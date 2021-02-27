@@ -1,0 +1,31 @@
+.badge {
+	display: inline-block;
+	padding: 3px 6px;
+	font-size: 10px;
+	font-weight: 400;
+	line-height: 10px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 3px;
+
+	// Empty badges collapse automatically
+	&:empty {
+		display: none;
+	}
+}
+
+// Quick fix for badges in buttons
+.btn .badge {
+	position: relative;
+	top: -1px;
+}
+
+//   // Colors
+
+@each $color, $value in $theme-colors {
+	.badge-#{$color} {
+        color: $white;
+        background: $value;
+	}
+}

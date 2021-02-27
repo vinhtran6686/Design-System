@@ -1,0 +1,80 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: inherit;
+	font-weight: 500;
+	color: $headings-color;
+}
+
+h1 {
+	@include textType(32px, 40px);
+}
+h2 {
+	@include textType(24px, 32px);
+	@include respond(md) {
+	}
+}
+h3 {
+	@include textType(16px, 20px);
+}
+h4,
+h5,
+h6 {
+	@include textType(14px, 20px);
+}
+
+p,
+.text {
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+code {
+	font-size: 87.5%;
+	color: $primary;
+	word-break: break-word;
+}
+// font weight
+$fws: 400, 500, 700;
+
+@mixin font-weight($className, $styleName) {
+	@each $fw in $fws {
+		#{$className + $fw} {
+			#{$styleName}: #{$fw};
+		}
+	}
+}
+@include font-weight('.f-w-', 'font-weight');
+
+// font size
+$fsPosts: (
+	'44': '60',
+	'36': '48',
+	'32': '40',
+	'28': '36',
+	'24': '32',
+	'20': '28',
+	'18': '24',
+	'16': '24',
+	'15': '20',
+	'14': '20',
+	'13': '18',
+	'12': '16',
+);
+$fsUIs: ('44', '36', '32', '28', '24', '20', '18', '16', '15', '14', '13', '12');
+@each $fs, $lh in $fsPosts {
+	.f-s-p-#{$fs} {
+		font-size: #{$fs + 'px'};
+		line-height: #{$lh + 'px'};
+	}
+}
+@each $fsUI in $fsUIs {
+	.f-s-ui-#{$fsUI} {
+		font-size: #{$fsUI + 'px'};
+		line-height: #{$fsUI + 'px'};
+	}
+}

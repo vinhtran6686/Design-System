@@ -1,0 +1,96 @@
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-break: break-word;
+	background-color: $card-bg;
+	background-clip: border-box;
+	box-shadow: 0 0 3px 0 $gray-300;
+	@include border-radius($card-border-radius);
+
+	> hr {
+		margin-right: 0; 
+		margin-left: 0; 
+	}
+
+	> .list-group:first-child {
+		.list-group-item:first-child {
+			@include border-top-radius($card-border-radius);
+		}
+	}
+
+	> .list-group:last-child {
+		.list-group-item:last-child {
+			@include border-bottom-radius($card-border-radius);
+		}
+	}
+}
+.card-body {
+	flex: 1 1 auto;
+	padding: $card-spacer-x;
+}
+
+.card-title {
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 500;
+	margin-bottom: $card-spacer-y;
+}
+
+.card-subtitle {
+	font-size: 14px;
+	line-height: 17px;
+	font-weight: 500;
+	margin-top: -($card-spacer-y / 2 - 0.5);
+	margin-bottom: 8px;
+}
+.card-text {
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: $card-spacer-y;
+}
+.card-text:last-child {
+	margin-bottom: 0;
+}
+
+.card-link {
+	@include hover {
+		text-decoration: none;
+	}
+
+	+ .card-link {
+		margin-left: $card-spacer-x;
+	}
+}
+.card-header {
+	padding: $card-spacer-x;
+	margin-bottom: 0; // Removes the default margin-bottom of <hN>
+	background-color: $card-bg;
+	border-bottom: $card-border-width solid $card-border-color;
+
+	&:first-child {
+		@include border-top-radius($card-border-radius);
+	}
+
+	+ .list-group {
+		.list-group-item:first-child {
+			border-top: 0;
+		}
+	}
+}
+.card-img {
+	width: 100%;
+	@include border-radius($card-inner-border-radius);
+}
+
+// Card image caps
+.card-img-top {
+	width: 100%;
+	@include border-top-radius($card-inner-border-radius);
+}
+
+.card-img-bottom {
+	width: 100%;
+	@include border-bottom-radius($card-inner-border-radius);
+}

@@ -1,0 +1,272 @@
+//
+// Color system
+//
+
+// stylelint-disable
+$gray-100: #f8f9fa !default; // Body-BG, Table-Striped,
+$gray-200: #e9ecef !default; // 200
+$gray-300: #dee2e6 !default; // Border,
+$gray-400: #ced4da !default; // Box-shadow, Input-border, Default-BG
+$gray-500: #99a2aa !default; // Place-holder, Text-disable,
+$gray-600: #6c757d !default; // 600
+$gray-700: #495057 !default; // Form-value, Body-text, color hover
+$gray-800: #343a40 !default; // 800
+$gray-900: #212529 !default; // Headline-text, Title,
+
+$red-100: #fcded0 !default; // Body-BG, Table-Striped,
+$red-200: #f9b7a3 !default; // 200
+$red-300: #ef8573 !default; // Border,
+$red-400: #df564f !default; // Box-shadow, Input-border, Default-BG
+$red-500: #cb1c22 !default; // Place-holder, Text-disable,
+$red-600: #ae1427 !default; // 600
+$red-700: #920e29 !default; // Form-value, Body-text
+$red-800: #750829 !default; // 800
+$red-900: #610529 !default; // Headline-text, Title,
+
+$blue-100: #cce9fe !default; // Body-BG, Table-Striped,
+$blue-200: #99cffe !default; // 200
+$blue-300: #66b1fd !default; // Border,
+$blue-400: #3f95fb !default; // Box-shadow, Input-border, Default-BG
+$blue-500: #0168fa !default; // Place-holder, Text-disable,
+$blue-600: #0050d7 !default; // 600
+$blue-700: #003bb3 !default; // Form-value, Body-text
+$blue-800: #002990 !default; // 800
+$blue-900: #001d77 !default; // Headline-text, Title,
+
+$green-100: #e3fbd6 !default; // Body-BG, Table-Striped,
+$green-200: #c3f7ae !default; // 200
+$green-300: #96e882 !default; // Border,
+$green-400: #6bd25e !default; // Box-shadow, Input-border, Default-BG
+$green-500: #33b530 !default; // Place-holder, Text-disable,
+$green-600: #239b2a !default; // 600
+$green-700: #188227 !default; // Form-value, Body-text
+$green-800: #0f6824 !default; // 800
+$green-900: #095621 !default; // Headline-text, Title,
+
+$dodger-blue-100: #d6fafe !default; // Body-BG, Table-Striped,
+$dodger-blue-200: #adf1fe !default; // 200
+$dodger-blue-300: #85e2fd !default; // Border,
+$dodger-blue-400: #66d0fb !default; // Box-shadow, Input-border, Default-BG
+$dodger-blue-500: #34b4f9 !default; // Place-holder, Text-disable,
+$dodger-blue-600: #268dd6 !default; // 600
+$dodger-blue-700: #1a6ab3 !default; // Form-value, Body-text
+$dodger-blue-800: #104b90 !default; // 800
+$dodger-blue-900: #093577 !default; // Headline-text, Title,
+
+$yellow-100: #fdf4cb !default; // Body-BG, Table-Striped,
+$yellow-200: #fce598 !default; // 200
+$yellow-300: #f8d164 !default; // Border,
+$yellow-400: #f2bc3e !default; // Box-shadow, Input-border, Default-BG
+$yellow-500: #ea9d02 !default; // Place-holder, Text-disable,
+$yellow-600: #c98001 !default; // 600
+$yellow-700: #a86501 !default; // Form-value, Body-text
+$yellow-800: #874d00 !default; // 800
+$yellow-900: #703b00 !default; // Headline-text, Title,
+
+$tomato-100: #f8d7da !default; // Body-BG, Table-Striped,
+$tomato-200: #f5c6cb !default; // 200
+$tomato-300: #f59476 !default; // Border,
+$tomato-400: #ec6a53 !default; // Box-shadow, Input-border, Default-BG
+$tomato-500: #e02c1f !default; // Place-holder, Text-disable,
+$tomato-600: #c01619 !default; // 600
+$tomato-700: #a10f1d !default; // Form-value, Body-text
+$tomato-800: #81091f !default; // 800
+$tomato-900: #6b0520 !default; // Headline-text, Title,
+
+$white: #fff !default;
+$black: #000 !default;
+
+$primary: $red-500 !default;
+$secondary: $gray-500 !default;
+$link: $blue-500 !default;
+$gray: $gray-500 !default;
+$success: $green-500 !default;
+$info: $blue-400 !default;
+$warning: $yellow-500 !default;
+$danger: $tomato-500 !default;
+
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'success': $success,
+	'info': $info,
+	'warning': $warning, 
+	'danger': $danger,
+	'light': $gray-200,
+	'dark': $gray-800,
+);
+$theme-colors-hover: (
+	'primary': $red-600,
+	'secondary': $gray-600,
+	'success': $green-600,
+	'info': $dodger-blue-600,
+	'warning': $yellow-600,
+	'danger': $tomato-600,
+	'light': $gray-300, 
+	'dark': $gray-900,
+);
+$theme-colors-disable: (
+	'primary': $red-400,
+	'secondary': $gray-400,
+	'success': $green-400,
+	'info': $dodger-blue-400,
+	'warning': $yellow-400,
+	'danger': $tomato-400,
+	'light': $gray-200, 
+	'dark': $gray-700,
+);
+
+$theme-colors-alert: (
+	'primary': $red-100,
+	'secondary': $gray-100,
+	'success': $green-100,
+	'info': $dodger-blue-100,
+	'warning': $yellow-100,
+	'danger': $tomato-100,
+	'light': $gray-100,
+	'dark': $gray-500,
+);
+$theme-colors-alert-border: (
+	'primary': $red-200,
+	'secondary': $gray-200,
+	'success': $green-200,
+	'info': $dodger-blue-200,
+	'warning': $yellow-200,
+	'danger': $tomato-200,
+	'light': $gray-200,
+	'dark': $gray-600,
+);
+
+// Text
+$text-muted: $gray-500 !default;
+
+// Border
+$border-radius: 4px !default;
+$border-radius-second: 6px !default;
+$border-width: 1px !default; 
+
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+$bg-dark: #1a222c !default;
+
+$lipstick: #cb1c22;
+$bright-blue: #0168fa;
+
+// Grid column
+$grid-columns: 12 !default;
+$grid-columns10: 10 !default;
+$grid-gutter-width: 3rem !default;
+
+// Grid breakpoint
+
+$grid-breakpoints: (
+	none: 0,
+	lg: 1200px,
+	md: 992px,
+	sm: 768px,
+	xs: 576px, 
+) !default;
+
+// Define the maximum width of `.container` for different screen sizes.
+$container-max-widths: (
+	lg: 97rem,
+	md: 75rem,
+	sm: 55rem,
+	xs: 100%,
+) !default;
+
+// Styling by enabling or disabling optional features.
+
+$enable-grid-classes: true !default;
+$enable-rounded: true !default;
+$enable-gradients: false !default;
+// Typography\
+
+$headings-color: inherit !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px` => html: 62.5% == 10px
+
+$h1-font-size: $font-size-base * 3.6 !default;
+$h2-font-size: $font-size-base * 3 !default;
+$h3-font-size: $font-size-base * 2.4 !default;
+$h4-font-size: $font-size-base * 2 !default;
+$h5-font-size: $font-size-base * 1.8 !default;
+$h6-font-size: $font-size-base * 1.6 !default;
+
+$h1-line-height: $h1-font-size * 1.36 !default;
+$h2-line-height: $h2-font-size * 1.36 !default;
+$h3-line-height: $h3-font-size * 1.375 !default;
+$h4-line-height: $h4-font-size * 1.35 !default;
+$h5-line-height: $h5-font-size * 1.375 !default;
+$h6-line-height: $h6-font-size !default;
+
+// Buttons
+$btn-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+	box-shadow 0.15s ease-in-out !default;
+
+$btn-xl-padding-y: 10px;
+$btn-xl-padding-x: 32px;
+$btn-xl-font-size: 18px;
+$btn-xl-line-height: 14px;
+
+$btn-lg-padding-y: 14px;
+$btn-lg-padding-x: 18px;
+$btn-lg-font-size: 14px;
+$btn-lg-line-height: 14px;
+
+$btn-nor-padding-y: 12px;
+$btn-nor-padding-x: 16px;
+$btn-nor-font-size: 14px;
+$btn-nor-line-height: 14px;
+
+$btn-sm-padding-y: 10px;
+$btn-sm-padding-x: 16px;
+$btn-sm-font-size: 13px;
+$btn-sm-line-height: 13px;
+
+$btn-xs-padding-y: 9px;
+$btn-xs-padding-x: 16px;
+$btn-xs-font-size: 12px;
+$btn-xs-line-height: 12px;
+
+// badge
+
+// tables
+
+$spacer: 1rem !default;
+
+$table-bg: transparent !default;
+
+$table-cell-padding: 8.5px 10px !default;
+$table-cell-padding-sm: 5.5px 10px !default;
+
+$table-border-width: 1px !default;
+$table-border-color: $gray-300 !default;
+
+// Cards
+$card-border-radius: $border-radius-second !default;
+$card-border-color: rgba($black, 0.125) !default;
+$card-bg: $white !default;
+$card-border-width: $border-width !default;
+$card-spacer-y: 10px !default;
+$card-spacer-x: 15px !default;
+$card-inner-border-radius: calc(#{$card-border-radius} - #{$card-border-width}) !default;
+$card-cap-bg: rgba($black, 0.03) !default;
+
+// Alerts
+$alert-margin-bottom: 15px !default;
+$alert-border-radius: $border-radius !default;
+$alert-link-font-weight: 600 !default;
+$alert-border-width: $border-width !default;
+
+// Forms
+
+$input-padding-y: 7.5px !default;
+$input-padding-x: 11px !default;
+$input-line-height: 1.5 !default;
+
+$form-check-input-gutter: 20px !default;
+$form-check-input-margin-y: 1px !default;
+$form-check-input-margin-x: 12px !default;

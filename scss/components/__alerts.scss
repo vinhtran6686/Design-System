@@ -1,0 +1,42 @@
+//
+// Base styles
+//
+.alert {
+	position: relative;
+	font-size: 14px;
+	line-height: 21px;
+	padding: 13px 16px;
+	margin-bottom: $alert-margin-bottom;
+	border: $alert-border-width solid transparent;
+    @include border-radius($alert-border-radius);
+    span{
+        float: right;
+        font-size: 22px;
+    }
+}
+
+@each $color, $value in $theme-colors-alert {
+	.alert-#{$color} {
+		background: $value;
+	}
+}
+@each $color, $value in $theme-colors-alert-border {
+	.alert-#{$color} {
+		border-color: $value;
+	}
+}
+@each $color, $value in $theme-colors-hover {
+	.alert-#{$color} {
+		color: $value;
+		a {
+			font-weight: 600;
+			color: $headings-color;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		hr {
+			border-color: $value;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+$direction: (
+	't': '0px 1px 0px',
+	'l': '1px 0px 0px',
+	'r': '-1px 0px 0px',
+	'b': '0px -1px 0px',
+);
+$direction-coor: (
+	'x': '',
+	'y': '',
+);
+
+@each $direc, $value in $direction {
+	@each $state, $color in $border-effect-colors {
+		#{'.b-' + $direc + '-' + $state} {
+			box-shadow: #{$value} #{$color} inset;
+		}
+	}
+}
+
+// border vertical
+@mixin border-axis($className, $value1: null, $value2: null) {
+	@each $state, $color in $border-effect-colors {
+		#{$className + $state} {
+			box-shadow: inset #{$value1} #{$color}, inset #{$value2} #{$color};
+		}
+	}
+}
+@include border-axis('.b-x-', '0px 1px 0px', '0px -1px 0px');
+@include border-axis('.b-y-', '-1px 0px 0px', '1px 0px 0px');
+// border hoirzontal

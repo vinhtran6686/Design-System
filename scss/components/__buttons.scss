@@ -1,0 +1,107 @@
+@mixin button-size($padding-x, $padding-y, $font-size, $line-height) {
+	padding: $padding-y $padding-x;
+	font-size: $font-size;
+	line-height: $line-height;
+}
+// @mixin button-size($name) {
+// 	padding: $btn-#{$name}-padding-y '$btn-#{$name}-padding-x';
+// 	font-size: '$btn-#{$name}-font-size';
+// 	line-height: '$btn-#{$name}-line-height';
+// }
+
+.btn {
+	display: inline-block;
+	font-weight: 300;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	@include button-size($btn-nor-padding-x, $btn-nor-padding-y, $btn-nor-font-size, $btn-nor-line-height);
+	// @include button-size(nor);
+	transition: $btn-transition;
+	&-circle {
+		border-radius: 19px;
+	}
+	&-icon {
+		padding: 12px 11px;
+	}
+}
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		color: $white;
+		background: $value;
+		outline: none;
+		&:active {
+			outline: none;
+			box-shadow: 0 0 0 0.2rem $value;
+		}
+	}
+}
+@each $color, $value in $theme-colors-hover {
+	.btn-#{$color} {
+		&:hover {
+			background: $value;
+		}
+	}
+}
+@each $color, $value in $theme-colors-disable {
+	.btn-#{$color} {
+		&:disabled{
+			background: $value;
+			$value:bacl;
+		}
+	}
+}
+@each $color, $value in $theme-colors-disable{
+	.btn-#{$color} {
+		&.btn-disable{
+			background: $value;
+			pointer-events: none;
+		}
+		&:disabled {
+			background: $value;
+		}
+	}
+}
+.btn-light {
+	color: #8392a5;
+}
+
+@each $color, $value in $theme-colors {
+	.btn-outline-#{$color} {
+		color: $value;
+		border: 1px solid $value;
+		&:hover {
+			color: $white;
+			background: $value;
+		}
+		&:active {
+			outline: none;
+			box-shadow: 0 0 0 0.2rem $value;
+		}
+	}
+}
+.btn-outline-light {
+	color: #8392a5;
+	&:hover {
+		color: #8392a5;
+	}
+}
+
+.btn-xl {
+	@include button-size($btn-xl-padding-x, $btn-xl-padding-y, $btn-xl-font-size, $btn-xl-line-height);
+}
+.btn-lg {
+	@include button-size($btn-lg-padding-x, $btn-lg-padding-y, $btn-lg-font-size, $btn-lg-line-height);
+}
+.btn-nor {
+	@include button-size($btn-nor-padding-x, $btn-nor-padding-y, $btn-nor-font-size, $btn-nor-line-height);
+}
+.btn-sm {
+	@include button-size($btn-sm-padding-x, $btn-sm-padding-y, $btn-sm-font-size, $btn-sm-line-height);
+}
+.btn-xs {
+	@include button-size($btn-xs-padding-x, $btn-xs-padding-y, $btn-xs-font-size, $btn-xs-line-height);
+}

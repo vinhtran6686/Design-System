@@ -1,0 +1,44 @@
+.breadcrumb {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	&-margin {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	&-item {
+		color: #0275d8;
+		line-height: 24px;
+		font-size: 14px;
+		& + &:before {
+			display: inline-block;
+			padding-right: 5px;
+			padding-left: 5px; 
+			color: #cccccc;
+			font-size: 16px;
+			content: '/';
+		}
+		@include respond(xs){
+			font-size: 12.4px;
+			line-height: 12.4px;
+		} 
+		a {
+			font-size: 14px;
+			line-height: 20px;
+			color: #0275d8;
+			@include respond(xs){
+				font-size: 12.4px;
+				line-height: 12.4px;
+				color: #4a4a4a;
+			}
+		}
+		&:last-child {
+			color: $gray-900;
+		}
+	}
+}
+ 

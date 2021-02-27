@@ -1,0 +1,30 @@
+$spacings: 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
+$spacingsXY: 2, 4, 8, 12, 16, 24;
+@mixin spacing-loop($className, $styleName) {
+	@each $spacing in $spacings {
+		#{$className + $spacing} {
+			#{$styleName}: #{$spacing * 1px};
+		}
+	}
+}
+@include spacing-loop('.p-l-', 'padding-left');
+@include spacing-loop('.p-r-', 'padding-right');
+@include spacing-loop('.p-b-', 'padding-bottom');
+@include spacing-loop('.p-t-', 'padding-top');
+@include spacing-loop('.m-l-', 'margin-left');
+@include spacing-loop('.m-r-', 'margin-right');
+@include spacing-loop('.m-b-', 'margin-bottom');
+@include spacing-loop('.m-t-', 'margin-top');
+
+@mixin spacingXY-loop($className, $styleName) {
+	@each $spacing in $spacingsXY {
+		#{$className + $spacing} {
+			#{$styleName + '-left'}: #{$spacing * 1px};
+			#{$styleName + '-right'}: #{$spacing * 1px};
+		}
+	}
+}
+@include spacingXY-loop('.p-x-', 'padding');
+@include spacingXY-loop('.p-y-', 'padding');
+@include spacingXY-loop('.m-x-', 'margin');
+@include spacingXY-loop('.m-y-', 'margin');
