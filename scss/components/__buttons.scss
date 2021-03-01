@@ -1,31 +1,135 @@
-@mixin button-size($padding-x, $padding-y, $font-size, $line-height) {
-	padding: $padding-y $padding-x;
-	font-size: $font-size;
-	line-height: $line-height;
-}
-// @mixin button-size($name) {
-// 	padding: $btn-#{$name}-padding-y '$btn-#{$name}-padding-x';
-// 	font-size: '$btn-#{$name}-font-size';
-// 	line-height: '$btn-#{$name}-line-height';
-// }
+$btn-prop: (
+	'xl': (
+		padding: '0 32px',
+		height: '56px',
+		width: '56px',
+	),
+	'lg': (
+		padding: '0 16px',
+		height: '36px',
+		width: '36px',
+	),
+	'md': (
+		padding: '0 12px',
+		height: '32px',
+		width: '32px',
+	),
+	'sm': (
+		padding: '0 12px',
+		height: '28px',
+		width: '28px',
+	),
+	'xs': (
+		padding: '0 8px',
+		height: '24px',
+		width: '24px',
+	),
+	'xxs': (
+		padding: '0 8px',
+		height: '20px',
+		width: '20px',
+	),
+);
+
+$btn-font-size: (
+	'xl': 20px,
+	'lg': 16px,
+	'md': 16px,
+	'sm': 14px,
+	'xs': 14px,
+	'xxs': 12px,
+);
+$btn-icon-search: (
+	'xl': (
+		padding-left: '20px',
+		padding-right: '32px',
+		font-size: '28px',
+	),
+	'lg': (
+		padding-left: '16px',
+		padding-right: '12px',
+		font-size: '20px',
+	),
+	'md': (
+		padding-left: '12px',
+		padding-right: '8px',
+		font-size: '16px',
+	),
+	'sm': (
+		padding-left: '12px',
+		padding-right: '8px',
+		font-size: '16px',
+	),
+	'xs': (
+		padding-left: '8px',
+		padding-right: '8px',
+		font-size: '14px',
+	),
+	'xxs': (
+		padding-left: '8px',
+		padding-right: '8px',
+		font-size: '12px',
+	),
+);
+$btn-icon-props: (
+	'xl': (
+		padding: '0 22px',
+		margin-icon: '12px',
+		font-size: '18px',
+	),
+	'lg': (
+		padding: '0 12px',
+		margin-icon: '4px',
+		font-size: '16px',
+	),
+	'md': (
+		padding: '0 9px',
+		margin-icon: '4px',
+		font-size: '16px',
+	),
+	'sm': (
+		padding: '0 9px',
+		margin-icon: '4px',
+		font-size: '14px',
+	),
+	'xs': (
+		padding: '0 8px',
+		margin-icon: '4px',
+		font-size: '14px',
+	),
+	'xxs': (
+		padding: '0 8px',
+		margin-icon: '4px',
+		font-size: '12px',
+	),
+);
 
 .btn {
-	display: inline-block;
-	font-weight: 300;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	user-select: none;
-	border: 1px solid transparent;
-	border-radius: 4px;
-	@include button-size($btn-nor-padding-x, $btn-nor-padding-y, $btn-nor-font-size, $btn-nor-line-height);
-	// @include button-size(nor);
+	font-family: inherit;
+	border-radius: $border-radius;
+	padding: $spacing * 2 $spacing * 3;
 	transition: $btn-transition;
-	&-circle {
-		border-radius: 19px;
+	border: 1px solid transparent;
+	@each $size, $value in $btn-font-size {
+		&-#{$size} {
+			font-size: $value;
+			line-height: $value;
+		}
 	}
-	&-icon {
-		padding: 12px 11px;
+	&-xl,
+	&-lg {
+		border-radius: $border-radius + 2;
+	}
+	&-rounded {
+		border-radius: 100px;
+	}
+	&-outline-grayscale {
+		color: $grayscale-600;
 	}
 }
 @each $color, $value in $theme-colors {
@@ -33,10 +137,6 @@
 		color: $white;
 		background: $value;
 		outline: none;
-		&:active {
-			outline: none;
-			box-shadow: 0 0 0 0.2rem $value;
-		}
 	}
 }
 @each $color, $value in $theme-colors-hover {
@@ -46,62 +146,162 @@
 		}
 	}
 }
-@each $color, $value in $theme-colors-disable {
+@each $color, $value in $theme-colors-focus {
 	.btn-#{$color} {
-		&:disabled{
+		&:focus,
+		&:active {
+			outline: none;
 			background: $value;
-			$value:bacl;
 		}
 	}
 }
-@each $color, $value in $theme-colors-disable{
+@each $color, $value in $theme-colors-disable {
 	.btn-#{$color} {
-		&.btn-disable{
+		&:disabled {
 			background: $value;
 			pointer-events: none;
 		}
-		&:disabled {
-			background: $value;
+		&:active {
+			box-shadow: 0 0 0 0.1rem $value;
 		}
 	}
 }
-.btn-light {
-	color: #8392a5;
+
+// Button padding & height
+@each $size, $detail in $btn-prop {
+	$padding: map-get($detail, 'padding');
+	$height: map-get($detail, 'height');
+	$keys: map-keys($detail); // padding, height,width (get keys of detail);
+	.btn-#{$size} {
+		padding: #{$padding};
+		height: #{$height};
+	}
+}
+@mixin btn-number($bool: false) {
+	@each $size, $detail in $btn-prop {
+		$width: map-get($detail, 'width');
+		@if $bool {
+			&.btn-#{$size} {
+				width: #{$width};
+				padding: 0;
+			}
+		}
+	}
 }
 
+@mixin btn-icon($bool: false) {
+	@if $bool {
+		flex-direction: row;
+		.btn-inside {
+			display: flex;
+			flex-direction: column;
+		}
+
+		[class^='icon-']:not(.btn-icon-search),
+		[class*=' icon-']:not(.btn-icon-search) {
+			display: inline-block;
+			text-align: center;
+		}
+		@each $size, $detail in $btn-icon-props {
+			$padding: map-get($detail, 'padding');
+			$font-size: map-get($detail, 'font-size');
+			&.btn-#{$size} {
+				padding: #{$padding};
+				[class^='icon-'],
+				[class*=' icon-'] {
+					font-size: #{$font-size};
+					width: #{$font-size};
+				}
+			}
+		}
+	}
+}
+@mixin btn-icon-direction($direction: '') {
+	// each for all btn
+	// check icon on button posittion left or right
+	@each $size, $detail in $btn-icon-props {
+		$margin-icon: map-get($detail, 'margin-icon');
+		@if $direction == 'right' {
+			&.btn-#{$size} {
+				[class^='icon-'],
+				[class*=' icon-'] {
+					margin-left: #{$margin-icon};
+				}
+			}
+		} @else {
+			&.btn-#{$size} {
+				flex-direction: row-reverse;
+				[class^='icon-'],
+				[class*=' icon-'] {
+					margin-right: #{$margin-icon};
+				}
+			}
+		}
+	}
+	// set prop for search icon
+	@each $size, $detail in $btn-icon-search {
+		$padding-left: map-get($detail, 'padding-left');
+		$padding-right: map-get($detail, 'padding-right');
+		$font-size: map-get($detail, 'font-size');
+		&.btn-#{$size} {
+			.btn-icon-search {
+				font-size: #{$font-size};
+				width: #{$font-size};
+			}
+		}
+		@if $direction == right {
+			&.btn-#{$size} {
+				padding-left: #{$padding-right};
+				padding-right: #{$padding-left};
+			}
+		} @else {
+			&.btn-#{$size} {
+				padding-left: #{$padding-left};
+				padding-right: #{$padding-right};
+			}
+		}
+	}
+}
+
+// Button Outline
 @each $color, $value in $theme-colors {
 	.btn-outline-#{$color} {
-		color: $value;
-		border: 1px solid $value;
+		color: #{$value};
+		background: $white;
+		border: 1px solid #{$value};
 		&:hover {
 			color: $white;
-			background: $value;
-		}
-		&:active {
-			outline: none;
-			box-shadow: 0 0 0 0.2rem $value;
+			background: #{$value};
 		}
 	}
 }
-.btn-outline-light {
-	color: #8392a5;
-	&:hover {
-		color: #8392a5;
+// Button Outline focus color
+@each $color, $value in $theme-colors-disable {
+	.btn-outline-#{$color} {
+		&:disabled {
+			background: $value;
+			pointer-events: none;
+		}
+		&:active,
+		&:focus {
+			outline: none;
+			box-shadow: 0 0 0 0.1rem $value;
+		}
 	}
 }
 
-.btn-xl {
-	@include button-size($btn-xl-padding-x, $btn-xl-padding-y, $btn-xl-font-size, $btn-xl-line-height);
+// Button number
+.btn-number {
+	@include btn-number($bool: true);
 }
-.btn-lg {
-	@include button-size($btn-lg-padding-x, $btn-lg-padding-y, $btn-lg-font-size, $btn-lg-line-height);
+
+// Button Icon
+.btn-is-icon {
+	@include btn-icon($bool: true);
 }
-.btn-nor {
-	@include button-size($btn-nor-padding-x, $btn-nor-padding-y, $btn-nor-font-size, $btn-nor-line-height);
+.btn-icon-left {
+	@include btn-icon-direction('left');
 }
-.btn-sm {
-	@include button-size($btn-sm-padding-x, $btn-sm-padding-y, $btn-sm-font-size, $btn-sm-line-height);
-}
-.btn-xs {
-	@include button-size($btn-xs-padding-x, $btn-xs-padding-y, $btn-xs-font-size, $btn-xs-line-height);
+.btn-icon-right {
+	@include btn-icon-direction('right');
 }

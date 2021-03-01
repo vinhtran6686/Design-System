@@ -1,5 +1,4 @@
-$spacings: 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
-$spacingsXY: 2, 4, 8, 12, 16, 24;
+
 @mixin spacing-loop($className, $styleName) {
 	@each $spacing in $spacings {
 		#{$className + $spacing} {
@@ -16,15 +15,15 @@ $spacingsXY: 2, 4, 8, 12, 16, 24;
 @include spacing-loop('.m-b-', 'margin-bottom');
 @include spacing-loop('.m-t-', 'margin-top');
 
-@mixin spacingXY-loop($className, $styleName) {
+@mixin spacingXY-loop($className, $styleName, $direction1, $direction2) {
 	@each $spacing in $spacingsXY {
 		#{$className + $spacing} {
-			#{$styleName + '-left'}: #{$spacing * 1px};
-			#{$styleName + '-right'}: #{$spacing * 1px};
+			#{$styleName + '-'+ $direction1}: #{$spacing * 1px};
+			#{$styleName + '-'+ $direction2}: #{$spacing * 1px};
 		}
 	}
 }
-@include spacingXY-loop('.p-x-', 'padding');
-@include spacingXY-loop('.p-y-', 'padding');
-@include spacingXY-loop('.m-x-', 'margin');
-@include spacingXY-loop('.m-y-', 'margin');
+@include spacingXY-loop('.p-x-', 'padding', 'left', 'right');
+@include spacingXY-loop('.p-y-', 'padding', 'top', 'bottom');
+@include spacingXY-loop('.m-x-', 'margin', 'left', 'right');
+@include spacingXY-loop('.m-y-', 'margin', 'top', 'bottom');

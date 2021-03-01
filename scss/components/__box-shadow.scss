@@ -4,10 +4,6 @@ $direction: (
 	'r': '-1px 0px 0px',
 	'b': '0px -1px 0px',
 );
-$direction-coor: (
-	'x': '',
-	'y': '',
-);
 
 @each $direc, $value in $direction {
 	@each $state, $color in $border-effect-colors {

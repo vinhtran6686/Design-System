@@ -84,7 +84,7 @@ $danger-800: #9b332c;
 $danger-900: #742f2a;
 
 $black-15: rgba(0, 0, 0, 0.15);
-$black-30: rgba(0, 0, 0, 0.3); 
+$black-30: rgba(0, 0, 0, 0.3);
 $black-50: rgba(0, 0, 0, 0.5);
 $black-70: rgba(0, 0, 0, 0.7);
 $black-100: #000;
@@ -136,7 +136,7 @@ $grid-breakpoints: (
 	lg: 1200px,
 	md: 992px,
 	// sm: 768px,
-	// xs: 576px,,
+	// xs: 576px,,,,,,,,,
 ) !default;
 
 // Define for mobile
@@ -156,9 +156,12 @@ $theme-colors: (
 	'grayscale': $grayscale,
 	'success': $success,
 	'info': $info,
-	'warning': $warning, 
+	'warning': $warning,
 	'danger': $danger,
 );
+
+$border-radius: 4px !default;
+
 $border-effect-colors: (
 	'100': $grayscale-200,
 	'200': $grayscale-300,
@@ -169,14 +172,49 @@ $border-effect-colors: (
 	'700': $grayscale-800,
 	'800': $grayscale-900,
 );
+$theme-block-colors: (
+	'primary': $primary,
+	'link': $link,
+	'grayscale': $grayscale-200,
+	'success': $success,
+	'info': $info,
+	'warning': $warning,
+	'danger': $danger,
+);
 
-// $theme-colors-hover: (
-// 	'primary': $red-600,
-// 	'secondary': $gray-600,
-// 	'success': $green-600,
-// 	'info': $dodger-blue-600,
-// 	'warning': $yellow-600,
-// 	'danger': $tomato-600,
-// 	'light': $gray-300,
-// 	'dark': $gray-900,
-// );
+$theme-colors-hover: (
+	'primary': $primary-600,
+	'link': $link-600,
+	'grayscale': $grayscale-600,
+	'success': $success-600,
+	'info': $info-600,
+	'warning': $warning-600,
+	'danger': $danger-600,
+);
+$theme-colors-focus: (
+	'primary': $primary-700,
+	'link': $link-700,
+	'grayscale': $grayscale-500,
+	'success': $success-700,
+	'info': $info-700,
+	'warning': $warning-700,
+	'danger': $danger-700,
+);
+$theme-colors-disable: (
+	'primary': $primary-400,
+	'link': $link-400,
+	'grayscale': $grayscale-300,
+	'success': $success-400,
+	'info': $info-400,
+	'warning': $warning-400,
+	'danger': $danger-400,
+);
+
+// spacing
+$spacing: 4px !default;
+$spacings: 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
+$spacingsXY: 2, 4, 8, 12, 16, 24;
+
+// Buttons
+$btn-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
+	box-shadow 0.3s ease-in-out !default;

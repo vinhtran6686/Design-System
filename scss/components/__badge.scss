@@ -1,31 +1,54 @@
 .badge {
-	display: inline-block;
-	padding: 3px 6px;
-	font-size: 10px;
-	font-weight: 400;
-	line-height: 10px;
+	display: inline-flex;
+	padding: $spacing $spacing * 2;
+	line-height: 1;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
-	border-radius: 3px;
-
-	// Empty badges collapse automatically
+	border-radius: $border-radius;
+	&,
+	& * {
+		font-size: 12px;
+		line-height: 12px;
+	}
+	span {
+		display: inline-block;
+	}
+	&-xl {
+		padding: $spacing + 1 $spacing * 2;
+		&,
+		& * {
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
 	&:empty {
 		display: none;
 	}
-}
 
-// Quick fix for badges in buttons
-.btn .badge {
-	position: relative;
-	top: -1px;
+	&-rounded {
+		border-radius: 100px;
+	}
 }
 
 //   // Colors
 
-@each $color, $value in $theme-colors {
+@each $color, $value in $theme-block-colors {
 	.badge-#{$color} {
-        color: $white;
-        background: $value;
+		color: $white;
+		background: $value;
+	}
+	.badge-grayscale {
+		color: $grayscale-600;
+	}
+}
+@each $color, $value in $theme-block-colors {
+	.badge-outline-#{$color} {
+		color: #{$value};
+		border: 1px solid #{$value};
+	}
+	.badge-outline-grayscale {
+		color: #{$grayscale-600};
+		border: 1px solid #{$grayscale-400};
 	}
 }
