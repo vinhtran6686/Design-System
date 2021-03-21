@@ -1,16 +1,28 @@
 @if $enable-grid-classes {
 	.container {
-		@include make-container();
+		@include make-container(); 
+
 		// @include make-container-max-widths();
+		// set container with max-width mobile -> desktop
 	}
 	// .container-non-respond {
 	// 	@include make-container-non-respond();
 	// }
+	.container-mb{
+		@include make-container-mb();
+		@include make-container-mb-max-widths();
+	}
+	.col-1-of-5{
+		width: 20%;
+	}
 }
 
 @if $enable-grid-classes {
 	.row {
 		@include make-row();
+	}
+	.row-mb{
+		@include make-row-mb();
 	}
 
 	// Remove the negative margin from default .row, then the horizontal padding
@@ -30,6 +42,9 @@
 }
 @if $enable-grid-classes {
 	@include make-grid-columns();
+}
+@if $enable-grid-classes {
+	@include make-grid-mb-columns();
 }
 // @if $enable-grid-classes {
 // 	@include make-grid-columns10();

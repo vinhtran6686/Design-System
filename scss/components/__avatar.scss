@@ -1,0 +1,55 @@
+$avatar-size: (
+	lg: 72px,
+	md: 48px,
+	sm: 28px,
+);
+@each $size, $value in $avatar-size {
+	.avatar-#{$size} {
+		.avatar-shape {
+			width: $value;
+			height: $value;
+		}
+	}
+}
+.avatar {
+	$this: &;
+	display: flex;
+	align-items: center;
+	&-shape {
+		@include flexCenter(inline-flex);
+		border-radius: $border-radius;
+		overflow: hidden;
+	}
+	&-info {
+		margin-left: $spacing * 2;
+	}
+	&-name {
+		color: $grayscale-900;
+	}
+	&-time {
+		color: $grayscale;
+	}
+	// modified
+	&-default {
+		#{$this}-shape {
+			background: #252525;
+		}
+	}
+	&-text {
+		#{$this}-shape {
+			background: $grayscale-400;
+			color: $white;
+		}
+	}
+	&-circle {
+		#{$this}-shape {
+			border-radius: 50%;
+		}
+	}
+	&-badge {
+		#{$this}-name {
+			display: flex;
+			align-items: center;
+		}
+	}
+}

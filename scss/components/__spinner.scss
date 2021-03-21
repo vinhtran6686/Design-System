@@ -1,0 +1,85 @@
+$border-spinner: $border-width * 4;
+@mixin spinner($r) {
+	& {
+		&:before {
+			width: #{$r + 'px'};
+			height: #{$r + 'px'};
+		}
+		svg {
+			width: #{$r + 'px'};
+			height: #{$r + 'px'};
+			circle {
+				stroke-dasharray: #{$r * 3.14};
+				stroke-dashoffset: calc(#{$r * 3.14} * 0.75);
+			}
+		}
+	}
+}
+@mixin spinner-color($color: $primary) {
+	& {
+		svg {
+			circle {
+				stroke: $color;
+			}
+		}
+	}
+}
+.spinner {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		border: $border-spinner solid $grayscale-100;
+		border-radius: 50%;
+	}
+	svg {
+		position: relative;
+		z-index: 2;
+		animation: spinner-animation 1.1s infinite;
+		circle {
+			fill: none;
+			stroke-width: $border-spinner;
+			stroke-linecap: round;
+		}
+	}
+	&-text {
+		white-space: nowrap;
+		display: inline-block;
+		margin-top: $spacing * 2;
+		color: $grayscale;
+		font-weight: 400;
+		@extend .f-s-ui-14;
+	}
+}
+.spinner {
+	@include spinner(24);
+	$this: &;
+	&-big {
+		@include spinner(64);
+		#{$this}-text {
+			@extend .f-s-ui-16;
+		}
+	}
+	&-primary {
+		@include spinner-color($primary);
+	}
+	&-secondary {
+		@include spinner-color($grayscale);
+	}
+}
+
+@keyframes spinner-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}

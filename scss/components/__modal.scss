@@ -7,91 +7,144 @@
 	top: 0;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	background-color: #00000090;
+	align-items: baseline;
+	background-color: $black-70;
 	opacity: 0;
-	visibility: hidden; 
-	&__header {
-		padding: 10px 15px;
-		border-bottom: 1px solid #ddd;
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			margin-bottom: 0;
-		}
-	}
-	&__body {
-		padding: 10px 15px;
-		border-bottom: 1px solid #ddd;
-	}
-	&__footer {
-		padding: 10px 15px;
-	}
-	&--is-visible {
-		opacity: 1;
-		visibility: visible;
-	}
-	&__content {
-		overflow: auto;
-		background: $white;
-		width: 900px;
-		max-width: 900px;
-		max-height: 700px;
-		border-radius: 4px;
+	visibility: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
+	$this: &;
+	&-wrapper {
 		outline: none;
+		width: 100%;
+		margin: 100px auto;
+	}
+	&-box {
+		background: $white;
+		width: 100%;
+		pointer-events: auto;
+		background-clip: padding-box;
+		border-radius: 4px;
 		position: relative;
-		@include respond(sm) {
-			width: calc(100% - 30px);
-		}
-		@include respond(xs) {
-			width: calc(100% - 20px);
+	}
+	&-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		box-shadow: inset 0px -1px 0px $grayscale-200;
+		.label {
+			display: flex;
+			flex: 1;
+			margin-right: 16px;
+			.icon-circle {
+				background: $grayscale;
+			}
 		}
 	}
-	&__close-btn {
-		position: absolute;
-		top: 10px;
-		right: 10px;
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
-		background: #fff;
-		padding: 7px;
-		display: block;
-		line-height: 30px;
-		text-align: center;
+	&-close {
 		cursor: pointer;
 		outline: none;
+		color: $grayscale;
+		@include flexCenter(inline-flex);
 		&:hover {
-			background-color: #00000080;
+			color: $grayscale-600;
 		}
 		.icon {
 			display: block;
 		}
 	}
-}
-
-// close btn sticky within content
-.modal__content {
-	.modal__close-btn--sticky {
-		position: sticky;
-		float: right;
-		top: 0; 
-		right: 0;
+	&-body {
+		color: $grayscale-700;
 	}
-}
-.modal[data-animation='on'] {
-	transition: opacity 0.3s, visibility 0.3s; 
+	&-shape {
+		@include flexCenter(inline-flex);
+		[class*='ic'] {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&-footer {
+		display: flex;
+		justify-content: center;
+		.link {
+			align-self: center;
+		}
+	}
+	&--is-visible {
+		opacity: 1;
+		visibility: visible;
+	}
 
-	.modal__content {
+	// size
+	&-lg,
+	&-md {
+		#{$this}-wrapper {
+			max-width: 776px;
+		}
+		#{$this}-header {
+			padding: 10px 24px;
+			&#{$this}-no-title {
+				box-shadow: none;
+				justify-content: flex-end;
+				padding: 18px 24px 0;
+				margin-bottom: -8px;
+			}
+		}
+		#{$this}-body {
+			padding: 16px 24px;
+		}
+		#{$this}-shape {
+			width: 72px;
+			height: 72px;
+			font-size: 45px;
+		}
+		#{$this}-footer {
+			padding: 0 16px 16px;
+		}
+	}
+	&-sm {
+		#{$this}-wrapper {
+			max-width: 344px;
+		}
+		#{$this}-header {
+			padding: 8px 16px;
+			.icon-circle {
+				width: 24px;
+				height: 24px;
+				font-size: 15px;
+				margin-right: 8px;
+			}
+			&#{$this}-no-title {
+				box-shadow: none;
+				justify-content: flex-end;
+				padding: 12px 16px 0;
+				margin-bottom: -12px;
+			}
+		}
+		#{$this}-body {
+			padding: 16px;
+		}
+		#{$this}-shape {
+			width: 64px;
+			height: 64px;
+			font-size: 40px;
+		}
+		#{$this}-footer {
+			padding: 0 16px 16px;
+		}
+	}
+	// status
+}
+
+// ANIMATION
+.modal[data-animation='on'] {
+	transition: opacity $transition-duration-xs, visibility $transition-duration-xs;
+	.modal-wrapper {
 		will-change: transform;
-		transition: transform 0.3s var(--ease-out);
+		transition: transform $transition-duration-xs $transiton-timing;
 		transform: translateY(10%);
 	}
-
-	&.modal--is-visible .modal__content {
+	&.modal--is-visible .modal-wrapper {
 		transform: translateY(0);
 	}
 }

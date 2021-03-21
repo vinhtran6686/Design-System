@@ -1,18 +1,171 @@
+$theme-colors-alert: (
+	'grayscale': $grayscale-100,
+	'success': $success-100,
+	'info': $info-100,
+	'warning': $warning-100,
+	'danger': $danger-100,
+);
+$theme-colors-alert-icon: (
+	'grayscale': $grayscale,
+	'success': $success,
+	'info': $info,
+	'warning': $warning,
+	'danger': $danger,
+);
+$theme-colors-alert-border: (
+	'grayscale': $grayscale-200,
+	'success': $success-200,
+	'info': $info-200,
+	'warning': $warning-200,
+	'danger': $danger-200,
+);
+$theme-colors-alert-text: (
+	'grayscale': (
+		title: $grayscale-800,
+		des: $grayscale-700,
+	),
+	'success': (
+		title: $success-800,
+		des: $success-700,
+	),
+	'info': (
+		title: $info-900,
+		des: $info-700,
+	),
+	'warning': (
+		title: $warning-800,
+		des: $warning-700,
+	),
+	'danger': (
+		title: $danger-800,
+		des: $danger-700,
+	),
+);
+
+$alert-border-radius: $border-radius !default;
+$alert-border-width: $border-width !default;
+
 //
 // Base styles
 //
 .alert {
+	$this: &;
 	position: relative;
-	font-size: 14px;
-	line-height: 21px;
-	padding: 13px 16px;
-	margin-bottom: $alert-margin-bottom;
-	border: $alert-border-width solid transparent;
-    @include border-radius($alert-border-radius);
-    span{
-        float: right;
-        font-size: 22px;
-    }
+	border: $alert-border-width solid $grayscale-400;
+	background: $white;
+	@include border-radius($alert-border-radius);
+	.icon-circle {
+		background: $grayscale;
+		color: $white;
+	}
+	.label {
+		align-items: center;
+	}
+	&-single {
+		display: inline-flex;
+		&#{$this}-lg {
+			padding: 0 $spacing * 4;
+			height: 36px;
+			.label-text {
+				font-size: 16px;
+				line-height: 1;
+			}
+		}
+		&#{$this}-md {
+			padding: 0 $spacing * 3;
+			height: 32px;
+			.label-text {
+				font-size: 16px;
+				line-height: 1;
+			}
+		}
+		&#{$this}-sm {
+			padding: 0 $spacing * 2.5;
+			height: 28px;
+			.label-text {
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+		&#{$this}-xs {
+			padding: 0 $spacing * 2;
+			height: 24px;
+			.label-text {
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+	}
+	&-full-text {
+		color: red;
+		.label {
+			display: flex;
+			span {
+				flex: 1;
+			}
+		}
+		#{$this}-des {
+			margin-top: $spacing * 2;
+			padding-top: $spacing * 2;
+			border-top: $alert-border-width solid transparent;
+		}
+		&#{$this}-lg {
+			.alert-title {
+				font-size: 18px;
+				line-height: 24px;
+			}
+			.alert-des {
+				font-size: 16px;
+				line-height: 24px;
+			}
+		}
+		&#{$this}-md {
+			.alert-title {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.alert-des {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+		&#{$this}-sm {
+			.alert-title {
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.alert-des {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+		&#{$this}-xs {
+			.alert-title {
+				font-size: 14px;
+				line-height: 14px;
+			}
+			.alert-des {
+				font-size: 12px;
+				line-height: 16px;
+			}
+		}
+	}
+	&-close {
+		cursor: pointer;
+	}
+	// size
+	&-lg {
+		padding: $spacing * 3 - 1 $spacing * 4;
+	}
+	&-md {
+		padding: $spacing * 2.5 - 1 $spacing * 3;
+	}
+	&-sm {
+		padding: $spacing * 2 - 1 $spacing * 2.5;
+	}
+	&-xs {
+		padding: $spacing * 2.5 - 1 $spacing * 2 $spacing + 1;
+	}
 }
 
 @each $color, $value in $theme-colors-alert {
@@ -23,20 +176,37 @@
 @each $color, $value in $theme-colors-alert-border {
 	.alert-#{$color} {
 		border-color: $value;
+		.alert-des {
+			border-top-color: $value;
+		}
 	}
 }
-@each $color, $value in $theme-colors-hover {
+@each $color, $value in $theme-colors-alert-icon {
 	.alert-#{$color} {
-		color: $value;
-		a {
-			font-weight: 600;
-			color: $headings-color;
-			&:hover {
-				text-decoration: underline;
-			}
+		[class^='ic-'],
+		[class*=' ic-'] {
+			color: $value;
 		}
-		hr {
-			border-color: $value;
+		.icon-circle {
+			background: $value;
+			color: $white;
+		}
+	}
+}
+@each $color, $detail in $theme-colors-alert-text {
+	$title: map-get($detail, 'title');
+	$des: map-get($detail, 'des');
+	.alert-full-text.alert-#{$color} {
+		.alert-title {
+			color: $title;
+		}
+		.alert-des {
+			color: $des;
+		}
+	}
+	.alert-#{$color} {
+		.alert-text {
+			color: $title;
 		}
 	}
 }

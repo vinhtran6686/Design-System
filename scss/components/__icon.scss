@@ -1,0 +1,65 @@
+$icon-prop: (
+	'xl': (
+		width: 28px,
+		size: 23px,
+		size-default: 28px,
+	),
+	'lg': (
+		width: 20px,
+		size: 13px,
+		size-default: 20px,
+	),
+	'md': (
+		width: 16px,
+		size: 10px,
+		size-default: 16px,
+	),
+	'sm': (
+		width: 16px,
+		size: 10px,
+		size-default: 14px,
+	),
+	'xs': (
+		width: 12px,
+		size: 8px,
+		size-default: 12px,
+	),
+);
+.icon {
+	&s {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&-circle {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+	}
+	&-square {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@each $size, $detail in $icon-prop {
+	$font-size: map-get($detail, 'size');
+	$font-default: map-get($detail, 'size-default');
+	$width: map-get($detail, 'width');
+	.icon-#{$size} {
+		font-size: #{$font-default};
+	}
+	.icon-#{$size}.icon-circle,
+	.icon-#{$size}.icon-square {
+		font-size: #{$font-size};
+		width: #{$width};
+		height: #{$width};
+	}
+}
+@each $color, $value in $theme-colors {
+	.icon-#{$color} {
+		background-color: $value;
+		color: $white;
+	}
+}

@@ -1,0 +1,16 @@
+.tag-input {
+	.tags {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	&.form-search-lg {
+		padding: $spacing + 2 $spacing * 2 $spacing + 2 $spacing * 4;
+	}
+	&.form-search-md {
+		padding: $spacing $spacing * 2 $spacing $spacing * 3;
+	}
+	&.form-search-sm {
+		padding: $spacing + 2 $spacing * 2 $spacing + 2 $spacing * 4;
+	}
+}

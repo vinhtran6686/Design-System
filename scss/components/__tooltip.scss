@@ -1,0 +1,195 @@
+.tooltip {
+	position: relative;
+	$this: &;
+	&-box {
+		position: absolute;
+		z-index: 2;
+		background: $white;
+		color: $grayscale-700;
+		padding: $spacing * 2 - 1 $spacing * 3 - 1;
+		border-radius: $border-radius + 2;
+		border: $border-default;
+		text-align: left;
+		@extend .d-s-200;
+		&,
+		&:after,
+		&:before {
+			transition: $transition;
+			opacity: 0;
+			visibility: hidden;
+		}
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+		}
+	}
+	&-default {
+		#{$this}-box {
+			bottom: calc(100% + #{$spacing});
+			left: 0;
+		}
+	}
+	&-top,
+	&-bottom {
+		#{$this}-box {
+			transform: translateX(-50%);
+			left: 50%;
+			&:after,
+			&:before {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&-left,
+	&-right {
+		#{$this}-box {
+			transform: translateY(50%);
+			bottom: 50%;
+			&:after,
+			&:before {
+				bottom: 50%;
+				transform: translateY(50%);
+			}
+		}
+	}
+	&-top {
+		#{$this}-box {
+			bottom: calc(100% + #{$spacing * 2});
+			&:after {
+				bottom: -13px;
+				border: 7px solid transparent;
+				border-left-width: 4px;
+				border-right-width: 4px;
+				border-top-color: $white;
+			}
+			&:before {
+				bottom: -15px;
+				border: 7px solid transparent;
+				border-left-width: 4px;
+				border-right-width: 4px;
+				border-top-color: $grayscale-400;
+			}
+		}
+	}
+	&-bottom {
+		#{$this}-box {
+			top: calc(100% + #{$spacing * 2});
+			&:after {
+				top: -13px;
+				border: 7px solid transparent;
+				border-left-width: 4px;
+				border-right-width: 4px;
+				border-bottom-color: $white;
+			}
+			&:before {
+				top: -15px;
+				border: 7px solid transparent;
+				border-left-width: 4px;
+				border-right-width: 4px;
+				border-bottom-color: $grayscale-400;
+			}
+		}
+	}
+	&-left {
+		#{$this}-box {
+			right: calc(100% + #{$spacing * 2});
+			&:after {
+				right: -13px;
+				border: 7px solid transparent;
+				border-top-width: 4px;
+				border-bottom-width: 4px;
+				border-left-color: $white;
+			}
+			&:before {
+				right: -15px;
+				border: 7px solid transparent;
+				border-top-width: 4px;
+				border-bottom-width: 4px;
+				border-left-color: $grayscale-400;
+			}
+		}
+	}
+	&-right {
+		#{$this}-box {
+			left: calc(100% + #{$spacing * 2});
+			&:after {
+				left: -13px;
+				border: 7px solid transparent;
+				border-top-width: 4px;
+				border-bottom-width: 4px;
+				border-right-color: $white;
+			}
+			&:before {
+				left: -15px;
+				border: 7px solid transparent;
+				border-top-width: 4px;
+				border-bottom-width: 4px;
+				border-right-color: $grayscale-400;
+			}
+		}
+	}
+	&-extra {
+		#{$this}-box {
+			min-height: 64px;
+			width: 344px;
+		}
+	}
+	&:hover {
+		#{$this}-box {
+			&,
+			&:after,
+			&:before {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+	// color
+	&-grayscale {
+		#{$this}-box {
+			background: $grayscale;
+			color: $white;
+		}
+		&#{$this}-top,
+		&#{$this}-left,
+		&#{$this}-bottom,
+		&#{$this}-right {
+			#{$this}-box {
+				&:before {
+					display: none;
+				}
+			}
+		}
+		&#{$this}-top {
+			#{$this}-box {
+				&:after {
+					border-top-color: $grayscale;
+				}
+			}
+		}
+		&#{$this}-left {
+			#{$this}-box {
+				&:after {
+					border-left-color: $grayscale;
+				}
+			}
+		}
+		&#{$this}-bottom {
+			#{$this}-box {
+				&:after {
+					border-bottom-color: $grayscale;
+				}
+			}
+		}
+		&#{$this}-right {
+			#{$this}-box {
+				&:after {
+					border-right-color: $grayscale;
+				}
+			}
+		}
+	}
+}

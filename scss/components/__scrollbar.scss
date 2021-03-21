@@ -1,0 +1,30 @@
+$scrollbar-size-normal: 4px;
+$scrollbar-size-big: 6px;
+// scrollbar
+@mixin scrollbar($size) {
+	& {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	&:-webkit-scrollbar-track {
+		border-radius: 100px;
+		background-color: $grayscale-600;
+	}
+
+	&::-webkit-scrollbar {
+		width: #{$size};
+		border-radius: 100px;
+		background-color: $grayscale-400;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 100px;
+		background-color: $grayscale-600;
+	}
+}
+.scrollbar {
+	@include scrollbar($scrollbar-size-normal);
+	&-big {
+		@include scrollbar($scrollbar-size-big);
+	}
+}

@@ -24,3 +24,25 @@ $direction: (
 @include border-axis('.b-x-', '0px 1px 0px', '0px -1px 0px');
 @include border-axis('.b-y-', '-1px 0px 0px', '1px 0px 0px');
 // border hoirzontal
+$drop-shadow: (
+	'100': '0px 1px 1px rgba(0, 0, 0, 0.15)',
+	'200': '0px 1px 4px rgba(10, 10, 10, 0.15)',
+	'300': '0px 2px 12px rgba(0, 0, 0, 0.15)',
+	'400': '0px 4px 20px rgba(0, 0, 0, 0.15)',
+	'500': '0px 8px 40px rgba(0, 0, 0, 0.5)',
+);
+$inner-shadow: (
+	'100': 'inset 0px 2px 2px rgba(0, 0, 0, 0.15)',
+	'200': 'inset 0px 2px 4px rgba(4, 4, 4, 0.15)',
+	'300': 'inset 0px 2px 8px rgba(4, 4, 4, 0.15)',
+);
+@each $value, $prop in $drop-shadow {
+	.d-s-#{$value} {
+		box-shadow: #{$prop};
+	}
+}
+@each $value, $prop in $inner-shadow {
+	.i-s-#{$value} {
+		box-shadow: #{$prop};
+	}
+}

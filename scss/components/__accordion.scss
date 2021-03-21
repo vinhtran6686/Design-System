@@ -1,0 +1,112 @@
+.accordion {
+	$this: &;
+	&-tab {
+		display: flex;
+		margin-bottom: 16px;
+		&.active {
+			#{$this}-content-description {
+				transform: scaleY(1);
+				max-height: 500px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	&-title {
+		padding: $spacing * 4;
+		box-shadow: inset 0px -1px 0px $grayscale-200;
+		[class*='ic-'] {
+			background: $grayscale;
+		}
+	}
+	&-action {
+		&-icon {
+			cursor: pointer;
+			width: 24px;
+			height: 24px;
+			@include flexCenter(inline-flex);
+			transition: $transition-md;
+			color: $grayscale;
+			&.active {
+				transform: rotate(180deg);
+			}
+		}
+	}
+	&-content {
+		&-description {
+			margin-top: 4px;
+			transition: $transition-md;
+			transform: scaleY(0);
+			max-height: 0px;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	// modified
+	&-card {
+		@extend .d-s-200;
+		border-radius: $border-radius-md;
+		#{$this}-content {
+			flex: 1;
+			align-self: center;
+			&-description {
+				margin-top: 0;
+				color: $grayscale-700;
+			}
+		}
+		#{$this}-action {
+         position: absolute;
+			top: 12px;
+			right: 16px;
+			.btn {
+				&:hover {
+					color: $white;
+				}
+				&.active {
+					i:before {
+						content: '\e981';
+					}
+				}
+			}
+		}
+		#{$this}-tab {
+         position: relative;
+			margin-bottom: 0;
+			padding: 16px 64px 16px 16px;
+			&:not(:last-child) {
+				box-shadow: inset 0px -1px 0px $grayscale-200;
+			}
+			&.active {
+				background: $grayscale-100;
+				#{$this}-content-description {
+					margin-top: $spacing * 2;
+				}
+			}
+		}
+	}
+	&-mobile {
+		#{$this}-action {
+			top: 8px;
+			right: 8px;
+			&-icon {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		&#{$this}-card {
+			#{$this}-title {
+				padding: 8px;
+				transition: $transition-md;
+			}
+			#{$this}-content {
+				&-description {
+					transition: $transition-md;
+				}
+			}
+		}
+		#{$this}-tab {
+			padding: 12px 44px 12px 8px;
+			align-items: end;
+		}
+	}
+}

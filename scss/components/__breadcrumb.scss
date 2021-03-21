@@ -5,40 +5,68 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	list-style: none;
-	margin: 0;
-	&-margin {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
+	$this: &;
 	&-item {
-		color: #0275d8;
-		line-height: 24px;
-		font-size: 14px;
+		color: $grayscale-700;
+		@extend .f-s-p-14;
 		& + &:before {
 			display: inline-block;
-			padding-right: 5px;
-			padding-left: 5px; 
-			color: #cccccc;
-			font-size: 16px;
+			margin: 0 $spacing * 2;
+			color: $grayscale-400;
+			font-size: 15px;
 			content: '/';
 		}
-		@include respond(xs){
-			font-size: 12.4px;
-			line-height: 12.4px;
-		} 
-		a {
-			font-size: 14px;
-			line-height: 20px;
-			color: #0275d8;
-			@include respond(xs){
-				font-size: 12.4px;
-				line-height: 12.4px;
-				color: #4a4a4a;
+		&.active {
+			color: $link;
+		}
+	}
+	&-arrow {
+		#{$this}-item {
+			display: inline-flex;
+			align-items: center;
+			& + #{$this}-item {
+				&:before {
+					content: '\e90e';
+					font-family: $font-icon-family;
+					font-size: 12px;
+					line-height: 12px;
+				}
 			}
 		}
-		&:last-child {
-			color: $gray-900;
+	}
+	// mobile
+	&-mobile {
+		padding: $spacing + 2 $spacing * 2;
+		background: $grayscale-100;
+		$mobile: &;
+		#{$this}-item {
+			@extend .f-s-p-12;
+			&.active,
+			a {
+				color: $grayscale-700;
+			}
+			a {
+				display: inline-flex;
+				align-items: center;
+			}
+			i {
+				@extend .f-s-ui-14;
+			}
+			& + #{$this}-item {
+				&:before {
+					margin: 0 $spacing;
+				}
+			}
+		}
+		&#{$this}-arrow {
+			#{$this}-item {
+				& + #{$this}-item {
+					&:before {
+						font-size: 8px;
+						line-height: 8px;
+					}
+				}
+			}
 		}
 	}
 }
- 

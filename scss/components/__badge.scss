@@ -1,25 +1,67 @@
+$badge-close-size: (
+	'xl': (
+		margin-icon: '16px',
+		font-size: '28px',
+	),
+	'lg': (
+		margin-icon: '12px',
+		font-size: '20px',
+	),
+	'md': (
+		margin-icon: '8px',
+		font-size: '16px',
+	),
+	'sm': (
+		margin-icon: '8px',
+		font-size: '16px',
+	),
+	'xs': (
+		margin-icon: '4px',
+		font-size: '14px',
+	),
+	'xxs': (
+		margin-icon: '4px',
+		font-size: '12px',
+	),
+);
 .badge {
 	display: inline-flex;
-	padding: $spacing $spacing * 2;
 	line-height: 1;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: baseline;
 	border-radius: $border-radius;
+	border: 1px solid transparent;
 	&,
 	& * {
 		font-size: 12px;
 		line-height: 12px;
 	}
-	span {
+	span:not(.btn){
 		display: inline-block;
 	}
-	&-xl {
-		padding: $spacing + 1 $spacing * 2;
+	&-md {
+		padding: $spacing * 2 - 1 $spacing * 3;
+		&,
+		& * {
+			font-size: 16px;
+			line-height: 16px;
+		}
+	}
+	&-xs {
+		padding: $spacing $spacing * 2;
 		&,
 		& * {
 			font-size: 14px;
 			line-height: 14px;
+		}
+	}
+	&-xxs {
+		padding: $spacing - 1 $spacing * 2;
+		&,
+		& * {
+			font-size: 12px;
+			line-height: 12px;
 		}
 	}
 	&:empty {
@@ -28,27 +70,89 @@
 
 	&-rounded {
 		border-radius: 100px;
+		overflow: hidden;
 	}
 }
 
-//   // Colors
+// Colors
 
-@each $color, $value in $theme-block-colors {
+@each $color, $value in $theme-colors {
 	.badge-#{$color} {
 		color: $white;
 		background: $value;
 	}
-	.badge-grayscale {
-		color: $grayscale-600;
-	}
 }
-@each $color, $value in $theme-block-colors {
+@each $color, $value in $theme-colors {
 	.badge-outline-#{$color} {
 		color: #{$value};
 		border: 1px solid #{$value};
 	}
-	.badge-outline-grayscale {
-		color: #{$grayscale-600};
-		border: 1px solid #{$grayscale-400};
+}
+// custom
+.badge-grayscale {
+	background: $grayscale-200;
+}
+.badge-outline-grayscale {
+	border: 1px solid #{$grayscale-400};
+}
+.badge-outline-grayscale,
+.badge-grayscale {
+	color: $grayscale-600;
+}
+
+// badge button close
+@mixin badge-close($bool: false) {
+	@if $bool {
+		@each $size, $detail in $badge-close-size {
+			$margin-icon: map-get($detail, 'margin-icon');
+			$font-size: map-get($detail, 'font-size');
+			&.badge-#{$size} {
+				.btn {
+					margin-left: #{$margin-icon};
+				}
+			}
+		}
+	}
+}
+@each $color, $value in $theme-colors-hover {
+	.badge-#{$color}.badge-close {
+		.btn {
+			background: #{$value};
+			margin-right: -1px;
+		}
+	}
+}
+
+.badge-close {
+	padding: 0;
+	align-items: center;
+	overflow: hidden;
+	border: none;
+	@include badge-close(true);
+	&.badge-md {
+		padding-left: $spacing * 3;
+	}
+	&.badge-xs {
+		padding-left: $spacing * 2;
+	}
+	&.badge-xxs {
+		padding-left: $spacing * 2;
+	}
+}
+// custom only grayscale
+.badge-grayscale.badge-close {
+	.btn-grayscale {
+		background: $grayscale-300;
+		color: $grayscale-600;
+		&:hover {
+			background: $grayscale-400;
+			border-color: $grayscale-400;
+		}
+		&:focus,
+		&:active {
+			color: $white;
+			background: $grayscale-500;
+			border-color: $grayscale-500;
+		}
 	}
 }

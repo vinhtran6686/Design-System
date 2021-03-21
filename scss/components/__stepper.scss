@@ -1,0 +1,200 @@
+$stepper-vertical-spacing: 32px;
+.stepper {
+	max-width: 600px;
+	display: flex;
+	$this: &;
+	&-item {
+		flex: 1;
+		&:not(:first-child) {
+			#{$this}-tab {
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					top: 12px;
+					transform: translateY(-50%);
+					height: 2px;
+					transition: $transition-sm;
+				}
+				&:before {
+					right: 200%;
+					width: 0;
+					z-index: 2;
+					background: $primary;
+				}
+				&:after {
+					right: 50%;
+					width: 100%;
+					z-index: 1;
+					background: $grayscale-400;
+				}
+			}
+		}
+
+		&.active,
+		&.complete {
+			#{$this}-tab {
+				&:before {
+					right: 50%;
+					width: 100%;
+				}
+			}
+			#{$this}-circle {
+				border-color: $primary;
+			}
+		}
+		&.active {
+			#{$this}-circle {
+				background: $white;
+				&,
+				&:after {
+					transition-delay: $transition-duration-sm;
+				}
+				&:after {
+					transform: scale(1);
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+		&.complete {
+			#{$this}-circle {
+				background: $primary;
+				[class^='ic-'],
+				[class*=' ic-'] {
+					display: block;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	&-tab {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&-circle {
+		position: relative;
+		z-index: 3;
+		width: 24px;
+		height: 24px;
+		font-size: 15px;
+		color: $white;
+		border-radius: 100%;
+		background: $white;
+		border: $border-width $border-style;
+		border-color: $grayscale-400;
+		transition: $transition;
+		cursor: pointer;
+		@include flexCenter(inline-flex);
+		[class^='ic-'],
+		[class*=' ic-'] {
+			display: none;
+		}
+		&:after {
+			content: '';
+			width: 12px;
+			height: 12px;
+			background: $primary;
+			border-radius: 50%;
+			transform: scale(0.3);
+			opacity: 0;
+			visibility: hidden;
+			transition: $transition;
+		}
+		&:hover {
+			border-color: $primary;
+			background: $white;
+			&:after {
+				transform: scale(1);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+	// style
+	&-number {
+		#{$this}-item {
+			&.complete {
+			}
+			&.active {
+				#{$this}-circle {
+					transition-delay: 0s;
+					&:hover {
+						background: $white;
+					}
+					&:after {
+						display: block;
+					}
+				}
+				.text {
+					display: none;
+				}
+			}
+		}
+		#{$this}-circle {
+			background: $grayscale;
+			border-color: $grayscale;
+			&:hover {
+				border-color: $primary;
+				background: $primary;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	&-vertical {
+		display: inline-flex;
+		flex-direction: column;
+		#{$this}-item {
+			margin-bottom: $stepper-vertical-spacing;
+			&:not(:first-child) {
+				#{$this}-tab {
+					&:before,
+					&:after {
+						left: 12px;
+						right: unset;
+						top: unset;
+						transform: translateX(-50%);
+						width: 2px;
+					}
+					&:before {
+						height: 0;
+						bottom: calc(100% + #{$stepper-vertical-spacing});
+					}
+					&:after {
+						height: $stepper-vertical-spacing;
+						bottom: 100%;
+					}
+				}
+			}
+			&.active,
+			&.complete {
+				#{$this}-tab {
+					&:before {
+						height: $stepper-vertical-spacing;
+						bottom: 100%;
+						// right: 50%;
+						// width: 100%;
+					}
+				}
+			}
+			&.complete {
+				#{$this}-tab {
+					&:before,
+					&:after {
+						width: 2px;
+					}
+				}
+			}
+		}
+		#{$this}-tab {
+			flex-direction: row;
+		}
+	}
+}

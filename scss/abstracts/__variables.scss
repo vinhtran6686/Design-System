@@ -35,7 +35,7 @@ $link-900: #011c77;
 
 $grayscale-100: #f8f9fa;
 $grayscale-200: #edeeef;
-$grayscale-300: #e1e4e6;
+$grayscale-300: #E1E4E6;
 $grayscale-400: #cbd1d6;
 $grayscale-500: #939ca3;
 $grayscale-600: #6a737a;
@@ -63,11 +63,11 @@ $info-700: #2b6cb0;
 $info-800: #2c5282;
 $info-900: #2a4365;
 
-$warning-100: #ffffe5;
-$warning-200: #fff88f;
-$warning-300: #faf089;
-$warning-400: #f6e05e;
-$warning-500: #e0b43a;
+$warning-100: #fefae8;
+$warning-200: #fdf1ba;
+$warning-300: #fbe48e;
+$warning-400: #f6c743;
+$warning-500: #efb140;
 $warning-600: #d69e2e;
 $warning-700: #b7791f;
 $warning-800: #975a16;
@@ -116,10 +116,11 @@ $enable-gradients: false !default;
 
 $grid-gutter-base: 12px !default;
 $grid-columns: 12 !default;
+$grid-mb-columns: 6 !default;
 // $grid-columns10: 10 !default;
 $grid-gutter-width: $grid-gutter-base * 2 !default;
 
-// Grid breakpoint to set maximum witdh
+// Grid breakpoint to set maximum witdh for desktop
 
 $container-max-widths: (
 	lg: 97rem,
@@ -128,7 +129,16 @@ $container-max-widths: (
 	xs: 100%,
 ) !default;
 
+// Grid breakpoint to set maximum witdh for mobile
+
+$container-mb-max-widths: (
+	md: 378px,
+	sm: 352px,
+	xs: 340px,
+) !default;
+
 // Define the maximum width of `.container` for different screen sizes.
+
 // Define for deskstop
 $grid-breakpoints: (
 	none: 0,
@@ -136,31 +146,28 @@ $grid-breakpoints: (
 	lg: 1200px,
 	md: 992px,
 	// sm: 768px,
-	// xs: 576px,,,,,,,,,
+	// xs: 576px,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 
 // Define for mobile
-$grid-mobile-breakpoints: (
-	none: 0,
-	md: 768px,
-	sm: 512px,
+$grid-mb-breakpoints: (
+	md: '414px',
+	sm: '375px',
+	xs: '360px',
 ) !default;
 
 // Typography
 $headings-color: $grayscale-900 !default;
 
-// Text Color
-$theme-colors: (
-	'primary': $primary,
-	'link': $link,
-	'grayscale': $grayscale,
-	'success': $success,
-	'info': $info,
-	'warning': $warning,
-	'danger': $danger,
-);
-
+// border
+$border-style: solid !default;
+$border-width: 1px !default;
 $border-radius: 4px !default;
+$border-radius-md: 6px !default;
+$border-radius-lg: 8px !default;
+$border-default: $border-width $border-style $grayscale-400;
+
+$box-shadow: inset -1px 0px 0px $grayscale-200;
 
 $border-effect-colors: (
 	'100': $grayscale-200,
@@ -172,10 +179,11 @@ $border-effect-colors: (
 	'700': $grayscale-800,
 	'800': $grayscale-900,
 );
-$theme-block-colors: (
+// Text Color
+$theme-colors: (
 	'primary': $primary,
 	'link': $link,
-	'grayscale': $grayscale-200,
+	'grayscale': $grayscale,
 	'success': $success,
 	'info': $info,
 	'warning': $warning,
@@ -212,9 +220,29 @@ $theme-colors-disable: (
 
 // spacing
 $spacing: 4px !default;
-$spacings: 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
-$spacingsXY: 2, 4, 8, 12, 16, 24;
+$spacings: 0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
+$spacingsXY: 0, 2, 4, 6, 8, 12, 16, 24;
+
+// transition
+$transition-duration-xs: 0.3s;
+$transition-duration-sm: 0.6s;
+$transition-duration-md: 0.9s;
+$transiton-timing: ease-in-out;
+$transition: all $transition-duration-xs $transiton-timing !default;
+$transition-sm: all $transition-duration-sm $transiton-timing !default;
+$transition-md: all $transition-duration-md $transiton-timing !default;
 
 // Buttons
-$btn-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out,
-	box-shadow 0.3s ease-in-out !default;
+$btn-transition: color $transition-duration-xs ease-in-out, background-color $transition-duration-xs ease-in-out,
+	border-color $transition-duration-xs ease-in-out, box-shadow $transition-duration-xs ease-in-out !default;
+
+// Forms
+$input-padding-y: 7.5px !default;
+$input-padding-x: 11px !default;
+$input-line-height: 1.5 !default;
+
+$form-check-input-gutter: 20px !default;
+$form-check-input-margin-y: 1px !default;
+$form-check-input-margin-x: 12px !default;
+$font-size-base: 1rem !default;
+

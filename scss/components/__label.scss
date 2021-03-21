@@ -1,0 +1,160 @@
+$label-size: (
+	'xl': (
+		margin-icon: '8px',
+		margin-bottom: '4px',
+		font-size: '28px',
+	),
+	'lg': (
+		margin-icon: '8px',
+		margin-bottom: '4px',
+		font-size: '20px',
+	),
+	'md': (
+		margin-icon: '4px',
+		margin-bottom: '0',
+		font-size: '16px',
+	),
+	'sm': (
+		margin-icon: '4px',
+		margin-bottom: '0',
+		font-size: '14px',
+	),
+	'xs': (
+		margin-icon: '4px',
+		margin-bottom: '0',
+		font-size: '12px',
+	),
+);
+
+@mixin label-help-text($bool: false) {
+	@if $bool {
+		@each $size, $detail in $label-size {
+			$margin-bottom: map-get($detail, 'margin-bottom');
+			$font-size: map-get($detail, 'font-size');
+			&.label-#{$size} {
+				.label-text {
+					margin-bottom: #{$margin-bottom};
+				}
+			}
+		}
+	}
+}
+@mixin label-icon($bool: false, $direction: null) {
+	@if $bool {
+		@each $size, $detail in $label-size {
+			$font-size: map-get($detail, 'font-size');
+			$margin-icon: map-get($detail, 'margin-icon');
+			&.label-#{$size} {
+				[class^='ic-'],
+				[class*=' ic-'] {
+					width: #{$font-size};
+					height: #{$font-size};
+					font-size: calc(#{$font-size} - #{$spacing + 1});
+				}
+			}
+		}
+	}
+}
+@mixin label-direction($direction: null) {
+	@each $size, $detail in $label-size {
+		$margin-icon: map-get($detail, 'margin-icon');
+		@if $direction == 'right' {
+			&.label-#{$size} {
+				[class^='ic-'],
+				[class*=' ic-'] {
+					margin-left: #{$margin-icon};
+				}
+			}
+		} @else {
+			&.label-#{$size} {
+				[class^='ic-'],
+				[class*=' ic-'] {
+					margin-right: #{$margin-icon};
+				}
+			}
+		}
+	}
+}
+// label text
+.label {
+	color: $grayscale-700;
+	display: inline-flex;
+	$this: &;
+	&-text {
+		@extend .f-s-p-16;
+	}
+	&-help-text {
+		@extend .f-s-p-14;
+		color: $grayscale-500;
+	}
+	&-xl {
+		#{$this}-text {
+			@extend .f-s-p-28;
+		}
+		#{$this}-help-text {
+			@extend .f-s-ui-18;
+		}
+	}
+	&-lg {
+		#{$this}-text {
+			@extend .f-s-p-20;
+		}
+		#{$this}-help-text {
+			@extend .f-s-ui-16;
+		}
+	}
+	&-md {
+		#{$this}-text {
+			@extend .f-s-p-16;
+		}
+		#{$this}-help-text {
+			@extend .f-s-ui-14;
+		}
+	}
+	&-sm {
+		#{$this}-text {
+			@extend .f-s-p-14;
+		}
+		#{$this}-help-text {
+			@extend .f-s-ui-13;
+		}
+	}
+	&-xs {
+		#{$this}-text {
+			@extend .f-s-p-12;
+		}
+		#{$this}-help-text {
+			@extend .f-s-ui-12;
+		}
+	}
+}
+// only label help text
+.label-is-help-text {
+	flex-direction: column;
+	@include label-help-text(true);
+}
+// only label icon
+.label-is-icon {
+	align-items: center;
+	[class^='ic-'],
+	[class*=' ic-'] {
+		background: $grayscale-400;
+		color: $white;
+	}
+	// @include label-icon(true);
+	&.label-sm {
+		[class^='ic-'],
+		[class*='ic-'] {
+			width: 16px;
+			height: 16px;
+			font-size: calc(16px - 5px);
+		}
+	}
+}
+.label-icon-left {
+	@include label-direction('left');
+}
+.label-icon-right {
+	flex-direction: row-reverse;
+	@include label-direction('right');
+}

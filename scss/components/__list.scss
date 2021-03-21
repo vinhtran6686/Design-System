@@ -1,0 +1,72 @@
+.list {
+	&-group {
+		display: list-item;
+		li {
+			margin-bottom: $spacing;
+			position: relative;
+			display: flex;
+			font-weight: inherit;
+			@extend .f-s-p-16;
+			@extend .f-w-400;
+			* {
+				font-weight: inherit;
+			}
+			&:before {
+				margin-right: $spacing;
+				display: inline-block;
+			}
+		}
+	}
+	// style
+	&-disc {
+		li {
+			&:before {
+				font-family: '#{$font-icon-family}';
+			}
+		}
+		&-sm {
+			li {
+				&:before {
+					content: '\e937';
+				}
+			}
+		}
+		&-md {
+			li {
+				&:before {
+					content: '\e936';
+				}
+			}
+		}
+		&-lg {
+			li {
+				&:before {
+					content: '\e935';
+				}
+			}
+		}
+	}
+	&-number {
+		list-style-type: none;
+		counter-reset: section;
+		&::marker {
+			display: none;
+		}
+		li {
+			counter-increment: section;
+			&:before {
+				content: counter(section) '.';
+			}
+		}
+	}
+	&-alphabet {
+		list-style-type: none;
+		counter-reset: section;
+		li {
+			counter-increment: section;
+			&:before {
+				content: counter(section, lower-alpha) '.';
+			}
+		}
+	}
+}

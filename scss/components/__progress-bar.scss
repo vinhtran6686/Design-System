@@ -1,0 +1,103 @@
+.progress-line {
+	background: $grayscale-200;
+	position: relative;
+	overflow: hidden;
+	$progress: '.progress';
+	.progress-bar {
+		float: left;
+		height: 100%;
+		text-align: right;
+		color: $white;
+		transition: all $transition-duration-sm $transiton-timing;
+		span {
+			@extend .f-s-ui-14;
+			margin-right: $spacing * 2;
+			// mix-blend-mode: difference;
+		}
+	}
+	// size
+	&#{$progress}-md {
+		height: 18px;
+		border-radius: $border-radius * 4;
+		#{$progress}-bar {
+			border-radius: $border-radius * 4;
+			line-height: 18px;
+		}
+	}
+	&#{$progress}-sm {
+		height: 4px;
+		border-radius: $border-radius;
+		#{$progress}-bar {
+			border-radius: $border-radius;
+		}
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.progress-#{$color} {
+		@include spinner-color(#{$value});
+		.progress-bar {
+			background-color: $value;
+		}
+	}
+}
+@mixin progress-circle($r) {
+	$radius-circle: $r - 4px; // 4px is width-border;
+	& {
+		&:before {
+			width: #{$r + 'px'};
+			height: #{$r + 'px'};
+		}
+		svg {
+			width: #{$r + 'px'};
+			height: #{$r + 'px'};
+			circle {
+				stroke-dasharray: #{$radius-circle * 3.14};
+				// stroke-dashoffset: calc(50 * 87.92px / 100); // 50 is 50% circumference of a circle
+			}
+		}
+	}
+}
+.progress-circle {
+	display: inline-flex;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		border: $border-spinner solid $grayscale-200;
+		border-radius: 50%;
+	}
+	svg {
+		position: relative;
+		z-index: 2;
+		transform: rotate(-90deg);
+		circle {
+			fill: none;
+			stroke-width: $border-spinner;
+			transition: all $transition-duration-sm $transiton-timing;
+			// stroke-linecap: round;
+		}
+	}
+	&-text {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		color: $grayscale-600;
+		@extend .f-s-ui-14;
+	}
+}
+.progress-circle {
+	@include progress-circle(32);
+	$this: &;
+	&-big {
+		@include progress-circle(64);
+		#{$this}-text {
+			@extend .f-s-ui-16;
+		}
+	}
+}

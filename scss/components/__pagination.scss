@@ -2,37 +2,121 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding-left: 0;
 	list-style: none;
-	&--margin {
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
+	$this: &;
 	&-item {
-		&:not(:last-child) {
-			margin-right: 5px;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		// state
+		&.active {
+			#{$this}-link {
+				background: $primary;
+				color: $white;
+				border-color: $primary;
+			}
+		}
+		&.disabled,
+		&:disabled {
+			#{$this}-link {
+				color: $grayscale-400;
+			}
 		}
 	}
 	&-link {
-		font-size: 14px;
-		line-height: 17px;
-		color: $gray-700;
-		font-weight: 500;
-		padding: 10px 13px;
-		border: 1px solid $gray-400;
-		border-radius: 4px;
-		text-align: center;
-		i {
-			font-weight: bold;
-			display: inline-block;
-			width: 8px;
-			position: relative;
-			left: -6px;
-		}
-		&.active {
-			background: $red-500;
+		width: 40px;
+		height: 40px;
+		@extend .f-s-p-14;
+		@extend .f-w-500;
+		@include flexCenter(inline-flex);
+		color: $grayscale-700;
+		background: $white;
+		border-radius: $border-radius;
+		border: $border-default;
+		transition: $btn-transition;
+		&:hover {
+			background: $primary;
 			color: $white;
-			border-color: $red-500;
+			border-color: $primary;
+		}
+		&:active {
+			box-shadow: 0 0 0 0.1rem $primary-400;
+			color: $white;
+		}
+		&:focus {
+			border-color: $primary;
+			background: $primary-600;
+			color: $white;
+			outline: none;
+		}
+	}
+	// Style
+	&-default {
+		#{$this}-item {
+			#{$this}-link {
+				border-radius: 0;
+			}
+			&:not(:first-child):not(:last-child) {
+				color: red;
+				#{$this}-link {
+					border-right: none;
+					border-left: none;
+					box-shadow: inset -1px 0px 0px $grayscale-200;
+				}
+			}
+			&:first-child {
+				#{$this}-link {
+					border-right: none;
+					border-top-left-radius: $border-radius;
+					border-bottom-left-radius: $border-radius;
+					box-shadow: inset -1px 0px 0px $grayscale-200;
+				}
+			}
+			&:last-child {
+				#{$this}-link {
+					border-left: none;
+					border-top-right-radius: $border-radius;
+					border-bottom-right-radius: $border-radius;
+				}
+			}
+		}
+		#{$this}-link {
+			&:active {
+				background: $primary-600;
+				box-shadow: none;
+			}
+		}
+	}
+	&-space {
+		#{$this}-item {
+			margin: 0 $spacing;
+		}
+	}
+	&-empty {
+		#{$this}-link {
+			border-color: transparent;
+			&:active {
+				background: $primary-600;
+				box-shadow: none;
+			}
+		}
+	}
+
+	// mobile style
+	&-mobile {
+		#{$this}-link {
+			width: 32px;
+			height: 32px;
+		}
+		&#{$this}-space {
+			width: 32px;
+			height: 32px;
+			#{$this}-item {
+				margin: 0 $spacing/2;
+			}
 		}
 	}
 }
