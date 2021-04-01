@@ -142,9 +142,11 @@
 	.modal-wrapper {
 		will-change: transform;
 		transition: transform $transition-duration-xs $transiton-timing;
-		transform: translateY(10%);
+		// transform: translateY(10%);
+		transform: translate3d(-100%, 0, 0);
 	}
 	&.modal--is-visible .modal-wrapper {
-		transform: translateY(0);
+		// transform: translateY(0);
+		transform: translate3d(0, 0, 0);
 	}
 }

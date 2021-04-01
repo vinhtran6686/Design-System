@@ -5,8 +5,9 @@
 		margin-bottom: 16px;
 		&.active {
 			#{$this}-content-description {
-				transform: scaleY(1);
-				max-height: 500px;
+				// transform: scaleY(1);
+				// max-height: 500px;
+				transform: translate3d(0, 0, 0);
 				opacity: 1;
 				visibility: visible;
 			}
@@ -36,8 +37,9 @@
 		&-description {
 			margin-top: 4px;
 			transition: $transition-md;
-			transform: scaleY(0);
-			max-height: 0px;
+			// transform: scaleY(0);
+			// max-height: 0px;
+			transform: translate3d(0, -100%, 0);
 			opacity: 0;
 			visibility: hidden;
 		}
@@ -55,7 +57,7 @@
 			}
 		}
 		#{$this}-action {
-         position: absolute;
+			position: absolute;
 			top: 12px;
 			right: 16px;
 			.btn {
@@ -70,7 +72,7 @@
 			}
 		}
 		#{$this}-tab {
-         position: relative;
+			position: relative;
 			margin-bottom: 0;
 			padding: 16px 64px 16px 16px;
 			&:not(:last-child) {

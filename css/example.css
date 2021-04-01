@@ -5,8 +5,11 @@
 
 /* Sidebar Navigation */
 .section-nav {
+	flex-basis: 15%;
 	padding-left: 0;
 	border-right: 1px solid #efefef;
+	height: 100%;
+	overflow-y: auto;
 }
 .section-nav h3 {
 	margin-bottom: 0.75rem;
@@ -24,17 +27,21 @@
 	color: #ccc;
 	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
-
 .section-nav a:hover,
 .section-nav a:focus {
 	color: #666;
 }
+.nav-item{
+	cursor: pointer;
+}
 .demo {
-	display: grid;
-	grid-template-columns: 15em 1fr;
-	padding: 3rem 1rem;
+	height: 100vh;
+	overflow: auto;
+	display: flex;	
+	padding: 1rem 1rem;
 }
 .demo__content {
+	flex:1;
 	margin-left: 2rem;
 }
 

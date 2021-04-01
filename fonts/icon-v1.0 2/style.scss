@@ -1,0 +1,1334 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?62v7hj');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?62v7hj#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?62v7hj') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?62v7hj') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?62v7hj##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-360 {
+  &:before {
+    content: $icon-ic-360;     
+    color: #939ca3;
+  }
+}
+.icon-ic-a-watch {
+  &:before {
+    content: $icon-ic-a-watch;     
+    color: #939ca3;
+  }
+}
+.icon-ic-adapter {
+  &:before {
+    content: $icon-ic-adapter;     
+    color: #939ca3;
+  }
+}
+.icon-ic-air-purifier {
+  &:before {
+    content: $icon-ic-air-purifier;     
+    color: #939ca3;
+  }
+}
+.icon-ic-android {
+  &:before {
+    content: $icon-ic-android;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-double-down {
+  &:before {
+    content: $icon-ic-angle-double-down;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-double-left {
+  &:before {
+    content: $icon-ic-angle-double-left;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-double-right {
+  &:before {
+    content: $icon-ic-angle-double-right;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-double-up {
+  &:before {
+    content: $icon-ic-angle-double-up;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-down-thin {
+  &:before {
+    content: $icon-ic-angle-down-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-down {
+  &:before {
+    content: $icon-ic-angle-down;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-left-thin {
+  &:before {
+    content: $icon-ic-angle-left-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-left {
+  &:before {
+    content: $icon-ic-angle-left;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-right-thin {
+  &:before {
+    content: $icon-ic-angle-right-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-right {
+  &:before {
+    content: $icon-ic-angle-right;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-up-thin {
+  &:before {
+    content: $icon-ic-angle-up-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-angle-up {
+  &:before {
+    content: $icon-ic-angle-up;     
+    color: #939ca3;
+  }
+}
+.icon-ic-antutu {
+  &:before {
+    content: $icon-ic-antutu;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-cable {
+  &:before {
+    content: $icon-ic-apple-cable;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-cover-1 {
+  &:before {
+    content: $icon-ic-apple-cover-1;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-cover {
+  &:before {
+    content: $icon-ic-apple-cover;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-imac {
+  &:before {
+    content: $icon-ic-apple-imac;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-ipad {
+  &:before {
+    content: $icon-ic-apple-ipad;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-iphone {
+  &:before {
+    content: $icon-ic-apple-iphone;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-keyboard {
+  &:before {
+    content: $icon-ic-apple-keyboard;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-macbook {
+  &:before {
+    content: $icon-ic-apple-macbook;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-mouse {
+  &:before {
+    content: $icon-ic-apple-mouse;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-power {
+  &:before {
+    content: $icon-ic-apple-power;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-tv {
+  &:before {
+    content: $icon-ic-apple-tv;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple-watch {
+  &:before {
+    content: $icon-ic-apple-watch;     
+    color: #939ca3;
+  }
+}
+.icon-ic-apple {
+  &:before {
+    content: $icon-ic-apple;     
+    color: #939ca3;
+  }
+}
+.icon-ic-arrow-select {
+  &:before {
+    content: $icon-ic-arrow-select;     
+    color: #939ca3;
+  }
+}
+.icon-ic-bag {
+  &:before {
+    content: $icon-ic-bag;     
+    color: #939ca3;
+  }
+}
+.icon-ic-battery-charge {
+  &:before {
+    content: $icon-ic-battery-charge;     
+    color: #939ca3;
+  }
+}
+.icon-ic-battery-full {
+  &:before {
+    content: $icon-ic-battery-full;     
+    color: #939ca3;
+  }
+}
+.icon-ic-battery {
+  &:before {
+    content: $icon-ic-battery;     
+    color: #939ca3;
+  }
+}
+.icon-ic-bluetooth {
+  &:before {
+    content: $icon-ic-bluetooth;     
+    color: #939ca3;
+  }
+}
+.icon-ic-boiler {
+  &:before {
+    content: $icon-ic-boiler;     
+    color: #939ca3;
+  }
+}
+.icon-ic-book {
+  &:before {
+    content: $icon-ic-book;     
+    color: #939ca3;
+  }
+}
+.icon-ic-box {
+  &:before {
+    content: $icon-ic-box;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cable {
+  &:before {
+    content: $icon-ic-cable;     
+    color: #939ca3;
+  }
+}
+.icon-ic-calendar {
+  &:before {
+    content: $icon-ic-calendar;     
+    color: #939ca3;
+  }
+}
+.icon-ic-call {
+  &:before {
+    content: $icon-ic-call;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cam {
+  &:before {
+    content: $icon-ic-cam;     
+    color: #939ca3;
+  }
+}
+.icon-ic-camera-security-2 {
+  &:before {
+    content: $icon-ic-camera-security-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-camera-security {
+  &:before {
+    content: $icon-ic-camera-security;     
+    color: #939ca3;
+  }
+}
+.icon-ic-camera {
+  &:before {
+    content: $icon-ic-camera;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cancel {
+  &:before {
+    content: $icon-ic-cancel;     
+    color: #939ca3;
+  }
+}
+.icon-ic-card {
+  &:before {
+    content: $icon-ic-card;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cart-refresh .path1 {
+  &:before {
+    content: $icon-ic-cart-refresh-path1;  
+    color: rgb(147, 156, 163);
+  }
+}
+.icon-ic-cart-refresh .path2 {
+  &:before {
+    content: $icon-ic-cart-refresh-path2;  
+    margin-left: -0.94140625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-ic-cart-refresh .path3 {
+  &:before {
+    content: $icon-ic-cart-refresh-path3;  
+    margin-left: -0.94140625em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.icon-ic-cart {
+  &:before {
+    content: $icon-ic-cart;     
+    color: #939ca3;
+  }
+}
+.icon-ic-chat {
+  &:before {
+    content: $icon-ic-chat;     
+    color: #939ca3;
+  }
+}
+.icon-ic-check {
+  &:before {
+    content: $icon-ic-check;     
+    color: #939ca3;
+  }
+}
+.icon-ic-circle-lg {
+  &:before {
+    content: $icon-ic-circle-lg;     
+    color: #939ca3;
+  }
+}
+.icon-ic-circle-md {
+  &:before {
+    content: $icon-ic-circle-md;     
+    color: #939ca3;
+  }
+}
+.icon-ic-circle-sm {
+  &:before {
+    content: $icon-ic-circle-sm;     
+    color: #939ca3;
+  }
+}
+.icon-ic-clock {
+  &:before {
+    content: $icon-ic-clock;     
+    color: #939ca3;
+  }
+}
+.icon-ic-close {
+  &:before {
+    content: $icon-ic-close;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cog {
+  &:before {
+    content: $icon-ic-cog;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cogs {
+  &:before {
+    content: $icon-ic-cogs;     
+    color: #939ca3;
+  }
+}
+.icon-ic-combined-shape {
+  &:before {
+    content: $icon-ic-combined-shape;     
+    color: #939ca3;
+  }
+}
+.icon-ic-compatible-devices {
+  &:before {
+    content: $icon-ic-compatible-devices;     
+    color: #939ca3;
+  }
+}
+.icon-ic-connect {
+  &:before {
+    content: $icon-ic-connect;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cover {
+  &:before {
+    content: $icon-ic-cover;     
+    color: #939ca3;
+  }
+}
+.icon-ic-cpu {
+  &:before {
+    content: $icon-ic-cpu;     
+    color: #939ca3;
+  }
+}
+.icon-ic-crown {
+  &:before {
+    content: $icon-ic-crown;     
+    color: #939ca3;
+  }
+}
+.icon-ic-display {
+  &:before {
+    content: $icon-ic-display;     
+    color: #939ca3;
+  }
+}
+.icon-ic-doc {
+  &:before {
+    content: $icon-ic-doc;     
+    color: #939ca3;
+  }
+}
+.icon-ic-down-min {
+  &:before {
+    content: $icon-ic-down-min;     
+    color: #939ca3;
+  }
+}
+.icon-ic-down-thin {
+  &:before {
+    content: $icon-ic-down-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-down {
+  &:before {
+    content: $icon-ic-down;     
+    color: #939ca3;
+  }
+}
+.icon-ic-download {
+  &:before {
+    content: $icon-ic-download;     
+    color: #939ca3;
+  }
+}
+.icon-ic-drive {
+  &:before {
+    content: $icon-ic-drive;     
+    color: #939ca3;
+  }
+}
+.icon-ic-edit-3 {
+  &:before {
+    content: $icon-ic-edit-3;     
+    color: #939ca3;
+  }
+}
+.icon-ic-edit {
+  &:before {
+    content: $icon-ic-edit;     
+    color: #939ca3;
+  }
+}
+.icon-ic-emo-happy {
+  &:before {
+    content: $icon-ic-emo-happy;     
+    color: #939ca3;
+  }
+}
+.icon-ic-exclamation {
+  &:before {
+    content: $icon-ic-exclamation;     
+    color: #939ca3;
+  }
+}
+.icon-ic-expand {
+  &:before {
+    content: $icon-ic-expand;     
+    color: #939ca3;
+  }
+}
+.icon-ic-export {
+  &:before {
+    content: $icon-ic-export;     
+    color: #939ca3;
+  }
+}
+.icon-ic-eye {
+  &:before {
+    content: $icon-ic-eye;     
+    color: #939ca3;
+  }
+}
+.icon-ic-face {
+  &:before {
+    content: $icon-ic-face;     
+    color: #939ca3;
+  }
+}
+.icon-ic-fado {
+  &:before {
+    content: $icon-ic-fado;     
+    color: #939ca3;
+  }
+}
+.icon-ic-fast-shipping {
+  &:before {
+    content: $icon-ic-fast-shipping;     
+    color: #939ca3;
+  }
+}
+.icon-ic-ffriend {
+  &:before {
+    content: $icon-ic-ffriend;     
+    color: #939ca3;
+  }
+}
+.icon-ic-filter {
+  &:before {
+    content: $icon-ic-filter;     
+    color: #939ca3;
+  }
+}
+.icon-ic-flash {
+  &:before {
+    content: $icon-ic-flash;     
+    color: #939ca3;
+  }
+}
+.icon-ic-front-camera {
+  &:before {
+    content: $icon-ic-front-camera;     
+    color: #939ca3;
+  }
+}
+.icon-ic-game {
+  &:before {
+    content: $icon-ic-game;     
+    color: #939ca3;
+  }
+}
+.icon-ic-gift {
+  &:before {
+    content: $icon-ic-gift;     
+    color: #939ca3;
+  }
+}
+.icon-ic-glasses {
+  &:before {
+    content: $icon-ic-glasses;     
+    color: #939ca3;
+  }
+}
+.icon-ic-guarantee-time {
+  &:before {
+    content: $icon-ic-guarantee-time;     
+    color: #939ca3;
+  }
+}
+.icon-ic-hairdryer {
+  &:before {
+    content: $icon-ic-hairdryer;     
+    color: #939ca3;
+  }
+}
+.icon-ic-hdd-black {
+  &:before {
+    content: $icon-ic-hdd-black;     
+    color: #939ca3;
+  }
+}
+.icon-ic-hdd {
+  &:before {
+    content: $icon-ic-hdd;     
+    color: #939ca3;
+  }
+}
+.icon-ic-headphone {
+  &:before {
+    content: $icon-ic-headphone;     
+    color: #939ca3;
+  }
+}
+.icon-ic-heart-o {
+  &:before {
+    content: $icon-ic-heart-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-heart {
+  &:before {
+    content: $icon-ic-heart;     
+    color: #939ca3;
+  }
+}
+.icon-ic-help {
+  &:before {
+    content: $icon-ic-help;     
+    color: #939ca3;
+  }
+}
+.icon-ic-home {
+  &:before {
+    content: $icon-ic-home;     
+    color: #939ca3;
+  }
+}
+.icon-ic-hotsale {
+  &:before {
+    content: $icon-ic-hotsale;     
+    color: #939ca3;
+  }
+}
+.icon-ic-hub {
+  &:before {
+    content: $icon-ic-hub;     
+    color: #939ca3;
+  }
+}
+.icon-ic-humidity-2 {
+  &:before {
+    content: $icon-ic-humidity-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-humidity {
+  &:before {
+    content: $icon-ic-humidity;     
+    color: #939ca3;
+  }
+}
+.icon-ic-info {
+  &:before {
+    content: $icon-ic-info;     
+    color: #939ca3;
+  }
+}
+.icon-ic-internet {
+  &:before {
+    content: $icon-ic-internet;     
+    color: #939ca3;
+  }
+}
+.icon-ic-keyboard {
+  &:before {
+    content: $icon-ic-keyboard;     
+    color: #939ca3;
+  }
+}
+.icon-ic-laptop-gaming {
+  &:before {
+    content: $icon-ic-laptop-gaming;     
+    color: #939ca3;
+  }
+}
+.icon-ic-laptop {
+  &:before {
+    content: $icon-ic-laptop;     
+    color: #939ca3;
+  }
+}
+.icon-ic-layout {
+  &:before {
+    content: $icon-ic-layout;     
+    color: #939ca3;
+  }
+}
+.icon-ic-left-thin {
+  &:before {
+    content: $icon-ic-left-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-left {
+  &:before {
+    content: $icon-ic-left;     
+    color: #939ca3;
+  }
+}
+.icon-ic-lightbulb-1 {
+  &:before {
+    content: $icon-ic-lightbulb-1;     
+    color: #939ca3;
+  }
+}
+.icon-ic-lightbulb {
+  &:before {
+    content: $icon-ic-lightbulb;     
+    color: #939ca3;
+  }
+}
+.icon-ic-lightning {
+  &:before {
+    content: $icon-ic-lightning;     
+    color: #939ca3;
+  }
+}
+.icon-ic-like {
+  &:before {
+    content: $icon-ic-like;     
+    color: #939ca3;
+  }
+}
+.icon-ic-local-shipping {
+  &:before {
+    content: $icon-ic-local-shipping;     
+    color: #939ca3;
+  }
+}
+.icon-ic-location {
+  &:before {
+    content: $icon-ic-location;     
+    color: #939ca3;
+  }
+}
+.icon-ic-login {
+  &:before {
+    content: $icon-ic-login;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mac-mini {
+  &:before {
+    content: $icon-ic-mac-mini;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mac-pro {
+  &:before {
+    content: $icon-ic-mac-pro;     
+    color: #939ca3;
+  }
+}
+.icon-ic-machine {
+  &:before {
+    content: $icon-ic-machine;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mail-o {
+  &:before {
+    content: $icon-ic-mail-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mail {
+  &:before {
+    content: $icon-ic-mail;     
+    color: #939ca3;
+  }
+}
+.icon-ic-map-o {
+  &:before {
+    content: $icon-ic-map-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-map {
+  &:before {
+    content: $icon-ic-map;     
+    color: #939ca3;
+  }
+}
+.icon-ic-material {
+  &:before {
+    content: $icon-ic-material;     
+    color: #939ca3;
+  }
+}
+.icon-ic-megaphone {
+  &:before {
+    content: $icon-ic-megaphone;     
+    color: #939ca3;
+  }
+}
+.icon-ic-menu {
+  &:before {
+    content: $icon-ic-menu;     
+    color: #939ca3;
+  }
+}
+.icon-ic-minimize {
+  &:before {
+    content: $icon-ic-minimize;     
+    color: #939ca3;
+  }
+}
+.icon-ic-minus {
+  &:before {
+    content: $icon-ic-minus;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mobile-phone {
+  &:before {
+    content: $icon-ic-mobile-phone;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mouse-pad {
+  &:before {
+    content: $icon-ic-mouse-pad;     
+    color: #939ca3;
+  }
+}
+.icon-ic-mouse {
+  &:before {
+    content: $icon-ic-mouse;     
+    color: #939ca3;
+  }
+}
+.icon-ic-movie {
+  &:before {
+    content: $icon-ic-movie;     
+    color: #939ca3;
+  }
+}
+.icon-ic-new {
+  &:before {
+    content: $icon-ic-new;     
+    color: #939ca3;
+  }
+}
+.icon-ic-pause {
+  &:before {
+    content: $icon-ic-pause;     
+    color: #939ca3;
+  }
+}
+.icon-ic-pencil {
+  &:before {
+    content: $icon-ic-pencil;     
+    color: #939ca3;
+  }
+}
+.icon-ic-phone {
+  &:before {
+    content: $icon-ic-phone;     
+    color: #939ca3;
+  }
+}
+.icon-ic-phonecard {
+  &:before {
+    content: $icon-ic-phonecard;     
+    color: #939ca3;
+  }
+}
+.icon-ic-photo {
+  &:before {
+    content: $icon-ic-photo;     
+    color: #939ca3;
+  }
+}
+.icon-ic-picture {
+  &:before {
+    content: $icon-ic-picture;     
+    color: #939ca3;
+  }
+}
+.icon-ic-play {
+  &:before {
+    content: $icon-ic-play;     
+    color: #939ca3;
+  }
+}
+.icon-ic-plus {
+  &:before {
+    content: $icon-ic-plus;     
+    color: #939ca3;
+  }
+}
+.icon-ic-power-1 {
+  &:before {
+    content: $icon-ic-power-1;     
+    color: #939ca3;
+  }
+}
+.icon-ic-power-bank {
+  &:before {
+    content: $icon-ic-power-bank;     
+    color: #939ca3;
+  }
+}
+.icon-ic-power-socket-2 {
+  &:before {
+    content: $icon-ic-power-socket-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-power-socket {
+  &:before {
+    content: $icon-ic-power-socket;     
+    color: #939ca3;
+  }
+}
+.icon-ic-power {
+  &:before {
+    content: $icon-ic-power;     
+    color: #939ca3;
+  }
+}
+.icon-ic-print {
+  &:before {
+    content: $icon-ic-print;     
+    color: #939ca3;
+  }
+}
+.icon-ic-printer-ink {
+  &:before {
+    content: $icon-ic-printer-ink;     
+    color: #939ca3;
+  }
+}
+.icon-ic-projector-2 {
+  &:before {
+    content: $icon-ic-projector-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-projector {
+  &:before {
+    content: $icon-ic-projector;     
+    color: #939ca3;
+  }
+}
+.icon-ic-promo {
+  &:before {
+    content: $icon-ic-promo;     
+    color: #939ca3;
+  }
+}
+.icon-ic-quote {
+  &:before {
+    content: $icon-ic-quote;     
+    color: #939ca3;
+  }
+}
+.icon-ic-ram {
+  &:before {
+    content: $icon-ic-ram;     
+    color: #939ca3;
+  }
+}
+.icon-ic-reload {
+  &:before {
+    content: $icon-ic-reload;     
+    color: #939ca3;
+  }
+}
+.icon-ic-renew {
+  &:before {
+    content: $icon-ic-renew;     
+    color: #939ca3;
+  }
+}
+.icon-ic-replay {
+  &:before {
+    content: $icon-ic-replay;     
+    color: #939ca3;
+  }
+}
+.icon-ic-reply-all {
+  &:before {
+    content: $icon-ic-reply-all;     
+    color: #939ca3;
+  }
+}
+.icon-ic-reply {
+  &:before {
+    content: $icon-ic-reply;     
+    color: #939ca3;
+  }
+}
+.icon-ic-right-thin {
+  &:before {
+    content: $icon-ic-right-thin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-right {
+  &:before {
+    content: $icon-ic-right;     
+    color: #939ca3;
+  }
+}
+.icon-ic-router {
+  &:before {
+    content: $icon-ic-router;     
+    color: #939ca3;
+  }
+}
+.icon-ic-save {
+  &:before {
+    content: $icon-ic-save;     
+    color: #939ca3;
+  }
+}
+.icon-ic-scales {
+  &:before {
+    content: $icon-ic-scales;     
+    color: #939ca3;
+  }
+}
+.icon-ic-screen-size {
+  &:before {
+    content: $icon-ic-screen-size;     
+    color: #939ca3;
+  }
+}
+.icon-ic-screenprotect {
+  &:before {
+    content: $icon-ic-screenprotect;     
+    color: #939ca3;
+  }
+}
+.icon-ic-sd-card {
+  &:before {
+    content: $icon-ic-sd-card;     
+    color: #939ca3;
+  }
+}
+.icon-ic-sdcard {
+  &:before {
+    content: $icon-ic-sdcard;     
+    color: #939ca3;
+  }
+}
+.icon-ic-search {
+  &:before {
+    content: $icon-ic-search;     
+    color: #939ca3;
+  }
+}
+.icon-ic-secondhand {
+  &:before {
+    content: $icon-ic-secondhand;     
+    color: #939ca3;
+  }
+}
+.icon-ic-security-camera {
+  &:before {
+    content: $icon-ic-security-camera;     
+    color: #939ca3;
+  }
+}
+.icon-ic-send {
+  &:before {
+    content: $icon-ic-send;     
+    color: #939ca3;
+  }
+}
+.icon-ic-shave-2 {
+  &:before {
+    content: $icon-ic-shave-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-shave {
+  &:before {
+    content: $icon-ic-shave;     
+    color: #939ca3;
+  }
+}
+.icon-ic-software {
+  &:before {
+    content: $icon-ic-software;     
+    color: #939ca3;
+  }
+}
+.icon-ic-speaker {
+  &:before {
+    content: $icon-ic-speaker;     
+    color: #939ca3;
+  }
+}
+.icon-ic-spin {
+  &:before {
+    content: $icon-ic-spin;     
+    color: #939ca3;
+  }
+}
+.icon-ic-star-half-o {
+  &:before {
+    content: $icon-ic-star-half-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-star-half {
+  &:before {
+    content: $icon-ic-star-half;     
+    color: #939ca3;
+  }
+}
+.icon-ic-star-o {
+  &:before {
+    content: $icon-ic-star-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-star {
+  &:before {
+    content: $icon-ic-star;     
+    color: #939ca3;
+  }
+}
+.icon-ic-tablet {
+  &:before {
+    content: $icon-ic-tablet;     
+    color: #939ca3;
+  }
+}
+.icon-ic-tag {
+  &:before {
+    content: $icon-ic-tag;     
+    color: #939ca3;
+  }
+}
+.icon-ic-tags {
+  &:before {
+    content: $icon-ic-tags;     
+    color: #939ca3;
+  }
+}
+.icon-ic-target-location {
+  &:before {
+    content: $icon-ic-target-location;     
+    color: #939ca3;
+  }
+}
+.icon-ic-th-list {
+  &:before {
+    content: $icon-ic-th-list;     
+    color: #939ca3;
+  }
+}
+.icon-ic-th {
+  &:before {
+    content: $icon-ic-th;     
+    color: #939ca3;
+  }
+}
+.icon-ic-toothbrush {
+  &:before {
+    content: $icon-ic-toothbrush;     
+    color: #939ca3;
+  }
+}
+.icon-ic-trash-o {
+  &:before {
+    content: $icon-ic-trash-o;     
+    color: #939ca3;
+  }
+}
+.icon-ic-trash {
+  &:before {
+    content: $icon-ic-trash;     
+    color: #939ca3;
+  }
+}
+.icon-ic-trending-1 {
+  &:before {
+    content: $icon-ic-trending-1;     
+    color: #939ca3;
+  }
+}
+.icon-ic-trending {
+  &:before {
+    content: $icon-ic-trending;     
+    color: #939ca3;
+  }
+}
+.icon-ic-trophy {
+  &:before {
+    content: $icon-ic-trophy;     
+    color: #939ca3;
+  }
+}
+.icon-ic-tryon {
+  &:before {
+    content: $icon-ic-tryon;     
+    color: #939ca3;
+  }
+}
+.icon-ic-tv {
+  &:before {
+    content: $icon-ic-tv;     
+    color: #939ca3;
+  }
+}
+.icon-ic-up {
+  &:before {
+    content: $icon-ic-up;     
+    color: #939ca3;
+  }
+}
+.icon-ic-user {
+  &:before {
+    content: $icon-ic-user;     
+    color: #939ca3;
+  }
+}
+.icon-ic-vacuum-2 {
+  &:before {
+    content: $icon-ic-vacuum-2;     
+    color: #939ca3;
+  }
+}
+.icon-ic-vacuum {
+  &:before {
+    content: $icon-ic-vacuum;     
+    color: #939ca3;
+  }
+}
+.icon-ic-vga {
+  &:before {
+    content: $icon-ic-vga;     
+    color: #939ca3;
+  }
+}
+.icon-ic-video {
+  &:before {
+    content: $icon-ic-video;     
+    color: #939ca3;
+  }
+}
+.icon-ic-watch-automatic {
+  &:before {
+    content: $icon-ic-watch-automatic;     
+    color: #939ca3;
+  }
+}
+.icon-ic-watch-material {
+  &:before {
+    content: $icon-ic-watch-material;     
+    color: #939ca3;
+  }
+}
+.icon-ic-watch-screen {
+  &:before {
+    content: $icon-ic-watch-screen;     
+    color: #939ca3;
+  }
+}
+.icon-ic-watch {
+  &:before {
+    content: $icon-ic-watch;     
+    color: #939ca3;
+  }
+}
+.icon-ic-water-resistant-1 {
+  &:before {
+    content: $icon-ic-water-resistant-1;     
+    color: #939ca3;
+  }
+}
+.icon-ic-water-resistant {
+  &:before {
+    content: $icon-ic-water-resistant;     
+    color: #939ca3;
+  }
+}
+.icon-ic-water {
+  &:before {
+    content: $icon-ic-water;     
+    color: #939ca3;
+  }
+}
+.icon-ic-we {
+  &:before {
+    content: $icon-ic-we;     
+    color: #939ca3;
+  }
+}
+.icon-ic-weight {
+  &:before {
+    content: $icon-ic-weight;     
+    color: #939ca3;
+  }
+}
+.icon-ic-windows {
+  &:before {
+    content: $icon-ic-windows;     
+    color: #939ca3;
+  }
+}
+.icon-ic-youtube {
+  &:before {
+    content: $icon-ic-youtube;     
+    color: #939ca3;
+  }
+}
+.icon-ic-zoom-in {
+  &:before {
+    content: $icon-ic-zoom-in;     
+    color: #939ca3;
+  }
+}
+.icon-ic-zoom-out {
+  &:before {
+    content: $icon-ic-zoom-out;     
+    color: #939ca3;
+  }
+}
+
