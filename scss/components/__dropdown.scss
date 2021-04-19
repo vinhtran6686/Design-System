@@ -42,12 +42,12 @@
 			&:before {
 				border-color: $grayscale-500;
 			}
-			& + .dropdown-menu {
-				//demo
-				opacity: 1;
-				visibility: visible;
-				transform: translateY(0);
-			}
+			// & + .dropdown-menu {
+			// 	//demo
+			// 	opacity: 1;
+			// 	visibility: visible;
+			// 	transform: translateY(0);
+			// }
 		}
 		&:focus,
 		&:active {
@@ -281,5 +281,23 @@
 				}
 			}
 		}
+	}
+}
+
+.ex1{
+	
+	@extend .animate__animated ;
+	.dropdown-menu {
+		@extend .scale;
+		@extend .fade;
+	}
+	&.open {
+		.dropdown-menu {
+			@extend.scale.open;
+			@extend.fade.open;
+		}
+	}
+	&.openBounce{
+		@extend .animate__bounce;
 	}
 }

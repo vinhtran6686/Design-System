@@ -1,0 +1,35 @@
+// Icon Sizes
+// -------------------------
+$icon-props: (
+	'xl': (
+		font-size: '28px',
+	),
+	'lg': (
+		font-size: '20px',
+	),
+	'md': (
+		font-size: '16px',
+	),
+	'sm': (
+		font-size: '16px',
+	),
+	'xs': (
+		font-size: '14px',
+	),
+	'xxs': (
+		font-size: '12px',
+	),
+);
+@each $size, $detail in $icon-props {
+	$font-size: map-get($detail, 'font-size');
+	.#{$fa-css-prefix}-#{$size} {
+		font-size: #{$font-size};
+	}
+}
+
+// Icon Scaling
+@for $i from 2 through 3 {
+	.#{$fa-css-prefix}-#{$i}x {
+		font-size: $i * 1em;
+	}
+}

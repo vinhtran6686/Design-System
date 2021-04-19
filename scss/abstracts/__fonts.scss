@@ -1,10 +1,20 @@
 //
 // Fonts icon
 //
-@import 'fonts/_fonts-icon';
+@font-face {
+	font-family: '#{$font-icon-family}';
+	src: url('../fonts/#{$font-icon-path}/#{$font-icon-family}.eot?7h9xfl');
+	src: url('../fonts/#{$font-icon-path}/#{$font-icon-family}.eot?7h9xfl#iefix') format('embedded-opentype'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-family}.ttf?7h9xfl') format('truetype'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-family}.woff?7h9xfl') format('woff'),
+		url('../fonts/#{$font-icon-path}/#{$font-icon-family}.svg?7h9xfl##{$font-icon-family}') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
 
 //
-// Fonts Family
+// Fonts Family 
 //
 @font-face {
 	font-family: $font-family;

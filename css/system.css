@@ -21,676 +21,6 @@
   font-style: normal;
   font-display: block; }
 
-[class^='ic-'],
-[class*=' ic-'] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.ic-360:before {
-  content: ""; }
-
-.ic-a-watch:before {
-  content: ""; }
-
-.ic-adapter:before {
-  content: ""; }
-
-.ic-air-purifier:before {
-  content: ""; }
-
-.ic-android:before {
-  content: ""; }
-
-.ic-angle-double-down:before {
-  content: ""; }
-
-.ic-angle-double-left:before {
-  content: ""; }
-
-.ic-angle-double-right:before {
-  content: ""; }
-
-.ic-angle-double-up:before {
-  content: ""; }
-
-.ic-angle-down-thin:before {
-  content: ""; }
-
-.ic-angle-down:before {
-  content: ""; }
-
-.ic-angle-left-thin:before {
-  content: ""; }
-
-.ic-angle-left:before {
-  content: ""; }
-
-.ic-angle-right-thin:before {
-  content: ""; }
-
-.ic-angle-right:before {
-  content: ""; }
-
-.ic-angle-up-thin:before {
-  content: ""; }
-
-.ic-angle-up:before {
-  content: ""; }
-
-.ic-antutu:before {
-  content: ""; }
-
-.ic-apple-cable:before {
-  content: ""; }
-
-.ic-apple-cover-1:before {
-  content: ""; }
-
-.ic-apple-cover:before {
-  content: ""; }
-
-.ic-apple-imac:before {
-  content: ""; }
-
-.ic-apple-ipad:before {
-  content: ""; }
-
-.ic-apple-iphone:before {
-  content: ""; }
-
-.ic-apple-keyboard:before {
-  content: ""; }
-
-.ic-apple-macbook:before {
-  content: ""; }
-
-.ic-apple-mouse:before {
-  content: ""; }
-
-.ic-apple-power:before {
-  content: ""; }
-
-.ic-apple-tv:before {
-  content: ""; }
-
-.ic-apple-watch:before {
-  content: ""; }
-
-.ic-apple:before {
-  content: ""; }
-
-.ic-arrow-select:before {
-  content: ""; }
-
-.ic-bag:before {
-  content: ""; }
-
-.ic-battery-charge:before {
-  content: ""; }
-
-.ic-battery-full:before {
-  content: ""; }
-
-.ic-battery:before {
-  content: ""; }
-
-.ic-bluetooth:before {
-  content: ""; }
-
-.ic-boiler:before {
-  content: ""; }
-
-.ic-book:before {
-  content: ""; }
-
-.ic-box:before {
-  content: ""; }
-
-.ic-cable:before {
-  content: ""; }
-
-.ic-calendar:before {
-  content: ""; }
-
-.ic-call:before {
-  content: ""; }
-
-.ic-cam:before {
-  content: ""; }
-
-.ic-camera-security-2:before {
-  content: ""; }
-
-.ic-camera-security:before {
-  content: ""; }
-
-.ic-camera:before {
-  content: ""; }
-
-.ic-cancel:before {
-  content: ""; }
-
-.ic-card:before {
-  content: ""; }
-
-.ic-cart-refresh .path1:before {
-  content: "";
-  color: #939ca3; }
-
-.ic-cart-refresh .path2:before {
-  content: "";
-  margin-left: -0.94140625em;
-  color: white; }
-
-.ic-cart-refresh .path3:before {
-  content: "";
-  margin-left: -0.94140625em;
-  color: white; }
-
-.ic-cart:before {
-  content: ""; }
-
-.ic-chat:before {
-  content: ""; }
-
-.ic-check:before {
-  content: ""; }
-
-.ic-circle-lg:before {
-  content: ""; }
-
-.ic-circle-md:before {
-  content: ""; }
-
-.ic-circle-sm:before {
-  content: ""; }
-
-.ic-clock:before {
-  content: ""; }
-
-.ic-close:before {
-  content: ""; }
-
-.ic-cog:before {
-  content: ""; }
-
-.ic-cogs:before {
-  content: ""; }
-
-.ic-combined-shape:before {
-  content: ""; }
-
-.ic-compatible-devices:before {
-  content: ""; }
-
-.ic-connect:before {
-  content: ""; }
-
-.ic-cover:before {
-  content: ""; }
-
-.ic-cpu:before {
-  content: ""; }
-
-.ic-crown:before {
-  content: ""; }
-
-.ic-display:before {
-  content: ""; }
-
-.ic-doc:before {
-  content: ""; }
-
-.ic-down-min:before {
-  content: ""; }
-
-.ic-down-thin:before {
-  content: ""; }
-
-.ic-down:before {
-  content: ""; }
-
-.ic-download:before {
-  content: ""; }
-
-.ic-drive:before {
-  content: ""; }
-
-.ic-edit-3:before {
-  content: ""; }
-
-.ic-edit:before {
-  content: ""; }
-
-.ic-emo-happy:before {
-  content: ""; }
-
-.ic-exclamation:before {
-  content: ""; }
-
-.ic-expand:before {
-  content: ""; }
-
-.ic-export:before {
-  content: ""; }
-
-.ic-eye:before {
-  content: ""; }
-
-.ic-face:before {
-  content: ""; }
-
-.ic-fado:before {
-  content: ""; }
-
-.ic-fast-shipping:before {
-  content: ""; }
-
-.ic-ffriend:before {
-  content: ""; }
-
-.ic-filter:before {
-  content: ""; }
-
-.ic-flash:before {
-  content: ""; }
-
-.ic-front-camera:before {
-  content: ""; }
-
-.ic-game:before {
-  content: ""; }
-
-.ic-gift:before {
-  content: ""; }
-
-.ic-glasses:before {
-  content: ""; }
-
-.ic-guarantee-time:before {
-  content: ""; }
-
-.ic-hairdryer:before {
-  content: ""; }
-
-.ic-hdd-black:before {
-  content: ""; }
-
-.ic-hdd:before {
-  content: ""; }
-
-.ic-headphone:before {
-  content: ""; }
-
-.ic-heart-o:before {
-  content: ""; }
-
-.ic-heart:before {
-  content: ""; }
-
-.ic-help:before {
-  content: ""; }
-
-.ic-home:before {
-  content: ""; }
-
-.ic-hotsale:before {
-  content: ""; }
-
-.ic-hub:before {
-  content: ""; }
-
-.ic-humidity-2:before {
-  content: ""; }
-
-.ic-humidity:before {
-  content: ""; }
-
-.ic-info:before {
-  content: ""; }
-
-.ic-internet:before {
-  content: ""; }
-
-.ic-keyboard:before {
-  content: ""; }
-
-.ic-laptop-gaming:before {
-  content: ""; }
-
-.ic-laptop:before {
-  content: ""; }
-
-.ic-layout:before {
-  content: ""; }
-
-.ic-left-thin:before {
-  content: ""; }
-
-.ic-left:before {
-  content: ""; }
-
-.ic-lightbulb-1:before {
-  content: ""; }
-
-.ic-lightbulb:before {
-  content: ""; }
-
-.ic-lightning:before {
-  content: ""; }
-
-.ic-like:before {
-  content: ""; }
-
-.ic-local-shipping:before {
-  content: ""; }
-
-.ic-location:before {
-  content: ""; }
-
-.ic-login:before {
-  content: ""; }
-
-.ic-mac-mini:before {
-  content: ""; }
-
-.ic-mac-pro:before {
-  content: ""; }
-
-.ic-machine:before {
-  content: ""; }
-
-.ic-mail-o:before {
-  content: ""; }
-
-.ic-mail:before {
-  content: ""; }
-
-.ic-map-o:before {
-  content: ""; }
-
-.ic-map:before {
-  content: ""; }
-
-.ic-material:before {
-  content: ""; }
-
-.ic-megaphone:before {
-  content: ""; }
-
-.ic-menu:before {
-  content: ""; }
-
-.ic-minimize:before {
-  content: ""; }
-
-.ic-minus:before {
-  content: ""; }
-
-.ic-mobile-phone:before {
-  content: ""; }
-
-.ic-mouse-pad:before {
-  content: ""; }
-
-.ic-mouse:before {
-  content: ""; }
-
-.ic-movie:before {
-  content: ""; }
-
-.ic-new:before {
-  content: ""; }
-
-.ic-pause:before {
-  content: ""; }
-
-.ic-pencil:before {
-  content: ""; }
-
-.ic-phone:before {
-  content: ""; }
-
-.ic-phonecard:before {
-  content: ""; }
-
-.ic-photo:before {
-  content: ""; }
-
-.ic-picture:before {
-  content: ""; }
-
-.ic-play:before {
-  content: ""; }
-
-.ic-plus:before {
-  content: ""; }
-
-.ic-power-1:before {
-  content: ""; }
-
-.ic-power-bank:before {
-  content: ""; }
-
-.ic-power-socket-2:before {
-  content: ""; }
-
-.ic-power-socket:before {
-  content: ""; }
-
-.ic-power:before {
-  content: ""; }
-
-.ic-print:before {
-  content: ""; }
-
-.ic-printer-ink:before {
-  content: ""; }
-
-.ic-projector-2:before {
-  content: ""; }
-
-.ic-projector:before {
-  content: ""; }
-
-.ic-promo:before {
-  content: ""; }
-
-.ic-quote:before {
-  content: ""; }
-
-.ic-ram:before {
-  content: ""; }
-
-.ic-reload:before {
-  content: ""; }
-
-.ic-renew:before {
-  content: ""; }
-
-.ic-replay:before {
-  content: ""; }
-
-.ic-reply-all:before {
-  content: ""; }
-
-.ic-reply:before {
-  content: ""; }
-
-.ic-right-thin:before {
-  content: ""; }
-
-.ic-right:before {
-  content: ""; }
-
-.ic-router:before {
-  content: ""; }
-
-.ic-save:before {
-  content: ""; }
-
-.ic-scales:before {
-  content: ""; }
-
-.ic-screen-size:before {
-  content: ""; }
-
-.ic-screenprotect:before {
-  content: ""; }
-
-.ic-sd-card:before {
-  content: ""; }
-
-.ic-sdcard:before {
-  content: ""; }
-
-.ic-search:before {
-  content: ""; }
-
-.ic-secondhand:before {
-  content: ""; }
-
-.ic-security-camera:before {
-  content: ""; }
-
-.ic-send:before {
-  content: ""; }
-
-.ic-shave-2:before {
-  content: ""; }
-
-.ic-shave:before {
-  content: ""; }
-
-.ic-software:before {
-  content: ""; }
-
-.ic-speaker:before {
-  content: ""; }
-
-.ic-spin:before {
-  content: ""; }
-
-.ic-star-half-o:before {
-  content: ""; }
-
-.ic-star-half:before {
-  content: ""; }
-
-.ic-star-o:before {
-  content: ""; }
-
-.ic-star:before {
-  content: ""; }
-
-.ic-tablet:before {
-  content: ""; }
-
-.ic-tag:before {
-  content: ""; }
-
-.ic-tags:before {
-  content: ""; }
-
-.ic-target-location:before {
-  content: ""; }
-
-.ic-th-list:before {
-  content: ""; }
-
-.ic-th:before {
-  content: ""; }
-
-.ic-toothbrush:before {
-  content: ""; }
-
-.ic-trash-o:before {
-  content: ""; }
-
-.ic-trash:before {
-  content: ""; }
-
-.ic-trending-1:before {
-  content: ""; }
-
-.ic-trending:before {
-  content: ""; }
-
-.ic-trophy:before {
-  content: ""; }
-
-.ic-tryon:before {
-  content: ""; }
-
-.ic-tv:before {
-  content: ""; }
-
-.ic-up:before {
-  content: ""; }
-
-.ic-user:before {
-  content: ""; }
-
-.ic-vacuum-2:before {
-  content: ""; }
-
-.ic-vacuum:before {
-  content: ""; }
-
-.ic-vga:before {
-  content: ""; }
-
-.ic-video:before {
-  content: ""; }
-
-.ic-watch-automatic:before {
-  content: ""; }
-
-.ic-watch-material:before {
-  content: ""; }
-
-.ic-watch-screen:before {
-  content: ""; }
-
-.ic-watch:before {
-  content: ""; }
-
-.ic-water-resistant-1:before {
-  content: ""; }
-
-.ic-water-resistant:before {
-  content: ""; }
-
-.ic-water:before {
-  content: ""; }
-
-.ic-we:before {
-  content: ""; }
-
-.ic-weight:before {
-  content: ""; }
-
-.ic-windows:before {
-  content: ""; }
-
-.ic-youtube:before {
-  content: ""; }
-
-.ic-zoom-in:before {
-  content: ""; }
-
-.ic-zoom-out:before {
-  content: ""; }
-
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Thin.eot");
@@ -1437,6 +767,700 @@ code {
 .f-s-ui-44 {
   font-size: 44px;
   line-height: 44px; }
+
+.ic-xl {
+  font-size: 28px; }
+
+.ic-lg {
+  font-size: 20px; }
+
+.ic-md {
+  font-size: 16px; }
+
+.ic-sm {
+  font-size: 16px; }
+
+.ic-xs {
+  font-size: 14px; }
+
+.ic-xxs {
+  font-size: 12px; }
+
+.ic-2x {
+  font-size: 2em; }
+
+.ic-3x {
+  font-size: 3em; }
+
+[class^='ic-'],
+[class*=' ic-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.ic-360:before {
+  content: ""; }
+
+.ic-a-watch:before {
+  content: ""; }
+
+.ic-adapter:before {
+  content: ""; }
+
+.ic-air-purifier:before {
+  content: ""; }
+
+.ic-android:before {
+  content: ""; }
+
+.ic-angle-double-down:before {
+  content: ""; }
+
+.ic-angle-double-left:before {
+  content: ""; }
+
+.ic-angle-double-right:before {
+  content: ""; }
+
+.ic-angle-double-up:before {
+  content: ""; }
+
+.ic-angle-down-thin:before {
+  content: ""; }
+
+.ic-angle-down:before {
+  content: ""; }
+
+.ic-angle-left-thin:before {
+  content: ""; }
+
+.ic-angle-left:before {
+  content: ""; }
+
+.ic-angle-right-thin:before {
+  content: ""; }
+
+.ic-angle-right:before {
+  content: ""; }
+
+.ic-angle-up-thin:before {
+  content: ""; }
+
+.ic-angle-up:before {
+  content: ""; }
+
+.ic-antutu:before {
+  content: ""; }
+
+.ic-apple-cable:before {
+  content: ""; }
+
+.ic-apple-cover-1:before {
+  content: ""; }
+
+.ic-apple-cover:before {
+  content: ""; }
+
+.ic-apple-imac:before {
+  content: ""; }
+
+.ic-apple-ipad:before {
+  content: ""; }
+
+.ic-apple-iphone:before {
+  content: ""; }
+
+.ic-apple-keyboard:before {
+  content: ""; }
+
+.ic-apple-macbook:before {
+  content: ""; }
+
+.ic-apple-mouse:before {
+  content: ""; }
+
+.ic-apple-power:before {
+  content: ""; }
+
+.ic-apple-tv:before {
+  content: ""; }
+
+.ic-apple-watch:before {
+  content: ""; }
+
+.ic-apple:before {
+  content: ""; }
+
+.ic-arrow-select:before {
+  content: ""; }
+
+.ic-bag:before {
+  content: ""; }
+
+.ic-battery-charge:before {
+  content: ""; }
+
+.ic-battery-full:before {
+  content: ""; }
+
+.ic-battery:before {
+  content: ""; }
+
+.ic-bluetooth:before {
+  content: ""; }
+
+.ic-boiler:before {
+  content: ""; }
+
+.ic-book:before {
+  content: ""; }
+
+.ic-box:before {
+  content: ""; }
+
+.ic-cable:before {
+  content: ""; }
+
+.ic-calendar:before {
+  content: ""; }
+
+.ic-call:before {
+  content: ""; }
+
+.ic-cam:before {
+  content: ""; }
+
+.ic-camera-security-2:before {
+  content: ""; }
+
+.ic-camera-security:before {
+  content: ""; }
+
+.ic-camera:before {
+  content: ""; }
+
+.ic-cancel:before {
+  content: ""; }
+
+.ic-card:before {
+  content: ""; }
+
+.ic-cart-refresh .path1:before {
+  content: "";
+  color: #939ca3; }
+
+.ic-cart-refresh .path2:before {
+  content: "";
+  margin-left: -0.94140625em;
+  color: white; }
+
+.ic-cart-refresh .path3:before {
+  content: "";
+  margin-left: -0.94140625em;
+  color: white; }
+
+.ic-cart:before {
+  content: ""; }
+
+.ic-chat:before {
+  content: ""; }
+
+.ic-check:before {
+  content: ""; }
+
+.ic-circle-lg:before {
+  content: ""; }
+
+.ic-circle-md:before {
+  content: ""; }
+
+.ic-circle-sm:before {
+  content: ""; }
+
+.ic-clock:before {
+  content: ""; }
+
+.ic-close:before {
+  content: ""; }
+
+.ic-cog:before {
+  content: ""; }
+
+.ic-cogs:before {
+  content: ""; }
+
+.ic-combined-shape:before {
+  content: ""; }
+
+.ic-compatible-devices:before {
+  content: ""; }
+
+.ic-connect:before {
+  content: ""; }
+
+.ic-cover:before {
+  content: ""; }
+
+.ic-cpu:before {
+  content: ""; }
+
+.ic-crown:before {
+  content: ""; }
+
+.ic-display:before {
+  content: ""; }
+
+.ic-doc:before {
+  content: ""; }
+
+.ic-down-min:before {
+  content: ""; }
+
+.ic-down-thin:before {
+  content: ""; }
+
+.ic-down:before {
+  content: ""; }
+
+.ic-download:before {
+  content: ""; }
+
+.ic-drive:before {
+  content: ""; }
+
+.ic-edit-3:before {
+  content: ""; }
+
+.ic-edit:before {
+  content: ""; }
+
+.ic-emo-happy:before {
+  content: ""; }
+
+.ic-exclamation:before {
+  content: ""; }
+
+.ic-expand:before {
+  content: ""; }
+
+.ic-export:before {
+  content: ""; }
+
+.ic-eye:before {
+  content: ""; }
+
+.ic-face:before {
+  content: ""; }
+
+.ic-fado:before {
+  content: ""; }
+
+.ic-fast-shipping:before {
+  content: ""; }
+
+.ic-ffriend:before {
+  content: ""; }
+
+.ic-filter:before {
+  content: ""; }
+
+.ic-flash:before {
+  content: ""; }
+
+.ic-front-camera:before {
+  content: ""; }
+
+.ic-game:before {
+  content: ""; }
+
+.ic-gift:before {
+  content: ""; }
+
+.ic-glasses:before {
+  content: ""; }
+
+.ic-guarantee-time:before {
+  content: ""; }
+
+.ic-hairdryer:before {
+  content: ""; }
+
+.ic-hdd-black:before {
+  content: ""; }
+
+.ic-hdd:before {
+  content: ""; }
+
+.ic-headphone:before {
+  content: ""; }
+
+.ic-heart-o:before {
+  content: ""; }
+
+.ic-heart:before {
+  content: ""; }
+
+.ic-help:before {
+  content: ""; }
+
+.ic-home:before {
+  content: ""; }
+
+.ic-hotsale:before {
+  content: ""; }
+
+.ic-hub:before {
+  content: ""; }
+
+.ic-humidity-2:before {
+  content: ""; }
+
+.ic-humidity:before {
+  content: ""; }
+
+.ic-info:before {
+  content: ""; }
+
+.ic-internet:before {
+  content: ""; }
+
+.ic-keyboard:before {
+  content: ""; }
+
+.ic-laptop-gaming:before {
+  content: ""; }
+
+.ic-laptop:before {
+  content: ""; }
+
+.ic-layout:before {
+  content: ""; }
+
+.ic-left-thin:before {
+  content: ""; }
+
+.ic-left:before {
+  content: ""; }
+
+.ic-lightbulb-1:before {
+  content: ""; }
+
+.ic-lightbulb:before {
+  content: ""; }
+
+.ic-lightning:before {
+  content: ""; }
+
+.ic-like:before {
+  content: ""; }
+
+.ic-local-shipping:before {
+  content: ""; }
+
+.ic-location:before {
+  content: ""; }
+
+.ic-login:before {
+  content: ""; }
+
+.ic-mac-mini:before {
+  content: ""; }
+
+.ic-mac-pro:before {
+  content: ""; }
+
+.ic-machine:before {
+  content: ""; }
+
+.ic-mail-o:before {
+  content: ""; }
+
+.ic-mail:before {
+  content: ""; }
+
+.ic-map-o:before {
+  content: ""; }
+
+.ic-map:before {
+  content: ""; }
+
+.ic-material:before {
+  content: ""; }
+
+.ic-megaphone:before {
+  content: ""; }
+
+.ic-menu:before {
+  content: ""; }
+
+.ic-minimize:before {
+  content: ""; }
+
+.ic-minus:before {
+  content: ""; }
+
+.ic-mobile-phone:before {
+  content: ""; }
+
+.ic-mouse-pad:before {
+  content: ""; }
+
+.ic-mouse:before {
+  content: ""; }
+
+.ic-movie:before {
+  content: ""; }
+
+.ic-new:before {
+  content: ""; }
+
+.ic-pause:before {
+  content: ""; }
+
+.ic-pencil:before {
+  content: ""; }
+
+.ic-phone:before {
+  content: ""; }
+
+.ic-phonecard:before {
+  content: ""; }
+
+.ic-photo:before {
+  content: ""; }
+
+.ic-picture:before {
+  content: ""; }
+
+.ic-play:before {
+  content: ""; }
+
+.ic-plus:before {
+  content: ""; }
+
+.ic-power-1:before {
+  content: ""; }
+
+.ic-power-bank:before {
+  content: ""; }
+
+.ic-power-socket-2:before {
+  content: ""; }
+
+.ic-power-socket:before {
+  content: ""; }
+
+.ic-power:before {
+  content: ""; }
+
+.ic-print:before {
+  content: ""; }
+
+.ic-printer-ink:before {
+  content: ""; }
+
+.ic-projector-2:before {
+  content: ""; }
+
+.ic-projector:before {
+  content: ""; }
+
+.ic-promo:before {
+  content: ""; }
+
+.ic-quote:before {
+  content: ""; }
+
+.ic-ram:before {
+  content: ""; }
+
+.ic-reload:before {
+  content: ""; }
+
+.ic-renew:before {
+  content: ""; }
+
+.ic-replay:before {
+  content: ""; }
+
+.ic-reply-all:before {
+  content: ""; }
+
+.ic-reply:before {
+  content: ""; }
+
+.ic-right-thin:before {
+  content: ""; }
+
+.ic-right:before {
+  content: ""; }
+
+.ic-router:before {
+  content: ""; }
+
+.ic-save:before {
+  content: ""; }
+
+.ic-scales:before {
+  content: ""; }
+
+.ic-screen-size:before {
+  content: ""; }
+
+.ic-screenprotect:before {
+  content: ""; }
+
+.ic-sd-card:before {
+  content: ""; }
+
+.ic-sdcard:before {
+  content: ""; }
+
+.ic-search:before {
+  content: ""; }
+
+.ic-secondhand:before {
+  content: ""; }
+
+.ic-security-camera:before {
+  content: ""; }
+
+.ic-send:before {
+  content: ""; }
+
+.ic-shave-2:before {
+  content: ""; }
+
+.ic-shave:before {
+  content: ""; }
+
+.ic-software:before {
+  content: ""; }
+
+.ic-speaker:before {
+  content: ""; }
+
+.ic-spin:before {
+  content: ""; }
+
+.ic-star-half-o:before {
+  content: ""; }
+
+.ic-star-half:before {
+  content: ""; }
+
+.ic-star-o:before {
+  content: ""; }
+
+.ic-star:before {
+  content: ""; }
+
+.ic-tablet:before {
+  content: ""; }
+
+.ic-tag:before {
+  content: ""; }
+
+.ic-tags:before {
+  content: ""; }
+
+.ic-target-location:before {
+  content: ""; }
+
+.ic-th-list:before {
+  content: ""; }
+
+.ic-th:before {
+  content: ""; }
+
+.ic-toothbrush:before {
+  content: ""; }
+
+.ic-trash-o:before {
+  content: ""; }
+
+.ic-trash:before {
+  content: ""; }
+
+.ic-trending-1:before {
+  content: ""; }
+
+.ic-trending:before {
+  content: ""; }
+
+.ic-trophy:before {
+  content: ""; }
+
+.ic-tryon:before {
+  content: ""; }
+
+.ic-tv:before {
+  content: ""; }
+
+.ic-up:before {
+  content: ""; }
+
+.ic-user:before {
+  content: ""; }
+
+.ic-vacuum-2:before {
+  content: ""; }
+
+.ic-vacuum:before {
+  content: ""; }
+
+.ic-vga:before {
+  content: ""; }
+
+.ic-video:before {
+  content: ""; }
+
+.ic-watch-automatic:before {
+  content: ""; }
+
+.ic-watch-material:before {
+  content: ""; }
+
+.ic-watch-screen:before {
+  content: ""; }
+
+.ic-watch:before {
+  content: ""; }
+
+.ic-water-resistant-1:before {
+  content: ""; }
+
+.ic-water-resistant:before {
+  content: ""; }
+
+.ic-water:before {
+  content: ""; }
+
+.ic-we:before {
+  content: ""; }
+
+.ic-weight:before {
+  content: ""; }
+
+.ic-windows:before {
+  content: ""; }
+
+.ic-youtube:before {
+  content: ""; }
+
+.ic-zoom-in:before {
+  content: ""; }
+
+.ic-zoom-out:before {
+  content: ""; }
 
 .icons {
   display: inline-flex;
@@ -3952,6 +3976,8 @@ input[type='datetime-local'] {
   display: flex;
   margin-bottom: 16px; }
   .accordion-tab.active .accordion-content-description {
+    transform: scaleY(1);
+    max-height: 500px;
     transform: translate3d(0, 0, 0);
     opacity: 1;
     visibility: visible; }
@@ -3977,6 +4003,8 @@ input[type='datetime-local'] {
 .accordion-content-description {
   margin-top: 4px;
   transition: all 0.9s ease-in-out;
+  transform: scaleY(0);
+  max-height: 0px;
   transform: translate3d(0, -100%, 0);
   opacity: 0;
   visibility: hidden; }
@@ -3996,7 +4024,7 @@ input[type='datetime-local'] {
     .accordion-card .accordion-action .btn:hover {
       color: #fff; }
     .accordion-card .accordion-action .btn.active i:before {
-      content: '\e981'; }
+      content: '\e983'; }
   .accordion-card .accordion-tab {
     position: relative;
     margin-bottom: 0;
@@ -4037,8 +4065,6 @@ input[type='datetime-local'] {
   justify-content: center;
   align-items: baseline;
   background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  visibility: hidden;
   overflow-x: hidden;
   overflow-y: auto; }
   .modal-wrapper {
@@ -4088,9 +4114,6 @@ input[type='datetime-local'] {
     justify-content: center; }
     .modal-footer .link {
       align-self: center; }
-  .modal--is-visible {
-    opacity: 1;
-    visibility: visible; }
   .modal-lg .modal-wrapper, .modal-md .modal-wrapper {
     max-width: 776px; }
   .modal-lg .modal-header, .modal-md .modal-header {
@@ -4131,14 +4154,97 @@ input[type='datetime-local'] {
   .modal-sm .modal-footer {
     padding: 0 16px 16px; }
 
-.modal[data-animation='on'] {
-  transition: opacity 0.3s, visibility 0.3s; }
-  .modal[data-animation='on'] .modal-wrapper {
-    will-change: transform;
-    transition: transform 0.3s ease-in-out;
-    transform: translate3d(-100%, 0, 0); }
-  .modal[data-animation='on'].modal--is-visible .modal-wrapper {
+.scale, .modal .modal-wrapper, .ex1 .dropdown-menu {
+  transform: scale(0.9); }
+  .scale.open, .modal .open.modal-wrapper, .modal.modal--is-visible .modal-wrapper, .ex1 .open.dropdown-menu, .ex1.open .dropdown-menu {
+    transform: scale(1); }
+
+.fade, .modal, .ex1 .dropdown-menu {
+  opacity: 0;
+  visibility: hidden; }
+  .fade.open, .open.modal, .modal.modal--is-visible, .ex1 .open.dropdown-menu, .ex1.open .dropdown-menu {
+    opacity: 1;
+    visibility: visible; }
+
+.animation, .modal, .modal .modal-wrapper {
+  transition: all 0.3s ease-in-out; }
+
+:root {
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1; }
+
+.animate__animated, .ex1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animate__bounce, .ex1.openBounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom; }
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05); }
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02); } }
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1); }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05); }
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95); }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02); } }
 
 .dropdown {
   position: relative;
@@ -4176,10 +4282,6 @@ input[type='datetime-local'] {
       transition: all 0.3s ease; }
     .dropdown-button:hover:before {
       border-color: #939ca3; }
-    .dropdown-button:hover + .dropdown-menu {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0); }
     .dropdown-button:focus, .dropdown-button:active {
       outline: none; }
       .dropdown-button:focus:before, .dropdown-button:active:before {

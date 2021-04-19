@@ -31,17 +31,17 @@
 .section-nav a:focus {
 	color: #666;
 }
-.nav-item{
+.nav-item {
 	cursor: pointer;
 }
 .demo {
 	height: 100vh;
 	overflow: auto;
-	display: flex;	
-	padding: 1rem 1rem;
+	display: flex;
+	padding: 1rem 0 1rem 1rem;
 }
 .demo__content {
-	flex:1;
+	flex: 1;
 	margin-left: 2rem;
 }
 

@@ -9,348 +9,343 @@
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
 		<style>
-			.example-badge{
+			.example-badge {
 				display: flex;
 				align-items: center;
 			}
 		</style>
 	</head>
-	<body>
-		<main class="demo">
-			<div class="demo__content">
-				<h1 class="m-b-24">Badges</h1>
-				<h2 class="text-link m-b-12">Notation</h2>
-				<p>
-					The classes are named using the format
-					<code class="highlighter-rouge">{badge}-{colors}-{size}</code>from<code class="highlighter-rouge"
-						>Primary</code
-					>
-					to <code class="highlighter-rouge">Danger</code>.
-					<code class="highlighter-rouge">{badge}-{size}</code>
-				</p>
-				<p>
-					Blank - for classes <code class="highlighter-rouge">{badge}-{empty}</code> for
-					<code class="highlighter-rouge">normal</code> and <code class="highlighter-rouge">xl</code> on xxs
-					size.
-				</p>
-				<div class="m-t-40"></div>
-				<h2 class="m-b-24">MD size</h2>
-				<div class="m-b-32">
-					<span class="badge badge-primary badge-md m-r-8">badge</span>
-					<span class="badge badge-link badge-md m-r-8">badge</span>
-					<span class="badge badge-grayscale badge-md m-r-8">badge</span>
-					<span class="badge badge-success badge-md m-r-8">badge</span>
-					<span class="badge badge-info badge-md m-r-8">badge</span>
-					<span class="badge badge-warning badge-md m-r-8">badge</span>
-					<span class="badge badge-danger badge-md m-r-8">badge</span>
-				</div>
-				<h2 class="m-b-24">XS size</h2>
-				<div class="m-b-32">
-					<span class="badge badge-primary badge-xs m-r-8">badge</span>
-					<span class="badge badge-link badge-xs m-r-8">badge</span>
-					<span class="badge badge-grayscale badge-xs m-r-8">badge</span>
-					<span class="badge badge-success badge-xs m-r-8">badge</span>
-					<span class="badge badge-info badge-xs m-r-8">badge</span>
-					<span class="badge badge-warning badge-xs m-r-8">badge</span>
-					<span class="badge badge-danger badge-xs m-r-8">badge</span>
-				</div>
-				<h2 class="m-b-24">XXS size</h2>
-				<div class="m-b-32">
-					<span class="badge badge-primary badge-xxs m-r-8">badge</span>
-					<span class="badge badge-link badge-xxs m-r-8">badge</span>
-					<span class="badge badge-grayscale badge-xxs m-r-8">badge</span>
-					<span class="badge badge-success badge-xxs m-r-8">badge</span>
-					<span class="badge badge-info badge-xxs m-r-8">badge</span>
-					<span class="badge badge-warning badge-xxs m-r-8">badge</span>
-					<span class="badge badge-danger badge-xxs m-r-8">badge</span>
-				</div>
-				<h2 class="m-b-24">Outline</h2>
-				<div class="m-b-32">
-					<span class="badge badge-outline-primary badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-link badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-grayscale badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-success badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-info badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-warning badge-md m-r-8">badge-outline</span>
-					<span class="badge badge-outline-danger badge-md m-r-8">badge-outline</span>
-				</div>
-				<h2 class="m-b-24">Outline XL</h2>
-				<div class="m-b-32">
-					<span class="badge badge-outline-primary badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-link badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-grayscale badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-success badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-info badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-warning badge-xs m-r-8">badge</span>
-					<span class="badge badge-outline-danger badge-xs m-r-8">badge</span>
-				</div>
-				<h2 class="m-b-24">Rounded</h2>
-				<div class="m-b-16">
-					<span class="badge badge-rounded badge-md badge-primary m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-link m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-grayscale m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-success m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-info m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-warning m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-danger m-r-8">badge</span>
-				</div>
-				<div class="m-b-32">
-					<span class="badge badge-rounded badge-md badge-outline-primary m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-link m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-grayscale m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-success m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-info m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-warning m-r-8">badge</span>
-					<span class="badge badge-rounded badge-md badge-outline-danger m-r-8">badge</span>
-				</div>
-				<div class="m-b-16">
-					<span class="badge badge-rounded badge-primary badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-link badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-grayscale badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-success badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-info badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-warning badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-danger badge-xs m-r-8">badge</span>
-				</div>
-				<div class="m-b-32">
-					<span class="badge badge-rounded badge-outline-primary badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-link badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-grayscale badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-success badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-info badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-warning badge-xs m-r-8">badge</span>
-					<span class="badge badge-rounded badge-outline-danger badge-xs m-r-8">badge</span>
-				</div>
-				<h2 class="m-b-24">Icon</h2>
-				<div class="m-b-16 example-badge">
-					<a href="#" class="badge badge-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-					<a href="#" class="badge badge-xs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-					<a href="#" class="badge badge-xxs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
+	<body class="scrollbar-big">
+		<h1 class="m-b-24">Badges</h1>
+		<h2 class="text-link m-b-12">Notation</h2>
+		<p>
+			The classes are named using the format
+			<code class="highlighter-rouge">{badge}-{colors}-{size}</code>from<code class="highlighter-rouge"
+				>Primary</code
+			>
+			to <code class="highlighter-rouge">Danger</code>.
+			<code class="highlighter-rouge">{badge}-{size}</code>
+		</p>
+		<p>
+			Blank - for classes <code class="highlighter-rouge">{badge}-{empty}</code> for
+			<code class="highlighter-rouge">normal</code> and <code class="highlighter-rouge">xl</code> on xxs size.
+		</p>
+		<div class="m-t-40"></div>
+		<h2 class="m-b-24">MD size</h2>
+		<div class="m-b-32">
+			<span class="badge badge-primary badge-md m-r-8">badge</span>
+			<span class="badge badge-link badge-md m-r-8">badge</span>
+			<span class="badge badge-grayscale badge-md m-r-8">badge</span>
+			<span class="badge badge-success badge-md m-r-8">badge</span>
+			<span class="badge badge-info badge-md m-r-8">badge</span>
+			<span class="badge badge-warning badge-md m-r-8">badge</span>
+			<span class="badge badge-danger badge-md m-r-8">badge</span>
+		</div>
+		<h2 class="m-b-24">XS size</h2>
+		<div class="m-b-32">
+			<span class="badge badge-primary badge-xs m-r-8">badge</span>
+			<span class="badge badge-link badge-xs m-r-8">badge</span>
+			<span class="badge badge-grayscale badge-xs m-r-8">badge</span>
+			<span class="badge badge-success badge-xs m-r-8">badge</span>
+			<span class="badge badge-info badge-xs m-r-8">badge</span>
+			<span class="badge badge-warning badge-xs m-r-8">badge</span>
+			<span class="badge badge-danger badge-xs m-r-8">badge</span>
+		</div>
+		<h2 class="m-b-24">XXS size</h2>
+		<div class="m-b-32">
+			<span class="badge badge-primary badge-xxs m-r-8">badge</span>
+			<span class="badge badge-link badge-xxs m-r-8">badge</span>
+			<span class="badge badge-grayscale badge-xxs m-r-8">badge</span>
+			<span class="badge badge-success badge-xxs m-r-8">badge</span>
+			<span class="badge badge-info badge-xxs m-r-8">badge</span>
+			<span class="badge badge-warning badge-xxs m-r-8">badge</span>
+			<span class="badge badge-danger badge-xxs m-r-8">badge</span>
+		</div>
+		<h2 class="m-b-24">Outline</h2>
+		<div class="m-b-32">
+			<span class="badge badge-outline-primary badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-link badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-grayscale badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-success badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-info badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-warning badge-md m-r-8">badge-outline</span>
+			<span class="badge badge-outline-danger badge-md m-r-8">badge-outline</span>
+		</div>
+		<h2 class="m-b-24">Outline XL</h2>
+		<div class="m-b-32">
+			<span class="badge badge-outline-primary badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-link badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-grayscale badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-success badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-info badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-warning badge-xs m-r-8">badge</span>
+			<span class="badge badge-outline-danger badge-xs m-r-8">badge</span>
+		</div>
+		<h2 class="m-b-24">Rounded</h2>
+		<div class="m-b-16">
+			<span class="badge badge-rounded badge-md badge-primary m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-link m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-grayscale m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-success m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-info m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-warning m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-danger m-r-8">badge</span>
+		</div>
+		<div class="m-b-32">
+			<span class="badge badge-rounded badge-md badge-outline-primary m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-link m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-grayscale m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-success m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-info m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-warning m-r-8">badge</span>
+			<span class="badge badge-rounded badge-md badge-outline-danger m-r-8">badge</span>
+		</div>
+		<div class="m-b-16">
+			<span class="badge badge-rounded badge-primary badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-link badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-grayscale badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-success badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-info badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-warning badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-danger badge-xs m-r-8">badge</span>
+		</div>
+		<div class="m-b-32">
+			<span class="badge badge-rounded badge-outline-primary badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-link badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-grayscale badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-success badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-info badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-warning badge-xs m-r-8">badge</span>
+			<span class="badge badge-rounded badge-outline-danger badge-xs m-r-8">badge</span>
+		</div>
+		<h2 class="m-b-24">Icon</h2>
+		<div class="m-b-16 example-badge">
+			<a href="#" class="badge badge-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+			<a href="#" class="badge badge-xs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+			<a href="#" class="badge badge-xxs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
 
-					<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
+			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
 
-					<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
+			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
 
-					<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-					<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-					</a>
-				</div>
-				<div class="m-b-16 example-badge">
-					<a href="#" class="badge badge-primary badge-md m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-primary badge-xs m-r-8">
-						<span>Badge 1</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-xxs badge-primary m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
+			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+			</a>
+		</div>
+		<div class="m-b-16 example-badge">
+			<a href="#" class="badge badge-primary badge-md m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-primary badge-xs m-r-8">
+				<span>Badge 1</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-xxs badge-primary m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
 
-					<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
+			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
 
-					<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-				</div>
-				<div class="m-b-16 example-badge">
-					<a href="#" class="badge badge-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-xs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-xxs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					
-					<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
+			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+		</div>
+		<div class="m-b-16 example-badge">
+			<a href="#" class="badge badge-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-xs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-xxs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
 
-					<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-					<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-						<i class="ic-tag m-r-4"></i>
-						<span>Badge</span>
-						<i class="ic-cancel m-l-4"></i>
-					</a>
-				</div>
-				<h2 class="m-b-24">Badge button</h2>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-primary badge-md badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
-							<i class="ic-cancel f-s-ui-16"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-primary badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xs">
-							<i class="ic-cancel f-s-ui-14"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-primary badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xxs">
-							<i class="ic-cancel f-s-ui-12"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-md badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
-							<i class="ic-cancel f-s-ui-16"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
-							<i class="ic-cancel f-s-ui-14"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
-							<i class="ic-cancel f-s-ui-12"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-rounded badge-md badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
-							<i class="ic-cancel f-s-ui-16"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-rounded badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
-							<i class="ic-cancel f-s-ui-14"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-link badge-rounded badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
-							<i class="ic-cancel f-s-ui-12"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-grayscale badge-rounded badge-md badge-close m-r-8">
-						<span>Badge</span>
-						<a class="btn btn-icon-single btn-square btn-grayscale btn-md">
-							<i class="ic-cancel f-s-ui-16"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-grayscale badge-rounded badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xs">
-							<i class="ic-cancel f-s-ui-14"></i>
-						</a>
-					</div>
-				</div>
-				<div class="m-b-16 example-badge">
-					<div class="badge badge-grayscale badge-rounded badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-							<i class="ic-cancel f-s-ui-12"></i>
-						</a>
-					</div>
-				</div>
+			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+
+			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
+				<i class="ic-tag m-r-4"></i>
+				<span>Badge</span>
+				<i class="ic-cancel m-l-4"></i>
+			</a>
+		</div>
+		<h2 class="m-b-24">Badge button</h2>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-primary badge-md badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
+					<i class="ic-cancel f-s-ui-16"></i>
+				</a>
 			</div>
-		</main>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-primary badge-xs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xs">
+					<i class="ic-cancel f-s-ui-14"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-primary badge-xxs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xxs">
+					<i class="ic-cancel f-s-ui-12"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-md badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
+					<i class="ic-cancel f-s-ui-16"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-xs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
+					<i class="ic-cancel f-s-ui-14"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-xxs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
+					<i class="ic-cancel f-s-ui-12"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-rounded badge-md badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
+					<i class="ic-cancel f-s-ui-16"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-rounded badge-xs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
+					<i class="ic-cancel f-s-ui-14"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-link badge-rounded badge-xxs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
+					<i class="ic-cancel f-s-ui-12"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-grayscale badge-rounded badge-md badge-close m-r-8">
+				<span>Badge</span>
+				<a class="btn btn-icon-single btn-square btn-grayscale btn-md">
+					<i class="ic-cancel f-s-ui-16"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-grayscale badge-rounded badge-xs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xs">
+					<i class="ic-cancel f-s-ui-14"></i>
+				</a>
+			</div>
+		</div>
+		<div class="m-b-16 example-badge">
+			<div class="badge badge-grayscale badge-rounded badge-xxs badge-close m-r-8">
+				<span>Badge</span>
+				<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
+					<i class="ic-cancel f-s-ui-12"></i>
+				</a>
+			</div>
+		</div>
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>

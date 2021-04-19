@@ -11,145 +11,145 @@
 		<script src="js/util.js"></script>
 		<script src="js/modal.js"></script>
 	</head>
-	<body>
-		<main class="demo">
-			<div class="demo__content">
-				<h1 class="m-b-24">Modals</h1>
-				<div class="m-t-40"></div>
-				<button class="btn btn-primary m-r-8" aria-controls="modal1">Modal (lg)</button>
-				<button class="btn btn-primary m-r-8" aria-controls="modal2">Modal no title (md)</button>
-				<button class="btn btn-primary m-r-8" aria-controls="modal3">Modal (sm)</button>
-				<button class="btn btn-primary m-r-8" aria-controls="modal4">Modal no title (sm)</button>
-			</div>
-			<div class="modal modal-lg js-modal" id="modal1" data-animation="on">
-				<div class="modal-wrapper" tabindex="-1">
-					<div class="modal-box">
-						<div class="modal-header modal-title">
-							<div class="label label-xl label-is-icon label-icon-left">
-								<i class="ic-help icon-xl icon-circle"></i>
-								<span class="label-text text-grayscale-900 f-w-500">Title</span>
-							</div>
-							<span class="modal-close js-modal-close">
-								<i class="ic-close icon-md"></i>
-							</span>
+	<body class="scrollbar-big">
+		
+		
+		<h1 class="m-b-24">Modals</h1>
+		<div class="m-t-40"></div>
+		<button class="btn btn-primary m-r-8" aria-controls="modal1">Modal (lg)</button>
+		<button class="btn btn-primary m-r-8" aria-controls="modal2">Modal no title (md)</button>
+		<button class="btn btn-primary m-r-8" aria-controls="modal3">Modal (sm)</button>
+		<button class="btn btn-primary m-r-8" aria-controls="modal4">Modal no title (sm)</button>
+		
+		<div class="modal modal-lg js-modal scale" id="modal1" data-animation="on">
+			<div class="modal-wrapper" tabindex="-1">
+				<div class="modal-box">
+					<div class="modal-header modal-title">
+						<div class="label label-xl label-is-icon label-icon-left">
+							<i class="ic-help icon-xl icon-circle"></i>
+							<span class="label-text text-grayscale-900 f-w-500">Title</span>
 						</div>
-						<div class="modal-body text-center">
-							<div class="modal-shape m-b-8">
-								<i class="ic-check icon-success icon-circle"></i>
-							</div>
-							<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
-							<div class="f-s-p-14">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
-								mi. Auctor augue mauris augue neque gravida in fermentum.
-							</div>
+						<span class="modal-close js-modal-close">
+							<i class="ic-close icon-md"></i>
+						</span>
+					</div>
+					<div class="modal-body text-center">
+						<div class="modal-shape m-b-8">
+							<i class="ic-check icon-success icon-circle"></i>
 						</div>
-						<div class="modal-footer">
-							<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
-								Link
-								<i class="ic-right"></i>
-							</a>
-							<button class="btn btn-outline-grayscale btn-lg m-r-16">Button</button>
-							<button class="btn btn-primary btn-lg">Button</button>
+						<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
+						<div class="f-s-p-14">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
+							mi. Auctor augue mauris augue neque gravida in fermentum.
 						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
+							Link
+							<i class="ic-right"></i>
+						</a>
+						<button class="btn btn-outline-grayscale btn-lg m-r-16">Button</button>
+						<button class="btn btn-primary btn-lg">Button</button>
 					</div>
 				</div>
 			</div>
-			<div class="modal modal-md js-modal" id="modal2" data-animation="on">
-				<div class="modal-wrapper" tabindex="-1">
-					<div class="modal-box">
-						<div class="modal-header modal-no-title">
-							<span class="modal-close js-modal-close">
-								<i class="ic-close icon-md"></i>
-							</span>
+		</div>
+		<!-- <div class="modal modal-md js-modal" id="modal2" data-animation="on">
+			<div class="modal-wrapper" tabindex="-1">
+				<div class="modal-box">
+					<div class="modal-header modal-no-title">
+						<span class="modal-close js-modal-close">
+							<i class="ic-close icon-md"></i>
+						</span>
+					</div>
+					<div class="modal-body text-center">
+						<div class="modal-shape m-b-8">
+							<i class="ic-check icon-success icon-circle"></i>
 						</div>
-						<div class="modal-body text-center">
-							<div class="modal-shape m-b-8">
-								<i class="ic-check icon-success icon-circle"></i>
-							</div>
-							<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
-							<div class="f-s-p-14">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
-								mi. Auctor augue mauris augue neque gravida in fermentum.
-							</div>
+						<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
+						<div class="f-s-p-14">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
+							mi. Auctor augue mauris augue neque gravida in fermentum.
 						</div>
-						<div class="modal-footer">
-							<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
-								Link
-								<i class="ic-right"></i>
-							</a>
-							<button class="btn btn-outline-grayscale btn-lg m-r-16">Button</button>
-							<button class="btn btn-primary btn-lg">Button</button>
-						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
+							Link
+							<i class="ic-right"></i>
+						</a>
+						<button class="btn btn-outline-grayscale btn-lg m-r-16">Button</button>
+						<button class="btn btn-primary btn-lg">Button</button>
 					</div>
 				</div>
 			</div>
-			<div class="modal modal-sm js-modal" id="modal3" data-animation="on">
-				<div class="modal-wrapper" tabindex="-1">
-					<div class="modal-box">
-						<div class="modal-header">
-							<div class="label label-md label-is-icon label-icon-left">
-								<i class="ic-help icon-lg icon-circle"></i>
-								<span class="label-text text-grayscale-900 f-w-500">Title</span>
-							</div>
-							<span class="modal-close js-modal-close">
-								<i class="ic-close icon-md"></i>
-							</span>
+		</div>
+		<div class="modal modal-sm js-modal" id="modal3" data-animation="on">
+			<div class="modal-wrapper" tabindex="-1">
+				<div class="modal-box">
+					<div class="modal-header">
+						<div class="label label-md label-is-icon label-icon-left">
+							<i class="ic-help icon-lg icon-circle"></i>
+							<span class="label-text text-grayscale-900 f-w-500">Title</span>
 						</div>
-						<div class="modal-body text-center">
-							<div class="modal-shape m-b-8">
-								<i class="ic-check icon-success icon-circle"></i>
-							</div>
-							<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
-							<div class="f-s-p-14">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
-								mi. Auctor augue mauris augue neque gravida in fermentum.
-							</div>
+						<span class="modal-close js-modal-close">
+							<i class="ic-close icon-md"></i>
+						</span>
+					</div>
+					<div class="modal-body text-center">
+						<div class="modal-shape m-b-8">
+							<i class="ic-check icon-success icon-circle"></i>
 						</div>
-						<div class="modal-footer">
-							<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
-								Link
-								<i class="ic-right"></i>
-							</a>
-							<button class="btn btn-outline-grayscale btn-md m-r-16">Button</button>
-							<button class="btn btn-primary btn-md">Button</button>
+						<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
+						<div class="f-s-p-14">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
+							mi. Auctor augue mauris augue neque gravida in fermentum.
 						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
+							Link
+							<i class="ic-right"></i>
+						</a>
+						<button class="btn btn-outline-grayscale btn-md m-r-16">Button</button>
+						<button class="btn btn-primary btn-md">Button</button>
 					</div>
 				</div>
 			</div>
-			<div class="modal modal-sm js-modal" id="modal4" data-animation="on">
-				<div class="modal-wrapper" tabindex="-1">
-					<div class="modal-box">
-						<div class="modal-header modal-no-title">
-							<span class="modal-close js-modal-close">
-								<i class="ic-close icon-md"></i>
-							</span>
+		</div>
+		<div class="modal modal-sm js-modal" id="modal4" data-animation="on">
+			<div class="modal-wrapper" tabindex="-1">
+				<div class="modal-box">
+					<div class="modal-header modal-no-title">
+						<span class="modal-close js-modal-close">
+							<i class="ic-close icon-md"></i>
+						</span>
+					</div>
+					<div class="modal-body text-center">
+						<div class="modal-shape m-b-8">
+							<i class="ic-check icon-success icon-circle"></i>
 						</div>
-						<div class="modal-body text-center">
-							<div class="modal-shape m-b-8">
-								<i class="ic-check icon-success icon-circle"></i>
-							</div>
-							<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
-							<div class="f-s-p-14">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
-								mi. Auctor augue mauris augue neque gravida in fermentum.
-							</div>
+						<div class="f-s-p-16 f-w-500">Lorem ipsum dolor sit amet</div>
+						<div class="f-s-p-14">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+							incididunt ut labore et dolore magna aliqua. A diam sollicitudin tempor id eu nisl nunc
+							mi. Auctor augue mauris augue neque gravida in fermentum.
 						</div>
-						<div class="modal-footer">
-							<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
-								Link
-								<i class="ic-right"></i>
-							</a>
-							<button class="btn btn-outline-grayscale btn-md m-r-16 js-modal-close">Button</button>
-							<button class="btn btn-primary btn-md">Button</button>
-						</div>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="link link-icon link-lg f-w-500 m-r-16">
+							Link
+							<i class="ic-right"></i>
+						</a>
+						<button class="btn btn-outline-grayscale btn-md m-r-16 js-modal-close">Button</button>
+						<button class="btn btn-primary btn-md">Button</button>
 					</div>
 				</div>
 			</div>
-		</main>
+		</div> -->
+		
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
