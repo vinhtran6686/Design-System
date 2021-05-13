@@ -3433,7 +3433,7 @@ input[type='datetime-local'] {
     margin: 0; }
 
 .checkbox input[type='checkbox']:before {
-  content: '\e934';
+  content: '\e936';
   font-family: 'icon';
   position: absolute;
   top: 0;

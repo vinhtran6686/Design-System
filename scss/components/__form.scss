@@ -214,9 +214,9 @@ input[type='datetime-local'] {
 .checkbox {
 	input[type='checkbox'] {
 		&:before {
-			content: '\e934';
+			content: '\e936';
 			font-family: 'icon';
-			position: absolute;
+			position: absolute; 
 			top: 0;
 			right: 0;
 			color: $white;
