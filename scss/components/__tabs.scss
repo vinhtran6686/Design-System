@@ -44,7 +44,7 @@ $tab-border-active: $border-width * 2 $border-style $primary;
 				width: 0;
 				height: 2px;
 				background: $primary;
-				transition: $transition-sm;
+				transition: all $transition-duration-xs $timing-ease-end;
 			}
 			&:not(.active):hover {
 				&:before {
@@ -77,10 +77,10 @@ $tab-border-active: $border-width * 2 $border-style $primary;
 				box-shadow: inset 1px 0px 0px #edeeef;
 			}
 		}
-	}
+	}	
 	&-fill {
 		#{$this}-item {
-			transition: $btn-transition;
+			transition: all $transition-duration-xs $timing-ease-end;
 			&:hover,
 			&.active {
 				background: $primary;

@@ -36,7 +36,7 @@
 		background: $white;
 		border-radius: $border-radius;
 		border: $border-default;
-		transition: $btn-transition;
+		transition: all $transition-duration-xs $timing-ease-end;
 		&:hover {
 			background: $primary;
 			color: $white;

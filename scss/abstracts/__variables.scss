@@ -223,6 +223,11 @@ $spacing: 4px !default;
 $spacings: 0, 2, 4, 8, 12, 16, 24, 32, 40, 48, 64;
 $spacingsXY: 0, 2, 4, 6, 8, 12, 16, 24;
 
+//timing
+$timing-linear: cubic-bezier(0, 0, 1, 1);
+$timing-ease-start: cubic-bezier(0.5, 0, 1, 1);
+$timing-ease-end: cubic-bezier(0, 0, 0.4, 1);
+$timing-ease-start-end: cubic-bezier(0.45, 0, 0.4, 1);
 // transition
 $transition-duration-xs: 0.3s;
 $transition-duration-sm: 0.6s;

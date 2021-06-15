@@ -20,9 +20,9 @@
 		<div class="m-t-40"></div>
 		<h3 class="m-b-24 m-t-24">Default</h3>
 		<div class="accordion">
-			<div class="accordion-tab active">
+			<div class="accordion-tab open">
 				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4 active">
+					<div class="js-accordion-action accordion-action-icon m-r-4 open">
 						<i class="ic-angle-down icon-md"></i>
 					</div>
 				</div>
@@ -90,9 +90,9 @@
 			</div>
 		</div>
 		<div class="accordion accordion-mobile">
-			<div class="accordion-tab active">
+			<div class="accordion-tab open">
 				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4 active">
+					<div class="js-accordion-action accordion-action-icon m-r-4 open">
 						<i class="ic-angle-down icon-xs"></i>
 					</div>
 				</div>
@@ -172,7 +172,7 @@
 					<span class="label-text text-grayscale-900 f-w-500">Label</span>
 				</div>
 			</div>
-			<div class="accordion-tab active">
+			<div class="accordion-tab open">
 				<div class="accordion-content">
 					<div class="accordion-content-title">
 						<div class="label label-lg label-is-icon label-icon-left">
@@ -186,7 +186,7 @@
 				</div>
 				<div class="accordion-action">
 					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 active"
+						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 open"
 					>
 						<i class="ic-plus f-s-ui-16"></i>
 					</div>
@@ -234,7 +234,7 @@
 			</div>
 		</div>
 		<div class="accordion accordion-card">
-			<div class="accordion-tab active">
+			<div class="accordion-tab open">
 				<div class="accordion-content">
 					<div class="accordion-content-title">
 						<div class="label label-lg label-is-icon label-icon-left">
@@ -248,7 +248,7 @@
 				</div>
 				<div class="accordion-action">
 					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 active"
+						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 open"
 					>
 						<i class="ic-plus f-s-ui-16"></i>
 					</div>
@@ -307,7 +307,7 @@
 					<span class="label-text text-grayscale-900 f-w-500">Label</span>
 				</div>
 			</div>
-			<div class="accordion-tab active">
+			<div class="accordion-tab open">
 				<div class="accordion-content">
 					<div class="accordion-content-title">
 						<div class="label label-sm label-is-icon label-icon-left">
@@ -321,7 +321,7 @@
 				</div>
 				<div class="accordion-action">
 					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm text-grayscale-700 active"
+						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm text-grayscale-700 open"
 					>
 						<i class="ic-plus f-s-ui-12"></i>
 					</div>
@@ -371,7 +371,6 @@
 
 		<script>
 			var btn = document.querySelectorAll('.accordion .js-accordion-action');
-			console.log(btn);
 			btn.forEach((i) => i.addEventListener('click', toggleItem, false));
 
 			function toggleItem(e) {
@@ -380,12 +379,12 @@
 				for (i = 0; i < accItem.length; i++) {
 					accItem[i].className = 'accordion-tab';
 				}
-				this.closest('.accordion-tab').className = 'accordion-tab active';
+				this.closest('.accordion-tab').className = 'accordion-tab open';
 
 				accBtn.forEach((node) => {
-					node.classList.remove('active');
+					node.classList.remove('open');
 				});
-				e.currentTarget.classList.add('active');
+				e.currentTarget.classList.add('open');
 			}
 		</script>
 	</body>

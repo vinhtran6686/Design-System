@@ -2,11 +2,13 @@
 @import 'abstracts/_mixins';
 @import 'abstracts/_variables';
 @import 'abstracts/_fonts';
+@import 'abstracts/_utilities';
 // @import 'abstracts/_utilities';
 
 @import 'layout/_reboot';
 @import 'layout/_grid';
 @import 'components/_typography';
+@import 'components/_animation';
 @import 'components/_icon';
 @import 'components/_buttons';
 @import 'components/_button-group';
@@ -16,11 +18,11 @@
 @import 'components/_scrollbar';
 @import 'components/_spinner'; 
 @import 'components/_avatar'; 
-@import 'components/_pagination';
+@import 'components/_pagination'; 
 @import 'components/_breadcrumb';
 @import 'components/_progress-bar';
 @import 'components/_tabs';
-@import 'components/_tables';
+@import 'components/_tables'; 
 @import 'components/_alerts';
 @import 'components/_box-shadow'; 
 @import 'components/_form'; 
@@ -30,6 +32,5 @@
 @import 'components/_accordion';  
 @import 'components/_modal'; 
 @import 'components/_dropdown'; 
-@import 'abstracts/_utilities';
 @import 'components/_spacing';  
   

@@ -101,7 +101,7 @@ $btn-icon-props: (
 	font-family: inherit;
 	border-radius: $border-radius;
 	padding: $spacing * 2 $spacing * 3;
-	transition: $btn-transition;
+	transition: all $transition-duration-xs $timing-ease-end;
 	border: 1px solid transparent;
 	cursor: pointer;
 	@each $size, $value in $btn-font-size {

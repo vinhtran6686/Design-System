@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Design System FPTShop</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/example.css" />
+    <!-- <script src="./js/jquery-1.11.2.min.js"></script> -->
+    <script src="./js/functions.js"></script>
+    <style>
+        .animation-container {
+            text-align: center;
+            position: sticky;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            overflow-y:auto;
+            padding-right: 24px;
+        }
+
+        .animation-wrapper {
+            height: 230px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .animation-content {
+            display: inline-block;
+            line-height: 230px;
+            font-size: 42px;
+            text-align: center;
+            font-weight: bold;
+            color: #000;
+            margin: 0 auto;
+
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        .row-wrap {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .box-left {
+            padding-left: 16px;
+            border-left: 2px solid #6a737a;
+        }
+
+        .list-animation li {
+            font-size: 16px;
+            margin-bottom: 6px;
+            cursor: pointer;
+            padding-left: 8px;
+            color: #4299e1;
+        }
+
+        .block-ani {
+            width: 230px;
+            display: inline-block;
+        }
+
+        .demo-block {
+            display: flex;
+        }
+
+        .js-option {
+            display: inline-block;
+
+        }
+        h1{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body class="scrollbar-big">
+    
+    <div class="demo-content">
+        <div class="row">
+            <div class="col-9">
+                <div class="animation-container scrollbar">
+                    <h1 class="m-b-48 ">Animation</h1>
+
+                    <div class="demo-block m-b-16">
+                        <a class="btn btn-primary  m-r-8 js-option" to-show='block-ani'>
+                            All
+                        </a>
+                        <a class="btn btn-primary  m-r-8 js-option" to-show='demo-duration'>
+                            Demo duration
+                        </a>
+                        <a class="btn btn-primary js-option" to-show='demo-timing'>
+                            Demo timing
+                        </a>
+                    </div>
+                    <div class="row-wrap m-b-48">
+                        <div class=" block-ani demo-duration">
+                            <h3>Duration 0.3s</h3>
+                            <div class="animation-wrapper">
+                                <div class="animation-content animation">
+                                    Animation
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" block-ani demo-duration">
+                            <h3>Duration 0.6s</h3>
+                            <div class="animation-wrapper">
+
+                                <div class="animation-content animation-md">
+                                    Animation
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" block-ani demo-duration">
+                            <h3>Duration 0.9s</h3>
+                            <div class="animation-wrapper">
+                                <div class="animation-content animation-lg">
+                                    Animation
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-wrap">
+                        <div class=" block-ani demo-timing">
+                            <h3>Timing linear</h3>
+                            <div class="animation-wrapper">
+                                <div class="animation-content animation-md">
+                                    Animation
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" block-ani demo-timing">
+                            <h3>Timing ease-start</h3>
+                            <div class="animation-wrapper">
+                                <div class="animation-content animation-md animation-ease-start">
+                                    Animation
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" block-ani demo-timing">
+                            <h3>Timing ease-end</h3>
+                            <div class="animation-wrapper">
+                                <div class="animation-content animation-md animation-ease-end">
+                                    Animation
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="box-left">
+                    <h2 class="m-b-16">List animation</h2>
+                    <h3 class="m-b-8 f-s-p-18">Fade entrances</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='fadeIn'>fadeIn</li>
+                        <li class="js-animation-action" data-animation='fadeInTop'>fadeInTop</li>
+                        <li class="js-animation-action" data-animation='fadeInLeft'>fadeInLeft</li>
+                        <li class="js-animation-action" data-animation='fadeInBottom'>fadeInBottom</li>
+                        <li class="js-animation-action" data-animation='fadeInRight'>fadeInRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Fade exits</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='fadeOut'>fadeOut</li>
+                        <li class="js-animation-action" data-animation='fadeOutTop'>fadeOutTop</li>
+                        <li class="js-animation-action" data-animation='fadeOutLeft'>fadeOutLeft</li>
+                        <li class="js-animation-action" data-animation='fadeOutBottom'>fadeOutBottom</li>
+                        <li class="js-animation-action" data-animation='fadeOutRight'>fadeOutRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Slide entrances</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='slideInTop'>slideInTop</li>
+                        <li class="js-animation-action" data-animation='slideInLeft'>slideInLeft</li>
+                        <li class="js-animation-action" data-animation='slideInBottom'>slideInBottom</li>
+                        <li class="js-animation-action" data-animation='slideInRight'>slideInRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Slide exits</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='slideOutTop'>slideOutTop</li>
+                        <li class="js-animation-action" data-animation='slideOutLeft'>slideOutLeft</li>
+                        <li class="js-animation-action" data-animation='slideOutBottom'>slideOutBottom</li>
+                        <li class="js-animation-action" data-animation='slideOutRight'>slideOutRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Bounce entrances</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='bounceIn'>bounceIn</li>
+                        <li class="js-animation-action" data-animation='bounceInTop'>bounceInTop</li>
+                        <li class="js-animation-action" data-animation='bounceInLeft'>bounceInLeft</li>
+                        <li class="js-animation-action" data-animation='bounceInBottom'>bounceInBottom</li>
+                        <li class="js-animation-action" data-animation='bounceInRight'>bounceInRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Bounce exits</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='bounceOut'>bounceOut</li>
+                        <li class="js-animation-action" data-animation='bounceOutTop'>bounceOutTop</li>
+                        <li class="js-animation-action" data-animation='bounceOutLeft'>bounceOutLeft</li>
+                        <li class="js-animation-action" data-animation='bounceOutBottom'>bounceOutBottom</li>
+                        <li class="js-animation-action" data-animation='bounceOutRight'>bounceOutRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Scale entrances</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='scaleIn'>scaleIn</li>
+                        <li class="js-animation-action" data-animation='scaleInTop'>scaleInTop</li>
+                        <li class="js-animation-action" data-animation='scaleInLeft'>scaleInLeft</li>
+                        <li class="js-animation-action" data-animation='scaleInBottom'>scaleInBottom</li>
+                        <li class="js-animation-action" data-animation='scaleInRight'>scaleInRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">Scale exits</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='scaleOut'>scaleOut</li>
+                        <li class="js-animation-action" data-animation='scaleOutTop'>scaleOutTop</li>
+                        <li class="js-animation-action" data-animation='scaleOutLeft'>scaleOutLeft</li>
+                        <li class="js-animation-action" data-animation='scaleOutBottom'>scaleOutBottom</li>
+                        <li class="js-animation-action" data-animation='scaleOutRight'>scaleOutRight</li>
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">ZoomIn</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='zoomIn'>zoomIn</li>
+
+                    </ul>
+                    <h3 class="m-b-8 f-s-p-18">ZoomOut</h3>
+                    <ul class="list-animation">
+                        <li class="js-animation-action" data-animation='zoomOut'>zoomOut</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var btn = document.querySelectorAll('.js-animation-action');
+        btn.forEach((i) => i.addEventListener('click', toggleItem, false));
+        function toggleItem() {
+            var aniBlock = document.querySelectorAll('.animation-content');
+            var attribute = this.getAttribute('data-animation');
+            aniBlock.forEach(e => {
+                e.classList.add('animation-' + attribute);
+                setTimeout(() => {
+                    e.classList.remove('animation-' + attribute);
+                }, 900);
+            });
+        }
+        var option = document.querySelectorAll('.js-option');
+        option.forEach((i) => i.addEventListener('click', showItem, false));
+        function showItem() {
+            var attrShow = this.getAttribute('to-show');
+            var needShow = document.querySelectorAll('.' + attrShow);
+            var aniBlock = document.querySelectorAll('.block-ani');
+            aniBlock.forEach(e => {
+                e.style.display = 'none';
+            });
+            needShow.forEach(e => {
+                e.style.display = 'block';
+            });
+        }
+
+    </script>
+</body>
+
+</html>

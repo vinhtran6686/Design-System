@@ -32,6 +32,7 @@ $badge-close-size: (
 	vertical-align: baseline;
 	border-radius: $border-radius;
 	border: 1px solid transparent;
+	transition: all $transition-duration-xs $timing-ease-end;
 	&,
 	& * {
 		font-size: 12px;
@@ -45,7 +46,7 @@ $badge-close-size: (
 		&,
 		& * {
 			font-size: 16px;
-			line-height: 16px;
+			line-height: 16px;	
 		}
 	}
 	&-xs {

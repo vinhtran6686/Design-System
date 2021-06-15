@@ -3,7 +3,7 @@
 	&-tab {
 		display: flex;
 		margin-bottom: 16px;
-		&.active {
+		&.open {
 			#{$this}-content-description {
 				transform: scaleY(1);
 				max-height: 500px;
@@ -26,9 +26,10 @@
 			width: 24px;
 			height: 24px;
 			@include flexCenter(inline-flex);
-			transition: $transition-md;
+			transition-duration: $transition-duration-xs;
+			transition-timing-function: $timing-ease-end;
 			color: $grayscale;
-			&.active {
+			&.open {
 				transform: rotate(180deg);
 			}
 		}
@@ -36,10 +37,11 @@
 	&-content {
 		&-description {
 			margin-top: 4px;
-			transition: $transition-md;
+			transition-duration: $transition-duration-xs;
+			transition-timing-function: $timing-ease-end;
 			transform: scaleY(0);
 			max-height: 0px;
-			transform: translate3d(0, -100%, 0);
+			transform: translate3d(0, -20%, 0);
 			opacity: 0;
 			visibility: hidden;
 		}
@@ -64,7 +66,7 @@
 				&:hover {
 					color: $white;
 				}
-				&.active {
+				&.open {
 					i:before {
 						content: '\e983';
 					}
@@ -78,7 +80,7 @@
 			&:not(:last-child) {
 				box-shadow: inset 0px -1px 0px $grayscale-200;
 			}
-			&.active {
+			&.open {
 				background: $grayscale-100;
 				#{$this}-content-description {
 					margin-top: $spacing * 2;
@@ -98,11 +100,13 @@
 		&#{$this}-card {
 			#{$this}-title {
 				padding: 8px;
-				transition: $transition-md;
+				transition-duration: $transition-duration-xs;
+				transition-timing-function: $timing-ease-end;
 			}
 			#{$this}-content {
 				&-description {
-					transition: $transition-md;
+					transition-duration: $transition-duration-xs;
+					transition-timing-function: $timing-ease-end;
 				}
 			}
 		}
