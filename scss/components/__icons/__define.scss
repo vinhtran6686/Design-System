@@ -1110,30 +1110,32 @@
 $icon-props: (
 	'xl': (
 		size-default: 28px,
-		size-inner: 23px,
+		size-inner: 22px,
 	),
 	'lg': (
 		size-default: 20px,
-		size-inner: 13px,
+		size-inner: 15px,
 	),
 	'md': (
-		size-default: 16px,
-		size-inner: 10px,
+		size-default: 18px,
+		size-inner: 12px,
 	),
 	'sm': (
 		size-default: 16px,
-		size-inner: 10px,
+		size-inner: 11px,
 	),
 	'xs': (
 		size-default: 14px,
-		size-inner: 8px,
+		size-inner: 10px,
 	),
 	'xxs': (
 		size-default: 12px,
-		size-inner: 8px,
+		size-inner: 9px,
 	),
 );
 
 .ic {
 	display: inline-block;
+	line-height: 1;
+	color: $grayscale;
 }

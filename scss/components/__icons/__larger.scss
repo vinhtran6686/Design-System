@@ -6,18 +6,32 @@
 		font-size: $i * 1em;
 	}
 }
+.#{$ic-css-prefix}-2x {
+	&.#{$ic-css-prefix}-circle,
+	&.#{$ic-css-prefix}-circle-outline {
+		font-size: (2 - 0.75) * 1em;
+		width: 1.6em;
+		height: 1.6em;
+	}
+	&.#{$ic-css-prefix}-square,
+	&.#{$ic-css-prefix}-square-outline {
+		font-size: (2 - 0.5) * 1em;
 
-@each $size, $detail in $icon-props {
-	$font-size-inner: map-get($detail, 'size-inner');
-	$font-default: map-get($detail, 'size-default');
-	$width: map-get($detail, 'size-default');
-	.#{$ic-css-prefix}-#{$size} {
-		font-size: #{$font-default};
-		&.#{$ic-css-prefix}-circle,
-		&.#{$ic-css-prefix}-square {
-			font-size: #{$font-size-inner};
-			width: #{$width};
-			height: #{$width};
-		}
+		width: 1.3334em;
+		height: 1.3334em;
+	}
+}
+.#{$ic-css-prefix}-3x {
+	&.#{$ic-css-prefix}-circle,
+	&.#{$ic-css-prefix}-circle-outline {
+		font-size: (3 - 0.75) * 1em;
+		width: 1.3334em;
+		height: 1.3334em;
+	}
+	&.#{$ic-css-prefix}-square,
+	&.#{$ic-css-prefix}-square-outline {
+		font-size: (3 - 0.5) * 1em;
+		width: 1.2em;
+		height: 1.2em;
 	}
 }

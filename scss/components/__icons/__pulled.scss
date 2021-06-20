@@ -1,0 +1,14 @@
+// Pulled
+// -------------------------
+
+.#{$ic-css-prefix}-pull-left { float: left; }
+.#{$ic-css-prefix}-pull-right { float: right; }
+
+.#{$ic-css-prefix},
+.ics,
+.icr,
+.icl,
+.icb {
+  &.#{$ic-css-prefix}-pull-left { margin-right: $spacing * 2; }
+  &.#{$ic-css-prefix}-pull-right { margin-left: $spacing * 2; }
+}

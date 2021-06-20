@@ -1,0 +1,52 @@
+@each $size, $detail in $icon-props {
+	$font-size-inner: map-get($detail, 'size-inner');
+	$font-default: map-get($detail, 'size-default');
+	$width: map-get($detail, 'size-default');
+	.#{$ic-css-prefix}-#{$size} {
+		font-size: #{$font-default};
+		&.#{$ic-css-prefix}-circle,
+		&.#{$ic-css-prefix}-square,
+		&.#{$ic-css-prefix}-circle-outline,
+		&.#{$ic-css-prefix}-square-outline {
+			width: #{$width};
+			height: #{$width};
+		}
+		&.#{$ic-css-prefix}-circle,
+		&.#{$ic-css-prefix}-circle-outline {
+			font-size: #{$font-size-inner - 2px};
+		}
+
+		&.#{$ic-css-prefix}-square,
+		&.#{$ic-css-prefix}-square-outline {
+			font-size: #{$font-size-inner};
+		}
+	}
+}
+
+.#{$ic-css-prefix} {
+	&-square,
+	&-circle {
+		background: $grayscale;
+		color: $white;
+		@include flexCenter(inline-flex);
+		&-outline {
+			color: $grayscale;
+			border-width: $border-width;
+			border-color: $grayscale;
+			@include flexCenter(inline-flex);
+			border: $border-width $border-style $grayscale;
+		}
+	}
+	&-circle {
+		&,
+		&-outline {
+			border-radius: 50%;
+		}
+	}
+	&-square {
+		&,
+		&-outline {
+			border-radius: 2px;
+		}
+	}
+}
