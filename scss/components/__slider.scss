@@ -1,0 +1,202 @@
+$slider-height: 4px;
+$slider-width: 4px;
+$slider-size: $slider-height * 3;
+.slider {
+	width: 176px;
+	$noUI: '.noUi';
+	&#{$noUI}-target,
+	#{$noUI}-connects {
+		background: $grayscale-300;
+		border: none;
+		border-radius: 100px;
+	}
+	#{$noUI}-connect {
+		background: $primary;
+	}
+	&#{$noUI}-horizontal {
+		height: $slider-height;
+		#{$noUI}-handle {
+			width: $slider-size;
+			height: $slider-size;
+			top: calc(-#{$slider-size - $slider-height} / 2);
+			right: calc(-#{$slider-size - $slider-height} / 2 - 2px);
+			background: $white;
+			border: $border-default;
+			border-radius: $border-width * 2;
+			cursor: ew-resize;
+			@extend .d-s-100;
+			transition: $transition;
+			&:focus,
+			&:hover {
+				@extend .d-s-200;
+			}
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+		#{$noUI}-tooltip {
+			width: #{$slider-height * 6};
+			height: #{$slider-height * 6 - 2px};
+			padding: 5px 0;
+			font-size: 12px;
+			line-height: 1;
+			background: $grayscale-600;
+			color: white;
+			border: none;
+			border-radius: $border-width * 2;
+			bottom: calc(100% + 6px);
+			&:before {
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				left: 50%;
+				top: 100%;
+				transform: translateX(-50%);
+				border-left: 1.5px solid transparent;
+				border-right: 1.5px solid transparent;
+				border-top: 2px solid $grayscale-600;
+			}
+		}
+	}
+	// vertical
+	&#{$noUI}-vertical {
+		height: 176px;
+		width: $slider-width;
+		#{$noUI}-marker-large {
+			display: none;
+		}
+		#{$noUI}-value {
+			font-size: 12px;
+         line-height: 1;
+			color: $grayscale-600;
+			padding-left: 0;
+			transform: none;
+         &:last-child{
+            top: 0 !important;
+         }
+		}
+		#{$noUI}-handle {
+			width: $slider-size;
+			height: $slider-size;
+			top: calc(-#{$slider-size} / 2);
+			right: calc(-#{$slider-size - $slider-width} / 2);
+			background: $white;
+			border: $border-default;
+			border-radius: $border-width * 2;
+			cursor: ew-resize;
+			@extend .d-s-100;
+			transition: $transition;
+			&:focus,
+			&:hover {
+				@extend .d-s-200;
+			}
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+		#{$noUI}-tooltip {
+			width: #{$slider-height * 6};
+			height: #{$slider-height * 6 - 2px};
+			padding: 5px 0;
+			font-size: 12px;
+			line-height: 1;
+			background: $grayscale-600;
+			color: white;
+			border: none;
+			border-radius: $border-width * 2;
+			top: 50%;
+			left: calc(100% + 6px);
+			&:before {
+				content: '';
+				width: 0;
+				height: 0;
+				position: absolute;
+				right: 100%;
+				top: 50%;
+				transform: translateY(-50%);
+				border-top: 1.5px solid transparent;
+				border-bottom: 1.5px solid transparent;
+				border-right: 2px solid $grayscale-600;
+			}
+		}
+	}
+	// modified
+
+	&-md {
+		&#{$noUI}-horizontal,
+		&#{$noUI}-vertical {
+			#{$noUI}-handle {
+				width: $slider-size + $slider-height;
+				height: $slider-size + $slider-height;
+				border-radius: 2.67px;
+				&:before,
+				&:after {
+					display: none;
+				}
+			}
+		}
+		&#{$noUI}-horizontal {
+			height: $slider-height * 2;
+		}
+		&#{$noUI}-vertical {
+			width: $slider-width * 2;
+		}
+	}
+	&-circle {
+		&#{$noUI}-horizontal,
+		&#{$noUI}-vertical {
+			#{$noUI}-handle {
+				border-radius: 50%;
+			}
+		}
+	}
+	&-help-text {
+		display: flex;
+		align-items: center;
+		&:before,
+		&:after {
+			font-size: 12px;
+			color: $grayscale-600;
+			position: absolute;
+		}
+		&:before {
+			content: attr(data-slider-min);
+			right: calc(100% + 8px);
+		}
+		&:after {
+			content: attr(data-slider-max);
+			left: calc(100% + 8px);
+		}
+	}
+}
+// var sliderRange = Array.from(document.querySelectorAll('.js-slider-range'));
+
+// 			sliderRange.map((item) => {
+// 				noUiSlider.create(item, {
+// 					start: [20, 80],
+// 					step: 1,
+// 					connect: true,
+// 					range: {
+// 						min: 0,
+// 						max: 100,
+// 					},
+// 				});
+// 			});
+
+// 			var sliderSingle = Array.from(document.querySelectorAll('.js-slider-single'));
+
+// 			sliderSingle.map((item) => {
+// 				noUiSlider.create(item, {
+// 					start: 40,
+// 					step: 1,
+// 					tooltips: wNumb({ decimals: 0 }),
+// 					connect: [true, false],
+// 					range: {
+// 						min: 0,
+// 						max: 100,
+// 					},
+// 				});
+// 			});

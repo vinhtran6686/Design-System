@@ -1,7 +1,7 @@
 $font-icon-family: 'icon' !default;
 $font-icon-path: 'Icon' !default;
 
-$ic-360: '\e900';
+$ic-360: '\e900'; 
 $ic-a-watch: '\e901';
 $ic-adapter: '\e902';
 $ic-air-purifier: '\e903';
@@ -223,7 +223,7 @@ $ic-zoom-out: '\e9d8';
 $fa-font-path:         "../webfonts" !default;
 $fa-font-size-base:    16px !default;
 $fa-font-display:      block !default;
-$fa-css-prefix:        ic !default;
+$ic-css-prefix:        ic !default;
 $fa-version:           "5.15.3" !default;
 $fa-border-color:      #eee !default;
 $fa-inverse:           #fff !default;

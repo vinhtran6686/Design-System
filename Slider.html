@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Design System FPTShop</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<link rel="stylesheet" href="css/system.css" />
+		<link rel="stylesheet" href="css/example.css" />
+		<link rel="stylesheet" href="css/libs/nouislider.min.css" />
+		<script src="js/libs/nouislider.min.js"></script>
+		<script src="js/libs//wNumb.js"></script>
+		<style>
+			.slider {
+				margin: 0 auto;
+			}
+			.block {
+				width: 500px;
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body class="scrollbar-big">
+		<h1 class="m-b-24">Range slide</h1>
+		<div class="m-b-16">Click text on <b>Class</b> column to copy class</div>
+		<table class="table table-lg table-striped" style="margin-left: 2px">
+			<thead>
+				<tr>
+					<th>Properties</th>
+					<th>Value</th>
+					<th>Class</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>Size</b></td>
+					<td>
+						<ul>
+							<li>- MD</li>
+							<li>- SM</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>.slider-md</li>
+							<li>.slider-sm</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b> Type </b><br />
+						<i>set object on js </i>
+					</td>
+					<td>
+						<ul>
+							<li>- Single</li>
+							<li>- Range</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>- is value = start: 20</li>
+							<li>- is array = start: [20, 80]</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Style</b></td>
+					<td>
+						<ul>
+							<li>- Rounded (default)</li>
+							<li>- Circle</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>- slider (default)</li>
+							<li>- slider-circle</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Vertical</b><br /><i>set object on js</i></td>
+					<td>
+						<ul>
+							<li>- True</li>
+							<li>- False</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>- orientation: 'vertical'</li>
+							<li><br /></li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Help</b> <b>Text</b></td>
+					<td>
+						<ul>
+							<li>- True</li>
+							<li>- False</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>Set attribute</li>
+							<li>- help-text-min: '0'</li>
+							<li style="font-size: 14px">- help-text-max: '100'</li>
+						</ul>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="m-b-24"></div>
+		<!-- <div class="form-group m-b-48" style="width: 300px;">
+			<input type="text" class="form-input" placeholder="Type class here to get component">
+		</div> -->
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Style rounded (default)</h3>
+			<div class="js-slider slider"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Style circle</h3>
+			<div class="js-slider-circle slider slider-circle"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Size sm (default)</h3>
+			<div class="js-slider-size-default slider"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Size md</h3>
+			<div class="js-slider-size-md slider slider-md"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range default</h3>
+			<div class="js-slider-range slider"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range default</h3>
+			<div class="js-slider-range slider slider-circle"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range size md</h3>
+			<div class="js-slider-range slider slider-md"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range size md circle</h3>
+			<div class="js-slider-range slider slider-md slider-circle"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">tooltips</h3>
+			<div class="js-slider-tooltip slider slider-circle"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">tooltips circle</h3>
+			<div class="js-slider-tooltip slider slider-circle"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range help text</h3>
+			<div
+				class="js-slider-range-tooltips slider slider-help-text"
+				data-slider-min="0"
+				data-slider-max="100"
+			></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-24">Range help text md & circle</h3>
+			<div
+				class="js-slider-range-tooltips slider slider-md slider-circle slider-help-text"
+				data-slider-min="0"
+				data-slider-max="100"
+			></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-24">help text single tooltip</h3>
+			<div
+				class="js-slider-tooltip slider slider-circle slider-help-text"
+				data-slider-min="0"
+				data-slider-max="100"
+			></div>
+		</div>
+
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range Vertical</h3>
+			<div class="js-slider-vertical slider"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Range Vertical MD</h3>
+			<div class="js-slider-vertical slider slider-md"></div>
+		</div>
+		<div class="block p-b-24">
+			<h3 class="m-b-12">Slider Vertical Single</h3>
+			<div class="js-slider-vertical-single slider"></div>
+		</div>
+		<!-- <div class="current-value m-y-24 text-center">.slider</div>
+		<div class="show-code m-y-24 text-center">
+			<a href="#" class="link link-md"> Show Code </a>
+		</div> -->
+		<!-- <div class="m-b-24">
+			<div class="js-slider-single slider"></div>
+		</div>
+		<div class="m-b-24">
+			<div class="js-slider-single1 slider"></div>
+		</div>
+		<div class="m-b-32">
+			<div class="js-slider-abc slider"></div>
+		</div> -->
+		<script>
+			// document.body.contentEditable = true;
+			// style
+			var styleDefault = document.querySelector('.js-slider');
+			noUiSlider.create(styleDefault, {
+				start: 20,
+				connect: 'lower',
+				// connect: 'upper',
+				range: {
+					min: 0,
+					max: 100,
+				},
+			});
+			var styleCircle = document.querySelector('.js-slider-circle');
+			noUiSlider.create(styleCircle, {
+				start: 20,
+				connect: 'lower',
+				range: {
+					min: 0,
+					max: 100,
+				},
+			});
+
+			// tooltip
+			var slidertooltipSingle = Array.from(document.querySelectorAll('.js-slider-tooltip'));
+
+			slidertooltipSingle.map((item) => {
+				noUiSlider.create(item, {
+					start: 20,
+					step: 1,
+					tooltips: wNumb({ decimals: 0 }),
+					connect: 'lower',
+					range: {
+						min: 0,
+						max: 100,
+					},
+				});
+			});
+
+			// size
+			var sizeDefault = document.querySelector('.js-slider-size-default');
+			noUiSlider.create(sizeDefault, {
+				start: 20,
+				connect: 'lower',
+				range: {
+					min: 0,
+					max: 100,
+				},
+			});
+			var sizeMD = document.querySelector('.js-slider-size-md');
+			noUiSlider.create(sizeMD, {
+				start: 20,
+				connect: 'lower',
+				range: {
+					min: 0,
+					max: 100,
+				},
+			});
+
+			var sliderRange = Array.from(document.querySelectorAll('.js-slider-range'));
+
+			sliderRange.map((item) => {
+				noUiSlider.create(item, {
+					start: [20, 80],
+					step: 1,
+					connect: true,
+					range: {
+						min: 0,
+						max: 100,
+					},
+				});
+			});
+
+			var sliderRangeTooltips = Array.from(document.querySelectorAll('.js-slider-range-tooltips'));
+
+			sliderRangeTooltips.map((item) => {
+				noUiSlider.create(item, {
+					start: [20, 80],
+					step: 1,
+					connect: true,
+					// have 2 value, must set 2 value tooltips
+					tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+					// connect: [true, false],
+					range: {
+						min: 0,
+						max: 100,
+					},
+				});
+			});
+
+			// Vertical
+			var verticals = Array.from(document.querySelectorAll('.js-slider-vertical'));
+			verticals.map((item) => {
+				noUiSlider.create(item, {
+					start: [20, 80],
+					connect: true,
+					// step:1,
+					direction: 'rtl',
+					orientation: 'vertical',
+					tooltips: [wNumb({ decimals: 0 }), wNumb({ decimals: 0 })],
+					limit: 600,
+					range: {
+						min: 0,
+						max: 100,
+					},
+					pips: {
+						mode: 'steps',
+						stepped: true,
+						density: 100,
+					},
+				});
+			});
+			
+			// Vertical Single
+			var verticalSingle = Array.from(document.querySelectorAll('.js-slider-vertical-single'));
+			verticalSingle.map((item) => {
+				noUiSlider.create(item, {
+					start: 30,
+					connect: 'lower',
+					direction: 'rtl',
+					orientation: 'vertical',
+					tooltips: wNumb({ decimals: 0 }),
+					range: {
+						min: 0,
+						max: 100,
+					},
+					pips: {
+						mode: 'steps',
+						stepped: true,
+						density: 100,
+					},
+				});
+			});
+			
+			// noUiSlider.create(vertical, {
+			// 	start: [20, 80],
+			// 	connect: true,
+			// 	// step:1,
+			// 	direction: 'rtl',
+			// 	orientation: 'vertical',
+			// 	tooltips: [true, wNumb({ decimals: 1 })],
+			// 	limit: 600,
+			// 	range: {
+			// 		min: 0,
+			// 		max: 100,
+			// 	},
+			// 	pips: {
+			// 		mode: 'steps',
+			// 		stepped: true,
+			// 		density: 101,
+			// 	},
+			// });
+			// vertical.style.height = '400px';
+			// vertical.style.margin = '0 auto 30px';
+		</script>
+	</body>
+</html>

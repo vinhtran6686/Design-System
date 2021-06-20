@@ -1,0 +1,17 @@
+// icon background
+[class^='ic-bg-'],
+[class*=' ic-bg-'] {
+	color: $white;
+}
+@each $color, $value in $theme-colors {
+	.ic-bg-#{$color} {
+		background-color: $value;
+	}
+}
+// icon background
+@each $color, $value in $theme-colors {
+	.ic-color-#{$color} {
+		color: $value;
+	}
+}
+ 

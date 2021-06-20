@@ -27,3 +27,8 @@
 @include spacingXY-loop('.p-y-', 'padding', 'top', 'bottom');
 @include spacingXY-loop('.m-x-', 'margin', 'left', 'right');
 @include spacingXY-loop('.m-y-', 'margin', 'top', 'bottom');
+.m-x-auto{
+	margin-left: auto;
+	margin-right: auto;
+}
+

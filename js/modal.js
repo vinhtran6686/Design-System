@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 		this.firstFocusable = null;
 		this.lastFocusable = null;
 		this.selectedTrigger = null;
-		this.showClass = 'modal--is-visible';
+		this.showClass = 'open';
 		this.initModal();
 	};
 

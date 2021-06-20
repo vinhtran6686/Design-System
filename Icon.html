@@ -8,37 +8,18 @@
 		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
+		<style>
+			.block {
+				display: inline-block;
+				width: 400px;
+				margin: 0 20px 20px 0;
+			}
+		</style>
 	</head>
 	<body class="scrollbar-big">
 		<h1>Icons</h1>
-		<h3 class="m-y-24">Size (default = 14px)</h3>
-		<div>
-			<i class="ic-camera"></i>
-		</div>
-		<h3 class="m-y-24">Size (xs, sm,lg)</h3>
-		<div>
-			<i class="ic-camera ic-xl"></i>
-			<i class="ic-camera ic-lg"></i>
-			<i class="ic-camera ic-md"></i>
-			<i class="ic-camera ic-sm"></i>
-			<i class="ic-camera ic-xs"></i>
-			<i class="ic-camera ic-xxs"></i>
-		</div>
-		<h3 class="m-y-24">Size scale (inherit font size of parent)</h3>
-		<h4 class="m-y-12">Font size 0.5rem</h4>
-		<div class="m-b-24" style="font-size: 0.5rem">
-			<i class="ic-camera ic-2x"></i>
-			<i class="ic-camera ic-3x"></i>
-		</div>
-		<h4 class="m-y-12">Font size 16px</h4>
-		<div class="m-b-24" style="font-size: 16px">
-			<i class="ic-camera ic-2x"></i>
-			<i class="ic-camera ic-3x"></i>
-		</div>
-		
-
 		<h3 class="m-y-24">Sizing Scale Details</h3>
-		<table class="table table-lg table-striped" style="margin-left: 2px;">
+		<table class="table table-lg table-striped" style="margin-left: 2px">
 			<thead>
 				<tr>
 					<th>Class</th>
@@ -84,6 +65,66 @@
 				</tr>
 			</tbody>
 		</table>
+		<div class="block">
+			<h3 class="m-y-24">Size (default = 14px)</h3>
+			<div>
+				<i class="ic-camera"></i>
+			</div>
+			<h3 class="m-y-24">Size (xs, sm, lg)</h3>
+			<div>
+				<i class="ic-camera ic-xl"></i>
+				<i class="ic-camera ic-lg"></i>
+				<i class="ic-camera ic-md"></i>
+				<i class="ic-camera ic-sm"></i>
+				<i class="ic-camera ic-xs"></i>
+				<i class="ic-camera ic-xxs"></i>
+			</div>
+		</div>
+
+		<div class="block">
+			<h3 class="m-y-24">Size scale (inherit font size of parent)</h3>
+			<h4 class="m-y-12">Parent font size = 24px</h4>
+			<div class="m-b-24" style="font-size: 24px">
+				<i class="ic-camera ic-2x"></i>
+				<span class="m-r-12">2x</span>
+				<i class="ic-camera ic-3x"></i>
+				<span class="m-r-12">3x</span>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="m-y-24">Color</h3>
+			<div>
+				<i class="ic-camera ic-sm ic-color-primary"></i>
+				<i class="ic-camera ic-sm ic-color-link"></i>
+				<i class="ic-camera ic-sm ic-color-grayscale"></i>
+				<i class="ic-camera ic-sm ic-color-success"></i>
+				<i class="ic-camera ic-sm ic-color-info"></i>
+				<i class="ic-camera ic-sm ic-color-warning"></i>
+				<i class="ic-camera ic-sm ic-color-danger"></i>
+			</div>
+			<h3 class="m-y-24">Background</h3>
+			<div>
+				<i class="ic-camera ic-xl ic-bg-primary"></i>
+				<i class="ic-camera ic-lg ic-bg-link"></i>
+				<i class="ic-camera ic-md ic-bg-grayscale"></i>
+				<i class="ic-camera ic-sm ic-bg-success"></i>
+				<i class="ic-camera ic-xs ic-bg-info"></i>
+				<i class="ic-camera ic-xs ic-bg-warning"></i>
+				<i class="ic-camera ic-xxs ic-bg-danger"></i>
+			</div>
+		</div>
+		<div class="block">
+			<h3 class="m-y-24">Rotated & Flip</h3>
+			<div>
+				<i class="ic ic-camera ic-xl"></i>
+				<i class="ic ic-camera ic-xl ic-rotate-90"></i>
+				<i class="ic ic-camera ic-xl ic-rotate-180"></i>
+				<i class="ic ic-camera ic-xl ic-rotate-270"></i>
+				<i class="ic ic-camera ic-xl ic-flip-horizontal"></i>
+				<i class="ic ic-camera ic-xl ic-flip-vertical"></i>
+				<i class="ic ic-camera ic-xl ic-flip-both"></i>
+			</div>
+		</div>
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
