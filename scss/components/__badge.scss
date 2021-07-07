@@ -38,7 +38,7 @@ $badge-close-size: (
 		font-size: 12px;
 		line-height: 12px;
 	}
-	span:not(.btn){
+	span:not(.btn) {
 		display: inline-block;
 	}
 	&-md {
@@ -46,7 +46,7 @@ $badge-close-size: (
 		&,
 		& * {
 			font-size: 16px;
-			line-height: 16px;	
+			line-height: 16px;
 		}
 	}
 	&-xs {
@@ -73,6 +73,13 @@ $badge-close-size: (
 		border-radius: 100px;
 		overflow: hidden;
 	}
+
+	// colors
+	&-grayscale {
+		&:hover {
+			color: $white;
+		}
+	}
 }
 
 // Colors
@@ -87,6 +94,11 @@ $badge-close-size: (
 	.badge-outline-#{$color} {
 		color: #{$value};
 		border: 1px solid #{$value};
+		&:hover {
+			color: $white;
+			background: #{$value};
+			border: 1px solid #{$value};
+		}
 	}
 }
 // custom
@@ -99,6 +111,15 @@ $badge-close-size: (
 .badge-outline-grayscale,
 .badge-grayscale {
 	color: $grayscale-600;
+}
+
+// badge hover
+@each $color, $value in $theme-colors-hover {
+	.badge-#{$color} {
+		&:hover {
+			background: $value;
+		}
+	}
 }
 
 // badge button close

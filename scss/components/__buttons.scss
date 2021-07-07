@@ -318,7 +318,7 @@ $btn-icon-props: (
 		-webkit-transform: scaleX(0);
 		-ms-transform: scaleX(0);
 		transform: scaleX(0);
-		transition: transform $transition-duration-sm ease, -webkit-transform $transition-duration-sm ease;
+		transition: transform  $transition-duration-xs $timing-ease-end, -webkit-transform  $transition-duration-xs $timing-ease-end;
 	}
 	&:hover:before {
 		-webkit-transform: scaleX(1);

@@ -23,19 +23,67 @@
 			.example .form-date {
 				margin-bottom: 10px;
 			}
-			.example .form-search {
-				margin-bottom: 10px;
-			}
+
 			.example .form-date .form-input,
 			.example .form-search .form-input {
 				margin-bottom: 0;
 			}
+			.example-mobile {
+				position: fixed;
+				top: 3%;
+				right: 3%;z-index: 1;
+			}
+			@media only screen and (min-width: 601px) {
+				.example .form-search {
+					margin-bottom: 10px;
+				}
+			}
+			@media only screen and (max-width: 600px) {
+				.scrollbar {
+					padding: 10px 5px 10px 10px;
+				}
+				.form-group {
+					width: 100%;
+				}
+				.example-mobile {
+					position: relative;
+					top: 0;
+					right: 0;
+				}
+			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
+	<body class="scrollbar" style="padding-right: 5px">
 		<h1 class="m-b-24">Input</h1>
+		<div class="example-mobile">
+			<h3 class="m-b-12">Input Mobile</h3>
+			<p>use media query to see</p>
+			<div class="form-group form-mobile js-form-mobile">
+				<div class="form-search form-search-md">
+					<span class="form-search-icon m-r-4">
+						<i class="ic-search icon-md"></i>
+					</span>
+					<input type="text" class="form-search-input m-r-4 js-form-input" placeholder="Enter keyword..." />
+					<span class="form-search-icon form-search-clear js-form-clear">
+						<i class="ic-cancel icon-md"></i>
+					</span>
+				</div>
+				<span class="text-link form-search-close js-form-close">Huỷ bỏ</span>
+				<div class="form-search-result">
+					<a href="#" class="active">Hà Nội</a>
+					<a href="#">Hồ Chí Minh</a>
+					<a href="#">Đồng Tháp</a>
+					<a href="#">Đồng nai</a>
+					<a href="#">Thái Nguyên</a>
+					<a href="#">Gia Lai</a>
+					<a href="#">Nha Trang</a>
+					<a href="#">Quãng Ngãi</a>
+					<a href="#">An Giang</a>
+					<a href="#">Cà Mau</a>
+					<a href="#">Đà Nẵng</a>
+				</div>
+			</div>
+		</div>
 		<div class="m-t-40"></div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Default</h3>
@@ -143,25 +191,13 @@
 		<h3 class="m-b-24">Textarea Invalid</h3>
 		<div class="example">
 			<div class="form-group">
-				<textarea
-					class="form-input form-input-lg is-invalid"
-					rows="3"
-					placeholder="Textarea"
-				></textarea>
+				<textarea class="form-input form-input-lg is-invalid" rows="3" placeholder="Textarea"></textarea>
 			</div>
 			<div class="form-group">
-				<textarea
-					class="form-input form-input-md is-invalid"
-					rows="3"
-					placeholder="Textarea"
-				></textarea>
+				<textarea class="form-input form-input-md is-invalid" rows="3" placeholder="Textarea"></textarea>
 			</div>
 			<div class="form-group">
-				<textarea
-					class="form-input form-input-sm is-invalid"
-					rows="3"
-					placeholder="Textarea"
-				></textarea>
+				<textarea class="form-input form-input-sm is-invalid" rows="3" placeholder="Textarea"></textarea>
 			</div>
 		</div>
 		<div class="m-b-32"></div>
@@ -226,7 +262,7 @@
 						<i class="ic-search icon-lg"></i>
 					</span>
 					<input type="text" class="form-search-input m-r-8" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-close">
+					<span class="form-search-icon form-search-clear">
 						<i class="ic-cancel icon-lg"></i>
 					</span>
 				</div>
@@ -237,7 +273,7 @@
 						<i class="ic-search icon-md"></i>
 					</span>
 					<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-close">
+					<span class="form-search-icon form-search-clear">
 						<i class="ic-cancel icon-md"></i>
 					</span>
 				</div>
@@ -248,15 +284,120 @@
 						<i class="ic-search icon-sm"></i>
 					</span>
 					<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-close">
+					<span class="form-search-icon form-search-clear">
 						<i class="ic-cancel icon-sm"></i>
 					</span>
 				</div>
 			</div>
 		</div>
-		
-		
+		<div class="m-b-24"></div>
 
+		<script>
+			const formMobiles = document.querySelectorAll('.js-form-mobile');
+			const formInputs = document.querySelectorAll('.js-form-input');
+			const formClears = document.querySelectorAll('.js-form-clear');
+			const formCloses = document.querySelectorAll('.js-form-close');
+			function hasParentWithMatchingSelector(target, selector) {
+				return [...document.querySelectorAll(selector)].some((el) => el !== target && el.contains(target));
+			}
+			function getNextSibling(elem, callback) {
+				// Get the next sibling element
+				let sibling = elem.nextElementSibling;
+
+				// If there's no selector, return the first sibling
+				if (!callback || typeof callback !== 'function') return sibling;
+
+				// If the sibling matches our test condition, use it
+				// If not, jump to the next sibling and continue the loop
+				let index = 0;
+				while (sibling) {
+					if (callback(sibling, index, elem)) return sibling;
+					index++;
+					sibling = sibling.nextElementSibling;
+				}
+			}
+			function getPrevSibling(elem, callback) {
+				// Get the next sibling element
+				let sibling = elem.previousElementSibling;
+
+				// If there's no selector, return the first sibling
+				if (!callback || typeof callback !== 'function') return sibling;
+
+				// If the sibling matches our test condition, use it
+				// If not, jump to the next sibling and continue the loop
+				let index = 0;
+				while (sibling) {
+					if (callback(sibling, index, elem)) return sibling;
+					index++;
+					sibling = sibling.previousElementSibling;
+				}
+			}
+
+			function handleClick(e) {
+				e.stopPropagation();
+				this.classList.add('open');
+				this.querySelector('input').focus();
+			}
+			function handleInput(e) {
+				console.log(this.value.length);
+				let formResult = getNextSibling(this.parentNode, function (sibling) {
+					return sibling.matches('.form-search-result');
+				});
+				let formClose = getNextSibling(this.parentNode, function (sibling) {
+					return sibling.matches('.js-form-close');
+				});
+				let formClear = getNextSibling(this, function (sibling) {
+					return sibling.matches('.js-form-clear');
+				});
+				if (hasParentWithMatchingSelector(this, '.open') && this.value.length > 0) {
+					formResult.classList.add('open');
+					formClose.classList.add('open');
+					formClear.classList.add('open');
+				} else {
+					formResult.classList.remove('open');
+					formClose.classList.remove('open');
+					formClear.classList.remove('open');
+				}
+			}
+			function handleClear(e) {
+				e.stopPropagation();
+				let formInput = getPrevSibling(this, function (sibling) {
+					return sibling.matches('.js-form-input');
+				});
+				formInput.value = '';
+				this.classList.remove('open');
+			}
+			function handleClose(e) {
+				e.stopPropagation();
+				this.classList.remove('open');
+				this.parentNode.classList.remove('open');
+				let formSearch = getPrevSibling(this, function (sibling) {
+					return sibling.matches('.form-search');
+				});
+				let formResult = getNextSibling(this, function (sibling) {
+					return sibling.matches('.form-search-result');
+				});
+				formSearch.querySelector('.js-form-clear').classList.remove('open');
+				formSearch.querySelector('input').value = '';
+
+				console.log(formResult);
+				formResult.classList.remove('open');
+			}
+
+			formMobiles.forEach((e) => {
+				e.addEventListener('click', handleClick);
+			});
+			formInputs.forEach((e) => {
+				e.addEventListener('paste', handleInput);
+				e.addEventListener('input', handleInput);
+			});
+			formClears.forEach((e) => {
+				e.addEventListener('click', handleClear);
+			});
+			formCloses.forEach((e) => {
+				e.addEventListener('click', handleClose);
+			});
+		</script>
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>

@@ -216,7 +216,7 @@ input[type='datetime-local'] {
 		&:before {
 			content: '\e936';
 			font-family: 'icon';
-			position: absolute; 
+			position: absolute;
 			top: 0;
 			right: 0;
 			color: $white;
@@ -466,7 +466,20 @@ input[type='datetime-local'] {
 		}
 	}
 	&-close {
+		display: none;
+		align-self: baseline;
+		margin-left: $spacing;
 		cursor: pointer;
+		&.open {
+			display: inline-flex;
+		}
+	}
+	&-clear {
+		cursor: pointer;
+		display: none;
+		&.open {
+			display: inline-flex;
+		}
 	}
 	&-input {
 		flex: 1;
@@ -522,6 +535,69 @@ input[type='datetime-local'] {
 		min-height: 28px;
 		#{$this}-input {
 			@extend .f-s-p-14;
+		}
+	}
+}
+
+// form mobile
+.form-mobile {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	z-index: 1;
+	&.open {
+		//basic
+		position: fixed;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background: $white;
+		padding: $spacing * 2;
+	}
+	.form {
+		&-search {
+			flex: 1;
+			align-self: baseline;
+			&-result {
+				// animate
+				display: none;
+				// base
+				flex-basis: 100%;
+				margin-top: $spacing;
+				// //basic
+				background-color: $white;
+				box-sizing: border-box;
+				border-radius: $border-radius;
+				border: $border-default;
+				overflow: hidden;
+				@extend .d-s-100;
+				padding: $spacing $spacing * 2;
+				&.open {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					width: 100%;
+					height: auto;
+					max-height: calc(100% - 44px);
+
+					//basic
+				}
+				a {
+					width: 50%;
+					display: inline-block;
+					box-shadow: none;
+					padding: 6px 8px;
+					border-radius: 4px;
+					color: $grayscale-700;
+					@extend .f-s-p-14;
+					&.active {
+						font-weight: 500;
+						background-color: #f8f9fa;
+					}
+				}
+			}
 		}
 	}
 }

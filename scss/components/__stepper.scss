@@ -15,7 +15,7 @@ $stepper-vertical-spacing: 32px;
 					top: 12px;
 					transform: translateY(-50%);
 					height: 2px;
-					transition: $transition-sm;
+					transition: all $transition-duration-sm $timing-ease-end;
 				}
 				&:before {
 					right: 200%;
@@ -88,7 +88,7 @@ $stepper-vertical-spacing: 32px;
 		background: $white;
 		border: $border-width $border-style;
 		border-color: $grayscale-400;
-		transition: $transition;
+		transition: all $transition-duration-xs $timing-ease-end;
 		cursor: pointer;
 		@include flexCenter(inline-flex);
 		[class^='ic-'],
@@ -104,7 +104,7 @@ $stepper-vertical-spacing: 32px;
 			transform: scale(0.3);
 			opacity: 0;
 			visibility: hidden;
-			transition: $transition;
+			transition:all $transition-duration-xs $timing-ease-end;
 		}
 		&:hover {
 			border-color: $primary;

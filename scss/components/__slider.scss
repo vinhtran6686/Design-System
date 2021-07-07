@@ -25,7 +25,7 @@ $slider-size: $slider-height * 3;
 			border-radius: $border-width * 2;
 			cursor: ew-resize;
 			@extend .d-s-100;
-			transition: $transition;
+			transition: all $transition-duration-xs $timing-ease-end ;
 			&:focus,
 			&:hover {
 				@extend .d-s-200;
@@ -87,7 +87,7 @@ $slider-size: $slider-height * 3;
 			border-radius: $border-width * 2;
 			cursor: ew-resize;
 			@extend .d-s-100;
-			transition: $transition;
+			transition: all $transition-duration-xs $timing-ease-end;
 			&:focus,
 			&:hover {
 				@extend .d-s-200;

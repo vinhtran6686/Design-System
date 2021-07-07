@@ -238,8 +238,8 @@ $transition-sm: all $transition-duration-sm $transiton-timing !default;
 $transition-md: all $transition-duration-md $transiton-timing !default;
 
 // Buttons
-$btn-transition: color $transition-duration-xs ease-in-out, background-color $transition-duration-xs ease-in-out,
-	border-color $transition-duration-xs ease-in-out, box-shadow $transition-duration-xs ease-in-out !default;
+$btn-transition: color $transition-duration-xs $timing-ease-end, background-color $transition-duration-xs $timing-ease-end,
+	border-color $transition-duration-xs $timing-ease-end, box-shadow $transition-duration-xs $timing-ease-end !default;
 
 // Forms
 $input-padding-y: 7.5px !default;
