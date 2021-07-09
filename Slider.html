@@ -17,219 +17,237 @@
 			}
 			.block {
 				width: 500px;
-				margin: 0 auto;
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1 class="m-b-24">Range slide</h1>
-		<div class="m-b-16">Click text on <b>Class</b> column to copy class</div>
-		<table class="table table-lg table-striped" style="margin-left: 2px">
-			<thead>
-				<tr>
-					<th>Properties</th>
-					<th>Value</th>
-					<th>Class</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><b>Size</b></td>
-					<td>
-						<ul>
-							<li>- MD</li>
-							<li>- SM</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>.slider-md</li>
-							<li>.slider-sm</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b> Type </b><br />
-						<i>set object on js </i>
-					</td>
-					<td>
-						<ul>
-							<li>- Single</li>
-							<li>- Range</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>- is value = start: 20</li>
-							<li>- is array = start: [20, 80]</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td><b>Style</b></td>
-					<td>
-						<ul>
-							<li>- Rounded (default)</li>
-							<li>- Circle</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>- slider (default)</li>
-							<li>- slider-circle</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td><b>Vertical</b><br /><i>set object on js</i></td>
-					<td>
-						<ul>
-							<li>- True</li>
-							<li>- False</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>- orientation: 'vertical'</li>
-							<li><br /></li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td><b>Help</b> <b>Text</b></td>
-					<td>
-						<ul>
-							<li>- True</li>
-							<li>- False</li>
-						</ul>
-					</td>
-					<td>
-						<ul>
-							<li>Set attribute</li>
-							<li>- help-text-min: '0'</li>
-							<li style="font-size: 14px">- help-text-max: '100'</li>
-						</ul>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="m-b-24"></div>
-		<!-- <div class="form-group m-b-48" style="width: 300px;">
-			<input type="text" class="form-input" placeholder="Type class here to get component">
-		</div> -->
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Style rounded (default)</h3>
-			<div class="js-slider slider"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Style circle</h3>
-			<div class="js-slider-circle slider slider-circle"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Size sm (default)</h3>
-			<div class="js-slider-size-default slider"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Size md</h3>
-			<div class="js-slider-size-md slider slider-md"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range default</h3>
-			<div class="js-slider-range slider"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range default</h3>
-			<div class="js-slider-range slider slider-circle"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range size md</h3>
-			<div class="js-slider-range slider slider-md"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range size md circle</h3>
-			<div class="js-slider-range slider slider-md slider-circle"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">tooltips</h3>
-			<div class="js-slider-tooltip slider slider-circle"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">tooltips circle</h3>
-			<div class="js-slider-tooltip slider slider-circle"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range help text</h3>
-			<div
-				class="js-slider-range-tooltips slider slider-help-text"
-				data-slider-min="0"
-				data-slider-max="100"
-			></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-24">Range help text md & circle</h3>
-			<div
-				class="js-slider-range-tooltips slider slider-md slider-circle slider-help-text"
-				data-slider-min="0"
-				data-slider-max="100"
-			></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-24">help text single tooltip</h3>
-			<div
-				class="js-slider-tooltip slider slider-circle slider-help-text"
-				data-slider-min="0"
-				data-slider-max="100"
-			></div>
-		</div>
+	<body class="demo scrollbar-big">
+		<div class="grid-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Slider</h1>
+					</div>
+					<table class="table table-lg table-striped m-b-24" style="margin-left: 2px">
+						<thead>
+							<tr>
+								<th>Properties</th>
+								<th>Value</th>
+								<th>Class</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><b>Size</b></td>
+								<td>
+									<ul>
+										<li>- MD</li>
+										<li>- SM</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>.slider-md</li>
+										<li>.slider-sm</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<b> Type </b><br />
+									<i>set object on js </i>
+								</td>
+								<td>
+									<ul>
+										<li>- Single</li>
+										<li>- Range</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>- is value = start: 20</li>
+										<li>- is array = start: [20, 80]</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Style</b></td>
+								<td>
+									<ul>
+										<li>- Rounded (default)</li>
+										<li>- Circle</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>- slider (default)</li>
+										<li>- slider-circle</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Vertical</b><br /><i>set object on js</i></td>
+								<td>
+									<ul>
+										<li>- True</li>
+										<li>- False</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>- orientation: 'vertical'</li>
+										<li><br /></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td><b>Help</b> <b>Text</b></td>
+								<td>
+									<ul>
+										<li>- True</li>
+										<li>- False</li>
+									</ul>
+								</td>
+								<td>
+									<ul>
+										<li>Set attribute</li>
+										<li>- help-text-min: '0'</li>
+										<li style="font-size: 14px">- help-text-max: '100'</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div id="slider-size">
+						<h3>Size</h3>
+						<p class="m-b-24">Default, md</p>
+						<div class="line">
+							<div class="block"><div class="js-slider slider"></div></div>
+							<div class="m-b-24"></div>
+							<div class="block"><div class="js-slider-size-md slider slider-md"></div></div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522js-slider%2520slider%2522%253E%253C%252Fdiv%253E%250A%250Avar%2520styleDefault%2520%253D%2520document.querySelector%28%27.js-slider%27%29%253B%250AnoUiSlider.create%28styleDefault%252C%2520%257B%250A%2520%2520%2520%2520start%253A%252020%252C%250A%2520%2520%2520%2520connect%253A%2520%27lower%27%252C%250A%2520%2520%2520%2520%252F%252F%2520connect%253A%2520%27upper%27%252C%250A%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%257D%252C%250A%257D%29%253B%250A%250A%252F%252Fmd%2520%250A%253Cdiv%2520class%253D%2522js-slider-size-md%2520slider%2520slider-md%2522%253E%253C%252Fdiv%253E%250Avar%2520sizeMD%2520%253D%2520document.querySelector%28%27.js-slider-size-md%27%29%253B%250AnoUiSlider.create%28sizeMD%252C%2520%257B%250A%2520%2520%2520%2520start%253A%252020%252C%250A%2520%2520%2520%2520connect%253A%2520%27lower%27%252C%250A%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%257D%252C%250A%257D%29%253B%250A"
+							style="width: 800px; height: 636px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="slider-type">
+						<h3>Type</h3>
+						<p class="m-b-24">Single, Range</p>
+						<div class="line">
+							<div class="block">
+								<div class="js-slider slider"></div>
+							</div>
+							<div class="m-b-24"></div>
+							<div class="block">
+								<div class="js-slider-range slider"></div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Single%250A%253Cdiv%2520class%253D%2522js-slider%2520slider%2522%253E%253C%252Fdiv%253E%250Avar%2520styleDefault%2520%253D%2520document.querySelector%28%27.js-slider%27%29%253B%250AnoUiSlider.create%28styleDefault%252C%2520%257B%250A%2520%2520%2520%2520start%253A%252020%252C%250A%2520%2520%2520%2520connect%253A%2520%27lower%27%252C%250A%2520%2520%2520%2520%252F%252F%2520connect%253A%2520%27upper%27%252C%250A%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%257D%252C%250A%257D%29%253B%250A%250A%252F%252F%2520Range%250A%253Cdiv%2520class%253D%2522js-slider-range%2520slider%2522%253E%253C%252Fdiv%253E%250Avar%2520sliderRange%2520%253D%2520Array.from%28document.querySelectorAll%28%27.js-slider-range%27%29%29%253B%250AsliderRange.map%28%28item%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520noUiSlider.create%28item%252C%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520start%253A%2520%255B20%252C%252080%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520step%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520connect%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%257D%29%253B%250A%257D%29%253B%250A"
+							style="width: 800px; height: 690px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="slider-style">
+						<h3>Style</h3>
 
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range Vertical</h3>
-			<div class="js-slider-vertical slider"></div>
+						<p class="m-b-24">Rounded, Circle</p>
+						<div class="line">
+							<div class="block">
+								<div class="js-slider-range slider"></div>
+							</div>
+							<div class="m-b-24"></div>
+							<div class="block">
+								<div class="js-slider-range slider slider-circle"></div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Vertical%2520default%250A%253Cdiv%2520class%253D%2522js-slider%2520slider%2522%253E%253C%252Fdiv%253E%250Avar%2520styleDefaults%2520%253D%2520Array.from%28document.querySelectorAll%28%27.js-slider%27%29%29%253B%250AstyleDefaults.map%28%28item%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520noUiSlider.create%28item%252C%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520start%253A%252020%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520connect%253A%2520%27lower%27%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520connect%253A%2520%27upper%27%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%257D%29%253B%250A%257D%29%253B%250A%250A%252F%252F%2520Vertical%2520MD%250A%253Cdiv%2520class%253D%2522js-slider-range%2520slider%2522%253E%253C%252Fdiv%253E%250Avar%2520sliderRange%2520%253D%2520Array.from%28document.querySelectorAll%28%27.js-slider-range%27%29%29%253B%250AsliderRange.map%28%28item%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520noUiSlider.create%28item%252C%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520start%253A%2520%255B20%252C%252080%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520step%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520connect%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%257D%29%253B%250A%257D%29%253B%250A"
+							style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="slider-vertical">
+						<h3>Vertical</h3>
+						<div class="line">
+							<div class="block">
+								<div class="js-slider-vertical-single slider"></div>
+							</div>
+							<div class="m-b-24"></div>
+							<div class="block">
+								<div class="js-slider-vertical-single slider slider-md"></div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Vertical%2520default%250A%253Cdiv%2520class%253D%2522js-slider-range-tooltips%2520slider%2520slider-help-text%2522%2520data-slider-min%253D%25220%2522%2520data-slider-max%253D%2522100%2522%253E%253C%252Fdiv%253E%250Avar%2520sliderRangeTooltips%2520%253D%2520Array.from%28document.querySelectorAll%28%27.js-slider-range-tooltips%27%29%29%253B%250AsliderRangeTooltips.map%28%28item%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520noUiSlider.create%28item%252C%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520start%253A%2520%255B20%252C%252080%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520step%253A%25201%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520connect%253A%2520true%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520have%25202%2520value%252C%2520must%2520set%25202%2520value%2520tooltips%250A%2520%2520%2520%2520%2520%2520%2520%2520tooltips%253A%2520%255BwNumb%28%257B%2520decimals%253A%25200%2520%257D%29%252C%2520wNumb%28%257B%2520decimals%253A%25200%2520%257D%29%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%252F%2520connect%253A%2520%255Btrue%252C%2520false%255D%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520range%253A%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520min%253A%25200%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520max%253A%2520100%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520%257D%252C%250A%2520%2520%2520%2520%257D%29%253B%250A%257D%29%253B%250A%250A"
+							style="width: 800px; height: 564px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="slider-help-text">
+						<h3>Help Text</h3>
+						<div class="line">
+							<div class="block">
+								<div class="js-slider-vertical slider"></div>
+							</div>
+							<div class="m-b-24"></div>
+							<div class="block">
+								<div
+									class="js-slider-range-tooltips slider slider-help-text"
+									data-slider-min="0"
+									data-slider-max="100"
+								></div>
+							</div>
+							<div class="m-b-24"></div>
+							<div class="block">
+								<div class="js-slider-tooltip slider slider-circle"></div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520This%2520is%2520container%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 276px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Range Vertical MD</h3>
-			<div class="js-slider-vertical slider slider-md"></div>
-		</div>
-		<div class="block p-b-24">
-			<h3 class="m-b-12">Slider Vertical Single</h3>
-			<div class="js-slider-vertical-single slider"></div>
-		</div>
-		<!-- <div class="current-value m-y-24 text-center">.slider</div>
-		<div class="show-code m-y-24 text-center">
-			<a href="#" class="link link-md"> Show Code </a>
-		</div> -->
-		<!-- <div class="m-b-24">
-			<div class="js-slider-single slider"></div>
-		</div>
-		<div class="m-b-24">
-			<div class="js-slider-single1 slider"></div>
-		</div>
-		<div class="m-b-32">
-			<div class="js-slider-abc slider"></div>
-		</div> -->
 		<script>
 			// document.body.contentEditable = true;
 			// style
-			var styleDefault = document.querySelector('.js-slider');
-			noUiSlider.create(styleDefault, {
-				start: 20,
-				connect: 'lower',
-				// connect: 'upper',
-				range: {
-					min: 0,
-					max: 100,
-				},
+			var styleDefaults = Array.from(document.querySelectorAll('.js-slider'));
+			styleDefaults.map((item) => {
+				noUiSlider.create(item, {
+					start: 20,
+					connect: 'lower',
+					// connect: 'upper',
+					range: {
+						min: 0,
+						max: 100,
+					},
+				});
 			});
-			var styleCircle = document.querySelector('.js-slider-circle');
-			noUiSlider.create(styleCircle, {
-				start: 20,
-				connect: 'lower',
-				range: {
-					min: 0,
-					max: 100,
-				},
-			});
+
+			// var styleCircle = document.querySelector('.js-slider-circle');
+			// noUiSlider.create(styleCircle, {
+			// 	start: 20,
+			// 	connect: 'lower',
+			// 	range: {
+			// 		min: 0,
+			// 		max: 100,
+			// 	},
+			// });
 
 			// tooltip
 			var slidertooltipSingle = Array.from(document.querySelectorAll('.js-slider-tooltip'));
@@ -248,15 +266,16 @@
 			});
 
 			// size
-			var sizeDefault = document.querySelector('.js-slider-size-default');
-			noUiSlider.create(sizeDefault, {
-				start: 20,
-				connect: 'lower',
-				range: {
-					min: 0,
-					max: 100,
-				},
-			});
+			// var sizeDefault = document.querySelector('.js-slider-size-default');
+			// noUiSlider.create(sizeDefault, {
+			// 	start: 20,
+			// 	connect: 'lower',
+			// 	range: {
+			// 		min: 0,
+			// 		max: 100,
+			// 	},
+			// });
+			
 			var sizeMD = document.querySelector('.js-slider-size-md');
 			noUiSlider.create(sizeMD, {
 				start: 20,
@@ -320,7 +339,7 @@
 					},
 				});
 			});
-			
+
 			// Vertical Single
 			var verticalSingle = Array.from(document.querySelectorAll('.js-slider-vertical-single'));
 			verticalSingle.map((item) => {
@@ -341,7 +360,7 @@
 					},
 				});
 			});
-			
+
 			// noUiSlider.create(vertical, {
 			// 	start: [20, 80],
 			// 	connect: true,
