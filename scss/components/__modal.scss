@@ -76,11 +76,18 @@
 	}
 
 	// size
-	&-lg,
-	&-md {
+	&-lg {
 		#{$this}-wrapper {
 			max-width: 776px;
 		}
+	}
+	&-md {
+		#{$this}-wrapper {
+			max-width: 576px;
+		}
+	}
+	&-lg,
+	&-md {
 		#{$this}-header {
 			padding: 10px 24px;
 			&#{$this}-no-title {
@@ -148,7 +155,7 @@
 	}
 	&.open .modal-wrapper {
 		transition: opacity $transition-duration-xs $timing-ease-end,
-		visibility $transition-duration-xs $timing-ease-end;
+			visibility $transition-duration-xs $timing-ease-end;
 		transition-delay: 0s;
 	}
 	&.open .modal-wrapper {

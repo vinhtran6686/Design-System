@@ -2380,52 +2380,6 @@ code {
   width: 1.2em;
   height: 1.2em; }
 
-[class^='ic-bg-'],
-[class*=' ic-bg-'] {
-  color: #fff; }
-
-.ic-bg-primary {
-  background-color: #cb1c22; }
-
-.ic-bg-link {
-  background-color: #0664f9; }
-
-.ic-bg-grayscale {
-  background-color: #939ca3; }
-
-.ic-bg-success {
-  background-color: #48bb78; }
-
-.ic-bg-info {
-  background-color: #4299e1; }
-
-.ic-bg-warning {
-  background-color: #efb140; }
-
-.ic-bg-danger {
-  background-color: #f56f65; }
-
-.ic-color-primary {
-  color: #cb1c22; }
-
-.ic-color-link {
-  color: #0664f9; }
-
-.ic-color-grayscale {
-  color: #939ca3; }
-
-.ic-color-success {
-  color: #48bb78; }
-
-.ic-color-info {
-  color: #4299e1; }
-
-.ic-color-warning {
-  color: #efb140; }
-
-.ic-color-danger {
-  color: #f56f65; }
-
 .ic-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   transform: rotate(90deg); }
@@ -2604,6 +2558,52 @@ code {
 
 .ic-square, .ic-square-outline {
   border-radius: 2px; }
+
+[class^='ic-bg-'],
+[class*=' ic-bg-'] {
+  color: #fff; }
+
+.ic-bg-primary {
+  background-color: #cb1c22; }
+
+.ic-bg-link {
+  background-color: #0664f9; }
+
+.ic-bg-grayscale {
+  background-color: #939ca3; }
+
+.ic-bg-success {
+  background-color: #48bb78; }
+
+.ic-bg-info {
+  background-color: #4299e1; }
+
+.ic-bg-warning {
+  background-color: #efb140; }
+
+.ic-bg-danger {
+  background-color: #f56f65; }
+
+.ic-color-primary {
+  color: #cb1c22; }
+
+.ic-color-link {
+  color: #0664f9; }
+
+.ic-color-grayscale {
+  color: #939ca3; }
+
+.ic-color-success {
+  color: #48bb78; }
+
+.ic-color-info {
+  color: #4299e1; }
+
+.ic-color-warning {
+  color: #efb140; }
+
+.ic-color-danger {
+  color: #f56f65; }
 
 .btn {
   display: inline-flex;
@@ -5314,8 +5314,10 @@ input[type='datetime-local'] {
   .modal.open {
     opacity: 1;
     visibility: visible; }
-  .modal-lg .modal-wrapper, .modal-md .modal-wrapper {
+  .modal-lg .modal-wrapper {
     max-width: 776px; }
+  .modal-md .modal-wrapper {
+    max-width: 576px; }
   .modal-lg .modal-header, .modal-md .modal-header {
     padding: 10px 24px; }
     .modal-lg .modal-header.modal-no-title, .modal-md .modal-header.modal-no-title {
