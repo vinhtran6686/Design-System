@@ -104,7 +104,7 @@ $stepper-vertical-spacing: 32px;
 			transform: scale(0.3);
 			opacity: 0;
 			visibility: hidden;
-			transition:all $transition-duration-xs $timing-ease-end;
+			transition: all $transition-duration-xs $timing-ease-end;
 		}
 		&:hover {
 			border-color: $primary;
@@ -114,6 +114,9 @@ $stepper-vertical-spacing: 32px;
 				opacity: 1;
 				visibility: visible;
 			}
+		}
+		.text {
+			color: $white;
 		}
 	}
 	// style

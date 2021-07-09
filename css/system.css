@@ -5177,6 +5177,8 @@ input[type='datetime-local'] {
         transform: scale(1);
         opacity: 1;
         visibility: visible; }
+    .stepper-circle .text {
+      color: #fff; }
   .stepper-number .stepper-item.active .stepper-circle {
     transition-delay: 0s; }
     .stepper-number .stepper-item.active .stepper-circle:hover {

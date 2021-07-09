@@ -12,234 +12,321 @@
 			.stepper {
 				margin-bottom: 16px;
 			}
-			.example{
+			.example {
 				max-width: 300px;
 				margin-right: 30px;
 				display: inline-block;
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Stepper</h1>
-		<div class="m-t-40"></div>
-		<ul class="stepper">
-			<li class="stepper-item complete">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<i class="ic-check"></i>
+	<body class="demo scrollbar-big">
+		<div class="stepper-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>stepper</h1>
 					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item complete">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<i class="ic-check"></i>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item active">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<i class="ic-check"></i>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<i class="ic-check"></i>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<i class="ic-check"></i>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<ul class="stepper stepper-number">
-			<li class="stepper-item complete">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<span class="text f-s-ui-14">1</span>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item complete">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<span class="text f-s-ui-14">2</span>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item active">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<span class="text f-s-ui-14">3</span>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<span class="text f-s-ui-14">4</span>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-			<li class="stepper-item">
-				<div class="stepper-tab">
-					<div class="stepper-circle">
-						<span class="text f-s-ui-14">5</span>
-					</div>
-					<div class="label label-sm m-t-4">
-						<span class="label-text">Label</span>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<h3 class="m-t-32 m-b-24">Vertical</h3>
-		<div class="example">
-			<ul class="stepper stepper-number stepper-vertical">
-				<li class="stepper-item complete">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<span class="text f-s-ui-14">1</span>
+					<div id="stepper-style">
+						<h3>Style</h3>
+						<p class="m-b-24">Default, Number</p>
+						<div class="line">
+							<ul class="stepper">
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item active">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
+						<div class="line">
+							<ul class="stepper stepper-number">
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">1</span>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">2</span>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item active">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">3</span>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">4</span>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">5</span>
+										</div>
+										<div class="label label-sm m-t-4">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stepper%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+							style="width: 800px; height: 1122px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stepper%2520stepper-number%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E5%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-t-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+							style="width: 800px; height: 1122px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
-				</li>
-				<li class="stepper-item complete">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<span class="text f-s-ui-14">2</span>
+					<div id="stepper-vertical">
+						<h3>Vertical</h3>
+						<div class="line">
+							<ul class="stepper stepper-number stepper-vertical m-r-24">
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">1</span>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">2</span>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item active">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">3</span>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">4</span>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">5</span>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<ul class="stepper stepper-vertical">
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item active">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<i class="ic-check"></i>
+										</div>
+										<div class="label label-sm m-l-8">
+											<span class="label-text">Label</span>
+										</div>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stepper%2520stepper-number%2520stepper-vertical%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E5%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+							style="width: 800px; height: 1122px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stepper%2520stepper-vertical%2522%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520m-l-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+							style="width: 800px; height: 1122px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
-				</li>
-				<li class="stepper-item active">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<span class="text f-s-ui-14">3</span>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<span class="text f-s-ui-14">4</span>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<span class="text f-s-ui-14">5</span>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="example">
-			<ul class="stepper stepper-vertical">
-				<li class="stepper-item complete">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<i class="ic-check"></i>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item complete">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<i class="ic-check"></i>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item active">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<i class="ic-check"></i>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<i class="ic-check"></i>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-				<li class="stepper-item">
-					<div class="stepper-tab">
-						<div class="stepper-circle">
-							<i class="ic-check"></i>
-						</div>
-						<div class="label label-sm m-l-8">
-							<span class="label-text">Label</span>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-		
-		
 
+					<div id="stepper-Text">
+						<h3>Text</h3>
+						<p class="m-b-24">No Text</p>
+						<div class="line">
+							<ul class="stepper stepper-number">
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">1</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item complete">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">2</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item active">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">3</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">4</span>
+										</div>
+									</div>
+								</li>
+								<li class="stepper-item">
+									<div class="stepper-tab">
+										<div class="stepper-circle">
+											<span class="text f-s-ui-14">5</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522stepper%2520stepper-number%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520complete%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522stepper-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522stepper-circle%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text%2520f-s-ui-14%2522%253E5%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%253C%252Ful%253E"
+							style="width: 800px; height: 852px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>
