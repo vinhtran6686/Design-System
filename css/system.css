@@ -1108,6 +1108,14 @@ code {
     animation-name: animation-slideInRight; }
   .animation-slideInTop {
     animation-name: animation-slideInTop; }
+  .animation-slideInBottom100 {
+    animation-name: animation-slideInBottom100; }
+  .animation-slideInLeft100 {
+    animation-name: animation-slideInLeft100; }
+  .animation-slideInRight100 {
+    animation-name: animation-slideInRight100; }
+  .animation-slideInTop100 {
+    animation-name: animation-slideInTop100; }
   .animation-slideOutBottom {
     animation-name: animation-slideOutBottom; }
   .animation-slideOutLeft {
@@ -1116,6 +1124,14 @@ code {
     animation-name: animation-slideOutRight; }
   .animation-slideOutTop {
     animation-name: animation-slideOutTop; }
+  .animation-slideOutBottom100 {
+    animation-name: animation-slideOutBottom100; }
+  .animation-slideOutLeft100 {
+    animation-name: animation-slideOutLeft100; }
+  .animation-slideOutRight100 {
+    animation-name: animation-slideOutRight100; }
+  .animation-slideOutTop100 {
+    animation-name: animation-slideOutTop100; }
   .animation-fadeIn {
     animation-name: animation-fadeIn; }
   .animation-fadeInBottom {
@@ -1215,6 +1231,30 @@ code {
   to {
     transform: translate3d(0, 0, 0); } }
 
+@keyframes animation-slideInBottom100 {
+  from {
+    transform: translate3d(0, 100%, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes animation-slideInLeft100 {
+  from {
+    transform: translate3d(-100%, 0, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes animation-slideInRight100 {
+  from {
+    transform: translate3d(100%, 0, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
+@keyframes animation-slideInTop100 {
+  from {
+    transform: translate3d(0, -100%, 0); }
+  to {
+    transform: translate3d(0, 0, 0); } }
+
 @keyframes animation-slideOutTop {
   from {
     transform: translate3d(0, 0, 0); }
@@ -1238,6 +1278,30 @@ code {
     transform: translate3d(0, 0, 0); }
   to {
     transform: translate3d(0, 20%, 0); } }
+
+@keyframes animation-slideOutTop100 {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(0, -100%, 0); } }
+
+@keyframes animation-slideOutLeft100 {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes animation-slideOutRight100 {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(100%, 0, 0); } }
+
+@keyframes animation-slideOutBottom100 {
+  from {
+    transform: translate3d(0, 0, 0); }
+  to {
+    transform: translate3d(0, 100%, 0); } }
 
 @keyframes animation-fadeIn {
   from {
@@ -4533,10 +4597,17 @@ input[type='datetime-local'] {
 .checkbox,
 .radio {
   display: flex;
-  align-items: end; }
+  align-items: center; }
   .checkbox label,
   .radio label {
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
+    .checkbox label .label-help-text,
+    .radio label .label-help-text {
+      position: absolute;
+      width: max-content;
+      left: 0;
+      top: 100%; }
   .checkbox input,
   .radio input {
     position: relative;
@@ -4546,6 +4617,9 @@ input[type='datetime-local'] {
     appearance: none;
     cursor: pointer;
     outline: none; }
+    .checkbox input:disabled,
+    .radio input:disabled {
+      cursor: not-allowed; }
     .checkbox input:disabled ~ label,
     .radio input:disabled ~ label {
       color: #939ca3;
@@ -4553,6 +4627,11 @@ input[type='datetime-local'] {
     .checkbox input:checked ~ label .label-text,
     .radio input:checked ~ label .label-text {
       font-weight: 500; }
+    .checkbox input:after, .checkbox input:before,
+    .radio input:after,
+    .radio input:before {
+      width: 16px;
+      height: 16px; }
   .checkbox-single input[type='radio'],
   .checkbox-single input[type='checkbox'],
   .radio-single input[type='radio'],
@@ -4565,7 +4644,7 @@ input[type='datetime-local'] {
   position: absolute;
   top: 0;
   right: 0;
-  color: #fff;
+  color: transparent;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4575,11 +4654,9 @@ input[type='datetime-local'] {
   display: block;
   border-color: #cbd1d6;
   border-style: solid;
-  border-radius: 4px;
+  border-width: 1px;
+  border-radius: 2px;
   transition: all 0.3s ease-in-out; }
-
-.checkbox input[type='checkbox']:disabled {
-  cursor: not-allowed; }
 
 .checkbox input[type='checkbox']:disabled::after {
   background: #edeeef; }
@@ -4592,12 +4669,23 @@ input[type='datetime-local'] {
   border-color: #cb1c22;
   outline: none; }
 
+.checkbox input[type='checkbox']:checked:before {
+  color: #fff; }
+
 .checkbox input[type='checkbox']:disabled:checked:before {
   color: #fff; }
 
 .checkbox input[type='checkbox']:disabled:checked:after {
   background: #cbd1d6;
   border-color: #cbd1d6; }
+
+.checkbox-indeteminate input[type='checkbox']:before {
+  content: ''; }
+
+.checkbox-indeteminate input[type='checkbox']:after {
+  background-color: #cb1c22;
+  border-color: #cb1c22;
+  outline: none; }
 
 .radio input[type='radio']:after, .radio input[type='radio']:before {
   content: '';
@@ -4621,11 +4709,9 @@ input[type='datetime-local'] {
   position: relative;
   top: 0;
   border-color: #cbd1d6;
+  border-width: 1px;
   border-style: solid;
   background: #fff; }
-
-.radio input[type='radio']:disabled {
-  cursor: not-allowed; }
 
 .radio input[type='radio']:disabled::after {
   background: #edeeef; }
@@ -4645,18 +4731,12 @@ input[type='datetime-local'] {
 .radio input[type='radio']:checked:disabled:before {
   background: #cbd1d6; }
 
+.form-check-error.checkbox input:after, .form-check-error.radio input:after {
+  border-color: #cb1c22; }
+
 .radio-xl input,
 .checkbox-xl input {
-  margin-right: 16px;
-  margin-top: 2.66667px; }
-  .radio-xl input:after, .radio-xl input:before,
-  .checkbox-xl input:after,
-  .checkbox-xl input:before {
-    width: 32px;
-    height: 32px; }
-  .radio-xl input:after,
-  .checkbox-xl input:after {
-    border-width: 2px; }
+  margin-right: 16px; }
 
 .checkbox-xl input:before {
   font-size: calc(32px * 0.625); }
@@ -4673,16 +4753,7 @@ input[type='datetime-local'] {
 
 .radio-lg input,
 .checkbox-lg input {
-  margin-right: 12px;
-  margin-top: 2px; }
-  .radio-lg input:after, .radio-lg input:before,
-  .checkbox-lg input:after,
-  .checkbox-lg input:before {
-    width: 24px;
-    height: 24px; }
-  .radio-lg input:after,
-  .checkbox-lg input:after {
-    border-width: 1px; }
+  margin-right: 12px; }
 
 .checkbox-lg input:before {
   font-size: calc(24px * 0.625); }
@@ -4699,16 +4770,7 @@ input[type='datetime-local'] {
 
 .radio-md input,
 .checkbox-md input {
-  margin-right: 8px;
-  margin-top: 1.33333px; }
-  .radio-md input:after, .radio-md input:before,
-  .checkbox-md input:after,
-  .checkbox-md input:before {
-    width: 20px;
-    height: 20px; }
-  .radio-md input:after,
-  .checkbox-md input:after {
-    border-width: 1px; }
+  margin-right: 8px; }
 
 .checkbox-md input:before {
   font-size: calc(20px * 0.625); }
@@ -4725,16 +4787,7 @@ input[type='datetime-local'] {
 
 .radio-sm input,
 .checkbox-sm input {
-  margin-right: 8px;
-  margin-top: 1.33333px; }
-  .radio-sm input:after, .radio-sm input:before,
-  .checkbox-sm input:after,
-  .checkbox-sm input:before {
-    width: 16px;
-    height: 16px; }
-  .radio-sm input:after,
-  .checkbox-sm input:after {
-    border-width: 1px; }
+  margin-right: 8px; }
 
 .checkbox-sm input:before {
   font-size: calc(16px * 0.625); }
@@ -4872,6 +4925,7 @@ input[type='datetime-local'] {
     z-index: 1000;
     top: 0;
     left: 0;
+    width: 100%;
     height: 100%;
     background: #fff;
     padding: 8px; }

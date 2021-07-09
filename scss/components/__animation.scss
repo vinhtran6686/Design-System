@@ -62,6 +62,19 @@
         animation-name: animation-slideInTop;
     }
 
+    // slide in 100%
+    &-slideInBottom100 {
+        animation-name: animation-slideInBottom100;
+    }
+    &-slideInLeft100 {
+        animation-name: animation-slideInLeft100;
+    }
+    &-slideInRight100 {
+        animation-name: animation-slideInRight100;
+    }
+    &-slideInTop100 {
+        animation-name: animation-slideInTop100;
+    }
     //slide out
     &-slideOutBottom {
         animation-name: animation-slideOutBottom;
@@ -76,6 +89,19 @@
         animation-name: animation-slideOutTop;
     }
 
+    //slide out 100%
+    &-slideOutBottom100 {
+        animation-name: animation-slideOutBottom100;
+    }
+    &-slideOutLeft100 {
+        animation-name: animation-slideOutLeft100;
+    }
+    &-slideOutRight100 {
+        animation-name: animation-slideOutRight100;
+    }
+    &-slideOutTop100 {
+        animation-name: animation-slideOutTop100;
+    }
     // fade in
     &-fadeIn {
         animation-name: animation-fadeIn;
@@ -243,6 +269,42 @@
     }
 }
 
+//slide-in 100%
+@keyframes animation-slideInBottom100 {
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animation-slideInLeft100 {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animation-slideInRight100 {
+    from {
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animation-slideInTop100 {
+    from {
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
 // slide-out
 @keyframes animation-slideOutTop {
     from {
@@ -279,7 +341,42 @@
         transform: translate3d(0, 20%, 0);
     }
 }
+// slide-out 100
+@keyframes animation-slideOutTop100 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -100%, 0);
+    }
+}
 
+@keyframes animation-slideOutLeft100 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes animation-slideOutRight100 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes animation-slideOutBottom100 {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 100%, 0);
+    }
+}
 //fadeIn
 @keyframes animation-fadeIn {
     from {

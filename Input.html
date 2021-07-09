@@ -13,25 +13,15 @@
 				display: inline-flex;
 				width: 400px;
 			}
-			.example {
+			.line {
 				display: flex;
 				flex-direction: column;
-			}
-			.example .form-input {
-				margin-bottom: 10px;
-			}
-			.example .form-date {
-				margin-bottom: 10px;
-			}
-
-			.example .form-date .form-input,
-			.example .form-search .form-input {
-				margin-bottom: 0;
 			}
 			.example-mobile {
 				position: fixed;
 				top: 3%;
-				right: 3%;z-index: 1;
+				right: 3%;
+				z-index: 1;
 			}
 			@media only screen and (min-width: 601px) {
 				.example .form-search {
@@ -53,245 +43,250 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar" style="padding-right: 5px">
-		<h1 class="m-b-24">Input</h1>
-		<div class="example-mobile">
-			<h3 class="m-b-12">Input Mobile</h3>
-			<p>use media query to see</p>
-			<div class="form-group form-mobile js-form-mobile">
-				<div class="form-search form-search-md">
-					<span class="form-search-icon m-r-4">
-						<i class="ic-search icon-md"></i>
-					</span>
-					<input type="text" class="form-search-input m-r-4 js-form-input" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-clear js-form-clear">
-						<i class="ic-cancel icon-md"></i>
-					</span>
+	<body class="demo scrollbar" style="padding-right: 5px">
+		<div class="input-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Input</h1>
+					</div>
+					<div id="spacing-properties">
+						<h3>Input Type</h3>
+						<div class="line">
+							<h6 class="m-b-24">Input Default</h6>
+							<div class="form-group">
+								<input type="text" class="form-input" placeholder="Text value" />
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2522%2520placeholder%253D%2522Text%2520value%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h3 class="m-b-24">Input Size <span class="f-s-p-16 text-grayscale">(lg, md, sm)</span></h3>
+						<div class="line">
+							<div class="form-group m-b-8">
+								<input type="text" class="form-input form-input-lg" placeholder="Text value" />
+							</div>
+							<div class="form-group m-b-8">
+								<input type="text" class="form-input form-input-md" placeholder="Text value" />
+							</div>
+							<div class="form-group m-b-8">
+								<input type="text" class="form-input form-input-sm" placeholder="Text value" />
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2520form-input-lg%2522%2520placeholder%253D%2522Text%2520value%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2520form-input-md%2522%2520placeholder%253D%2522Text%2520value%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2520form-input-sm%2522%2520placeholder%253D%2522Text%2520value%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 402px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Input Status</h3>
+						<div class="line">
+							<h6 class="m-b-24">Input Error</h6>
+							<div class="form-group">
+								<input type="text" class="form-input form-input-lg" placeholder="Text value" disabled />
+							</div>
+							<div class="m-t-24"></div>
+							<h6 class="m-b-24">Input Disabled</h6>
+							<div class="form-group">
+								<input
+									type="text"
+									class="form-input form-input-lg is-invalid"
+									placeholder="Text value"
+								/>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252Fdisabled%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2520form-input-lg%2522%2520placeholder%253D%2522Text%2520value%2522%2520disabled%2520%252F%253E%250A%253C%252Fdiv%253E%250A%250A%252F%252Ferror%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520form-input-lg%2520is-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Text%2520value%2522%250A%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 438px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Other type</h3>
+						<div class="line">
+							<h6 class="m-b-24">Input Password</h6>
+							<div class="form-group m-b-8">
+								<input
+									type="password"
+									class="form-input form-input-lg"
+									placeholder="Password"
+									value="hidden"
+								/>
+							</div>
+							<div class="form-group m-b-8">
+								<input
+									type="password"
+									class="form-input form-input-md"
+									value="value"
+									placeholder="Password"
+									disabled
+								/>
+							</div>
+							<div class="form-group m-b-8">
+								<input
+									type="password"
+									class="form-input form-input-sm is-invalid"
+									placeholder="Password"
+								/>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520form-input-md%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520value%253D%2522value%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522password%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520form-input-sm%2520is-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Password%2522%250A%2520%2520%2520%2520%252F%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 474px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<div class="line">
+							<h6 class="m-b-24">Select</h6>
+							<div class="form-group m-b-8">
+								<select class="form-input form-input-lg">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group m-b-8">
+								<select class="form-input form-input-md">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+							<div class="form-group m-b-8">
+								<select class="form-input form-input-sm">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2520m-b-8%2522%253E%250A%2520%2520%2520%2520%253Cselect%2520class%253D%2522form-input%2520form-input-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253E1%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253E2%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253E3%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253E4%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253E5%253C%252Foption%253E%250A%2520%2520%2520%2520%253C%252Fselect%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 348px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<div class="line">
+							<h6 class="m-b-24">Textarea</h6>
+							<div class="form-group m-b-8">
+								<textarea class="form-input form-input-lg" rows="3" placeholder="Textarea"></textarea>
+							</div>
+							<div class="form-group m-b-8">
+								<textarea
+									class="form-input form-input-lg"
+									rows="3"
+									placeholder="Textarea"
+									disabled
+								></textarea>
+							</div>
+							<div class="form-group">
+								<textarea
+									class="form-input form-input-lg is-invalid"
+									rows="3"
+									placeholder="Textarea"
+								></textarea>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%2520class%253D%2522form-input%2520form-input-lg%2522%2520rows%253D%25223%2522%2520placeholder%253D%2522Textarea%2522%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520form-input-lg%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%25223%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Textarea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520form-input-lg%2520is-invalid%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520rows%253D%25223%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Textarea%2522%250A%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 528px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<div class="line">
+							<h6 class="m-b-24">Date</h6>
+							<div class="form-group">
+								<div class="form-date">
+									<input type="datetime-local" class="form-input form-input-lg" />
+									<i class="form-date-icon ic-lg ic-calendar"></i>
+								</div>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-date%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522datetime-local%2522%2520class%253D%2522form-input%2520form-input-lg%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522form-date-icon%2520ic-lg%2520ic-calendar%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 294px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<div class="line">
+							<h6 class="m-b-24">Search</h6>
+							<div class="form-group">
+								<div class="form-search form-search-lg">
+									<span class="form-search-icon m-r-8">
+										<i class="ic-search ic-lg"></i>
+									</span>
+									<input type="text" class="form-search-input m-r-8" placeholder="Enter keyword..." />
+									<span class="form-search-icon form-search-clear">
+										<i class="ic-cancel ic-lg"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search%2520form-search-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-search%2520ic-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-search-input%2520m-r-8%2522%2520placeholder%253D%2522Enter%2520keyword...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520form-search-clear%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 402px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="input-mobile">
+						<div class="line">
+							<h6 class="m-b-24">Input mobile</h6>
+							<div class="form-group form-mobile js-form-mobile">
+								<div class="form-search form-search-md">
+									<span class="form-search-icon m-r-4">
+										<i class="ic-search ic-md"></i>
+									</span>
+									<input
+										type="text"
+										class="form-search-input m-r-4 js-form-input"
+										placeholder="Enter keyword..."
+									/>
+									<span class="form-search-icon form-search-clear js-form-clear">
+										<i class="ic-cancel ic-md"></i>
+									</span>
+								</div>
+								<span class="text-link form-search-close js-form-close">Huỷ bỏ</span>
+								<div class="form-search-result">
+									<a href="#" class="active">Hà Nội</a>
+									<a href="#">Hồ Chí Minh</a>
+									<a href="#">Đồng Tháp</a>
+									<a href="#">Đồng nai</a>
+									<a href="#">Thái Nguyên</a>
+									<a href="#">Gia Lai</a>
+									<a href="#">Nha Trang</a>
+									<a href="#">Quãng Ngãi</a>
+									<a href="#">An Giang</a>
+									<a href="#">Cà Mau</a>
+									<a href="#">Đà Nẵng</a>
+								</div>
+							</div>
+						</div>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2520form-mobile%2520js-form-mobile%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search%2520form-search-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-search%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-search-input%2520m-r-4%2520js-form-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520keyword...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520form-search-clear%2520js-form-clear%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-link%2520form-search-close%2520js-form-close%2522%253EHu%25E1%25BB%25B7%2520b%25E1%25BB%258F%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search-result%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253EH%25C3%25A0%2520N%25E1%25BB%2599i%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EH%25E1%25BB%2593%2520Ch%25C3%25AD%2520Minh%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%25C4%2590%25E1%25BB%2593ng%2520Th%25C3%25A1p%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%25C4%2590%25E1%25BB%2593ng%2520nai%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ETh%25C3%25A1i%2520Nguy%25C3%25AAn%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EGia%2520Lai%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253ENha%2520Trang%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EQu%25C3%25A3ng%2520Ng%25C3%25A3i%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EAn%2520Giang%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253EC%25C3%25A0%2520Mau%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%253E%25C4%2590%25C3%25A0%2520N%25E1%25BA%25B5ng%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 708px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
 				</div>
-				<span class="text-link form-search-close js-form-close">Huỷ bỏ</span>
-				<div class="form-search-result">
-					<a href="#" class="active">Hà Nội</a>
-					<a href="#">Hồ Chí Minh</a>
-					<a href="#">Đồng Tháp</a>
-					<a href="#">Đồng nai</a>
-					<a href="#">Thái Nguyên</a>
-					<a href="#">Gia Lai</a>
-					<a href="#">Nha Trang</a>
-					<a href="#">Quãng Ngãi</a>
-					<a href="#">An Giang</a>
-					<a href="#">Cà Mau</a>
-					<a href="#">Đà Nẵng</a>
-				</div>
 			</div>
 		</div>
-		<div class="m-t-40"></div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Default</h3>
-		<div class="form-group">
-			<input type="text" class="form-input" placeholder="Text value" />
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Size (lg,md,sm)</h3>
-		<div class="example">
-			<div class="form-group">
-				<input type="text" class="form-input form-input-lg" placeholder="Text value" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-md" placeholder="Text value" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-sm" placeholder="Text value" />
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Disabled</h3>
-		<div class="example">
-			<div class="form-group">
-				<input type="text" class="form-input form-input-lg" placeholder="Text value" disabled />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-md" placeholder="Text value" disabled />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-sm" placeholder="Text value" disabled />
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Invalid</h3>
-		<div class="example">
-			<div class="form-group">
-				<input type="text" class="form-input form-input-lg is-invalid" placeholder="Text value" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-md is-invalid" placeholder="Text value" />
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-input form-input-sm is-invalid" placeholder="Text value" />
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Password</h3>
-		<div class="example">
-			<div class="form-group">
-				<input type="password" class="form-input form-input-lg" placeholder="Password" />
-			</div>
-			<div class="form-group">
-				<input type="password" class="form-input form-input-md" placeholder="Password" />
-			</div>
-			<div class="form-group">
-				<input type="password" class="form-input form-input-sm" placeholder="Password" />
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Password Disabled</h3>
-		<div class="example">
-			<div class="form-group">
-				<input type="password" class="form-input form-input-lg" placeholder="Password" disabled />
-			</div>
-			<div class="form-group">
-				<input
-					type="password"
-					class="form-input form-input-md"
-					value="ádasdas"
-					placeholder="Password"
-					disabled
-				/>
-			</div>
-			<div class="form-group">
-				<input type="password" class="form-input form-input-sm is-invalid" placeholder="Password" />
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Textarea</h3>
-		<div class="example">
-			<div class="form-group">
-				<textarea class="form-input form-input-lg" rows="3" placeholder="Textarea"></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-md" rows="3" placeholder="Textarea"></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-sm" rows="3" placeholder="Textarea"></textarea>
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Textarea Disabled</h3>
-		<div class="example">
-			<div class="form-group">
-				<textarea class="form-input form-input-lg" rows="3" placeholder="Textarea" disabled></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-md" rows="3" placeholder="Textarea" disabled></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-sm" rows="3" placeholder="Textarea" disabled></textarea>
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Textarea Invalid</h3>
-		<div class="example">
-			<div class="form-group">
-				<textarea class="form-input form-input-lg is-invalid" rows="3" placeholder="Textarea"></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-md is-invalid" rows="3" placeholder="Textarea"></textarea>
-			</div>
-			<div class="form-group">
-				<textarea class="form-input form-input-sm is-invalid" rows="3" placeholder="Textarea"></textarea>
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Select</h3>
-		<div class="example">
-			<div class="form-group">
-				<select class="form-input form-input-lg">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<select class="form-input form-input-md">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<select class="form-input form-input-sm">
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Date</h3>
-		<div class="example">
-			<div class="form-group">
-				<div class="form-date">
-					<input type="datetime-local" class="form-input form-input-lg" />
-					<i class="form-date-icon icon-lg ic-calendar"></i>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-date">
-					<input type="datetime-local" class="form-input form-input-md" disabled />
-					<i class="form-date-icon icon-md ic-calendar"></i>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-date">
-					<input type="datetime-local" class="form-input form-input-sm is-invalid" />
-					<i class="form-date-icon icon-sm ic-calendar"></i>
-				</div>
-			</div>
-		</div>
-		<div class="m-b-32"></div>
-		<h3 class="m-b-24">Input Search</h3>
-		<div class="example">
-			<div class="form-group">
-				<div class="form-search form-search-lg">
-					<span class="form-search-icon m-r-8">
-						<i class="ic-search icon-lg"></i>
-					</span>
-					<input type="text" class="form-search-input m-r-8" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-clear">
-						<i class="ic-cancel icon-lg"></i>
-					</span>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-search form-search-md">
-					<span class="form-search-icon m-r-4">
-						<i class="ic-search icon-md"></i>
-					</span>
-					<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-clear">
-						<i class="ic-cancel icon-md"></i>
-					</span>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-search form-search-sm disabled">
-					<span class="form-search-icon m-r-4">
-						<i class="ic-search icon-sm"></i>
-					</span>
-					<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-					<span class="form-search-icon form-search-clear">
-						<i class="ic-cancel icon-sm"></i>
-					</span>
-				</div>
-			</div>
-		</div>
-		<div class="m-b-24"></div>
-
 		<script>
 			const formMobiles = document.querySelectorAll('.js-form-mobile');
 			const formInputs = document.querySelectorAll('.js-form-input');

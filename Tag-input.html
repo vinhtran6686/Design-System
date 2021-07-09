@@ -15,99 +15,118 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Tag input</h1>
-		<div class="m-t-40"></div>
-		<h3 class="m-b-16 m-t-16">Disabled</h3>
-		<p>Size: (lg, md, sm)</p>
-		<!-- size lg (icon badge xs 14px and badge-xs) -->
-		<div class="form-group">
-			<div class="form-search form-search-lg tag-input">
-				<span class="form-search-icon m-r-8">
-					<i class="ic-search icon-lg"></i>
-				</span>
-				<!-- Add more tags  -->
-				<div class="tags">
-					<div class="badge badge-grayscale badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xs">
-							<i class="ic-cancel icon-xs"></i>
-						</span>
+	<body class="demo scrollbar" style="padding-right: 5px">
+		<div class="input-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Tag input</h1>
 					</div>
-					<div class="badge badge-grayscale badge-xs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xs">
-							<i class="ic-cancel icon-xs"></i>
-						</span>
+					<div id="tag-input-properties">
+						<h3>Tag Input size</h3>
+						<div class="line">
+							<h6 class="m-b-24">Input Default<span class="f-s-p-16 text-grayscale">(lg, md)</span></h6>
+							<div class="form-group">
+								<div class="form-search form-search-lg tag-input">
+									<span class="form-search-icon m-r-8">
+										<i class="ic-search icon-lg"></i>
+									</span>
+									<!-- Add more tags  -->
+									<div class="tags">
+										<div class="badge badge-grayscale badge-xs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xs">
+												<i class="ic-cancel icon-xs"></i>
+											</span>
+										</div>
+										<div class="badge badge-grayscale badge-xs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xs">
+												<i class="ic-cancel icon-xs"></i>
+											</span>
+										</div>
+									</div>
+									<input type="text" class="form-search-input m-r-8" placeholder="Enter keyword..." />
+									<span class="form-search-icon form-search-close">
+										<i class="ic-cancel icon-lg"></i>
+									</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-search form-search-md tag-input">
+									<span class="form-search-icon m-r-4">
+										<i class="ic-search icon-md"></i>
+									</span>
+									<!-- Add more tags  -->
+									<div class="tags">
+										<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
+												<i class="ic-cancel icon-xxs"></i>
+											</span>
+										</div>
+										<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
+												<i class="ic-cancel icon-xxs"></i>
+											</span>
+										</div>
+									</div>
+									<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
+									<span class="form-search-icon form-search-close">
+										<i class="ic-cancel icon-md"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search%2520form-search-lg%2520tag-input%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-search%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Add%2520more%2520tags%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tags%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-grayscale%2520badge-xs%2520badge-close%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-grayscale%2520btn-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-xs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-grayscale%2520badge-xs%2520badge-close%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-grayscale%2520btn-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-xs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-search-input%2520m-r-8%2522%2520placeholder%253D%2522Enter%2520keyword...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520form-search-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-lg%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 708px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Tag Input Disabled</h3>
+						<div class="line">							
+							<div class="form-group">
+								<div class="form-search form-search-sm tag-input disabled">
+									<span class="form-search-icon m-r-4">
+										<i class="ic-search icon-sm"></i>
+									</span>
+									<!-- Add more tags  -->
+									<div class="tags">
+										<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
+												<i class="ic-cancel icon-xxs"></i>
+											</span>
+										</div>
+										<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
+											<span>Badge</span>
+											<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
+												<i class="ic-cancel icon-xxs"></i>
+											</span>
+										</div>
+									</div>
+									<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
+									<span class="form-search-icon form-search-close">
+										<i class="ic-cancel icon-sm"></i>
+									</span>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search%2520form-search-sm%2520tag-input%2520disabled%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-search%2520icon-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Add%2520more%2520tags%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tags%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-grayscale%2520badge-xxs%2520badge-close%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-grayscale%2520btn-xxs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-xxs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2520badge-grayscale%2520badge-xxs%2520badge-close%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-grayscale%2520btn-xxs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-xxs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-search-input%2520m-r-4%2522%2520placeholder%253D%2522Enter%2520keyword...%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520form-search-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520icon-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 708px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
 				</div>
-				<input type="text" class="form-search-input m-r-8" placeholder="Enter keyword..." />
-				<span class="form-search-icon form-search-close">
-					<i class="ic-cancel icon-lg"></i>
-				</span>
 			</div>
 		</div>
-		<!-- size md (icon badge xxs 12px and badge-xxs) -->
-		<div class="form-group">
-			<div class="form-search form-search-md tag-input">
-				<span class="form-search-icon m-r-4">
-					<i class="ic-search icon-md"></i>
-				</span>
-				<!-- Add more tags  -->
-				<div class="tags">
-					<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-							<i class="ic-cancel icon-xxs"></i>
-						</span>
-					</div>
-					<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-							<i class="ic-cancel icon-xxs"></i>
-						</span>
-					</div>
-				</div>
-				<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-				<span class="form-search-icon form-search-close">
-					<i class="ic-cancel icon-md"></i>
-				</span>
-			</div>
-		</div>
-
-		<h3 class="m-b-16 m-t-16">Disabled</h3>
-		<!-- size sm (icon badge xxs 12px and badge-xxs) -->
-		<div class="form-group">
-			<div class="form-search form-search-sm tag-input disabled">
-				<span class="form-search-icon m-r-4">
-					<i class="ic-search icon-sm"></i>
-				</span>
-				<!-- Add more tags  -->
-				<div class="tags">
-					<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-							<i class="ic-cancel icon-xxs"></i>
-						</span>
-					</div>
-					<div class="badge badge-grayscale badge-xxs badge-close m-r-8">
-						<span>Badge</span>
-						<span class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-							<i class="ic-cancel icon-xxs"></i>
-						</span>
-					</div>
-				</div>
-				<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-				<span class="form-search-icon form-search-close">
-					<i class="ic-cancel icon-sm"></i>
-				</span>
-			</div>
-		</div>
-		
-		
-
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>

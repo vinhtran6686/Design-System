@@ -182,10 +182,17 @@ input[type='datetime-local'] {
 .checkbox,
 .radio {
 	display: flex;
-	align-items: end;
+	align-items: center;
 	label {
 		cursor: pointer;
+		position: relative;
 		@extend .f-s-p-14;
+		.label-help-text {
+			position: absolute;
+			width: max-content;
+			left: 0;
+			top: 100%;
+		}
 	}
 	input {
 		position: relative;
@@ -195,6 +202,9 @@ input[type='datetime-local'] {
 		appearance: none;
 		cursor: pointer;
 		outline: none;
+		&:disabled {
+			cursor: not-allowed;
+		}
 		&:disabled ~ label {
 			color: $grayscale-500;
 			pointer-events: none;
@@ -203,6 +213,11 @@ input[type='datetime-local'] {
 			.label-text {
 				font-weight: 500;
 			}
+		}
+		&:after,
+		&:before {
+			width: 16px;
+			height: 16px;
 		}
 	}
 	&-icon {
@@ -224,7 +239,7 @@ input[type='datetime-local'] {
 			position: absolute;
 			top: 0;
 			right: 0;
-			color: $white;
+			color: transparent;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -234,11 +249,9 @@ input[type='datetime-local'] {
 			display: block;
 			border-color: $grayscale-400;
 			border-style: solid;
-			border-radius: $border-radius;
+			border-width: $border-width;
+			border-radius: $border-radius / 2;
 			transition: $transition;
-		}
-		&:disabled {
-			cursor: not-allowed;
 		}
 		&:disabled::after {
 			background: $grayscale-200;
@@ -251,6 +264,9 @@ input[type='datetime-local'] {
 			border-color: $primary-500;
 			outline: none;
 		}
+		&:checked:before {
+			color: $white;
+		}
 		&:disabled:checked {
 			&:before {
 				color: $white;
@@ -258,6 +274,18 @@ input[type='datetime-local'] {
 			&:after {
 				background: $grayscale-400;
 				border-color: $grayscale-400;
+			}
+		}
+	}
+	&-indeteminate {
+		input[type='checkbox'] {
+			&:before {
+				content: '';
+			}
+			&:after {
+				background-color: $primary;
+				border-color: $primary;
+				outline: none;
 			}
 		}
 	}
@@ -288,11 +316,9 @@ input[type='datetime-local'] {
 			position: relative;
 			top: 0;
 			border-color: $grayscale-400;
+			border-width: $border-width;
 			border-style: solid;
 			background: $white;
-		}
-		&:disabled {
-			cursor: not-allowed;
 		}
 		&:disabled::after {
 			background: $grayscale-200;
@@ -317,6 +343,15 @@ input[type='datetime-local'] {
 	}
 }
 
+.form-check-error {
+	&.checkbox,
+	&.radio {
+		input:after {
+			border-color: $primary;
+		}
+	}
+}
+
 @each $size, $detail in $check-size {
 	$value: map-get($detail, 'size');
 	$border-width-value: map-get($detail, 'border-width');
@@ -326,15 +361,6 @@ input[type='datetime-local'] {
 	.checkbox-#{$size} {
 		input {
 			margin-right: $margin;
-			margin-top: $margin / 6;
-			&:after,
-			&:before {
-				width: #{$value};
-				height: #{$value};
-			}
-			&:after {
-				border-width: $border-width-value;
-			}
 		}
 	}
 	.checkbox-#{$size} {
@@ -557,6 +583,7 @@ input[type='datetime-local'] {
 		z-index: 1000;
 		top: 0;
 		left: 0;
+		width: 100%;
 		height: 100%;
 		background: $white;
 		padding: $spacing * 2;

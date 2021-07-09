@@ -145,6 +145,15 @@ body.open .navigator-menu {
 	border-radius: 8px;
 	padding: 4rem 4rem 4rem 6rem;
 }
+@media only screen and (max-width: 768px) {
+	.demo-content {
+		width: 100%;
+		padding: 10px;
+	}
+	iframe{
+		width: 100% !important;
+	}
+}
 .demo-heading {
 	font-size: 48px;
 	line-height: 1.15;

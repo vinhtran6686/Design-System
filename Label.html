@@ -16,118 +16,141 @@
 			.example .label {
 				margin-right: 16px;
 			}
-			.icon-circle {
+			.ic-circle {
 				background: #f56f65;
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Labels</h1>
-		<div class="m-t-40"></div>
-		<div class="example">
-			<div class="label label-xl">
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-lg">
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-md">
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-sm">
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-xs">
-				<span class="label-text">Label</span>
+	<body class="demo scrollbar-big">
+		<div class="label-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Labels</h1>
+					</div>
+					<div id="spacing-properties">
+						<h3>Labels size</h3>
+						<div class="line">
+							<div class="label label-xl m-r-8">
+								<span class="label-text">Label xl</span>
+							</div>
+							<div class="label label-lg m-r-8">
+								<span class="label-text">Label lg</span>
+							</div>
+							<div class="label label-md m-r-8">
+								<span class="label-text">Label md</span>
+							</div>
+							<div class="label label-sm m-r-8">
+								<span class="label-text">Label sm</span>
+							</div>
+							<div class="label label-xs m-r-8">
+								<span class="label-text">Label xs</span>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522label%2520label-xl%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%2520xl%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-lg%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%2520lg%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%2520md%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%2520sm%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%2520xs%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 456px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Labels help text</h3>
+						<div class="line">
+							<div class="label label-xl label-is-help-text m-r-8">
+								<span class="label-text">Label</span>
+								<span class="label-help-text">Help text</span>
+							</div>
+							<div class="label label-lg label-is-help-text m-r-8">
+								<span class="label-text">Label</span>
+								<span class="label-help-text">Help text</span>
+							</div>
+							<div class="label label-md label-is-help-text m-r-8">
+								<span class="label-text">Label</span>
+								<span class="label-help-text">Help text</span>
+							</div>
+							<div class="label label-sm label-is-help-text m-r-8">
+								<span class="label-text">Label</span>
+								<span class="label-help-text">Help text</span>
+							</div>
+							<div class="label label-xs label-is-help-text m-r-8">
+								<span class="label-text">Label</span>
+								<span class="label-help-text">Help text</span>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522label%2520label-xl%2520label-is-help-text%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-help-text%2522%253EHelp%2520text%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-help-text%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-help-text%2522%253EHelp%2520text%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-md%2520label-is-help-text%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-help-text%2522%253EHelp%2520text%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-sm%2520label-is-help-text%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-help-text%2522%253EHelp%2520text%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-xs%2520label-is-help-text%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-help-text%2522%253EHelp%2520text%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 546px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Left Icon</h3>
+						<div class="line">
+							<div class="label label-xl label-is-icon label-icon-left m-r-8">
+								<i class="ic-help ic-xl ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-lg label-is-icon label-icon-left m-r-8">
+								<i class="ic-help ic-lg ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-md label-is-icon label-icon-left m-r-8">
+								<i class="ic-help ic-md ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-sm label-is-icon label-icon-left m-r-8">
+								<i class="ic-help ic-sm ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-xs label-is-icon label-icon-left m-r-8">
+								<i class="ic-help ic-xs ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522label%2520label-xl%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-xl%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-lg%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-md%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-md%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-sm%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-xs%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-xs%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 546px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Right Icon</h3>
+						<div class="line">
+							<div class="label label-xl label-is-icon label-icon-right m-r-8">
+								<i class="ic-help ic-xl ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-lg label-is-icon label-icon-right m-r-8">
+								<i class="ic-help ic-lg ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-md label-is-icon label-icon-right m-r-8">
+								<i class="ic-help ic-md ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-sm label-is-icon label-icon-right m-r-8">
+								<i class="ic-help ic-sm ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+							<div class="label label-xs label-is-icon label-icon-right m-r-8">
+								<i class="ic-help ic-xs ic-circle"></i>
+								<span class="label-text">Label</span>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522label%2520label-xl%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-xl%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-lg%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-md%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-md%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-sm%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522label%2520label-xs%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-xs%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ELabel%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 546px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="m-b-24"></div>
-		<div class="example">
-			<div class="label label-xl label-is-help-text">
-				<span class="label-text">Label</span>
-				<span class="label-help-text">Help text</span>
-			</div>
-			<div class="label label-lg label-is-help-text">
-				<span class="label-text">Label</span>
-				<span class="label-help-text">Help text</span>
-			</div>
-			<div class="label label-md label-is-help-text">
-				<span class="label-text">Label</span>
-				<span class="label-help-text">Help text</span>
-			</div>
-			<div class="label label-sm label-is-help-text">
-				<span class="label-text">Label</span>
-				<span class="label-help-text">Help text</span>
-			</div>
-			<div class="label label-xs label-is-help-text">
-				<span class="label-text">Label</span>
-				<span class="label-help-text">Help text</span>
-			</div>
-		</div>
-		<div class="m-b-24"></div>
-		<h3 class="text-link">Left icon</h3>
-		<!-- <i class="ic-help icon-xl icon-circle"></i>
-		<i class="ic-help icon-lg icon-circle"></i>
-		<i class="ic-help icon-md icon-circle"></i>
-		<i class="ic-help icon-sm icon-circle"></i>
-		<i class="ic-help icon-xs icon-circle"></i>
-
-		<i class="ic-close icon-xl"></i>
-		<i class="ic-close icon-lg"></i>
-		<i class="ic-close icon-md"></i>
-		<i class="ic-close icon-sm"></i>
-		<i class="ic-close icon-xs"></i> -->
-		<div class="example">
-			<div class="label label-xl label-is-icon label-icon-left">
-				<i class="ic-help icon-xl icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-lg label-is-icon label-icon-left">
-				<i class="ic-help icon-lg icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-md label-is-icon label-icon-left">
-				<i class="ic-help icon-md icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-sm label-is-icon label-icon-left">
-				<i class="ic-help icon-sm icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-xs label-is-icon label-icon-left">
-				<i class="ic-help icon-xs icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-		</div>
-		<div class="m-b-24"></div>
-		<h3 class="text-link">Right icon</h3>
-		<div class="example">
-			<div class="label label-xl label-is-icon label-icon-right">
-				<i class="ic-help icon-xl icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-lg label-is-icon label-icon-right">
-				<i class="ic-help icon-lg icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-md label-is-icon label-icon-right">
-				<i class="ic-help icon-md icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-sm label-is-icon label-icon-right">
-				<i class="ic-help icon-sm icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-			<div class="label label-xs label-is-icon label-icon-right">
-				<i class="ic-help icon-xs icon-circle"></i>
-				<span class="label-text">Label</span>
-			</div>
-		</div>
-		
-		
-
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>
