@@ -16,9 +16,10 @@
 				display: flex;
 				flex-wrap: wrap;
 			}
-			.example-border img {
+			.example-shadow img {
 				width: 250px;
-				margin-right: 10px;
+				margin-right: 16px;
+				margin-bottom: 16px;
 			}
 			.example-block {
 				display: inline-block;
@@ -30,80 +31,184 @@
 				justify-content: center;
 				color: #444b52;
 			}
+			.line {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.example-shadow {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
+	<body class="demo scrollbar-big">
+		<div class="box-shadow-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<!-- box-shadow  -->
+					<div class="header">
+						<h1>Box Shadow</h1>
+					</div>
+					<div class="description">
+						<div class="description">
+							<p>
+								The classes are named using the format
+								<code>{property}{direction}-{value} </code>from <code>100</code> to <code>800</code>.
+							</p>
+						</div>
+					</div>
+					<div id="box-shadow-system">
+						<h3>Drop shadow</h3>
+						<p class="m-b-24"><code>.d-s-{value}</code> for classes that set box-shadow</p>
+						<div class="line">
+							<div class="example-shadow m-b-24">
+								<img src="images/Drop/100.png" alt="" />
+								<img src="images/Drop/200.png" alt="" />
+								<img src="images/Drop/300.png" alt="" />
+								<img src="images/Drop/400.png" alt="" />
+								<img src="images/Drop/500.png" alt="" />
+							</div>
+							<div class="example-shadow m-b-40">
+								<div class="example-block d-s-100">.d-s-100</div>
+								<div class="example-block d-s-200">.d-s-200</div>
+								<div class="example-block d-s-300">.d-s-300</div>
+								<div class="example-block d-s-400">.d-s-400</div>
+								<div class="example-block d-s-500">.d-s-500</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522d-s-100%2522%253EDrop%2520shadow%2520100%253C%252Fdiv%253E%250A...%250A%253Cdiv%2520class%253D%2522d-s-800%2522%253EDrop%2520shadow%2520800%253C%252Fdiv%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h3>Inner shadow</h3>
+						<p class="m-b-24"><code>.i-s-{value}</code> for classes that set box-shadow inner</p>
+						<div class="line">
+							<div class="example-shadow m-b-24">
+								<img src="images/Inner/100.png" alt="" />
+								<img src="images/Inner/200.png" alt="" />
+								<img src="images/Inner/300.png" alt="" />
+								<img src="images/Inner/400.png" alt="" />
+								<img src="images/Inner/500.png" alt="" />
+							</div>
+							<div class="example-shadow m-b-40">
+								<div class="example-block i-s-100">.i-s-100</div>
+								<div class="example-block i-s-200">.i-s-200</div>
+								<div class="example-block i-s-300">.i-s-300</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522i-s-100%2522%253EInner%2520shadow%2520100%253C%252Fdiv%253E%250A...%250A%253Cdiv%2520class%253D%2522i-s-300%2522%253EInner%2520shadow%2520300%253C%252Fdiv%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<!-- border  -->
+					<div class="header">
+						<h1>Border</h1>
+					</div>
+					<div class="description">
+						<div class="description">
+							<p>
+								The classes are named using the format
+								<code>{property}{direction}-{value} </code>from <code>100</code> to <code>800</code>.
+							</p>
+						</div>
+					</div>
+					<div id="border-system">
+						<h3>Border Top</h3>
+						<p class="m-b-24"><code>.b-t-{value}</code> for classes that set border-top</p>
+						<div class="line">
+							<div class="example-block b-t-100">.b-t-100</div>
+							<div class="example-block b-t-200">.b-t-200</div>
+							<div class="example-block b-t-300">.b-t-300</div>
+							<div class="example-block b-t-400">.b-t-400</div>
+							<div class="example-block b-t-500">.b-t-500</div>
+							<div class="example-block b-t-600">.b-t-600</div>
+							<div class="example-block b-t-700">.b-t-700</div>
+							<div class="example-block b-t-800">.b-t-800</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522b-t-100%2522%253EBorder%2520Top%253C%252Fdiv%253E%250A...%250A%253Cdiv%2520class%253D%2522b-t-800%2522%253EBorder%2520Top%253C%252Fdiv%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h3>Border Bottom</h3>
+						<p class="m-b-24"><code>.b-b-{value}</code> for classes that set border-bottom</p>
+						<div class="line">
+							<div class="example-block b-b-100">.b-b-100</div>
+							<div class="example-block b-b-200">.b-b-200</div>
+							<div class="example-block b-b-300">.b-b-300</div>
+							<div class="example-block b-b-400">.b-b-400</div>
+							<div class="example-block b-b-500">.b-b-500</div>
+							<div class="example-block b-b-600">.b-b-600</div>
+							<div class="example-block b-b-700">.b-b-700</div>
+							<div class="example-block b-b-800">.b-b-800</div>
+						</div>
+						<h3>Border left</h3>
+						<p class="m-b-24"><code>.b-l-{value}</code> for classes that set border-left</p>
+						<div class="line">
+							<div class="example-block b-l-100">.b-l-100</div>
+							<div class="example-block b-l-200">.b-l-200</div>
+							<div class="example-block b-l-300">.b-l-300</div>
+							<div class="example-block b-l-400">.b-l-400</div>
+							<div class="example-block b-l-500">.b-l-500</div>
+							<div class="example-block b-l-600">.b-l-600</div>
+							<div class="example-block b-l-700">.b-l-700</div>
+							<div class="example-block b-l-800">.b-l-800</div>
+						</div>
+						<h3>Border Right</h3>
+						<p class="m-b-24"><code>.b-r-{value}</code> for classes that set border-right</p>
+						<div class="line">
+							<div class="example-block b-r-100">.b-r-100</div>
+							<div class="example-block b-r-200">.b-r-200</div>
+							<div class="example-block b-r-300">.b-r-300</div>
+							<div class="example-block b-r-400">.b-r-400</div>
+							<div class="example-block b-r-500">.b-r-500</div>
+							<div class="example-block b-r-600">.b-r-600</div>
+							<div class="example-block b-r-700">.b-r-700</div>
+							<div class="example-block b-r-800">.b-r-800</div>
+						</div>
+						<h3>Border Vertical</h3>
+						<p class="m-b-24"><code>.b-x-{value}</code></p>
+						<div class="line">
+							<div class="example-block b-x-100">.b-x-100</div>
+							<div class="example-block b-x-200">.b-x-200</div>
+							<div class="example-block b-x-300">.b-x-300</div>
+							<div class="example-block b-x-400">.b-x-400</div>
+							<div class="example-block b-x-500">.b-x-500</div>
+							<div class="example-block b-x-600">.b-x-600</div>
+							<div class="example-block b-x-700">.b-x-700</div>
+							<div class="example-block b-x-800">.b-x-800</div>
+						</div>
+						<h3>Border Horizontal</h3>
+						<p class="m-b-24"><code>.b-y-{value}</code></p>
+						<div class="line">
+							<div class="example-block b-y-100">.b-y-100</div>
+							<div class="example-block b-y-200">.b-y-200</div>
+							<div class="example-block b-y-300">.b-y-300</div>
+							<div class="example-block b-y-400">.b-y-400</div>
+							<div class="example-block b-y-500">.b-y-500</div>
+							<div class="example-block b-y-600">.b-y-600</div>
+							<div class="example-block b-y-700">.b-y-700</div>
+							<div class="example-block b-y-800">.b-y-800</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<h1>Border</h1>
 		<p>Use border utilities to add or remove an element’s borders.</p>
 		<div class="m-b-32"></div>
-		<div class="text m-b-16">Border Top</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-t-100">.b-t-100</div>
-			<div class="example-block b-t-200">.b-t-200</div>
-			<div class="example-block b-t-300">.b-t-300</div>
-			<div class="example-block b-t-400">.b-t-400</div>
-			<div class="example-block b-t-500">.b-t-500</div>
-			<div class="example-block b-t-600">.b-t-600</div>
-			<div class="example-block b-t-700">.b-t-700</div>
-			<div class="example-block b-t-800">.b-t-800</div>
-		</div>
-		<div class="text m-b-16">Border Left</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-l-100">.b-l-100</div>
-			<div class="example-block b-l-200">.b-l-200</div>
-			<div class="example-block b-l-300">.b-l-300</div>
-			<div class="example-block b-l-400">.b-l-400</div>
-			<div class="example-block b-l-500">.b-l-500</div>
-			<div class="example-block b-l-600">.b-l-600</div>
-			<div class="example-block b-l-700">.b-l-700</div>
-			<div class="example-block b-l-800">.b-l-800</div>
-		</div>
-		<div class="text m-b-16">Border Bottom</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-b-100">.b-b-100</div>
-			<div class="example-block b-b-200">.b-b-200</div>
-			<div class="example-block b-b-300">.b-b-300</div>
-			<div class="example-block b-b-400">.b-b-400</div>
-			<div class="example-block b-b-500">.b-b-500</div>
-			<div class="example-block b-b-600">.b-b-600</div>
-			<div class="example-block b-b-700">.b-b-700</div>
-			<div class="example-block b-b-800">.b-b-800</div>
-		</div>
-		<div class="text m-b-16">Border Right</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-r-100">.b-r-100</div>
-			<div class="example-block b-r-200">.b-r-200</div>
-			<div class="example-block b-r-300">.b-r-300</div>
-			<div class="example-block b-r-400">.b-r-400</div>
-			<div class="example-block b-r-500">.b-r-500</div>
-			<div class="example-block b-r-600">.b-r-600</div>
-			<div class="example-block b-r-700">.b-r-700</div>
-			<div class="example-block b-r-800">.b-r-800</div>
-		</div>
-		<div class="text m-b-16">Border Vertical</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-x-100">.b-x-100</div>
-			<div class="example-block b-x-200">.b-x-200</div>
-			<div class="example-block b-x-300">.b-x-300</div>
-			<div class="example-block b-x-400">.b-x-400</div>
-			<div class="example-block b-x-500">.b-x-500</div>
-			<div class="example-block b-x-600">.b-x-600</div>
-			<div class="example-block b-x-700">.b-x-700</div>
-			<div class="example-block b-x-800">.b-x-800</div>
-		</div>
-		<div class="text m-b-16">Border Horizontal</div>
-		<div class="example-border m-b-40">
-			<div class="example-block b-y-100">.b-y-100</div>
-			<div class="example-block b-y-200">.b-y-200</div>
-			<div class="example-block b-y-300">.b-y-300</div>
-			<div class="example-block b-y-400">.b-y-400</div>
-			<div class="example-block b-y-500">.b-y-500</div>
-			<div class="example-block b-y-600">.b-y-600</div>
-			<div class="example-block b-y-700">.b-y-700</div>
-			<div class="example-block b-y-800">.b-y-800</div>
-		</div>
+
 		<div class="text m-b-16">Drop shadow</div>
 		<div class="example-border m-b-24">
 			<img src="images/Drop/100.png" alt="" />
@@ -132,8 +237,6 @@
 			<div class="example-block i-s-200">.i-s-200</div>
 			<div class="example-block i-s-300">.i-s-300</div>
 		</div>
-		
-		
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>

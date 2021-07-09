@@ -13,340 +13,270 @@
 				display: flex;
 				align-items: center;
 			}
+			.line {
+				display: block;
+			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1 class="m-b-24">Badges</h1>
-		<h2 class="text-link m-b-12">Notation</h2>
-		<p>
-			The classes are named using the format
-			<code class="highlighter-rouge">{badge}-{colors}-{size}</code>from<code class="highlighter-rouge"
-				>Primary</code
-			>
-			to <code class="highlighter-rouge">Danger</code>.
-			<code class="highlighter-rouge">{badge}-{size}</code>
-		</p>
-		<p>
-			Blank - for classes <code class="highlighter-rouge">{badge}-{empty}</code> for
-			<code class="highlighter-rouge">normal</code> and <code class="highlighter-rouge">xl</code> on xxs size.
-		</p>
-		<div class="m-t-40"></div>
-		<h2 class="m-b-24">MD size</h2>
-		<div class="m-b-32">
-			<span class="badge badge-primary badge-md m-r-8">badge</span>
-			<span class="badge badge-link badge-md m-r-8">badge</span>
-			<span class="badge badge-grayscale badge-md m-r-8">badge</span>
-			<span class="badge badge-success badge-md m-r-8">badge</span>
-			<span class="badge badge-info badge-md m-r-8">badge</span>
-			<span class="badge badge-warning badge-md m-r-8">badge</span>
-			<span class="badge badge-danger badge-md m-r-8">badge</span>
-		</div>
-		<h2 class="m-b-24">XS size</h2>
-		<div class="m-b-32">
-			<span class="badge badge-primary badge-xs m-r-8">badge</span>
-			<span class="badge badge-link badge-xs m-r-8">badge</span>
-			<span class="badge badge-grayscale badge-xs m-r-8">badge</span>
-			<span class="badge badge-success badge-xs m-r-8">badge</span>
-			<span class="badge badge-info badge-xs m-r-8">badge</span>
-			<span class="badge badge-warning badge-xs m-r-8">badge</span>
-			<span class="badge badge-danger badge-xs m-r-8">badge</span>
-		</div>
-		<h2 class="m-b-24">XXS size</h2>
-		<div class="m-b-32">
-			<span class="badge badge-primary badge-xxs m-r-8">badge</span>
-			<span class="badge badge-link badge-xxs m-r-8">badge</span>
-			<span class="badge badge-grayscale badge-xxs m-r-8">badge</span>
-			<span class="badge badge-success badge-xxs m-r-8">badge</span>
-			<span class="badge badge-info badge-xxs m-r-8">badge</span>
-			<span class="badge badge-warning badge-xxs m-r-8">badge</span>
-			<span class="badge badge-danger badge-xxs m-r-8">badge</span>
-		</div>
-		<h2 class="m-b-24">Outline</h2>
-		<div class="m-b-32">
-			<span class="badge badge-outline-primary badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-link badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-grayscale badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-success badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-info badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-warning badge-md m-r-8">badge-outline</span>
-			<span class="badge badge-outline-danger badge-md m-r-8">badge-outline</span>
-		</div>
-		<h2 class="m-b-24">Outline XL</h2>
-		<div class="m-b-32">
-			<span class="badge badge-outline-primary badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-link badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-grayscale badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-success badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-info badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-warning badge-xs m-r-8">badge</span>
-			<span class="badge badge-outline-danger badge-xs m-r-8">badge</span>
-		</div>
-		<h2 class="m-b-24">Rounded</h2>
-		<div class="m-b-16">
-			<span class="badge badge-rounded badge-md badge-primary m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-link m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-grayscale m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-success m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-info m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-warning m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-danger m-r-8">badge</span>
-		</div>
-		<div class="m-b-32">
-			<span class="badge badge-rounded badge-md badge-outline-primary m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-link m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-grayscale m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-success m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-info m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-warning m-r-8">badge</span>
-			<span class="badge badge-rounded badge-md badge-outline-danger m-r-8">badge</span>
-		</div>
-		<div class="m-b-16">
-			<span class="badge badge-rounded badge-primary badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-link badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-grayscale badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-success badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-info badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-warning badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-danger badge-xs m-r-8">badge</span>
-		</div>
-		<div class="m-b-32">
-			<span class="badge badge-rounded badge-outline-primary badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-link badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-grayscale badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-success badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-info badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-warning badge-xs m-r-8">badge</span>
-			<span class="badge badge-rounded badge-outline-danger badge-xs m-r-8">badge</span>
-		</div>
-		<h2 class="m-b-24">Icon</h2>
-		<div class="m-b-16 example-badge">
-			<a href="#" class="badge badge-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-			<a href="#" class="badge badge-xs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-			<a href="#" class="badge badge-xxs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-
-			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-
-			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-
-			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-			</a>
-		</div>
-		<div class="m-b-16 example-badge">
-			<a href="#" class="badge badge-primary badge-md m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-primary badge-xs m-r-8">
-				<span>Badge 1</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-xxs badge-primary m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-
-			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-
-			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-		</div>
-		<div class="m-b-16 example-badge">
-			<a href="#" class="badge badge-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-xs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-xxs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-
-			<a href="#" class="badge badge-rounded badge-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-rounded badge-xxs badge-primary m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-
-			<a href="#" class="badge badge-outline-primary badge-md m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-outline-primary badge-xs m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-			<a href="#" class="badge badge-outline-primary badge-xxs m-r-8">
-				<i class="ic-tag m-r-4"></i>
-				<span>Badge</span>
-				<i class="ic-cancel m-l-4"></i>
-			</a>
-		</div>
-		<h2 class="m-b-24">Badge button</h2>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-primary badge-md badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
-					<i class="ic-cancel f-s-ui-16"></i>
-				</a>
+	<body class="demo scrollbar-big">
+		<div class="badge-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Badges</h1>
+					</div>
+					<div class="description">
+						<p>
+							The classes are named using the format
+							<code class="highlighter-rouge">{badge}-{colors}-{size}</code>from<code
+								class="highlighter-rouge"
+								>Primary</code
+							>
+							to <code class="highlighter-rouge">Danger</code>.
+							<code class="highlighter-rouge">{badge}-{size}</code>
+						</p>
+						<p>
+							Blank - for classes <code class="highlighter-rouge">{badge}-{empty}</code> for
+							<code class="highlighter-rouge">normal</code> and
+							<code class="highlighter-rouge">xl</code> on xxs size.
+						</p>
+					</div>
+					<div id="badge-style">
+						<h3>Badge size</h3>
+						<p class="m-b-24">MD, XS, XXS</p>
+						<div class="line">
+							<span class="badge badge-primary badge-md">badge</span>
+							<span class="badge badge-primary badge-xs">badge</span>
+							<span class="badge badge-primary badge-xxs">badge</span>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-md%2522%253Ebadge%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xs%2522%253Ebadge%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xxs%2522%253Ebadge%253C%252Fspan%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Badge Colors</h3>
+						<p class="m-b-24">Primary, Link, Grayscale, Success, Info, Warning, Danger</p>
+						<div class="line">
+							<span class="badge badge-primary badge-md">Primary</span>
+							<span class="badge badge-link badge-md">Link</span>
+							<span class="badge badge-grayscale badge-md">Grayscale</span>
+							<span class="badge badge-success badge-md">Success</span>
+							<span class="badge badge-info badge-md">Info</span>
+							<span class="badge badge-warning badge-md">Warning</span>
+							<span class="badge badge-danger badge-md">Danger</span>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-md%2522%253EPrimary%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-link%2520badge-md%2522%253ELink%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-grayscale%2520badge-md%2522%253EGrayscale%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-success%2520badge-md%2522%253ESuccess%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-info%2520badge-md%2522%253EInfo%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-warning%2520badge-md%2522%253EWarning%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-danger%2520badge-md%2522%253EDanger%253C%252Fspan%253E"
+							style="width: 800px; height: 312px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Badge Outline</h3>
+						<div class="line">
+							<span class="badge badge-outline-primary badge-md">Badge Outline</span>
+							<span class="badge badge-outline-primary badge-xs">Badge Outline</span>
+							<span class="badge badge-outline-primary badge-xxs">Badge Outline</span>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520badge-outline-primary%2520badge-md%2522%253EBadge%2520Outline%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-outline-primary%2520badge-xs%2522%253EBadge%2520Outline%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-outline-primary%2520badge-xxs%2522%253EBadge%2520Outline%253C%252Fspan%253E"
+							style="width: 800px; height: 240px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Badge Rounded</h3>
+						<div class="line">
+							<span class="badge badge-rounded badge-md badge-primary m-r-8">Badge Rounded</span>
+							<span class="badge badge-rounded badge-xs badge-primary m-r-8">Badge Rounded</span>
+							<span class="badge badge-rounded badge-xxs badge-primary m-r-8">Badge Rounded</span>
+						</div>
+						<div class="line">
+							<span class="badge badge-rounded badge-md badge-outline-primary m-r-8"
+								>Badge Outline Rounded</span
+							>
+							<span class="badge badge-rounded badge-xs badge-outline-primary m-r-8"
+								>Badge Outline Rounded</span
+							>
+							<span class="badge badge-rounded badge-xxs badge-outline-primary m-r-8"
+								>Badge Outline Rounded</span
+							>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-md%2520badge-primary%2522%253EBadge%2520Rounded%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-xs%2520badge-primary%2522%253EBadge%2520Rounded%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-xxs%2520badge-primary%2522%253EBadge%2520Rounded%253C%252Fspan%253E%250A-------%250A%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-md%2520badge-outline-primary%2522%253EBadge%2520Outline%2520Rounded%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-xs%2520badge-outline-primary%2522%253EBadge%2520Outline%2520Rounded%253C%252Fspan%253E%250A%253Cspan%2520class%253D%2522badge%2520badge-rounded%2520badge-xxs%2520badge-outline-primary%2522%253EBadge%2520Outline%2520Rounded%253C%252Fspan%253E"
+							style="width: 800px; height: 430px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Badge Icon</h3>
+						<p class="m-b-12">Badge Icon default</p>
+						<div class="line">
+							<a href="#" class="badge badge-primary badge-md">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon md</span>
+							</a>
+							<a href="#" class="badge badge-primary badge-xs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon xs</span>
+							</a>
+							<a href="#" class="badge badge-primary badge-xxs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon xxs</span>
+							</a>
+						</div>
+						<p class="m-b-12">Badge Icon Rounded</p>
+						<div class="line">
+							<a href="#" class="badge badge-rounded badge-primary badge-md">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Rounded</span>
+							</a>
+							<a href="#" class="badge badge-rounded badge-xs badge-primary">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Rounded</span>
+							</a>
+							<a href="#" class="badge badge-rounded badge-xxs badge-primary">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Rounded</span>
+							</a>
+						</div>
+						<p class="m-b-12">Badge Icon Outline</p>
+						<div class="line">
+							<a href="#" class="badge badge-outline-primary badge-md">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Outline</span>
+							</a>
+							<a href="#" class="badge badge-outline-primary badge-xs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Outline</span>
+							</a>
+							<a href="#" class="badge badge-outline-primary badge-xxs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon Outline</span>
+							</a>
+						</div>
+						<p class="m-b-12">Badge Icon Left & right</p>
+						<div class="line">
+							<a href="#" class="badge badge-primary badge-md">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon md</span>
+							</a>
+							<a href="#" class="badge badge-primary badge-xs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon xs</span>
+							</a>
+							<a href="#" class="badge badge-primary badge-xxs">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge Icon xxs</span>
+							</a>
+						</div>
+						<div class="line">
+							<a href="#" class="badge badge-primary badge-md">
+								<span>Badge</span>
+								<i class="ic-cancel m-l-4"></i>
+							</a>
+							<a href="#" class="badge badge-primary badge-xs">
+								<span>Badge 1</span>
+								<i class="ic-cancel m-l-4"></i>
+							</a>
+							<a href="#" class="badge badge-primary badge-xxs">
+								<span>Badge</span>
+								<i class="ic-cancel m-l-4"></i>
+							</a>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FBagde%2520size%2520MD%252C%2520XS%252C%2520XXS%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-primary%2520badge-md%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-tag%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%2520Icon%2520md%253C%252Fspan%253E%250A%253C%252Fa%253E%250A----%250A%252F%252FBadge%2520Rounded%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-rounded%2520badge-primary%2520badge-md%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-tag%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%2520Icon%2520Rounded%253C%252Fspan%253E%250A%253C%252Fa%253E%250A----%250A%252F%252FBadge%2520Outline%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-outline-primary%2520badge-md%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-tag%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%2520Icon%2520Outline%253C%252Fspan%253E%250A%253C%252Fa%253E%250A----%250A%252F%252FBadge%2520Icon%252C%2520Icon%2520left%2520%2526%2520Icon%2520Right%2520%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-primary%2520badge-md%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-tag%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%2520Icon%2520md%253C%252Fspan%253E%250A%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-primary%2520badge-md%2522%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520m-l-4%2522%253E%253C%252Fi%253E%250A%253C%252Fa%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Badge Button</h3>
+						<p class="m-b-12">Badge Button size</p>
+						<div class="line">
+							<div class="badge badge-primary badge-md badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
+									<i class="ic-cancel f-s-ui-16"></i>
+								</a>
+							</div>
+							<div class="badge badge-primary badge-xs badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xs">
+									<i class="ic-cancel f-s-ui-14"></i>
+								</a>
+							</div>
+							<div class="badge badge-primary badge-xxs badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xxs">
+									<i class="ic-cancel f-s-ui-12"></i>
+								</a>
+							</div>
+						</div>
+						<div class="line">
+							<div class="badge badge-link badge-md badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
+									<i class="ic-cancel f-s-ui-16"></i>
+								</a>
+							</div>
+							<div class="badge badge-link badge-xs badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xs">
+									<i class="ic-cancel f-s-ui-14"></i>
+								</a>
+							</div>
+							<div class="badge badge-link badge-xxs badge-close">
+								<span>Badge button</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xxs">
+									<i class="ic-cancel f-s-ui-12"></i>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge%2520badge-primary%2520badge-md%2520badge-close%2522%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%2520button%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-primary%2520btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520f-s-ui-16%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 294px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Mixed Badge</h3>
+						<p class="m-b-12">Mixed Badge Button & Badge Icon</p>
+						<div class="line">
+							<!-- <div class="badge badge-primary badge-md badge-close">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge</span>
+								<a href="#" class="btn btn-icon-single btn-square btn-primary btn-md">
+									<i class="ic-cancel f-s-ui-16"></i>
+								</a>
+							</div> -->
+							<a href="#" class="badge badge-primary badge-md badge-close">
+								<i class="ic-tag m-r-4"></i>
+								<span>Badge</span>
+								<span class="btn btn-icon-single btn-square btn-primary btn-md">
+									<i class="ic-cancel f-s-ui-16"></i>
+								</span>
+							</a>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522badge%2520badge-primary%2520badge-md%2520badge-close%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-tag%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253Cspan%253EBadge%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522btn%2520btn-icon-single%2520btn-square%2520btn-primary%2520btn-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520f-s-ui-16%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fa%253E"
+							style="width: 800px; height: 312px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-primary badge-xs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xs">
-					<i class="ic-cancel f-s-ui-14"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-primary badge-xxs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-primary btn-xxs">
-					<i class="ic-cancel f-s-ui-12"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-md badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
-					<i class="ic-cancel f-s-ui-16"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-xs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
-					<i class="ic-cancel f-s-ui-14"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-xxs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
-					<i class="ic-cancel f-s-ui-12"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-rounded badge-md badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-md">
-					<i class="ic-cancel f-s-ui-16"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-rounded badge-xs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xs">
-					<i class="ic-cancel f-s-ui-14"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-link badge-rounded badge-xxs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-link btn-xxs">
-					<i class="ic-cancel f-s-ui-12"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-grayscale badge-rounded badge-md badge-close m-r-8">
-				<span>Badge</span>
-				<a class="btn btn-icon-single btn-square btn-grayscale btn-md">
-					<i class="ic-cancel f-s-ui-16"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-grayscale badge-rounded badge-xs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xs">
-					<i class="ic-cancel f-s-ui-14"></i>
-				</a>
-			</div>
-		</div>
-		<div class="m-b-16 example-badge">
-			<div class="badge badge-grayscale badge-rounded badge-xxs badge-close m-r-8">
-				<span>Badge</span>
-				<a href="#" class="btn btn-icon-single btn-square btn-grayscale btn-xxs">
-					<i class="ic-cancel f-s-ui-12"></i>
-				</a>
-			</div>
-		</div>
-
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>

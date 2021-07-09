@@ -15,360 +15,349 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1 class="m-b-24">Accordion</h1>
-		<div class="m-t-40"></div>
-		<h3 class="m-b-24 m-t-24">Default</h3>
-		<div class="accordion">
-			<div class="accordion-tab open">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4 open">
-						<i class="ic-angle-down icon-md"></i>
+	<body class="demo scrollbar-big">
+		<div class="accordion-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Accordion</h1>
 					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-md">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
+					<div id="accordion-style">
+						<h3>Default</h3>
+						<div class="line">
+							<div class="accordion">
+								<div class="accordion-tab open">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4 open">
+											<i class="ic-angle-down ic-md"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-md">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4">
+											<i class="ic-angle-down ic-md"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-md">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4">
+											<i class="ic-angle-down ic-md"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-md">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-md"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-md">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522accordion%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 1194px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Default mobile</h3>
+						<div class="line">
+							<div class="accordion accordion-mobile">
+								<div class="accordion-tab open">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4 open">
+											<i class="ic-angle-down ic-xs"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4">
+											<i class="ic-angle-down ic-xs"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-action">
+										<div class="js-accordion-action accordion-action-icon m-r-4">
+											<i class="ic-angle-down ic-xs"></i>
+										</div>
+									</div>
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm">
+												<span class="label-text text-grayscale-900 f-w-500">Label</span>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-md"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-md">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522accordion%2520accordion-mobile%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-xs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-xs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522js-accordion-action%2520accordion-action-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-angle-down%2520icon-xs%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 1194px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Card</h3>
+						<div class="line">
+							<div class="accordion accordion-card">
+								<div class="accordion-title">
+									<div class="label label-lg label-is-icon label-icon-left">
+										<i class="ic-help ic-lg ic-circle"></i>
+										<span class="label-text text-grayscale-900 f-w-500">Label</span>
+									</div>
+									<!-- <div class="label label-lg label-is-icon label-icon-right">
+										<i class="ic-help ic-lg ic-circle"></i>
+										<span class="label-text text-grayscale-900 f-w-500">Label</span>
+									</div> -->
+								</div>
+								<div class="accordion-tab open">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-lg label-is-icon label-icon-left">
+												<i class="ic-help ic-lg ic-circle"></i>
+												<span class="f-s-p-18 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-md
+												text-grayscale-700
+												open
+											"
+										>
+											<i class="ic-plus f-s-ui-16"></i>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-lg label-is-icon label-icon-left">
+												<i class="ic-help ic-lg ic-circle"></i>
+												<span class="f-s-p-18 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-md
+												text-grayscale-700
+											"
+										>
+											<i class="ic-plus f-s-ui-16"></i>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-lg label-is-icon label-icon-left">
+												<i class="ic-help ic-lg ic-circle"></i>
+												<span class="f-s-p-18 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-16">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-md
+												text-grayscale-700
+											"
+										>
+											<i class="ic-plus f-s-ui-16"></i>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-md"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-md">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522accordion%2520accordion-card%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-lg%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%2509%2509%2509%2509%2509%2509%2509%2509%2509%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2520open%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-lg%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-18%2520text-grayscale-900%2520f-w-500%2522%253EAccordion%2520summary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520js-accordion-action%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn%2520btn-icon-single%2520btn-rounded%2520btn-outline-grayscale%2520btn-md%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text-grayscale-700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520open%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-plus%2520f-s-ui-16%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-lg%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-lg%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-18%2520text-grayscale-900%2520f-w-500%2522%253EAccordion%2520summary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520js-accordion-action%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn%2520btn-icon-single%2520btn-rounded%2520btn-outline-grayscale%2520btn-md%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text-grayscale-700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-plus%2520f-s-u"
+							style="width: 800px; height: 1250px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Card Mobile</h3>
+						<div class="line">
+							<div class="accordion accordion-card accordion-mobile">
+								<div class="accordion-title">
+									<div class="label label-md label-is-icon label-icon-left">
+										<i class="ic-help ic-md ic-circle"></i>
+										<span class="label-text text-grayscale-900 f-w-500">Label</span>
+									</div>
+									<!-- <div class="label label-md label-is-icon label-icon-right">
+										<i class="ic-help ic-md ic-circle"></i>
+										<span class="label-text text-grayscale-900 f-w-500">Label</span>
+									</div> -->
+								</div>
+								<div class="accordion-tab open">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm label-is-icon label-icon-left">
+												<i class="ic-help ic-sm ic-circle"></i>
+												<span class="f-s-p-14 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm
+												text-grayscale-700
+												open
+											"
+										>
+											<i class="ic-plus f-s-ui-12"></i>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm label-is-icon label-icon-left">
+												<i class="ic-help ic-sm ic-circle"></i>
+												<span class="f-s-p-14 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm
+												text-grayscale-700
+											"
+										>
+											<i class="ic-plus f-s-ui-12"></i>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-tab">
+									<div class="accordion-content">
+										<div class="accordion-content-title">
+											<div class="label label-sm label-is-icon label-icon-left">
+												<i class="ic-help ic-sm ic-circle"></i>
+												<span class="f-s-p-14 text-grayscale-900 f-w-500"
+													>Accordion summary</span
+												>
+											</div>
+										</div>
+										<div class="accordion-content-description">
+											<div class="f-s-p-14">Accordion details</div>
+										</div>
+									</div>
+									<div class="accordion-action">
+										<div
+											class="
+												js-accordion-action
+												btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm
+												text-grayscale-700
+											"
+										>
+											<i class="ic-plus f-s-ui-12"></i>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522accordion%2520accordion-card%2520accordion-mobile%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-md%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520text-grayscale-900%2520f-w-500%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2520open%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-sm%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-14%2520text-grayscale-900%2520f-w-500%2522%253EAccordion%2520summary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520js-accordion-action%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn%2520btn-icon-single%2520btn-rounded%2520btn-outline-grayscale%2520btn-sm%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text-grayscale-700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520open%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-plus%2520f-s-ui-12%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522accordion-tab%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-left%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520ic-sm%2520ic-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-14%2520text-grayscale-900%2520f-w-500%2522%253EAccordion%2520summary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-content-description%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EAccordion%2520details%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522accordion-action%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520js-accordion-action%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520btn%2520btn-icon-single%2520btn-rounded%2520btn-outline-grayscale%2520btn-sm%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520text-grayscale-700%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-pl"
+							style="width: 800px; height: 1300px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="accordion accordion-mobile">
-			<div class="accordion-tab open">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4 open">
-						<i class="ic-angle-down icon-xs"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-xs"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-xs"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-action">
-					<div class="js-accordion-action accordion-action-icon m-r-4">
-						<i class="ic-angle-down icon-xs"></i>
-					</div>
-				</div>
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm">
-							<span class="label-text text-grayscale-900 f-w-500">Label</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<h3 class="m-b-24 m-t-24">Card</h3>
-		<div class="accordion accordion-card">
-			<div class="accordion-title">
-				<div class="label label-lg label-is-icon label-icon-left">
-					<i class="ic-help icon-lg icon-circle"></i>
-					<span class="label-text text-grayscale-900 f-w-500">Label</span>
-				</div>
-				<div class="label label-lg label-is-icon label-icon-right">
-					<i class="ic-help icon-lg icon-circle"></i>
-					<span class="label-text text-grayscale-900 f-w-500">Label</span>
-				</div>
-			</div>
-			<div class="accordion-tab open">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 open"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="accordion accordion-card">
-			<div class="accordion-tab open">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700 open"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-lg label-is-icon label-icon-left">
-							<i class="ic-help icon-lg icon-circle"></i>
-							<span class="f-s-p-18 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-16">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-md text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-16"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-		<h3 class="m-b-24 m-t-24">Card mobile</h3>
-		<div class="accordion accordion-card accordion-mobile">
-			<div class="accordion-title">
-				<div class="label label-md label-is-icon label-icon-left">
-					<i class="ic-help icon-md icon-circle"></i>
-					<span class="label-text text-grayscale-900 f-w-500">Label</span>
-				</div>
-				<div class="label label-md label-is-icon label-icon-right">
-					<i class="ic-help icon-md icon-circle"></i>
-					<span class="label-text text-grayscale-900 f-w-500">Label</span>
-				</div>
-			</div>
-			<div class="accordion-tab open">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm label-is-icon label-icon-left">
-							<i class="ic-help icon-sm icon-circle"></i>
-							<span class="f-s-p-14 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm text-grayscale-700 open"
-					>
-						<i class="ic-plus f-s-ui-12"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm label-is-icon label-icon-left">
-							<i class="ic-help icon-sm icon-circle"></i>
-							<span class="f-s-p-14 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-12"></i>
-					</div>
-				</div>
-			</div>
-			<div class="accordion-tab">
-				<div class="accordion-content">
-					<div class="accordion-content-title">
-						<div class="label label-sm label-is-icon label-icon-left">
-							<i class="ic-help icon-sm icon-circle"></i>
-							<span class="f-s-p-14 text-grayscale-900 f-w-500">Accordion summary</span>
-						</div>
-					</div>
-					<div class="accordion-content-description">
-						<div class="f-s-p-14">Accordion details</div>
-					</div>
-				</div>
-				<div class="accordion-action">
-					<div
-						class="js-accordion-action btn btn-icon-single btn-rounded btn-outline-grayscale btn-sm text-grayscale-700"
-					>
-						<i class="ic-plus f-s-ui-12"></i>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<script>
 			var btn = document.querySelectorAll('.accordion .js-accordion-action');
 			btn.forEach((i) => i.addEventListener('click', toggleItem, false));

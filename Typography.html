@@ -15,81 +15,156 @@
 			h4,
 			h5,
 			h6 {
-				margin-bottom: 15px;
-			}
-			.example-font-size * {
-				color: #212529;
-			}
-			.example-font-size p {
-				margin-bottom: 10px;
+				margin-bottom: 24px;
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1>Typography</h1>
-		<br />
-		<br />
-		<br />
-		<h1>Heading</h1>
-		<hr />
-		<h1>h1. FPTSHOP heading (32px 36px)</h1>
-		<h2>h2. FPTSHOP heading (24px 32px)</h2>
-		<h3>h3. FPTSHOP heading (16px 20px)</h3>
-		<h4>h4. FPTSHOP heading (14px 20px)</h4>
-		<h5>h5. FPTSHOP heading (14px 20px)</h5>
-		<h6>h6. FPTSHOP heading (14px 20px)</h6>
-		<br />
-		<br />
-		<br />
-		<h1>Font-weight</h1>
-		<p>Quickly change the weight (boldness) of text or italicize text.</p>
-		<hr />
-		<h1 class="f-w-700">Font weight 700</h1>
-		<h2 class="f-w-500">Font weight 500</h2>
-		<h3 class="f-w">Font weight 400</h3>
-		<br />
-		<p class="f-w-700">Font weight 700</p>
-		<p class="f-w-500">Font weight 500</p>
-		<p class="f-w">Font weight 400</p>
-		<br />
-		<br />
-		<br />
-		<h1>Font-size</h1>
-		<p>Quickly change the size of text.</p>
-		<hr />
-		<h1 class="">Font-size for post</h1>
-		<div class="example-font-size">
-			<p class="f-s-p-44">Font size post 44 (.f-s-p-44)</p>
-			<p class="f-s-p-36">Font size post 36 (.f-s-p-36)</p>
-			<p class="f-s-p-32">Font size post 32 (.f-s-p-32)</p>
-			<p class="f-s-p-28">Font size post 28 (.f-s-p-28)</p>
-			<p class="f-s-p-24">Font size post 24 (.f-s-p-24)</p>
-			<p class="f-s-p-20">Font size post 20 (.f-s-p-20)</p>
-			<p class="f-s-p-18">Font size post 18 (.f-s-p-18)</p>
-			<p class="f-s-p-16">Font size post 16 (.f-s-p-16)</p>
-			<p class="f-s-p-15">Font size post 15 (.f-s-p-15)</p>
-			<p class="f-s-p-14">Font size post 14 (.f-s-p-14)</p>
-			<p class="f-s-p-13">Font size post 13 (.f-s-p-13)</p>
-			<p class="f-s-p-12">Font size post 12 (.f-s-p-12)</p>
-			<div class="m-b-40"></div>
-			<h1>Font-size for UI</h1>
-			<p class="f-s-ui-44">Font size UI 44 (.f-s-ui-44)</p>
-			<p class="f-s-ui-36">Font size UI 36 (.f-s-ui-36)</p>
-			<p class="f-s-ui-32">Font size UI 32 (.f-s-ui-32)</p>
-			<p class="f-s-ui-28">Font size UI 28 (.f-s-ui-28)</p>
-			<p class="f-s-ui-24">Font size UI 24 (.f-s-ui-24)</p>
-			<p class="f-s-ui-20">Font size UI 20 (.f-s-ui-20)</p>
-			<p class="f-s-ui-18">Font size UI 18 (.f-s-ui-18)</p>
-			<p class="f-s-ui-16">Font size UI 16 (.f-s-ui-16)</p>
-			<p class="f-s-ui-15">Font size UI 15 (.f-s-ui-15)</p>
-			<p class="f-s-ui-14">Font size UI 14 (.f-s-ui-14)</p>
-			<p class="f-s-ui-13">Font size UI 13 (.f-s-ui-13)</p>
-			<p class="f-s-ui-12">Font size UI 12 (.f-s-ui-12)</p>
+	<body class="demo scrollbar-big">
+		<div class="typography-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Typography</h1>
+					</div>
+					<div class="description">
+						<p>
+							Our grid system is composed of 8 flexible columns with a gutter between columns of 30px. We
+							apply <a href="#" class="link">border-box</a> so that the border and padding is included in
+							the width of the grid columns.
+						</p>
+					</div>
+					<div id="typo-base">
+						<h3>Font Family</h3>
+						<p class="m-b-24">Roboto, Helvetica, Arial, sans-serif</p>
+
+						<h3>Default Value:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=body%2520%257B%250A%2520%2520%2520%2520font-family%253A%2520%2522Roboto%2522%252C%2520Helvetica%252C%2520Arial%252C%2520sans-serif%253B%250A%2520%2520%2520%2520font-size%253A%252014px%253B%250A%2520%2520%2520%2520font-weight%253A%2520400%253B%250A%2520%2520%2520%2520line-height%253A%25201.3%253B%250A%257D"
+							style="width: 800px; height: 294px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="typo-font-weight">
+						<h3>Font weight</h3>
+						<p class="m-b-24">Regular (500), Medium (700)</p>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=css&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=.f-w-500%2520%257B%2509%250A%2509font-weight%253A%2520500%253B%250A%257D%250A.f-w-700%2520%257B%2509%250A%2509font-weight%253A%2520700%253B%250A%257D%250A"
+							style="width: 800px; height: 312px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+
+					<div id="typo-heading">
+						<h3>Heading Tag</h3>
+						<div class="line">
+							<h1>
+								h1. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(36px / 48px | Medium 700 | Gray-900)</span>
+							</h1>
+							<h2>
+								h2. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(32px / 40px | Medium 700 | Gray-900)</span>
+							</h2>
+							<h3>
+								h3. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(28px / 36px | Medium 700 | Gray-900)</span>
+							</h3>
+							<h4>
+								h4. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(24px / 32px | Medium 700 | Gray-900)</span>
+							</h4>
+							<h5>
+								h5. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(20px / 28px | Medium 700 | Gray-900)</span>
+							</h5>
+							<h6>
+								h6. FPTSHOP heading
+								<span class="f-s-p-16 text-grayscale">(18px / 24px | Medium 700 | Gray-900)</span>
+							</h6>
+						</div>
+						<h3>Default Value:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%253E%250A%2509Heading%25201%250A%253C%252Fh1%253E%250A%253Cdiv%2520class%253D%2522h1%2522%253E%250A%2509div.h1%250A%253C%252Fdiv%253E%250A%253Ch2%253E%250A%2509Heading%25202%250A%253C%252Fh2%253E%250A%253Cdiv%2520class%253D%2522h2%2522%253E%250A%2509div.h2%250A%253C%252Fdiv%253E%250A...%250A%253Ch6%253E%250A%2509Heading%25206%250A%253C%252Fh6%253E%250A%253Cdiv%2520class%253D%2522h6%2522%253E%250A%2509div.h6%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 528px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="typo-font-weight">
+						<h3>Font size for Post</h3>
+						<div class="line">
+							<div class="f-s-p-44">Font size post 44 (.f-s-p-44)</div>
+							<div class="f-s-p-36">Font size post 36 (.f-s-p-36)</div>
+							<div class="f-s-p-32">Font size post 32 (.f-s-p-32)</div>
+							<div class="f-s-p-28">Font size post 28 (.f-s-p-28)</div>
+							<div class="f-s-p-24">Font size post 24 (.f-s-p-24)</div>
+							<div class="f-s-p-20">Font size post 20 (.f-s-p-20)</div>
+							<div class="f-s-p-18">Font size post 18 (.f-s-p-18)</div>
+							<div class="f-s-p-16">Font size post 16 (.f-s-p-16)</div>
+							<div class="f-s-p-15">Font size post 15 (.f-s-p-15)</div>
+							<div class="f-s-p-14">Font size post 14 (.f-s-p-14)</div>
+							<div class="f-s-p-13">Font size post 13 (.f-s-p-13)</div>
+							<div class="f-s-p-12">Font size post 12 (.f-s-p-12)</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522f-s-p-44%2522%253EFont%2520size%2520post%252044%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-36%2522%253EFont%2520size%2520post%252036%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-32%2522%253EFont%2520size%2520post%252032%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-28%2522%253EFont%2520size%2520post%252028%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-24%2522%253EFont%2520size%2520post%252024%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-20%2522%253EFont%2520size%2520post%252020%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-18%2522%253EFont%2520size%2520post%252018%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-16%2522%253EFont%2520size%2520post%252016%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-15%2522%253EFont%2520size%2520post%252015%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EFont%2520size%2520post%252014%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-13%2522%253EFont%2520size%2520post%252013%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-p-12%2522%253EFont%2520size%2520post%252012%253C%252Fdiv%253E"
+							style="width: 800px; height: 402px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h3>Font size for UI</h3>
+						<div class="line">
+							<div class="f-s-ui-44">Font size UI 44 (.f-s-ui-44)</div>
+							<div class="f-s-ui-36">Font size UI 36 (.f-s-ui-36)</div>
+							<div class="f-s-ui-32">Font size UI 32 (.f-s-ui-32)</div>
+							<div class="f-s-ui-28">Font size UI 28 (.f-s-ui-28)</div>
+							<div class="f-s-ui-24">Font size UI 24 (.f-s-ui-24)</div>
+							<div class="f-s-ui-20">Font size UI 20 (.f-s-ui-20)</div>
+							<div class="f-s-ui-18">Font size UI 18 (.f-s-ui-18)</div>
+							<div class="f-s-ui-16">Font size UI 16 (.f-s-ui-16)</div>
+							<div class="f-s-ui-15">Font size UI 15 (.f-s-ui-15)</div>
+							<div class="f-s-ui-14">Font size UI 14 (.f-s-ui-14)</div>
+							<div class="f-s-ui-13">Font size UI 13 (.f-s-ui-13)</div>
+							<div class="f-s-ui-12">Font size UI 12 (.f-s-ui-12)</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522f-s-ui-44%2522%253EFont%2520size%2520UI%252044%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-36%2522%253EFont%2520size%2520UI%252036%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-32%2522%253EFont%2520size%2520UI%252032%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-28%2522%253EFont%2520size%2520UI%252028%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-24%2522%253EFont%2520size%2520UI%252024%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-20%2522%253EFont%2520size%2520UI%252020%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-18%2522%253EFont%2520size%2520UI%252018%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-16%2522%253EFont%2520size%2520UI%252016%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-15%2522%253EFont%2520size%2520UI%252015%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-14%2522%253EFont%2520size%2520UI%252014%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-13%2522%253EFont%2520size%2520UI%252013%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522f-s-ui-12%2522%253EFont%2520size%2520UI%252012%253C%252Fdiv%253E"
+							style="width: 800px; height: 402px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="typo-font-weight">
+						<h3>Paragraph</h3>
+						<div class="line">
+							<p>
+								<span class="f-w-500"> Paragraph: </span>
+								<span class="text-grayscale"> (18px / 24px | Regular 500 | Gray-700) </span>
+							</p>
+						</div>
+						<h3>Paragraph Small</h3>
+						<div class="line">
+							<p>
+								<span class="f-w-500"> Paragraph: </span>
+								<span class="text-grayscale"> (16px / 24px | Regular 500 | Gray-700) </span>
+							</p>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cp%253EParagraph%253A%2520%2818px%2520%252F%252024px%2520%2520%257C%2520%2520Regular%2520500%2520%2520%257C%2520%2520Gray-700%29%253C%252Fp%253E"
+							style="width: 800px; height: 204px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
 		</div>
-		
-		
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>

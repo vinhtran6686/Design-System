@@ -21,7 +21,7 @@
 			border-top-right-radius: $border-radius;
 			border-bottom-right-radius: $border-radius;
 		}
-		&-rounded{
+		&-rounded {
 			&:first-child {
 				border-top-left-radius: $border-radius * 25;
 				border-bottom-left-radius: $border-radius * 25;
@@ -31,5 +31,31 @@
 				border-bottom-right-radius: $border-radius * 25;
 			}
 		}
-	} 
+	}
+	&-spacing {
+		.btn {
+			&:not(:first-child),
+			&:not(:last-child) {
+				border-radius: $border-radius;
+			}
+			&-xl {
+				margin: 0 16px;
+			}
+			&-lg {
+				margin: 0 16px;
+			}
+			&-md {
+				margin: 0 12px;
+			}
+			&-sm {
+				margin: 0 8px;
+			}
+			&-xs {
+				margin: 0 4px;
+			}
+			&-xxs {
+				margin: 0 4px;
+			}
+		}
+	}
 }

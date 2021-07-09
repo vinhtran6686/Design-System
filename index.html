@@ -8,87 +8,72 @@
 		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
-		<style>
-			@media only screen and (max-width: 600px){
-				.demo{
-					padding: 0;
-				}
-				.section-nav{
-					display: none;
-				}
-				.demo__content{
-					margin-left: 0;
-				}
-			}
-		</style>
+		<link rel="import" href="./Icon.html" />
 	</head>
-	<body>
-		<main class="demo">
-			<div class="section-nav scrollbar">
-				<h3>Layout</h3>
-				<ul>
-					<li><a class="nav-item" data-ref="Grid.html">Grid</a></li>
-					<li><a class="nav-item" data-ref="Typography.html">Typography</a></li>
-					<li><a class="nav-item" data-ref="Spacing.html">Spacing</a></li>
-					<li><a class="nav-item" data-ref="Border-shadow.html">Border & shadow</a></li>
-					<li><a class="nav-item" data-ref="Utilities.html">Utilities</a></li>
-				</ul>
-				<h3>Components</h3>
-				<ul>
-					<li><a class="nav-item" data-ref="Animation.html">Animation</a></li>
-					<li><a class="nav-item" data-ref="Icon.html">Icons</a></li>
-					<li><a class="nav-item" data-ref="Accordion.html">Accordion</a></li>
-					<li><a class="nav-item" data-ref="Badge.html">Badges</a></li>
-					<li><a class="nav-item" data-ref="Buttons.html">Buttons</a></li>
-					<li><a class="nav-item" data-ref="Buttons-group.html">Buttons-group</a></li>
-					<li><a class="nav-item" data-ref="Breadcrumb.html">Breadcrumb</a></li>
-					<li><a class="nav-item" data-ref="Pagination.html">Pagination</a></li>
-					<li><a class="nav-item" data-ref="Alert.html">Alert</a></li>
-					<li><a class="nav-item" data-ref="Dropdown.html">Dropdown</a></li>
-					<li><a class="nav-item" data-ref="Modals.html">Modals</a></li>
-					<li><a class="nav-item" data-ref="Progress-bar.html">Progress bar</a></li>
-					<li><a class="nav-item" data-ref="Spinner.html">Spinner</a></li>
-					<li><a class="nav-item" data-ref="File.html">File</a></li>
-					<li><a class="nav-item" data-ref="Label.html">Label</a></li>
-					<li><a class="nav-item" data-ref="Input.html">Input</a></li>
-					<li><a class="nav-item" data-ref="Tag-input.html">Tag input</a></li>
-					<li><a class="nav-item" data-ref="Checkbox.html">Checkbox</a></li>
-					<li><a class="nav-item" data-ref="Radio.html">Radio</a></li>
-					<li><a class="nav-item" data-ref="Toggle.html">Toggle</a></li>
-					<li><a class="nav-item" data-ref="Stepper.html">Stepper</a></li>
-					<li><a class="nav-item" data-ref="Slider.html">Slider</a></li>
-				</ul>
-				<h3>Display</h3>
-				<ul>
-					<li><a class="nav-item active" data-ref="Avatar.html">Avatar</a></li>
-					<li><a class="nav-item" data-ref="Cursor.html">Cursor</a></li>
-					<li><a class="nav-item" data-ref="List.html">List</a></li>
-					<li><a class="nav-item" data-ref="Scroll.html">Scroll</a></li>
-					<li><a class="nav-item" data-ref="Table.html">Table</a></li>
-					<li><a class="nav-item" data-ref="Tabs.html">Tabs</a></li>
-					<li><a class="nav-item" data-ref="Tooltip.html">Tooltip</a></li>
-				</ul>
+	<body class="start">
+		<button id="navigator-trigger" class="btn btn-icon-single btn-outline-grayscale btn-lg">
+			<span class="ic-menu btn-icon-search f-s-ui-20"></span>
+		</button>
+		<div class="navigator">
+			<div id="navigator-overlay"></div>
+			<div class="navigator-menu scrollbar-big d-s-100 p-y-24">
+				<div class="navigator-logo">
+					<img src="images/Logo/logo-lg.png" alt="" />
+				</div>
+				<div class="navigator-block active">
+					<h3 class="f-s-p-18">Layout</h3>
+					<ul>
+						<li><a class="navigator-item" data-ref="Grid.html">Grid</a></li>
+						<li><a class="navigator-item" data-ref="Typography.html">Typography</a></li>
+						<li><a class="navigator-item" data-ref="Spacing.html">Spacing</a></li>
+						<li><a class="navigator-item" data-ref="Border-shadow.html">Border & shadow</a></li>
+						<li><a class="navigator-item" data-ref="Utilities.html">Utilities</a></li>
+					</ul>
+				</div>
+				<div class="navigator-block active">
+					<h3 class="f-s-p-18">Components</h3>
+					<ul>
+						<li><a class="navigator-item" data-ref="Animation.html">Animation</a></li>
+						<li><a class="navigator-item" data-ref="Icon.html">Icons</a></li>
+						<li><a class="navigator-item" data-ref="Accordion.html">Accordion</a></li>
+						<li><a class="navigator-item" data-ref="Badge.html">Badges</a></li>
+						<li><a class="navigator-item" data-ref="Buttons.html">Buttons</a></li>
+						<li><a class="navigator-item" data-ref="Buttons-group.html">Buttons-group</a></li>
+						<li><a class="navigator-item" data-ref="Breadcrumb.html">Breadcrumb</a></li>
+						<li><a class="navigator-item" data-ref="Pagination.html">Pagination</a></li>
+						<li><a class="navigator-item" data-ref="Alert.html">Alert</a></li>
+						<li><a class="navigator-item" data-ref="Dropdown.html">Dropdown</a></li>
+						<li><a class="navigator-item" data-ref="Modals.html">Modals</a></li>
+						<li><a class="navigator-item" data-ref="Progress-bar.html">Progress bar</a></li>
+						<li><a class="navigator-item" data-ref="Spinner.html">Spinner</a></li>
+						<!-- <li><a class="navigator-item" data-ref="File.html">File</a></li> -->
+						<li><a class="navigator-item" data-ref="Label.html">Label</a></li>
+						<li><a class="navigator-item" data-ref="Input.html">Input</a></li>
+						<li><a class="navigator-item" data-ref="Tag-input.html">Tag input</a></li>
+						<li><a class="navigator-item" data-ref="Checkbox.html">Checkbox</a></li>
+						<li><a class="navigator-item" data-ref="Radio.html">Radio</a></li>
+						<li><a class="navigator-item" data-ref="Toggle.html">Toggle</a></li>
+						<li><a class="navigator-item" data-ref="Stepper.html">Stepper</a></li>
+						<li><a class="navigator-item" data-ref="Slider.html">Slider</a></li>
+					</ul>
+				</div>
+				<div class="navigator-block active">
+					<h3 class="f-s-p-18">Display</h3>
+					<ul>
+						<li><a class="navigator-item active" data-ref="Avatar.html">Avatar</a></li>
+						<!-- <li><a class="navigator-item" data-ref="Cursor.html">Cursor</a></li> -->
+						<li><a class="navigator-item" data-ref="List.html">List</a></li>
+						<li><a class="navigator-item" data-ref="Scroll.html">Scroll</a></li>
+						<li><a class="navigator-item" data-ref="Table.html">Table</a></li>
+						<li><a class="navigator-item" data-ref="Tabs.html">Tabs</a></li>
+						<li><a class="navigator-item" data-ref="Tooltip.html">Tooltip</a></li>
+					</ul>
+				</div>
 			</div>
-			<div class="demo__content">
-				<iframe class="frame" src="Input.html" height="100%" width="100%" title="Iframe Example"></iframe>
-			</div>
-		</main>
-		<script>
-			var navItem = document.querySelectorAll('.nav-item');
-			navItem.forEach((i) => i.addEventListener('click', clickHandle, false));
-
-			function clickHandle(e) {
-				var linkItem = document.querySelectorAll('.nav-item');
-				var frame = document.querySelectorAll('.frame');
-				for (i = 0; i < linkItem.length; i++) {
-					linkItem[i].parentNode.className = '';
-				}
-				this.parentNode.classList.add('active');
-				const url = this.dataset.ref;
-				frame[0].src = url;
-			}
-		</script>
+		</div>
+		<iframe class="frame" src="Buttons-group.html" height="100%" width="100%" title="Iframe Example"></iframe>
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
+		<script src="js/demo.js"></script>
 	</body>
 </html>

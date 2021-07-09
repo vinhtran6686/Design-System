@@ -13,7 +13,7 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 94px;
+				height: 50px;
 				border-radius: 4px;
 			}
 			.demo-bg-link {
@@ -42,1159 +42,728 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1>Grids</h1>
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
+	<body class="demo scrollbar-big">
+		<div class="grid-system">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Grids</h1>
 					</div>
-				</div>
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
+					<div class="description">
+						<p>
+							Our grid system is composed of 8 flexible columns with a gutter between columns of 30px. We
+							apply <a href="#" class="link">border-box</a> so that the border and padding is included in
+							the width of the grid columns.
+						</p>
 					</div>
-				</div>
-			</div>
-			<!-- row 6 * 2-->
-			<div class="row">
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 4 * 3 -->
-			<div class="row">
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 3 * 4 -->
-			<div class="row">
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 5  col -->
-			<div class="row">
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 2 * 6 -->
-			<div class="row">
-				<div class="col-6">
-					<div class="row">
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+					<div id="grid-container">
+						<h3>Grid Container</h3>
+						<p class="m-b-24">Our grid container have a 1176px</p>
+						<div class="line">
+							<h4>Container</h4>
+							<div class="row">
+								<div class="col">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520This%2520is%2520container%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 276px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="grid-sizes">
+						<h3>Grid sizes</h3>
+						<div class="line">
+							<h4>Col auto</h4>
+							<div class="row">
+								<div class="col">
+									<div class="demo-bg demo-bg-primary">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<div class="line">
+							<h4>Col 1 to 12</h4>
+							<div class="row">
+								<div class="col-1">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-3">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-4">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-5">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-7">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-8">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-9">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-10">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<div class="demo-bg demo-bg-link">
+										<div class="demo-text">
+											576
+											<span>px</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col%2522%253E%250A%2520%2520%2520%2520Col%2520auto%2509%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-1%2522%253E%250A%2520%2520%2520%2520Col%25201%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-2%2522%253E%250A%2520%2520%2520%2520Col%25202%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-3%2522%253E%250A%2520%2520%2520%2520Col%25203%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520....%250A%2520%2520%253Cdiv%2520class%253D%2522col-12%2522%253E%250A%2520%2520%2520%2520Col%252012%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 336px; height: 530px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="grid-gutters">
+						<h3>Grid Gutters</h3>
+						<p class="m-b-24">
+							Our grid columns have a 12px padding on either side that results in a 24px gutter between
+							columns and a 12px gutter on the grid edges.
+						</p>
+						<div class="row">
+							<div class="col-6">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										576
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										576
+										<span>px</span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="row">
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<!-- row 6 * 2-->
+						<div class="row">
+							<div class="col-4">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<!-- row 4 * 3 -->
+						<div class="row">
+							<div class="col-3">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										376
+										<span>px</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<!-- row 3 * 4 -->
+						<div class="row">
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										216
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										216
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										216
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										216
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										216
+										<span>px</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<!-- row 5  col -->
+						<div class="row">
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-2">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										176
+										<span>px</span>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 8 col -->
-			<div class="row">
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
+						<!-- row 2 * 6 -->
+						<div class="row">
+							<div class="col-6">
+								<div class="row">
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="row">
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-3">
+										<div class="demo-bg demo-bg-primary">
+											<div class="demo-text">
+												126
+												<span>px</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
+						<!-- row 8 col -->
+						<div class="row">
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										96
+										<span>px</span>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
+						<!-- row 10 col -->
+						<div class="row">
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<div class="demo-bg demo-bg-primary">
+									<div class="demo-text">
+										76
+										<span>px</span>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
+						<!-- row 12 col -->
+						<h3 class="p-t-40">No Gutters</h3>
+						<p class="m-b-24">Set class name "no-gutters" to remove gutter between columns</p>
+						<div class="row no-gutters">
+							<div class="col-6">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										576
+										<span>px</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="demo-bg demo-bg-link">
+									<div class="demo-text">
+										576
+										<span>px</span>
+									</div>
+								</div>
+							</div>
 						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row%2520no-gutters%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E%250A%2520%2520%2520%2520%2520%2520Col-6%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-6%2522%253E%250A%2520%2520%2520%2520%2520%2520Col-6%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 366px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 10 col -->
-			<div class="row">
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 12 col -->
-			<br /><br /><br />
 
-			<div class="row">
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 6 - 6 -->
-			<div class="row">
-				<div class="col-5">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							476
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-7">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							676
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 5 - 7 -->
-			<div class="row">
-				<div class="col-4">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							476
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							676
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 4 - 8 -->
-			<div class="row">
-				<div class="col-3">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-9">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							776
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 3 - 9 -->
-			<div class="row">
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-10">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							976
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 2 - 10 -->
-			<div class="row">
-				<div class="col-1 col-xl-5 col-md-6">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-11 col-xl-7 col-md-6">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							1076
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 1 - 11 -->
-		</div>
-		<h1>Grids no gutters</h1>
-		<div class="container">
-			<div class="row no-gutters">
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 6 * 2-->
-			<div class="row no-gutters">
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-4">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 4 * 3 -->
-			<div class="row no-gutters">
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 3 * 4 -->
-			<div class="row no-gutters">
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							216
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 5  col -->
-			<div class="row no-gutters">
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 2 * 6 -->
-			<div class="row no-gutters">
-				<div class="col-6">
-					<div class="row no-gutters">
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+					<div id="mixed-grids">
+						<h3>Mixed grids</h3>
+						<p class="m-b-24">
+							The grid layout is easily extended by nesting and mixing different column sizes.
+						</p>
+						<div class="line">
+							<div class="row">
+								<div class="col-4">
+									<div class="demo-bg demo-bg-link">
+										<div class="f-s-ui-20 f-w-500">Col 4</div>
+									</div>
+								</div>
+								<div class="col-8">
+									<div class="demo-bg demo-bg-link">
+										<div class="f-s-ui-20 f-w-500">Col 8</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<div class="demo-bg demo-bg-link">
+										<div class="f-s-ui-20 f-w-500">Col 2</div>
+									</div>
+								</div>
+								<div class="col-10">
+									<div class="demo-bg demo-bg-link">
+										<div class="f-s-ui-20 f-w-500">Col 10</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-4%2522%253E%250A%2520%2520%2520%2520Col%25204%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-8%2522%253E%250A%2520%2520%2520%2520Col%25208%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522row%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-2%2522%253E%250A%2520%2520%2520%2520Col%25202%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522col-10%2522%253E%250A%2520%2520%2520%2520Col%252010%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 474px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="grid-mobile">
+						<h3>Grids Mobile</h3>
+						<p class="m-b-24">Our grid container have width 100%</p>
+						<p class="m-b-24">Grid mobile have 6 col</p>
+						<div class="line">
+							<div class="container-mb">
+								<div class="row-mb">
+									<div class="col-mb-1">
+										<div class="demo-bg demo-bg-link">
+											<div class="f-s-ui-20 f-w-500">Col 1</div>
+										</div>
+									</div>
+									<div class="col-mb-2">
+										<div class="demo-bg demo-bg-link">
+											<div class="f-s-ui-20 f-w-500">Col 2</div>
+										</div>
+									</div>
+									<div class="col-mb-3">
+										<div class="demo-bg demo-bg-link">
+											<div class="f-s-ui-20 f-w-500">Col 3</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="row no-gutters">
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-3">
-							<div class="demo-bg demo-bg-primary">
-								<div class="demo-text">
-									126
-									<span>px</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 8 col -->
-			<div class="row no-gutters">
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							96
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 10 col -->
-			<div class="row no-gutters">
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- row 12 col -->
-			<br /><br /><br />
-
-			<div class="row no-gutters">
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-6">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							576
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 6 - 6 -->
-			<div class="row no-gutters">
-				<div class="col-5">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							476
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-7">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							676
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 5 - 7 -->
-			<div class="row no-gutters">
-				<div class="col-4">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							476
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							676
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 4 - 8 -->
-			<div class="row no-gutters">
-				<div class="col-3">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							376
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-9">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							776
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 3 - 9 -->
-			<div class="row no-gutters">
-				<div class="col-2">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							176
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-10">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							976
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 2 - 10 -->
-			<div class="row no-gutters">
-				<div class="col-1 col-xl-5 col-md-6">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							76
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-11 col-xl-7 col-md-6">
-					<div class="demo-bg demo-bg-primary">
-						<div class="demo-text">
-							1076
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- col 1 - 11 -->
-		</div>
-
-		<div class="container-mb">
-			<h1>Grids mobile</h1>
-			<div class="row-mb">
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-mb-1">
-					<div class="demo-bg demo-bg-link">
-						<div class="demo-text">
-							1
-							<span>px</span>
-						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522container-mb%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522row-mb%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-mb-1%2522%253E%250A%2520%2520%2520%2520%2509Col%25201%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-mb-2%2522%253E%250A%2509%2509Col%25202%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522col-mb-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Col%25203%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 420px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
 				</div>
 			</div>

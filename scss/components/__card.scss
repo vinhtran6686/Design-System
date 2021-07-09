@@ -1,0 +1,10 @@
+.card{
+   display: block;
+   border-radius: $border-radius;
+   &-md{
+      border-radius: $border-radius-md;
+   }
+   &-lg{
+      border-radius: $border-radius-lg;
+   }
+}
