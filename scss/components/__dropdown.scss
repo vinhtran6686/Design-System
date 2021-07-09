@@ -8,7 +8,7 @@
 		color: $grayscale-700;
 		cursor: pointer;
 		background-color: #ffffff;
-		transition: all  $transition-duration-xs $timing-ease-end;
+		transition: all $transition-duration-xs $timing-ease-end;
 		font-weight: normal;
 		display: inline-flex;
 		justify-content: space-between;
@@ -37,7 +37,7 @@
 			left: 0;
 			border-radius: 4px;
 			border: $border-default;
-			transition: all  $transition-duration-xs $timing-ease-end;
+			transition: all $transition-duration-xs $timing-ease-end;
 		}
 		&:hover {
 			&:before {
@@ -111,14 +111,27 @@
 			&:not(:last-child) {
 				box-shadow: inset 0px -1px 0px $grayscale-200;
 			}
+			.radio {
+				label {
+					[class*='ic'] {
+						display: flex;
+					}
+				}
+				.dropdown-address-status {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: center;
+					font-weight: 400;
+				}
+			}
 			&.active {
 				span,
 				div,
 				h3 {
 					font-weight: 500;
 				}
-				[class*='ic'] {
-					display: flex;
+				[class*='ic-'] {
+					display: block;
 				}
 			}
 
@@ -156,6 +169,10 @@
 		#{$this}-menu-top {
 			width: 328px; // mean 344px
 		}
+		#{$this}-menu-wrapper {
+			max-width: none;
+			width: 344px;
+		}
 	}
 	// style
 	&-product {
@@ -187,7 +204,7 @@
 			}
 		}
 	}
-	&-address {
+	&-shop {
 		&-item {
 			width: 100%;
 			input[type='radio'] {
@@ -222,7 +239,7 @@
 			}
 		}
 	}
-	&-city {
+	&-address {
 		#{$this}-menu {
 			max-width: 344px;
 			&-wrapper {
@@ -289,7 +306,7 @@
 }
 
 // .ex1{
-	
+
 // 	@extend .animate__animated ;
 // 	.dropdown-menu {
 // 		@extend .scale;

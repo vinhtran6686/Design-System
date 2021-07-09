@@ -11,6 +11,9 @@
 				opacity: 1;
 				visibility: visible;
 			}
+			#{$this}-action-icon {
+				transform: rotate(180deg);
+			}
 		}
 	}
 	&-title {
@@ -29,9 +32,6 @@
 			transition-duration: $transition-duration-xs;
 			transition-timing-function: $timing-ease-end;
 			color: $grayscale;
-			&.open {
-				transform: rotate(180deg);
-			}
 		}
 	}
 	&-content {

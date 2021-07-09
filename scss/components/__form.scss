@@ -199,9 +199,14 @@ input[type='datetime-local'] {
 			color: $grayscale-500;
 			pointer-events: none;
 		}
+		&:checked ~ label {
+			.label-text {
+				font-weight: 500;
+			}
+		}
 	}
 	&-icon {
-		align-items: center;
+		// align-items: center;
 	}
 	&-single {
 		input[type='radio'],

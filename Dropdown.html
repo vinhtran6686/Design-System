@@ -1,1501 +1,1218 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<title>Design System FPTShop</title>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-	<!-- <link rel="stylesheet" href="css/style.css" /> -->
-	<link rel="stylesheet" href="css/system.css" />
-	<link rel="stylesheet" href="css/example.css" />
-	<style>
-		.dropdown {
-			margin-right: 300px;
-			margin-bottom: 500px;
-		}
-
-		.dropdown:nth-of-type(-n + 9) {
-			margin-bottom: 230px;
-		}
-	</style>
-</head>
-
-<body class="scrollbar-big">
-
-
-	<h1 class="m-b-24">Dropdown</h1>
-	<span class="ic-camera-security-2"></span>
-	<div class="m-t-40"></div>
-	<h3>Default</h3>
-	<div class="dropdown">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab4" />
-						<label for="ab4" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab41" />
-						<label for="ab41" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab42" />
-						<label for="ab42" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-search">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown ex1 dropdown-search dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open1">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<br />
-	<h3>Checkbox</h3>
-	<div class="dropdown">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab4" />
-						<label for="ab4" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab41" />
-						<label for="ab41" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ab42" />
-						<label for="ab42" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba1" />
-						<label for="ba1" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba12" />
-						<label for="ba12" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba13" />
-						<label for="ba13" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba14" />
-						<label for="ba14" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba15" />
-						<label for="ba15" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-search">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba1" />
-						<label for="ba1" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba12" />
-						<label for="ba12" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba13" />
-						<label for="ba13" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba14" />
-						<label for="ba14" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba15" />
-						<label for="ba15" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-search dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba1" />
-						<label for="ba1" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba12" />
-						<label for="ba12" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba13" />
-						<label for="ba13" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba14" />
-						<label for="ba14" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="checkbox checkbox-icon checkbox-sm">
-						<input type="checkbox" value="checkbox3" name="ab1" id="ba15" />
-						<label for="ba15" class="label label-sm label-is-icon label-icon-right">
-							<i class="ic-help icon-circle"></i>
-							<span class="label-text f-w-400">Label</span>
-						</label>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<br />
-	<h3>Products</h3>
-	<br />
-	<div class="dropdown dropdown-product">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-product dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-product dropdown-search dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-product-item">
-						<div class="dropdown-product-img m-r-8">
-							<img src="images/dropdown/product-img.png" alt="" />
-						</div>
-						<div class="dropdown-product-info">
-							<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
-								Apple Watch Series 5 GPS Cellular
-							</h3>
-							<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
-							<span class="text-grayscale f-w400"><strike>15.990.000₫</strike></span>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<br />
-	<h3>Address</h3>
-	<br />
-	<div class="dropdown dropdown-address">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex421" />
-							<label for="ex421">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex422" />
-							<label for="ex422">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex423" />
-							<label for="ex423">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex4224" />
-							<label for="ex4224">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-address dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex421" />
-							<label for="ex421">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex422" />
-							<label for="ex422">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex423" />
-							<label for="ex423">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex4224" />
-							<label for="ex4224">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-address dropdown-search">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex421" />
-							<label for="ex421">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex422" />
-							<label for="ex422">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex423" />
-							<label for="ex423">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex4224" />
-							<label for="ex4224">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex422" />
-							<label for="ex422">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex423" />
-							<label for="ex423">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-				<a href="#" class="">
-					<div class="dropdown-address-item">
-						<div class="radio radio-sm form-check-error">
-							<input type="radio" value="radio3" name="grp1" id="ex4224" />
-							<label for="ex4224">
-								<div class="f-s-p-14 m-b-4">
-									141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
-								</div>
-								<div class="dropdown-address-status text-success">
-									<i class="ic-check icon-md icon-circle icon-success m-r-4"></i>
-									Có hàng
-								</div>
-							</label>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-	</div>
-	<h3>City</h3>
-	<br />
-	<div class="dropdown dropdown-city">
-		<div class="dropdown-button active">
-			<span>An Giang</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>An Giang</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-extra dropdown-city">
-		<div class="dropdown-button active">
-			<span>An Giang</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>An Giang</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-extra dropdown-search dropdown-city">
-		<div class="dropdown-button active">
-			<span>An Giang</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<span>An Giang</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-				<a href="#" class="">
-					<span>Hải Phòng</span>
-				</a>
-				<a href="#" class="">
-					<span>Hồ Chí Minh</span>
-				</a>
-				<a href="#" class="">
-					<span>Hà Nội</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-	<div class="dropdown dropdown-photo">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-photo dropdown-search">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-	<div class="dropdown dropdown-photo dropdown-search dropdown-extra">
-		<div class="dropdown-button active">
-			<span>Apple (iPhone)</span>
-			<i class="ic-arrow-select icon-md"></i>
-		</div>
-		<div class="dropdown-menu open">
-			<div class="dropdown-menu-top">
-				<div class="dropdown-menu-search">
-					<div class="form-search form-search-sm">
-						<span class="form-search-icon m-r-4">
-							<i class="ic-search icon-sm"></i>
-						</span>
-						<input type="text" class="form-search-input m-r-4" placeholder="Enter keyword..." />
-						<span class="form-search-icon form-search-close">
-							<i class="ic-cancel icon-sm"></i>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="dropdown-menu-wrapper scrollbar">
-				<a href="#" class="active">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-				<a href="#" class="">
-					<div class="photo">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<span>Apple (iPhone)</span>
-					<i class="ic-check icon-sm m-l-8"></i>
-				</a>
-			</div>
-		</div>
-	</div>
-
-
-	<script>
-		var btn = document.querySelectorAll('.dropdown');
-		btn.forEach((i) => i.addEventListener('click', toggleItem, false));
-		function toggleItem(e) {
-			var menu = this.querySelector('.dropdown-menu');
-			if (menu.classList.contains('open')) {
-				menu.classList.remove('open');
+	<head>
+		<title>Design System FPTShop</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<link rel="stylesheet" href="css/system.css" />
+		<link rel="stylesheet" href="css/example.css" />
+		<style>
+			.content .dropdown h3 {
+				margin-bottom: 4px;
 			}
-			else {
-				menu.classList.add('open');
-			}
-		}
-	</script>
-	<script src="js/util.js"></script>
-	<script src="js/functions.js"></script>
-</body>
+		</style>
+	</head>
 
+	<body class="demo scrollbar-big">
+		<div class="dropdown-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Dropdown</h1>
+					</div>
+					<div id="dropdown-style">
+						<h3>Dropdown Style</h3>
+						<h6 class="m-b-24">Dropdown default</h6>
+						<div class="line">
+							<div class="dropdown">
+								<div class="dropdown-button active">
+									<span>Apple (iPhone)</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 654px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h6 class="m-b-24">Dropdown Multichoice</h6>
+						<div class="line">
+							<div class="dropdown">
+								<div class="dropdown-button active">
+									<span>Apple (iPhone)</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab4" />
+												<label for="ab4" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab41" />
+												<label for="ab41" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab42" />
+												<label for="ab42" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox%2520checkbox-icon%2520checkbox-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520value%253D%2522checkbox3%2522%2520name%253D%2522ab1%2522%2520id%253D%2522ab4%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522ab4%2522%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520icon-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520f-w-400%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox%2520checkbox-icon%2520checkbox-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520value%253D%2522checkbox3%2522%2520name%253D%2522ab1%2522%2520id%253D%2522ab41%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522ab41%2522%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520icon-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520f-w-400%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522checkbox%2520checkbox-icon%2520checkbox-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%2520value%253D%2522checkbox3%2522%2520name%253D%2522ab1%2522%2520id%253D%2522ab42%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522ab42%2522%2520class%253D%2522label%2520label-sm%2520label-is-icon%2520label-icon-right%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-help%2520icon-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2520f-w-400%2522%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 960px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h6 class="m-b-24">Dropdown Product</h6>
+						<p class="m-b-24">Default, Extra</p>
+						<div class="line">
+							<div class="dropdown dropdown-product">
+								<div class="dropdown-button active">
+									<span>Default</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-product dropdown-extra">
+								<div class="dropdown-button active">
+									<span>Extra</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2520dropdown-product%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EDefault%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2520scrollbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-img%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252Fdropdown%252Fproduct-img.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-grayscale-700%2520f-s-p-14%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Apple%2520Watch%2520Series%25205%2520GPS%2520Cellular%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2520m-r-4%2520f-w-500%2522%253E15.490.000%25E2%2582%25AB%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-grayscale%2520f-w400%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Cstrike%253E15.990.000%25E2%2582%25AB%253C%252Fstrike%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-img%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252Fdropdown%252Fproduct-img.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%2520class%253D%2522text-grayscale-700%2520f-s-p-14%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Apple%2520Watch%2520Series%25205%2520GPS%2520Cellular%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2520m-r-4%2520f-w-500%2522%253E15.490.000%25E2%2582%25AB%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-grayscale%2520f-w400%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253Cstrike%253E15.990.000%25E2%2582%25AB%253C%252Fstrike%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-product-img%2520m-r-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252Fdropdown%252Fproduct-img.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522drop"
+							style="width: 800px; height: 1100px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h6 class="m-b-24">Dropdown Shop</h6>
+						<p class="m-b-24">Default, Extra</p>
+						<div class="line">
+							<div class="dropdown dropdown-shop">
+								<div class="dropdown-button active">
+									<span>Default</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex421" />
+													<label for="ex421">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex422" />
+													<label for="ex422">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex423" />
+													<label for="ex423">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex4224" />
+													<label for="ex4224">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-shop dropdown-extra">
+								<div class="dropdown-button active">
+									<span>Extra</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex421" />
+													<label for="ex421">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex422" />
+													<label for="ex422">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex423" />
+													<label for="ex423">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex4224" />
+													<label for="ex4224">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2520dropdown-shop%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EDefault%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2520scrollbar%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-address-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio%2520radio-sm%2520form-check-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520value%253D%2522radio3%2522%2520name%253D%2522grp1%2522%2520id%253D%2522ex421%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522ex421%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520141%2520Tr%25E1%25BA%25A7n%2520N%25C3%25A3o%252C%2520Khu%2520Ph%25E1%25BB%2591%25203%252C%2520P.%2520B%25C3%25ACnh%2520An%2520%252C%2520Qu%25E1%25BA%25ADn%25202%252C%2520H%25E1%25BB%2593%2520Ch%25C3%25AD%2520Minh%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-address-status%2520text-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-xs%2520ic-circle%2520ic-bg-success%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520C%25C3%25B3%2520h%25C3%25A0ng%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-address-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio%2520radio-sm%2520form-check-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520value%253D%2522radio3%2522%2520name%253D%2522grp1%2522%2520id%253D%2522ex422%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520for%253D%2522ex422%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520141%2520Tr%25E1%25BA%25A7n%2520N%25C3%25A3o%252C%2520Khu%2520Ph%25E1%25BB%2591%25203%252C%2520P.%2520B%25C3%25ACnh%2520An%2520%252C%2520Qu%25E1%25BA%25ADn%25202%252C%2520H%25E1%25BB%2593%2520Ch%25C3%25AD%2520Minh%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-address-status%2520text-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-xs%2520ic-circle%2520ic-bg-success%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520C%25C3%25B3%2520h%25C3%25A0ng%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-address-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522radio%2520radio-sm%2520form-check-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520value%253D%2522radio"
+							style="width: 800px; height: 1100px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h6 class="m-b-24">Dropdown Address</h6>
+						<p class="m-b-24">Default, Extra</p>
+						<div class="line">
+							<div class="dropdown dropdown-address">
+								<div class="dropdown-button active">
+									<span>Default</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<span>An Giang</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-extra dropdown-address">
+								<div class="dropdown-button active">
+									<span>Extra</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<span>An Giang</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2520dropdown-address%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EDefault%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EAn%2520Giang%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25C3%25A0%2520N%25E1%25BB%2599i%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25E1%25BA%25A3i%2520Ph%25C3%25B2ng%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25E1%25BB%2593%2520Ch%25C3%25AD%2520Minh%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25C3%25A0%2520N%25E1%25BB%2599i%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25C3%25A0%2520N%25E1%25BB%2599i%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25E1%25BA%25A3i%2520Ph%25C3%25B2ng%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25E1%25BB%2593%2520Ch%25C3%25AD%2520Minh%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EH%25C3%25A0%2520N%25E1%25BB%2599i%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 852px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h6 class="m-b-24">Dropdown photo</h6>
+						<p class="m-b-24">Default, Extra</p>
+						<div class="line">
+							<div class="dropdown dropdown-photo">
+								<div class="dropdown-button active">
+									<span>Dropdown photo</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-photo dropdown-extra">
+								<div class="dropdown-button active">
+									<span>Dropdown photo extra</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2520dropdown-photo%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EDropdown%2520photo%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 870px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+					</div>
+					<div id="dropdown-properties">
+						<h3>Dropdown properties</h3>
+						<h6 class="m-b-24">Dropdown search</h6>
+						<div class="line">
+							<div class="dropdown dropdown-search">
+								<div class="dropdown-button active">
+									<span>Default search</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-search">
+								<div class="dropdown-button active">
+									<span>Multichoice search</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab4" />
+												<label for="ab4" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab41" />
+												<label for="ab41" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="checkbox checkbox-icon checkbox-sm">
+												<input type="checkbox" value="checkbox3" name="ab1" id="ab42" />
+												<label for="ab42" class="label label-sm label-is-icon label-icon-right">
+													<i class="ic-help icon-circle"></i>
+													<span class="label-text f-w-400">Label</span>
+												</label>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-product dropdown-search">
+								<div class="dropdown-button active">
+									<span>Product search</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-product-item">
+												<div class="dropdown-product-img m-r-8">
+													<img src="images/dropdown/product-img.png" alt="" />
+												</div>
+												<div class="dropdown-product-info">
+													<h3 class="text-grayscale-700 f-s-p-14 m-b-4">
+														Apple Watch Series 5 GPS Cellular
+													</h3>
+													<span class="text-primary m-r-4 f-w-500">15.490.000₫</span>
+													<span class="text-grayscale f-w400"
+														><strike>15.990.000₫</strike></span
+													>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-shop dropdown-search">
+								<div class="dropdown-button active">
+									<span>Shop search</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper scrollbar">
+										<a href="#" class="active">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex421" />
+													<label for="ex421">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex422" />
+													<label for="ex422">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex423" />
+													<label for="ex423">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="">
+											<div class="dropdown-address-item">
+												<div class="radio radio-sm form-check-error">
+													<input type="radio" value="radio3" name="grp1" id="ex4224" />
+													<label for="ex4224">
+														<div class="f-s-p-14 m-b-4">
+															141 Trần Não, Khu Phố 3, P. Bình An , Quận 2, Hồ Chí Minh
+														</div>
+														<div class="dropdown-address-status text-success">
+															<i class="ic-check ic-xs ic-circle ic-bg-success m-r-4"></i>
+															Có hàng
+														</div>
+													</label>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-address dropdown-search">
+								<div class="dropdown-button active">
+									<span>Default</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<span>An Giang</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+										<a href="#" class="">
+											<span>Hải Phòng</span>
+										</a>
+										<a href="#" class="">
+											<span>Hồ Chí Minh</span>
+										</a>
+										<a href="#" class="">
+											<span>Hà Nội</span>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown dropdown-photo dropdown-search">
+								<div class="dropdown-button active">
+									<span>Dropdown photo</span>
+									<i class="ic-arrow-select ic-md"></i>
+								</div>
+								<div class="dropdown-menu">
+									<div class="dropdown-menu-top">
+										<div class="dropdown-menu-search">
+											<div class="form-search form-search-sm">
+												<span class="form-search-icon m-r-4">
+													<i class="ic-search ic-sm"></i>
+												</span>
+												<input
+													type="text"
+													class="form-search-input m-r-4"
+													placeholder="Enter keyword..."
+												/>
+												<span class="form-search-icon form-search-close">
+													<i class="ic-cancel ic-sm"></i>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-menu-wrapper">
+										<a href="#" class="active">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+										<a href="#" class="">
+											<div class="photo">
+												<img src="images/Avatar/1.jpg" alt="" />
+											</div>
+											<span>Apple (iPhone)</span>
+											<i class="ic-check ic-sm m-l-8"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522dropdown%2520dropdown-search%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-button%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253EDefault%2520search%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-arrow-select%2520ic-md%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-top%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-search%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-search%2520form-search-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520m-r-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-search%2520ic-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-search-input%2520m-r-4%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Enter%2520keyword...%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-search-icon%2520form-search-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-menu-wrapper%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EApple%2520%28iPhone%29%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-check%2520ic-sm%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 744px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var btn = document.querySelectorAll('.dropdown');
+			btn.forEach((i) => i.addEventListener('click', toggleItem, false));
+			function toggleItem(e) {
+				var menu = this.querySelector('.dropdown-menu');
+				if (menu.classList.contains('open')) {
+					menu.classList.remove('open');
+				} else {
+					menu.classList.add('open');
+				}
+			}
+		</script>
+		<script src="js/util.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
 </html>
