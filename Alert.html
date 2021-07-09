@@ -21,185 +21,178 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1 class="m-b-24">Alert</h1>
-		<div class="m-t-40"></div>
-		<h3 class="m-b-16">Single</h3>
-
-		<div class="block">
-			<div class="alert alert-lg alert-single">
-				<div class="label label-lg">
-					<i class="ic-exclamation icon-circle icon-lg m-r-8"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
+	<body class="demo scrollbar-big">
+		<div class="alert-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Alert</h1>
+					</div>
+					<div id="alert-properties">
+						<h3>Alert Single size</h3>
+						<p class="m-b-12">lg, md, sm, xs</p>
+						<div class="line">
+							<div class="alert alert-lg alert-single">
+								<div class="label label-lg">
+									<i class="ic-exclamation ic-circle ic-lg m-r-8"></i>
+									<span class="alert-text label-text">Description</span>
+									<i class="ic-close m-l-8 ic-sm"></i>
+								</div>
+							</div>
+							<div class="alert alert-md alert-single">
+								<div class="label label-md">
+									<i class="ic-exclamation ic-circle ic-md m-r-8"></i>
+									<span class="label-text">Description</span>
+									<i class="ic-close m-l-8"></i>
+								</div>
+							</div>
+							<div class="alert alert-sm alert-single">
+								<div class="label label-sm">
+									<i class="ic-exclamation ic-circle ic-sm m-r-8"></i>
+									<span class="label-text">Description</span>
+									<i class="ic-close m-l-8"></i>
+								</div>
+							</div>
+							<div class="alert alert-xs alert-single">
+								<div class="label label-xs">
+									<i class="ic-exclamation ic-circle ic-xs m-r-4"></i>
+									<span class="label-text">Description</span>
+									<i class="ic-close m-l-4"></i>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-lg%2520alert-single%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-exclamation%2520ic-circle%2520ic-lg%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-text%2520label-text%2522%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520m-l-8%2520ic-sm%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-md%2520alert-single%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-exclamation%2520ic-circle%2520ic-md%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-sm%2520alert-single%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-exclamation%2520ic-circle%2520ic-sm%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520m-l-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-single%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-exclamation%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520m-l-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 690px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Alert full text</h3>
+						<p class="m-b-12">lg, md, sm, xs</p>
+						<div class="line">
+							<div class="alert alert-lg alert-danger alert-full-text">
+								<div class="alert-title label label-lg">
+									<i class="ic-cancel ic-circle ic-lg m-r-8"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-md alert-danger alert-full-text">
+								<div class="alert-title label label-md">
+									<i class="ic-cancel ic-circle ic-md m-r-8"></i>
+									<span>Label</span>
+									<i class="ic-close ic-xs alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-sm alert-danger alert-full-text">
+								<div class="alert-title label label-sm">
+									<i class="ic-cancel ic-circle ic-sm m-r-8"></i>
+									<span>Label</span>
+									<i class="ic-close alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-danger alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-lg%2520alert-danger%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-lg%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-md%2520alert-danger%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-md%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-xs%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-sm%2520alert-danger%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-sm%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-sm%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-danger%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 762px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Alert color</h3>
+						<p class="m-b-24">Grayscale, Success, Info, Warning, Danger</p>
+						<div class="line">
+							<div class="alert alert-xs alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-grayscale alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-success alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-info alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-warning alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+							<div class="alert alert-xs alert-danger alert-full-text">
+								<div class="alert-title label label-xs">
+									<i class="ic-cancel ic-circle ic-xs m-r-4"></i>
+									<span>Label</span>
+									<i class="ic-close ic-sm alert-close"></i>
+								</div>
+								<div class="alert-des">Description</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-grayscale%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-success%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-info%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-warning%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-xs%2520alert-danger%2520alert-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-title%2520label%2520label-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-cancel%2520ic-circle%2520ic-xs%2520m-r-4%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ELabel%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520ic-sm%2520alert-close%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert-des%2522%253EDescription%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 1050px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Alert no fill</h3>
+						<div class="line">
+							<div class="alert alert-lg alert-single alert-no-fill">
+								<div class="label label-lg">
+									<i class="ic-exclamation ic-circle ic-lg m-r-8"></i>
+									<span class="alert-text label-text">Description</span>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520alert-lg%2520alert-single%2520alert-no-fill%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-lg%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-exclamation%2520ic-circle%2520ic-lg%2520m-r-8%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-text%2520label-text%2522%253EDescription%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 294px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
 				</div>
 			</div>
-			<div class="alert alert-md alert-single">
-				<div class="label label-md">
-					<i class="ic-exclamation icon-circle icon-md m-r-8"></i>
-					<span class="label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-sm alert-single">
-				<div class="label label-sm">
-					<i class="ic-exclamation icon-circle icon-sm m-r-8"></i>
-					<span class="label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-sm alert-single">
-				<div class="label label-sm">
-					<i class="ic-exclamation icon-circle icon-sm m-r-4"></i>
-					<span class="label-text">Description</span>
-					<i class="ic-close m-l-4"></i>
-				</div>
-			</div>
-		</div>
-		<div class="block">
-			<div class="alert alert-lg alert-single alert-danger">
-				<div class="label label-lg">
-					<i class="ic-exclamation icon-circle icon-lg m-r-8"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close alert-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-lg alert-single alert-grayscale">
-				<div class="label label-lg">
-					<i class="ic-exclamation icon-circle icon-lg m-r-8"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-md alert-single alert-success">
-				<div class="label label-md">
-					<i class="ic-exclamation icon-circle icon-md m-r-8"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-sm alert-single alert-info">
-				<div class="label label-sm">
-					<i class="ic-exclamation icon-circle icon-sm m-r-8"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close m-l-8"></i>
-				</div>
-			</div>
-			<div class="alert alert-sm alert-single alert-warning">
-				<div class="label label-sm">
-					<i class="ic-exclamation icon-circle icon-sm m-r-4"></i>
-					<span class="alert-text label-text">Description</span>
-					<i class="ic-close m-l-4"></i>
-				</div>
-			</div>
-		</div>
-
-		<h3 class="m-b-16">Full text</h3>
-		<!-- lg and md need close icon-md  -->
-		<!-- sm and xs need close icon-sm  -->
-
-		<!-- danger  -->
-		<div class="alert alert-lg alert-danger alert-full-text">
-			<div class="alert-title label label-lg">
-				<i class="ic-cancel icon-circle icon-lg m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-md icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-md alert-danger alert-full-text">
-			<div class="alert-title label label-md">
-				<i class="ic-cancel icon-circle icon-md m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-md icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-sm alert-danger alert-full-text">
-			<div class="alert-title label label-sm">
-				<i class="ic-cancel icon-circle icon-sm m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-sm icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-xs alert-danger alert-full-text">
-			<div class="alert-title label label-xs">
-				<i class="ic-cancel icon-circle icon-xs m-r-4"></i>
-				<span>Label</span>
-				<i class="ic-close icon-sm icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-
-		<!-- info  -->
-		<div class="alert alert-lg alert-info alert-full-text">
-			<div class="alert-title label label-lg">
-				<i class="ic-exclamation icon-circle icon-lg m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-md icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-md alert-info alert-full-text">
-			<div class="alert-title label label-md">
-				<i class="ic-exclamation icon-circle icon-md m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-md icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-sm alert-info alert-full-text">
-			<div class="alert-title label label-sm">
-				<i class="ic-exclamation icon-circle icon-sm m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close icon-sm icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-xs alert-info alert-full-text">
-			<div class="alert-title label label-xs">
-				<i class="ic-exclamation icon-circle icon-xs m-r-4"></i>
-				<span>Label</span>
-				<i class="ic-close icon-sm icons alert-close"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-
-		<!-- success  -->
-		<div class="alert alert-lg alert-success alert-full-text">
-			<div class="alert-title label label-lg">
-				<i class="ic-check icon-circle icon-lg m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close alert-close icon-md icons"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-md alert-success alert-full-text">
-			<div class="alert-title label label-md">
-				<i class="ic-check icon-circle icon-md m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close alert-close icon-md icons"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-sm alert-success alert-full-text">
-			<div class="alert-title label label-sm">
-				<i class="ic-check icon-circle icon-sm m-r-8"></i>
-				<span>Label</span>
-				<i class="ic-close alert-close icon-sm icons"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-		<div class="alert alert-xs alert-success alert-full-text">
-			<div class="alert-title label label-xs">
-				<i class="ic-check icon-circle icon-xs m-r-4"></i>
-				<span>Label</span>
-				<i class="ic-close alert-close icon-sm icons"></i>
-			</div>
-			<div class="alert-des">Description</div>
-		</div>
-
+		</div>		
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>

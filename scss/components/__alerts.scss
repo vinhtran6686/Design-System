@@ -97,7 +97,6 @@ $alert-border-width: $border-width !default;
 		}
 	}
 	&-full-text {
-		color: red;
 		.label {
 			display: flex;
 			span {
@@ -107,7 +106,7 @@ $alert-border-width: $border-width !default;
 		#{$this}-des {
 			margin-top: $spacing * 2;
 			padding-top: $spacing * 2;
-			border-top: $alert-border-width solid transparent;
+			border-top: $alert-border-width solid $grayscale-300;
 		}
 		&#{$this}-lg {
 			.alert-title {
@@ -150,6 +149,11 @@ $alert-border-width: $border-width !default;
 			}
 		}
 	}
+	&-no-fill {
+		background: none;
+		border: none;
+		padding: 0 !important;
+	}
 	&-close {
 		cursor: pointer;
 	}
@@ -187,7 +191,7 @@ $alert-border-width: $border-width !default;
 		[class*=' ic-'] {
 			color: $value;
 		}
-		.icon-circle {
+		.ic-circle {
 			background: $value;
 			color: $white;
 		}

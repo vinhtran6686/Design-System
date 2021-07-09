@@ -27,7 +27,7 @@
 	&-square,
 	&-circle {
 		background: $grayscale;
-		color: $white;
+		color: $white !important;
 		@include flexCenter(inline-flex);
 		&-outline {
 			color: $grayscale;
