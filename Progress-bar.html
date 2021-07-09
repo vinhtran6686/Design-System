@@ -15,98 +15,125 @@
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Progress bar</h1>
-		<div class="m-t-40"></div>
-		<h3>Progress line</h3>
-		<div class="m-b-24"></div>
-		<div class="progress-primary progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
+	<body class="demo scrollbar-big">
+		<div class="progress-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Progress bar</h1>
+					</div>
+					<div id="progress-properties">
+						<h3>Progress Style</h3>
+						<h6 class="m-b-24">
+							Progress line
+							<span class="f-s-p-16 text-grayscale">(MD, SM)</span>
+						</h6>
+						<div class="line">
+							<div class="progress-primary progress-md progress-line">
+								<div class="progress-bar" style="width: 70%">
+									<span>70%</span>
+								</div>
+							</div>
+							<div class="progress-primary progress-sm progress-line">
+								<div class="progress-bar" style="width: 70%"></div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522progress-primary%2520progress-md%2520progress-line%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522progress-bar%2522%2520style%253D%2522width%253A%252070%2525%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E70%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522progress-primary%2520progress-sm%2520progress-line%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522progress-bar%2522%2520style%253D%2522width%253A%252070%2525%2522%253E%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 330px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h6 class="m-b-24">
+							Progress circle
+							<span class="f-s-p-16 text-grayscale">(MD, SM)</span>
+						</h6>
+						<div class="line">
+							<div class="progress-circle progress-circle-big progress-primary">
+								<svg>
+									<!-- radius of circle line = 188.4px for big size  -->
+									<!-- 40 is 40% of circle  -->
+									<circle
+										cx="50%"
+										cy="50%"
+										r="30"
+										style="stroke-dashoffset: calc(188.4px - (40 * 188.4px) / 100)"
+									></circle>
+								</svg>
+								<div class="progress-circle-text">40%</div>
+							</div>
+							<div class="progress-circle progress-primary">
+								<svg>
+									<!-- radius of circle line = 87.92px for big size  -->
+									<!-- 40 is 40% of circle  -->
+									<circle
+										cx="50%"
+										cy="50%"
+										r="14"
+										style="stroke-dashoffset: calc(87.92px - (99 * 87.92px) / 100)"
+									></circle>
+								</svg>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522progress-circle%2520progress-circle-big%2520progress-primary%2522%253E%250A%2520%2520%2520%2520%253Csvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520radius%2520of%2520circle%2520line%2520%253D%2520188.4px%2520for%2520big%2520size%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%252040%2520is%252040%2525%2520of%2520circle%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ccircle%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cx%253D%252250%2525%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cy%253D%252250%2525%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520r%253D%252230%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522stroke-dashoffset%253A%2520calc%28188.4px%2520-%2520%2840%2520*%2520188.4px%29%2520%252F%2520100%29%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fcircle%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522progress-circle-text%2522%253E40%2525%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522progress-circle%2520progress-primary%2522%253E%250A%2520%2520%2520%2520%253Csvg%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520radius%2520of%2520circle%2520line%2520%253D%252087.92px%2520for%2520big%2520size%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%252040%2520is%252040%2525%2520of%2520circle%2520%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ccircle%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cx%253D%252250%2525%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520cy%253D%252250%2525%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520r%253D%252214%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520style%253D%2522stroke-dashoffset%253A%2520calc%2887.92px%2520-%2520%2899%2520*%252087.92px%29%2520%252F%2520100%29%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fcircle%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 636px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Progress color</h3>
+						<p class="m-b-24">Primary, Link, Grayscale, Success, Info, Warning, Danger</p>
+						<div class="line">
+							<div class="progress-primary progress-md progress-line">
+								<div class="progress-bar" style="width: 70%">
+									<span>70%</span>
+								</div>
+							</div>
+							<div class="progress-link progress-md progress-line">
+								<div class="progress-bar" style="width: 30%">
+									<span>30%</span>
+								</div>
+							</div>
+							<div class="progress-grayscale progress-md progress-line">
+								<div class="progress-bar" style="width: 20%">
+									<span>20%</span>
+								</div>
+							</div>
+							<div class="progress-success progress-md progress-line">
+								<div class="progress-bar" style="width: 10%">
+									<span>10%</span>
+								</div>
+							</div>
+							<div class="progress-info progress-md progress-line">
+								<div class="progress-bar" style="width: 55%">
+									<span>55%</span>
+								</div>
+							</div>
+							<div class="progress-warning progress-md progress-line">
+								<div class="progress-bar" style="width: 34%">
+									<span>34%</span>
+								</div>
+							</div>
+							<div class="progress-danger progress-md progress-line">
+								<div class="progress-bar" style="width: 90%">
+									<span>90%</span>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522progress-primary%2520progress-md%2520progress-line%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522progress-bar%2522%2520style%253D%2522width%253A%252070%2525%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E70%2525%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 276px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="progress-link progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
-			</div>
-		</div>
-		<div class="progress-grayscale progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
-			</div>
-		</div>
-		<div class="progress-success progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
-			</div>
-		</div>
-		<div class="progress-info progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
-			</div>
-		</div>
-		<div class="progress-warning progress-md progress-line">
-			<div class="progress-bar" style="width: 70%">
-				<span>70%</span>
-			</div>
-		</div>
-		<div class="progress-danger progress-sm progress-line">
-			<div class="progress-bar" style="width: 70%"></div>
-		</div>
-		<div class="m-b-24 m-t-24"></div>
-		<h3>Progress circle</h3>
-		<div class="m-b-24"></div>
-		<div class="progress-circle progress-circle-big progress-primary">
-			<svg>
-				<!-- radius of circle line = 188.4px for big size  -->
-				<!-- 40 is 40% of circle  -->
-				<circle
-					cx="50%"
-					cy="50%"
-					r="30"
-					style="stroke-dashoffset: calc(188.4px - (40 * 188.4px) / 100)"
-				></circle>
-			</svg>
-			<div class="progress-circle-text">40%</div>
-		</div>
-		<div class="progress-circle progress-primary">
-			<svg>
-				<!-- radius of circle line = 87.92px for big size  -->
-				<!-- 40 is 40% of circle  -->
-				<circle
-					cx="50%"
-					cy="50%"
-					r="14"
-					style="stroke-dashoffset: calc(87.92px - (99 * 87.92px) / 100)"
-				></circle>
-			</svg>
-		</div>
-		<div class="progress-circle progress-circle-big progress-link">
-			<svg>
-				<circle
-					cx="50%"
-					cy="50%"
-					r="30"
-					style="stroke-dashoffset: calc(188.4px - (40 * 188.4px) / 100)"
-				></circle>
-			</svg>
-			<div class="progress-circle-text">40%</div>
-		</div>
-		<div class="progress-circle progress-link">
-			<svg>
-				<circle
-					cx="50%"
-					cy="50%"
-					r="14"
-					style="stroke-dashoffset: calc(87.92px - (20 * 87.92px) / 100)"
-				></circle>
-			</svg>
-		</div>
-		
-		
-
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>
