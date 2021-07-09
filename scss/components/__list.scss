@@ -1,47 +1,66 @@
 .list {
+	$this: &;
 	&-group {
 		display: list-item;
 		li {
 			margin-bottom: $spacing;
 			position: relative;
-			display: flex;
-			font-weight: inherit;
-			@extend .f-s-p-16;
+			color: $grayscale-700;
 			@extend .f-w-400;
-			* {
-				font-weight: inherit;
-			}
-			&:before {
-				margin-right: $spacing;
-				display: inline-block;
-			}
+		}
+	}
+	&-lg {
+		li {
+			@extend .f-s-p-18;
+		}
+	}
+	&-md {
+		li {
+			@extend .f-s-p-16;
+		}
+	}
+	&-sm {
+		li {
+			@extend .f-s-p-14;
 		}
 	}
 	// style
-	&-disc {
+	&-bullet {
 		li {
+			position: relative;
 			&:before {
-				font-family: '#{$font-icon-family}';
+				content: '';
+				position: absolute;
+				top: 8px;
+				left: 0;
+				background: $grayscale;
+				border-radius: 50%;
 			}
 		}
-		&-sm {
+		&#{$this}-lg {
 			li {
+				padding-left: 14px;
 				&:before {
-					content: '\e937';
+					width: 6px;
+					height: 6px;
 				}
 			}
 		}
-		&-md {
+		&#{$this}-md {
 			li {
+				padding-left: 14px;
 				&:before {
-					content: '\e936';
+					width: 6px;
+					height: 6px;
 				}
 			}
 		}
-		&-lg {
+		&#{$this}-sm {
 			li {
+				padding-left: 8px;
 				&:before {
-					content: '\e935';
+					width: 4px;
+					height: 4px;
 				}
 			}
 		}
@@ -53,9 +72,28 @@
 			display: none;
 		}
 		li {
+			position: relative;
 			counter-increment: section;
 			&:before {
 				content: counter(section) '.';
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		&#{$this}-lg {
+			li {
+				padding-left: 23px;
+			}
+		}
+		&#{$this}-md {
+			li {
+				padding-left: 22px;
+			}
+		}
+		&#{$this}-sm {
+			li {
+				padding-left: 16px;
 			}
 		}
 	}
@@ -63,9 +101,28 @@
 		list-style-type: none;
 		counter-reset: section;
 		li {
+			position: relative;
 			counter-increment: section;
 			&:before {
 				content: counter(section, lower-alpha) '.';
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		&#{$this}-lg {
+			li {
+				padding-left: 23px;
+			}
+		}
+		&#{$this}-md {
+			li {
+				padding-left: 22px;
+			}
+		}
+		&#{$this}-sm {
+			li {
+				padding-left: 16px;
 			}
 		}
 	}

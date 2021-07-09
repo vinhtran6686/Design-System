@@ -236,6 +236,7 @@ input[type='datetime-local'] {
 		&:before {
 			content: '\e936';
 			font-family: 'icon';
+			font-size: 11px;
 			position: absolute;
 			top: 0;
 			right: 0;
@@ -361,13 +362,6 @@ input[type='datetime-local'] {
 	.checkbox-#{$size} {
 		input {
 			margin-right: $margin;
-		}
-	}
-	.checkbox-#{$size} {
-		input {
-			&:before {
-				font-size: calc(#{$value} * 0.625);
-			}
 		}
 	}
 	.switch-#{$size} {

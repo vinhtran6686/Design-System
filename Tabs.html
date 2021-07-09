@@ -8,20 +8,559 @@
 		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
-		<style>
-			.tab {
-				margin-bottom: 16px;
-				max-width: 800px;
-			}
-			.tab-vertical{
-				
-			}
-		</style>
+		<style></style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Tabs</h1>
+	<body class="demo scrollbar-big">
+		<div class="tab-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Tabs</h1>
+					</div>
+					<div id="tab-size">
+						<h3>Size</h3>
+						<p class="m-b-24">MD, SM</p>
+						<div class="line">
+							<div class="tab tab-md tab-line">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<br />
+							<div class="m-b-12"></div>
+							<div class="tab tab-sm tab-line">
+								<a href="#" class="tab-item active">
+									<div class="label label-sm">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520tab-line%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tab-style">
+						<h3>Style</h3>
+						<p class="m-b-24">Line, Solid, Rounded, Circle</p>
+						<div class="line">
+							<h6 class="m-b-12">Line & solid</h6>
+							<p class="m-b-12">Add class <code>tab-solid, tab-line</code></p>
+							<div class="tab tab-md tab-line tab-solid">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Full Solid</h6>
+							<p class="m-b-12">Add class <code>tab-full-solid, tab-fill</code></p>
+							<div class="tab tab-md tab-full-solid tab-fill">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Rounded</h6>
+							<p class="m-b-12">Add class <code>tab-rounded</code></p>
+							<div class="tab tab-md tab-fill tab-rounded">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Circle</h6>
+							<p class="m-b-12">Add class <code>tab-circle</code></p>
+							<div class="tab tab-md tab-fill tab-circle">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tab-container">
+						<h3>Container</h3>
+						<p class="m-b-24">True, False</p>
+						<div class="line">
+							<h6 class="m-b-12">Container True</h6>
+							<div class="tab tab-md tab-rounded tab-fill tab-fitted tab-container">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<h6 class="m-b-12 m-t-12">Container False</h6>
+							<div class="tab tab-md tab-fill tab-rounded">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="tab-fitted">
+						<h3>Fitted</h3>
+						<p class="m-b-24">True, False (add class <code>tab-fitted</code>)</p>
+						<div class="line">
+							<h6 class="m-b-12">Fitted True</h6>
+							<div class="tab tab-md tab-full-solid tab-fill tab-fitted tab-container">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<h6 class="m-b-12 m-t-12">Fitted False</h6>
+							<div class="tab tab-md tab-full-solid tab-fill tab-container">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520tab-full-solid%2520tab-fill%2520tab-fitted%2520tab-container%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tab-inner">
+						<h3>Inner & Hidden</h3>
+						<p class="m-b-24">add class <code>tab-hidden, tab-inner</code></p>
+						<div class="line">
+							<div class="tab tab-md tab-fill tab-circle tab-fitted tab-container tab-inner tab-hidden">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<br />
+							<div class="m-b-8"></div>
+							<div class="tab tab-sm tab-fill tab-circle tab-inner tab-hidden">
+								<a href="#" class="tab-item active">
+									<div class="label label-sm">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520tab-fill%2520tab-circle%2520tab-fitted%2520tab-container%2520tab-inner%2520tab-hidden%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 690px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tab-vertical">
+						<h3>Size</h3>
+						<p class="m-b-24">Add class <code>tab-vertical</code></p>
+						<div class="line">
+							<div class="tab tab-md tab-line tab-vertical">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<div class="tab tab-sm tab-line tab-vertical">
+								<a href="#" class="tab-item active">
+									<div class="label label-sm">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-sm">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520tab-line%2520tab-vertical%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tab-vertical-style">
+						<h3>Vertical -rounded, -circle</h3>
+						<div class="line">
+							<p class="m-b-24">Add class <code>tab-vertical tab-rounded</code></p>
+							<div class="tab tab-md tab-fill tab-vertical tab-rounded">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+							<p class="m-b-24 m-t-24">Add class <code>tab-vertical tab-rounded</code></p>
+							<div class="tab tab-md tab-fill tab-vertical tab-circle">
+								<a href="#" class="tab-item active">
+									<div class="label label-md">
+										<span class="label-text">All</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+								<a href="#" class="tab-item">
+									<div class="label label-md">
+										<span class="label-text">Tabs Item</span>
+									</div>
+								</a>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522tab%2520tab-md%2520tab-line%2520tab-vertical%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253EAll%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522tab-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522label%2520label-md%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522label-text%2522%253ETabs%2520Item%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 672px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <h1 class="m-b-24">Tabs</h1>
 		<div class="m-t-40"></div>
 		<p>Style: Line, Box, Rounded, Circle</p>
 		<p>Item: Default, Box, Line, Toggle-Rounded, Toggle-Circle</p>
@@ -251,7 +790,7 @@
 		</div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Fill no container</h3>
-		<div class="tab tab-md tab-fill tab-radius">
+		<div class="tab tab-md tab-fill tab-rounded">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -278,7 +817,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-radius">
+		<div class="tab tab-sm tab-fill tab-rounded">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -307,7 +846,7 @@
 		</div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Fill container</h3>
-		<div class="tab tab-md tab-fill tab-radius tab-container">
+		<div class="tab tab-md tab-fill tab-rounded tab-container">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -334,7 +873,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-radius tab-container">
+		<div class="tab tab-sm tab-fill tab-rounded tab-container">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -363,7 +902,7 @@
 		</div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Inner</h3>
-		<div class="tab tab-md tab-fill tab-radius tab-container tab-inner">
+		<div class="tab tab-md tab-fill tab-rounded tab-container tab-inner">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -390,7 +929,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-radius tab-container tab-inner">
+		<div class="tab tab-sm tab-fill tab-rounded tab-container tab-inner">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -475,7 +1014,7 @@
 		</div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Fill rounded container</h3>
-		<div class="tab tab-md tab-fill tab-rounded tab-container">
+		<div class="tab tab-md tab-fill tab-circle tab-container">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -502,7 +1041,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-rounded tab-container">
+		<div class="tab tab-sm tab-fill tab-circle tab-container">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -531,7 +1070,7 @@
 		</div>
 		<div class="m-b-32"></div>
 		<h3 class="m-b-24">Fill rounded inner container</h3>
-		<div class="tab tab-md tab-fill tab-rounded tab-container tab-inner tab-overlay">
+		<div class="tab tab-md tab-fill tab-circle tab-container tab-inner tab-hidden">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -558,7 +1097,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-rounded tab-container tab-inner tab-overlay">
+		<div class="tab tab-sm tab-fill tab-circle tab-container tab-inner tab-hidden">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -641,7 +1180,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-md tab-fill tab-vertical tab-radius">
+		<div class="tab tab-md tab-fill tab-vertical tab-rounded">
 			<a href="#" class="tab-item active">
 				<div class="label label-md">
 					<span class="label-text">All</span>
@@ -668,7 +1207,7 @@
 				</div>
 			</a>
 		</div>
-		<div class="tab tab-sm tab-fill tab-vertical tab-radius">
+		<div class="tab tab-sm tab-fill tab-vertical tab-rounded">
 			<a href="#" class="tab-item active">
 				<div class="label label-sm">
 					<span class="label-text">All</span>
@@ -748,9 +1287,7 @@
 					<span class="label-text">Tabs Item</span>
 				</div>
 			</a>
-		</div>
-		
-		
+		</div> -->
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>

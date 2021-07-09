@@ -9,144 +9,160 @@
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Tooltip</h1>
-		<div class="m-t-40"></div>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-top">
-			Top
-			<div class="tooltip-box">
-				<div class="f-s-p-14">Tooltip</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-left">
-			Left
-			<div class="tooltip-box">
-				<div class="f-s-p-14">Tooltip</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-bottom">
-			Bottom
-			<div class="tooltip-box">
-				<div class="f-s-p-14">Tooltip</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-right">
-			Right
-			<div class="tooltip-box">
-				<div class="f-s-p-14">Tooltip</div>
-			</div>
-		</button>
-		<br />
-		<br />
-		<button class="btn btn-primary m-r-8 tooltip tooltip-top">
-			Top
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-left">
-			Left
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-bottom">
-			Bottom
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-right">
-			Right
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<br />
-		<br />
-		<button class="btn btn-primary m-r-8 tooltip tooltip-grayscale tooltip-top">
-			Top
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-grayscale tooltip-left">
-			Left
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-grayscale tooltip-bottom">
-			Bottom
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-grayscale tooltip-right">
-			Right
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<br /><br />
-		<button class="btn btn-primary m-r-8 tooltip tooltip-default">
-			Default
-			<div class="tooltip-box">
-				<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-default tooltip-extra tooltip-close">
-			Close
-			<div class="tooltip-box">
-				<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
-					<div class="f-s-p-16 f-w-500">Title</div>
-					<i class="ic-close icon-md"></i>
+	<body class="demo scrollbar-big">
+		<div class="tooltip-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Tooltip</h1>
+					</div>
+					<div id="tooltip-mobile">
+						<h3>Mobile</h3>
+						<p class="m-b-24">Mobile <span class="f-s-p-16 text-grayscale">(True, False)</span></p>
+						<div class="line">
+							<h6 class="m-b-12">Use this for mobile</h6>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-default tooltip-extra tooltip-close">
+								Have Title
+								<div class="tooltip-box">
+									<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
+										<div class="f-s-p-16 f-w-500">Title</div>
+										<i class="ic-close icon-md"></i>
+									</div>
+									<div class="f-s-p-14">Description</div>
+								</div>
+							</button>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-default tooltip-extra tooltip-close">
+								No Title
+								<div class="tooltip-box">
+									<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
+										<div class="f-s-p-14">Description</div>
+										<i class="ic-close icon-md"></i>
+									</div>
+								</div>
+							</button>
+							<button
+								class="
+									btn btn-primary
+									m-r-8
+									tooltip tooltip-default tooltip-extra tooltip-close tooltip-dark
+								"
+							>
+								Have Title
+								<div class="tooltip-box">
+									<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
+										<div class="f-s-p-16 f-w-500">Title</div>
+										<i class="ic-close icon-md"></i>
+									</div>
+									<div class="f-s-p-14">Description</div>
+								</div>
+							</button>
+							<button
+								class="
+									btn btn-primary
+									m-r-8
+									tooltip tooltip-default tooltip-extra tooltip-close tooltip-dark
+								"
+							>
+								No Title
+								<div class="tooltip-box">
+									<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
+										<div class="f-s-p-14">Description</div>
+										<i class="ic-close icon-md"></i>
+									</div>
+								</div>
+							</button>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520tooltip%2520tooltip-default%2520tooltip-extra%2520tooltip-close%2520tooltip-dark%2522%253E%250A%2520%2520%2520%2520Have%2520Title%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tooltip-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522u-flex%2520u-flex-justify-between%2520u-flex-align-center%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2520f-w-500%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522ic-close%2520icon-md%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EDescription%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fbutton%253E"
+							style="width: 800px; height: 400px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tooltip-dark">
+						<h3>Dark</h3>
+						<p class="m-b-24">Add class <code>tooltip-dark</code></p>
+						<div class="line">
+							<button class="btn btn-primary m-r-8 tooltip tooltip-top">
+								Tooltip Default
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-top tooltip-dark">
+								Tooltip Dark
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520tooltip%2520tooltip-top%2520tooltip-dark%2522%253E%250A%2520%2520%2520%2520Tooltip%2520Dark%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tooltip-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253ETooltip%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fbutton%253E"
+							style="width: 800px; height: 294px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tooltip-full-text">
+						<h3>Full text</h3>
+						<div class="line">
+							<button class="btn btn-primary m-r-8 tooltip tooltip-top">
+								Top
+								<div class="tooltip-box">
+									<div class="f-s-p-16 f-w-500 m-b-4">Title</div>
+									<div class="f-s-p-14">Description</div>
+								</div>
+							</button>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520tooltip%2520tooltip-top%2522%253E%250A%2520%2520%2520%2520Top%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tooltip-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-16%2520f-w-500%2520m-b-4%2522%253ETitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253EDescription%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fbutton%253E"
+							style="width: 800px; height: 312px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="tooltip-arrow">
+						<h3>Arrow <span class="f-s-p-16 text-grayscale">(Top, Right, Bottom, Left)</span></h3>
+						<div class="line">
+							<button class="btn btn-primary m-r-8 tooltip tooltip-top">
+								Tooltip Top
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-bottom">
+								Tooltip Bottom
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-left">
+								Tooltip left
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+							<button class="btn btn-primary m-r-8 tooltip tooltip-right">
+								Tooltip Right
+								<div class="tooltip-box">
+									<div class="f-s-p-14">Tooltip</div>
+								</div>
+							</button>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Set%2520tooltip-top%2520or%2520tooltip-bottom%252C%2520tooltip-left%252C%2520tooltip-right%250A%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520m-r-8%2520tooltip%2522%253E%250A%2520%2520%2520%2520Tooltip%2520Direction%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522tooltip-box%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522f-s-p-14%2522%253ETooltip%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fbutton%253E"
+							style="width: 800px; height: 312px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
 				</div>
-				<div class="f-s-p-14">Description</div>
 			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-default tooltip-extra tooltip-close">
-			Have Title
-			<div class="tooltip-box">
-				<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
-					<div class="f-s-p-16 f-w-500">Title</div>
-					<i class="ic-close icon-md"></i>
-				</div>
-				<div class="f-s-p-14">Description</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-default tooltip-extra tooltip-close">
-			No Title
-			<div class="tooltip-box">
-				<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
-					<div class="f-s-p-14">Description</div>
-					<i class="ic-close icon-md"></i>
-				</div>
-			</div>
-		</button>
-		<button class="btn btn-primary m-r-8 tooltip tooltip-grayscale tooltip-default tooltip-extra tooltip-close">
-			No Title
-			<div class="tooltip-box">
-				<div class="u-flex u-flex-justify-between u-flex-align-center m-b-4">
-					<div class="f-s-p-14">Description</div>
-					<i class="ic-close icon-md"></i>
-				</div>
-			</div>
-		</button>
-		
-		
-
+		</div>
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>

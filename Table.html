@@ -9,733 +9,575 @@
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
 		<style>
-			.example {
-				display: inline-flex;
-				margin-right: 16px;
-				margin-bottom: 16px;
-			}
-			.block {
+			.line {
 				display: flex;
 				flex-wrap: wrap;
-				margin-bottom: 30px;
+			}
+			.line h6 {
+				flex-basis: 100%;
+			}
+			.table {
+				flex-basis: 30%;
+				align-self: baseline;
+				margin-right: 8px;
+				margin-bottom: 8px;
 			}
 		</style>
 	</head>
-	<body class="scrollbar-big">
-		
-		
-		<h1 class="m-b-24">Table</h1>
-		<div class="m-t-40"></div>
-		<h3 class="m-b-16 m-t-16">Style (Default, striped)</h3>
-		<div class="block">
-			<div class="example">
-				<table class="table table-lg table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-lg table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<h3 class="m-b-16 m-t-16">Heading (true,false)</h3>
-		<div class="block">
-			<div class="example">
-				<table class="table table-lg table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-lg table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<h3 class="m-b-16 m-t-16">Even</h3>
-		<div class="block">
-			<div class="example">
-				<table class="table table-lg table-even table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-lg table-even table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-even table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-even table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-even table-default">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-even table-striped">
-					<thead>
-						<tr>
-							<th>Title</th>
-							<th>Title</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-		<h3 class="m-b-16 m-t-16">Event title (true,false)</h3>
-		<div class="block">
-			<div class="example">
-				<table class="table table-lg table-even table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-lg table-even table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-even table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-md table-even table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-even table-default">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<div class="example">
-				<table class="table table-sm table-even table-striped">
-					<tbody>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-						<tr>
-							<td>Apple (iPhone)</td>
-							<td>Apple (iPhone)</td>
-						</tr>
-					</tbody>
-				</table>
+	<body class="demo scrollbar-big">
+		<div class="table-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Table</h1>
+					</div>
+					<div id="table-size">
+						<h3>Size</h3>
+						<p class="m-b-24">LG, MD, SM</p>
+						<div class="line">
+							<table class="table table-lg table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-md table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-default%2522%253E%250A%2520%2520%2520%2520%253Cthead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Fthead%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+							style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+					<div id="table-type">
+						<h3>Type</h3>
+						<p class="m-b-24">Default, Striped, Default Border, Striped Border</p>
+						<div class="line">
+							<h6 class="m-b-12">Default</h6>
+							<table class="table table-lg table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-md table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm table-default">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<h6 class="m-t-36 m-b-24">Code:</h6>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-default%2522%253E%250A%2520%2520%2520%2520%253Cthead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Fthead%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+								style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Striped</h6>
+							<table class="table table-lg table-striped">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-md table-striped">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm table-striped">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<h6 class="m-t-36 m-b-24">Code:</h6>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-striped%2522%253E%250A%2520%2520%2520%2520%253Cthead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Fthead%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+								style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Default Border</h6>
+							<table class="table table-lg table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-md table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<h6 class="m-t-36 m-b-24">Code:</h6>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-even%2522%253E%250A%2520%2520%2520%2520%253Cthead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Fthead%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+								style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</div>
+						<div class="line">
+							<h6 class="m-b-12">Striped Border</h6>
+							<table class="table table-lg table-striped table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-md table-striped table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="table table-sm table-striped table-even">
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Title</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+							<h6 class="m-t-36 m-b-24">Code:</h6>
+							<iframe
+								src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-striped%2520table-even%2522%253E%250A%2520%2520%2520%2520%253Cthead%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cth%253ETitle%253C%252Fth%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Fthead%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+								style="width: 800px; height: 726px; border: 0; transform: scale(1); overflow: hidden"
+								sandbox="allow-scripts allow-same-origin"
+							>
+							</iframe>
+						</div>
+					</div>
+					<div id="table-heading">
+						<h3>Heading</h3>
+						<p class="m-b-24">True, False</p>
+						<div class="line">
+							<table class="table table-lg table-striped table-even">
+								<tbody>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+									<tr>
+										<td>Apple (iPhone)</td>
+										<td>Apple (iPhone)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ctable%2520class%253D%2522table%2520table-lg%2520table-striped%2520table-even%2522%253E%250A%2520%2520%2520%2520%253Ctbody%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ctr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctd%253EApple%2520%28iPhone%29%253C%252Ftd%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ftr%253E%250A%2520%2520%2520%2520%253C%252Ftbody%253E%250A%253C%252Ftable%253E"
+							style="width: 800px; height: 618px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
 			</div>
 		</div>
-		
-		
 
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>

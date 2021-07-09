@@ -8,224 +8,473 @@
 		<!-- <link rel="stylesheet" href="css/style.css" /> -->
 		<link rel="stylesheet" href="css/system.css" />
 		<link rel="stylesheet" href="css/example.css" />
-		<style>
-			.example {
-				margin-bottom: 24px;
-			}
-			.block {
-				width: 350px;
-				display: inline-block;
-			}
-			.avatar {
-				margin-bottom: 16px;
-			}
-		</style>
 	</head>
-	<body class="scrollbar-big">
-		<h1 class="m-b-24">Avatar</h1>
-		<div class="m-t-40"></div>
-		<div class="example">
-			<div class="block">
-				<div class="avatar avatar-sm avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
+	<body class="demo scrollbar-big">
+		<div class="avatar-system container">
+			<div class="content demo-content d-s-200">
+				<div class="container">
+					<div class="header">
+						<h1>Avatar</h1>
 					</div>
-				</div>
-				<div class="avatar avatar-md avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-				</div>
-				<div class="avatar avatar-lg avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="avatar avatar-circle avatar-sm avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-				</div>
-				<div class="avatar avatar-circle avatar-md avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-				</div>
-				<div class="avatar avatar-circle avatar-lg avatar-photo">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="avatar avatar-sm avatar-photo avatar-full-text">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-align-center">
-						<div class="avatar-name">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+					<div id="avatar-properties">
+						<h3>Avatar Size</h3>
+						<p class="m-b-24">LG, MD, SM</p>
+						<div class="line">
+							<div class="avatar avatar-sm avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="avatar avatar-md avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="avatar avatar-lg avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
 						</div>
-						<div class="avatar-time m-l-4">
-							<span class="f-s-ui-14">1 giờ trước</span>
+						<h3>Avatar Style</h3>
+						<p class="m-b-24">Rounded, Circle</p>
+						<div class="line">
+							<div class="avatar avatar-lg avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="avatar avatar-circle avatar-lg avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="avatar avatar-md avatar-photo avatar-full-text">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+						<h3>Avatar Type</h3>
+						<p class="m-b-24">Photo, Logo, Text</p>
+						<div class="line">
+							<div class="avatar avatar-lg avatar-photo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+							</div>
+							<div class="avatar avatar-lg avatar-logo m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/2.png" alt="" />
+								</div>
+							</div>
+							<div class="avatar avatar-lg avatar-text">
+								<div class="avatar-shape">
+									<span class="f-s-p-24 f-w-500">MT</span>
+								</div>
+							</div>
 						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-14">1 giờ trước</span>
-						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-logo%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F2.png%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-24%2520f-w-500%2522%253EMT%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 456px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
 					</div>
-				</div>
-				<div class="avatar avatar-lg avatar-photo avatar-full-text">
-					<div class="avatar-shape">
-						<img src="images/Avatar/1.jpg" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-18 f-w-500">Chloe Williams</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-16">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="example">
-			<div class="block">
-				<div class="avatar avatar-sm avatar-default">
-					<div class="avatar-shape">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-				</div>
-				<div class="avatar avatar-md avatar-default">
-					<div class="avatar-shape">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-				</div>
-				<div class="avatar avatar-lg avatar-default">
-					<div class="avatar-shape">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="avatar avatar-sm avatar-circle avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-2">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-align-center">
-						<div class="avatar-name m-r-4">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-14">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-				<div class="avatar avatar-md avatar-circle avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-4">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-14">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-				<div class="avatar avatar-lg avatar-circle avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-6">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-18 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-16">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="block">
-				<div class="avatar avatar-sm avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-2">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-align-center">
-						<div class="avatar-name m-r-4">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-14">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-				<div class="avatar avatar-md avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-4">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-14">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-				<div class="avatar avatar-lg avatar-default avatar-full-text avatar-badge">
-					<div class="avatar-shape p-x-6">
-						<img src="images/Avatar/2.png" alt="" />
-					</div>
-					<div class="avatar-info u-flex u-flex-column">
-						<div class="avatar-name m-b-4">
-							<span class="f-s-ui-18 f-w-500">Chloe Williams</span>
-							<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
-						</div>
-						<div class="avatar-time">
-							<span class="f-s-ui-16">1 giờ trước</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="example">
-			<div class="avatar avatar-sm avatar-text">
-				<div class="avatar-shape">
-					<span class="f-s-p-12 f-w-500">MT</span>
-				</div>
-			</div>
-			<div class="avatar avatar-md avatar-text">
-				<div class="avatar-shape">
-					<span class="f-s-p-20 f-w-500">MT</span>
-				</div>
-			</div>
-			<div class="avatar avatar-lg avatar-text">
-				<div class="avatar-shape">
-					<span class="f-s-p-24 f-w-500">MT</span>
-				</div>
-			</div>
-		</div>
+					<div id="avatar-info">
+						<h3>Avatar Text</h3>
+						<div class="line">
+							<div class="avatar avatar-lg avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name m-b-8">
+										<span class="f-s-ui-24 f-w-500">Chloe Williams</span>
+									</div>
+									<div class="avatar-time">
+										<span class="f-s-ui-16">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-lg avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name">
+										<span class="f-s-ui-24 f-w-500">Chloe Williams</span>
+									</div>
+								</div>
+							</div>
 
+							<div class="avatar avatar-md avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name m-b-4">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+									<div class="avatar-time">
+										<span class="f-s-ui-14">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-md avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="avatar avatar-sm avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-align-center">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+									<div class="avatar-time m-l-4">
+										<span class="f-s-ui-14">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-sm avatar-photo avatar-full-text m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-align-center">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-photo%2520avatar-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2520m-b-8%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-24%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-time%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2522%253E1%2520gi%25E1%25BB%259D%2520tr%25C6%25B0%25E1%25BB%259Bc%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-photo%2520avatar-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-24%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-photo%2520avatar-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-time%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-14%2522%253E1%2520gi%25E1%25BB%259D%2520tr%25C6%25B0%25E1%25BB%259Bc%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-photo%2520avatar-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-photo%2520avatar-full-text%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-align-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-time%2520m-l-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-14%2522%253E1%2520gi%25E1%25BB%259D%2520tr%25C6%25B0%25E1%25BB%259Bc%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A"
+							style="width: 800px; height: 1264px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+						<h3>Avatar Badge</h3>
+						<div class="line">
+							<div class="avatar avatar-lg avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name m-b-8">
+										<span class="f-s-ui-24 f-w-500">Chloe Williams</span>
+										<span class="badge badge-primary badge-xs m-l-8">Quản trị viên</span>
+									</div>
+									<div class="avatar-time">
+										<span class="f-s-ui-16">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-lg avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name">
+										<span class="f-s-ui-24 f-w-500">Chloe Williams</span>
+									</div>
+									<span class="badge badge-primary badge-xs m-t-8">Quản trị viên</span>
+								</div>
+							</div>
+
+							<div class="avatar avatar-md avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name m-b-4">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+										<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
+									</div>
+									<div class="avatar-time">
+										<span class="f-s-ui-14">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-md avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-column">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+									<span class="badge badge-primary badge-xxs m-t-4">Quản trị viên</span>
+								</div>
+							</div>
+
+							<div class="avatar avatar-sm avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-align-center">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+										<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
+									</div>
+									<div class="avatar-time m-l-4">
+										<span class="f-s-ui-14">1 giờ trước</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar avatar-sm avatar-photo avatar-full-text avatar-badge m-b-8">
+								<div class="avatar-shape">
+									<img src="images/Avatar/1.jpg" alt="" />
+								</div>
+								<div class="avatar-info u-flex u-flex-align-center">
+									<div class="avatar-name">
+										<span class="f-s-ui-16 f-w-500">Chloe Williams</span>
+									</div>
+									<span class="badge badge-primary badge-xxs m-l-4">Quản trị viên</span>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-photo%2520avatar-full-text%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-24%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xs%2520m-l-8%2522%253EQu%25E1%25BA%25A3n%2520tr%25E1%25BB%258B%2520vi%25C3%25AAn%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-time%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2522%253E1%2520gi%25E1%25BB%259D%2520tr%25C6%25B0%25E1%25BB%259Bc%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-lg%2520avatar-photo%2520avatar-full-text%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-24%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xs%2520m-t-8%2522%253EQu%25E1%25BA%25A3n%2520tr%25E1%25BB%258B%2520vi%25C3%25AAn%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-photo%2520avatar-full-text%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2520m-b-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xxs%2520m-l-4%2522%253EQu%25E1%25BA%25A3n%2520tr%25E1%25BB%258B%2520vi%25C3%25AAn%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-time%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-14%2522%253E1%2520gi%25E1%25BB%259D%2520tr%25C6%25B0%25E1%25BB%259Bc%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-md%2520avatar-photo%2520avatar-full-text%2520avatar-badge%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-info%2520u-flex%2520u-flex-column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-name%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-ui-16%2520f-w-500%2522%253EChloe%2520Williams%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge%2520badge-primary%2520badge-xxs%2520m-t-4%2522%253EQu%25E1%25BA%25A3n%2520tr%25E1%25BB%258B%2520vi%25C3%25AAn%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253Cdiv%2520class%253D%2522avatar%2520avatar-sm%2520avatar-photo%2520avatar-full-text%2520avatar-"
+							style="width: 800px; height: 1262px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<hr />
+					</div>
+					<div id="avatar-stack">
+						<h3>Avatar Stack</h3>
+						<div class="line">
+							<div class="avatar-stack">
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="m-b-24"></div>
+							<br />
+							<div class="avatar-stack">
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<br />
+							<div class="m-b-24"></div>
+							<div class="avatar-stack">
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-stack%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 762px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+						<h3>Avatar Stack Number</h3>
+						<div class="line">
+							<div class="avatar-stack avatar-stack-number">
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-lg avatar-text">
+									<div class="avatar-shape">
+										<span class="f-s-p-24 f-w-500 text-primary">+4</span>
+									</div>
+								</div>
+							</div>
+							<div class="avatar-stack avatar-stack-number">
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-md avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="avatar-stack avatar-stack-number">
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+								<div class="avatar avatar-circle avatar-sm avatar-photo">
+									<div class="avatar-shape">
+										<img src="images/Avatar/1.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<h3>Code:</h3>
+						<iframe
+							src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522avatar-stack%2520avatar-stack-number%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-photo%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522images%252FAvatar%252F1.jpg%2522%2520alt%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522avatar%2520avatar-circle%2520avatar-lg%2520avatar-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-shape%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522f-s-p-24%2520f-w-500%2520text-primary%2522%253E%252B4%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+							style="width: 800px; height: 852px; border: 0; transform: scale(1); overflow: hidden"
+							sandbox="allow-scripts allow-same-origin"
+						>
+						</iframe>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/util.js"></script>
 		<script src="js/functions.js"></script>
 	</body>
