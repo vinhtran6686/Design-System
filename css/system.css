@@ -3685,8 +3685,12 @@ code {
     background: #cb1c22;
     color: #fff;
     border-color: #cb1c22; }
-  .pagination-item.disabled .pagination-link, .pagination-item:disabled .pagination-link {
-    color: #cbd1d6; }
+  .pagination-item.disabled, .pagination-item:disabled {
+    cursor: no-drop; }
+    .pagination-item.disabled .pagination-link, .pagination-item:disabled .pagination-link {
+      color: #cbd1d6;
+      cursor: no-drop;
+      pointer-events: none; }
   .pagination-link {
     width: 40px;
     height: 40px;
@@ -3713,7 +3717,7 @@ code {
   .pagination-default .pagination-item .pagination-link {
     border-radius: 0; }
   .pagination-default .pagination-item:not(:first-child):not(:last-child) {
-    color: red; }
+    color: #cb1c22; }
     .pagination-default .pagination-item:not(:first-child):not(:last-child) .pagination-link {
       border-right: none;
       border-left: none;

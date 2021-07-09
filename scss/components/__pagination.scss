@@ -21,8 +21,11 @@
 		}
 		&.disabled,
 		&:disabled {
+			cursor: no-drop;
 			#{$this}-link {
 				color: $grayscale-400;
+				cursor: no-drop;
+				pointer-events: none;
 			}
 		}
 	}
@@ -60,7 +63,7 @@
 				border-radius: 0;
 			}
 			&:not(:first-child):not(:last-child) {
-				color: red;
+				color: $primary;
 				#{$this}-link {
 					border-right: none;
 					border-left: none;
