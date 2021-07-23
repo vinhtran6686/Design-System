@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Design System FPTShop</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/system.css" />
+    <link rel="stylesheet" href="css/example.css" />
+  </head>
+  <body class="demo scrollbar-big">
+    <div class="product-system">
+      <div class="content demo-content d-s-200">
+        <div class="container">
+          <div class="header">
+            <h1>Product</h1>
+          </div>
+          <div id="product-dom">
+            <figure>
+              <figcaption>Product DOM structure diagram</figcaption>
+              <ul class="tree" style="margin: 0 -75px">
+                <li>
+                  <code>product</code>
+                  <ul>
+                    <li>
+                      <code>product_img</code>
+                      <ul>
+                        <li>
+                          <code>a</code>
+                          <ul>
+                            <li><code>img</code></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <code>product_info</code>
+                      <ul>
+                        <li>
+                          <code>h3</code>
+                          <ul>
+                            <li><code>a</code></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <code>product_timing</code>
+                          <ul>
+                            <li>
+                              <code>product_timing_left</code>
+                              <ul>
+                                <li>
+                                  <code>product_progress</code>
+                                  <ul>
+                                    <li>
+                                      <code> product_progress_bar </code>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <code>product_timing_right</code>
+                              <ul>
+                                <li><code>product_strike</code></li>
+                                <li><code>product_countdown</code></li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <code>product_config</code>
+                          <ul>
+                            <li>
+                              <code>product_config_param</code>
+                              <ul>
+                                <li>
+                                  <code>span</code>
+                                  <ul>
+                                    <li><code>i</code></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <code>product_img-promo</code>
+                              <ul>
+                                <li>
+                                  <code>a</code>
+                                  <ul>
+                                    <li>
+                                      <code>span</code>
+                                      <ul>
+                                        <li><code>img</code></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <code>product_text-promo</code>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <code>product_btn</code>
+                      <ul>
+                        <li><code>a.btn</code></li>
+                        <li><code>a.btn</code></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </figure>
+          </div>
+          <div id="product-properties">
+            <h3>Product</h3>
+            <div class="row no-gutters">
+              <div class="col-3">
+                <div class="product product-grid_item product--absolute">
+                  <div class="product_img">
+                    <a href="#">
+                      <img
+                        src="https://images.fpt.shop/unsafe/fit-in/214x214/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/9/11/637037687757921048_11-pro-max-chung.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="product_info">
+                    <h3>
+                      <a href="#" class="product_name">
+                        Bao Da Samsung S20 Ultra Clear View Black 1
+                      </a>
+                    </h3>
+                    <div class="product_timing">
+                      <div class="product_timing_left">
+                        <div class="product_progress">
+                          1.990.000 ₫
+                          <div
+                            class="product_progress_bar"
+                            style="width: 70%"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="product_timing_right">
+                        <div class="product_strike">2.990.000 ₫</div>
+                        <div class="product_countdown">1 ngày 02:58:03</div>
+                      </div>
+                    </div>
+                    <div class="product_config">
+                      <div class="product_config_param">
+                        <span data-info="CPU"
+                          ><i class="icon-cpu"></i>A14 Bionic</span
+                        >
+                        <span data-info="Màn hình"
+                          ><i class="icon-mobile"></i>6.1"</span
+                        >
+                        <span data-info="RAM&nbsp;"
+                          ><i class="icon-ram"></i>4 GB</span
+                        >
+                        <span data-info="Bộ nhớ trong"
+                          ><i class="icon-hdd-black"></i>64 GB</span
+                        >
+                      </div>
+                      <div class="product_img-promo">
+                        <span>
+                          <!-- <img src="./images/promo-phone.png" alt=""> -->
+                          <img src="https://dummyimage.com/45x45.png" alt="" />
+                        </span>
+                        <span>
+                          <!-- <img src="./images/promo-vnpay.png" alt=""> -->
+                          <img src="https://dummyimage.com/45x45.png" alt="" />
+                        </span>
+                      </div>
+                      <div class="product_text-promo">
+                        Giảm 1.000.000đ mua cùng Apple Watch
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product_btn">
+                    <a href="#" class="btn btn-primary btn-lg btn-main"
+                      >MUA NGAY</a
+                    >
+                    <a href="#" class="btn btn-grayscale btn-lg btn-sub"
+                      >SO SÁNH</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Code:</h3>
+            <iframe
+              src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=one-dark&wt=none&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cspan%2520class%253D%2522cursor-default%2522%253Edefault%253C%252Fspan%253E%250A%2509%2509%2509%2509%2509%2509%2509%250A%253Cspan%2520class%253D%2522cursor-pointer%2522%253Epointer%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-grabbing%2522%253Egrabbing%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-zoom-out%2522%253Ezoom-out%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-zoom-in%2522%253Ezoom-in%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-unavailable%2522%253Eunavailable%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-text%2522%253Etext%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-crosshair%2522%253Ecrosshair%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522cursor-disabled%2522%253Edisabled%253C%252Fspan%253E"
+              style="
+                width: 800px;
+                height: 492px;
+                border: 0;
+                transform: scale(1);
+                overflow: hidden;
+              "
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/util.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>

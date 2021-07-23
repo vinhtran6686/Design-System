@@ -1,194 +1,279 @@
 body.open #navigator-overlay {
-	display: block;
+  display: block;
 }
 body.open .navigator-menu {
-	left: 0;
+  left: 0;
 }
 
 /* Navigation */
 #navigator-trigger {
-	position: fixed;
-	top: 1rem;
-	left: 1rem;
-	cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  cursor: pointer;
 }
 /* navigator  */
 .navigator-logo {
-	display: block;
-	padding: 0 24px;
-	margin-bottom: 12px;
-	text-align: center;
+  display: block;
+  padding: 0 24px;
+  margin-bottom: 12px;
+  text-align: center;
 }
 .navigator-logo img {
-	width: 50%;
+  width: 50%;
 }
 .navigator-menu {
-	position: fixed;
-	z-index: 10;
-	top: 0;
-	left: -300px;
-	width: 300px;
-	height: 100%;
-	background-color: #212529;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	transition: ease 0.3s all;
-	overflow-y: auto;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #212529;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: ease 0.3s all;
+  overflow-y: auto;
 }
 .navigator-menu h3 {
-	padding: 8px 24px;
+  padding: 8px 24px;
 }
 .navigator-menu h3,
 .navigator-menu a {
-	color: #cbd1d6;
-	transition: 0.3s ease;
+  color: #cbd1d6;
+  transition: 0.3s ease;
 }
 .navigator-menu h3:hover,
 .navigator-menu a:hover {
-	color: white;
-	background-color: #444b52;
+  color: white;
+  background-color: #444b52;
 }
 .navigator-menu ul {
-	margin-left: 24px;
+  margin-left: 24px;
 }
 .navigator-menu li {
-	position: relative;
-	margin-left: 8px;
+  position: relative;
+  margin-left: 8px;
 }
 .navigator-menu li:before {
-	content: ' ';
-	display: block;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	transition: height 100ms linear;
-	width: 1px;
-	background: #939ca3;
-	-webkit-transform: translateY(-50%);
-	-webkit-transition: height 100ms linear;
+  content: " ";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: height 100ms linear;
+  width: 1px;
+  background: #939ca3;
+  -webkit-transform: translateY(-50%);
+  -webkit-transition: height 100ms linear;
 }
 .navigator-menu li:hover:before {
-	width: 2px;
-	background: #edeeef;
+  width: 2px;
+  background: #edeeef;
 }
 .navigator-menu a {
-	text-decoration: none;
-	display: block;
-	padding: 7px 0 7px 12px;
-	transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+  text-decoration: none;
+  display: block;
+  padding: 7px 0 7px 12px;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
 }
 .navigator-block {
-	position: relative;
+  position: relative;
 }
 .navigator-block ul {
-	height: 0px;
-	overflow: hidden;
-	visibility: hidden;
-	transition: all 0.3s ease;
+  height: 0px;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.3s ease;
 }
 .navigator-block.active ul {
-	height: auto;
-	overflow: visible;
-	visibility: visible;
+  height: auto;
+  overflow: visible;
+  visibility: visible;
 }
 .navigator-block li.active {
-	font-weight: 500;
+  font-weight: 500;
 }
 .navigator-block li.active:before {
-	width: 2px;
-	background: #cb1c22;
+  width: 2px;
+  background: #cb1c22;
 }
 .navigator-block::after {
-	content: '\e90a';
-	font-family: 'icon';
-	color: white;
-	position: absolute;
-	font-size: 14px;
-	line-height: 20px;
-	right: 24px;
-	top: 8px;
+  content: "\e90a";
+  font-family: "icon";
+  color: white;
+  position: absolute;
+  font-size: 14px;
+  line-height: 20px;
+  right: 24px;
+  top: 8px;
 }
 .navigator-block.active::after {
-	content: '\e910';
+  content: "\e910";
 }
 .navigator-item {
-	cursor: pointer;
+  cursor: pointer;
 }
 /* overlay  */
 #navigator-overlay {
-	width: 100vw;
-	height: 100vh;
-	display: none;
-	position: fixed;
-	z-index: 3;
-	top: 0;
-	overflow: hidden;
-	background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .start {
-	height: 100vh;
-	overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 .demo {
-	background: #212529;
-	margin: 6rem 0;
-	height: auto;
-	padding: 0 8rem;
+  background: #212529;
+  margin: 6rem 0;
+  height: auto;
+  padding: 0 8rem;
 }
 .demo-content {
-	background: white;
-	height: 100%;
-	border-radius: 8px;
-	padding: 4rem 4rem 4rem 6rem;
+  background: white;
+  height: 100%;
+  border-radius: 8px;
+  padding: 4rem 4rem 4rem 6rem;
 }
 @media only screen and (max-width: 768px) {
-	.demo-content {
-		width: 100%;
-		padding: 10px;
-	}
-	iframe{
-		width: 100% !important;
-	}
+  .demo-content {
+    width: 100%;
+    padding: 10px;
+  }
+  iframe {
+    width: 100% !important;
+  }
 }
 .demo-heading {
-	font-size: 48px;
-	line-height: 1.15;
-	margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 1.15;
+  margin-bottom: 60px;
 }
 .demo-padding {
-	padding-right: 2rem;
+  padding-right: 2rem;
 }
 .header {
-	margin: 48px 0;
+  margin: 48px 0;
 }
 .header h1 {
-	font-size: 44px;
-	line-height: 1.1;
+  font-size: 44px;
+  line-height: 1.1;
 }
 .description {
-	margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 .content p {
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 28px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
 }
 .content h3 {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 .content h4 {
-	margin-bottom: 18px;
+  margin-bottom: 18px;
 }
-.content iframe{
-	margin-bottom: 36px;
+.content iframe {
+  margin-bottom: 36px;
 }
 .section {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
 }
-.line{
-	margin-bottom: 24px;
+.line {
+  margin-bottom: 24px;
+}
+
+/* tree diagram */
+.tree,
+.tree ul,
+.tree li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.tree {
+  margin: 0 0 1em;
+  text-align: center;
+}
+.tree,
+.tree ul {
+  display: table;
+}
+.tree ul {
+  width: 100%;
+}
+.tree li {
+  display: table-cell;
+  padding: 1em 0;
+  vertical-align: top;
+}
+/* _________ */
+.tree li:before {
+  outline: solid 1px #666;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.tree li:first-child:before {
+  left: 50%;
+}
+.tree li:last-child:before {
+  right: 50%;
+}
+
+.tree code,
+.tree span {
+  border: solid 0.1em #666;
+  border-radius: 0.2em;
+  display: inline-block;
+  margin: 0 0.2em 1em;
+  padding: 0.2em 0.5em;
+  position: relative;
+}
+/* If the tree represents DOM structure */
+.tree code {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+
+/* | */
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+  outline: solid 1px #666;
+  content: "";
+  height: .9em;
+  left: 50%;
+  position: absolute;
+}
+.tree ul:before {
+  top: -1em;
+}
+.tree code:before,
+.tree span:before {
+  top: -1em;
+}
+
+/* The root node doesn't connect upwards */
+.tree > li {
+  margin-top: 0;
+}
+.tree > li:before,
+.tree > li:after,
+.tree > li > code:before,
+.tree > li > span:before {
+  outline: none;
 }

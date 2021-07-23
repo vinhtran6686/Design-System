@@ -1,0 +1,16 @@
+$cursor: (
+	'default': default,
+	'pointer': pointer,
+	'grabbing': grabbing,
+	'zoom-out': zoom-out,
+	'zoom-in': zoom-in,
+	'unavailable': not-allowed,
+	'text': text,
+	'crosshair': crosshair,
+	'disabled': not-allowed,
+);
+@each $name, $value in $cursor {
+   .cursor-#{$name} {
+      cursor: $value;
+   }
+}
